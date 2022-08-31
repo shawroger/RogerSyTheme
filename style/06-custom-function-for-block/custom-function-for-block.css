@@ -152,7 +152,8 @@
 	max-width: 100%;
     margin: 0 auto;
     font-size: 120%;
-    font-family: KaiTi;
+    font-family: KaiTi; 
+    margin-bottom: 10px;
 }
 
 /* ————————————文本缩进———————————— */

@@ -130,10 +130,11 @@
     color: var(--b3-theme-on-background);
 }
 
-/* ————————————文本竖排(适合古诗文）———————————— 
+/* ————————————文本竖排(适合古诗文）———————————— */
+
+/*
 .protyle-wysiwyg [data-node-id][custom-f~=sp] {
     writing-mode: vertical-lr;
-    /*从左向右 从右向左是 writing-mode: vertical-rl;*/
     font-size: 120%;
     line-height: 2em;
     background-color: #f0efe2;
@@ -143,14 +144,15 @@
     letter-spacing: 4px;
 }*/
 
-.protyle-wysiwyg [data-node-id][custom-f~="sp"] {
+.protyle-wysiwyg [data-node-id][custom-f~=sp] {
 	writing-mode: vertical-rl;
 	background-color: #f0efe2;
 	padding: 10px;
 	border: 5px solid #e1e0c7;
-	word-wrap: break-word;
 	max-width: 100%;
-	overflow-y: auto;
+    margin: 0 auto;
+    font-size: 120%;
+    font-family: KaiTi;
 }
 
 /* ————————————文本缩进———————————— */

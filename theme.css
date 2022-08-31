@@ -1,5 +1,9 @@
 /* ----------------------------------------------------引入开始---------------------------------------------------------- */
 
+/* #barSync {
+    display: none;
+} */
+
 /* ————————————————————初始设置———————————————————— */
 /* 引入颜色和字体 */
 @import url("style/01-color-font/color-font.css");
@@ -12,7 +16,7 @@
 
 /* ————————————————————界面修改———————————————————— */
 /* 修改上左右dock栏样式 */
-@import url("style/02-appearance/dock.css");
+/* @import url("style/02-appearance/dock.css"); */
 /* 修改正文A4纸大小 */
 @import url("style/02-appearance/A4.css");
 /* 修改文档树样式 */
@@ -33,7 +37,6 @@
 @import url("style/02-appearance/setting-option.css");
 /* 修改警告界面样式 */
 @import url("style/02-appearance/warning-color.css");
-
 
 /* ————————————————————行内元素———————————————————— */
 /* 修改高亮样式 */
@@ -88,8 +91,6 @@
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
 /* 增加块的自定义属性 */
 @import url("style/06-custom-function-for-block/custom-function-for-block.css");
-/* 对PPT，word等文件格式前面加上标识 
-@import url("style/07-others/file-link-before.css");*/
 
 @import url("style/link-icon.css");
 
@@ -101,3 +102,10 @@
 /* 引入自定义配置 */
 @import url("custom.css");
 /* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+#toolbarVIP,
+#barSync,
+#dockLeft > div:nth-child(1) > span:nth-child(3) {
+	display: none;
+}
+

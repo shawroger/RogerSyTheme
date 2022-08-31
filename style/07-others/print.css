@@ -3,7 +3,7 @@
 @media print {
 
     /* 正文元素设置为宋体 */
-    .p,
+    /* .p,
     table,
     .list {
         font-family: "Times New Roman", "宋体";
@@ -13,7 +13,7 @@
     div[data-type="NodeHeading"] {
         font-family: "Times New Roman", "黑体" !important;
         font-weight: normal !important;
-    }
+    } */
 
     /* 打印时不显示标题前面的H1等符号 */
     div.h1::before,

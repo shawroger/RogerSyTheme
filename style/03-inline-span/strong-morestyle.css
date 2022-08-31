@@ -53,6 +53,7 @@ strong[style="background-color: var(--b3-font-background12);"] {
 
 
 /* 为前8种后面设置数字 */
+/*
 strong[style="background-color: var(--b3-font-background1);"]::after {
     content: "¹";
     color: var(--b3-font-color1);
@@ -107,7 +108,7 @@ strong[style="background-color: var(--b3-font-background8);"]::after {
     color: var(--b3-font-color8);
     font-weight: 400;
     opacity: 0.4;
-}
+}*/
 
 /* 设置第13个背景色为挖空效果 */
 strong[style="background-color: var(--b3-font-background13);"] {

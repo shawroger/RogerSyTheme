@@ -9,7 +9,6 @@
     padding-right: 2px;
 }*/
 
-/* 为引用块后面增加引用图标 */
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
     content: "[[";
     position: relative;
@@ -18,8 +17,6 @@
 	color: lightgrey !important;
 }
 
-
-/* 为引用块后面增加引用图标 */
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after{
     content: "]]";
     position: relative;

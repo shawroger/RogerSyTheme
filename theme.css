@@ -88,9 +88,10 @@
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
 /* 增加块的自定义属性 */
 @import url("style/06-custom-function-for-block/custom-function-for-block.css");
-/* 对PPT，word等文件格式前面加上标识 */
-@import url("style/07-others/file-link-before.css");
+/* 对PPT，word等文件格式前面加上标识 
+@import url("style/07-others/file-link-before.css");*/
 
+@import url("style/link-icon.css");
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */

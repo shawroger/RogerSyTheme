@@ -1,0 +1,46 @@
+/* 控制打印样式 */
+
+@media print {
+
+    /* 正文元素设置为宋体 */
+    .p,
+    table,
+    .list {
+        font-family: "Times New Roman", "宋体";
+    }
+
+    /* 标题元素设置为黑体 */
+    div[data-type="NodeHeading"] {
+        font-family: "Times New Roman", "黑体" !important;
+        font-weight: normal !important;
+    }
+
+    /* 打印时不显示标题前面的H1等符号 */
+    div.h1::before,
+    div.h2::before,
+    div.h3::before,
+    div.h4::before,
+    div.h5::before,
+    div.h6::before {
+        display: none !important;
+    }
+
+    /* 打印时不显示分割线 */
+    div.hr>div {
+        border-color: transparent !important;
+    }
+}
+
+
+
+/* 在一级标题和分割线处打印分页 */
+@media print {
+
+    .h1 {
+        page-break-before: always;
+    }
+
+    div.hr {
+        page-break-after: always;
+    }
+}

@@ -264,7 +264,10 @@
     --b3-border-column-item: 1px solid #80808033;
     --b3-border-kbd: 0.1em solid rgba(128, 128, 128, 0.2);
     --b3-border-gezi: 0.05em solid #cfcece4d;
+    /*
     --b3-link-underline-color: #d71a1aad;
+    */
+    --b3-link-underline-color: #81B9C0;
 
 }
 

@@ -4,12 +4,17 @@
 /* ————————————————————修改PDF双链样式———————————————————— */
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
     display: inline-block;
-    color: var(--b3-theme-on-surface);
+    color: var(--b3-card-darker-yellow);
     padding: 4px;
-    /* border: 1px solid var(--b3-border-color1); */
+    /* border: 1px solid var(--b3-border-color1);
     text-decoration: 0.05em solid var(--b3-border-color1) underline;
-    border-radius: var(--b3-border-radius-noraml);
+    border-radius: var(--b3-border-radius-noraml); */
+    text-decoration: none;
     margin: 0px;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref']:hover {
+    text-decoration: 0.06em wavy var(--b3-font-color8) underline;
 }
 
 

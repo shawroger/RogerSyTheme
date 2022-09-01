@@ -234,3 +234,25 @@ function inject() {
 }
 
 inject();
+
+function forceReload() {
+	try {
+		const { session } = require("@electron/remote");
+		session.defaultSession
+			.clearCache()
+			.then((...args) => window.location.reload());
+	} catch (err) {
+		console.warn(err);
+		window.location.reload();
+	}
+}
+
+window.addEventListener("keydown", (event) => {
+	const keycode = event.key;
+	const ctrlKeyCode = event.ctrlKey;
+	console.log(keycode, ctrlKeyCode);
+	if (keycode === "F5" && ctrlKeyCode) {
+		console.log(23333);
+		forceReload();
+	}
+});

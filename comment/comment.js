@@ -197,7 +197,7 @@ class Comment {
 			) || activeEditor.querySelector(".protyle-background"); // 获得桌面端当前编辑的文章
 		let docId = document.querySelector(".popover__block").dataset.id//background.dataset.nodeId; //获得当前编辑的文章 id
 
-		console.log(background.dataset, docId)
+		 
 		// 批注 h1 标题
 		// let headerHtml = `<div data-subtype="h4" data-node-id="${createBlockId()}" data-type="NodeHeading" class="h4" style="comment-header" updated="${createBlockId(false)}"><div contenteditable="true" spellcheck="false">批注</div><div class="protyle-attr" contenteditable="false"></div></div>`
 		let headerMd = `
@@ -281,10 +281,10 @@ ${commentMd}
 		// 	`.fn__flex-1.protyle:not(.fn__none) .bq[custom-quote-id*="${quoteId}"]`
 		// );
 		// if (existQuote) {
-		// 	await this.insertBlockDom(commentHtml, existQuote.dataset.nodeId);
+		// 	await this.appendBlockMd(commentMd, existQuote.dataset.nodeId);
 		// } else {
-		// 	await this.appendBlockDom(quoteHtml, docId);
-		// 	await this.appendBlockDom(commentHtml, docId);
+		// 	//await this.appendBlockMd(commentMd, docId);
+		// 	//await this.appendBlockMd(quoteMd, docId);
 		// }
 	}
 

@@ -34,6 +34,12 @@
     background-image: url('../icon/weibo_com.png');
 }
 
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="siyuan"]:not(:empty)::before,
+.b3-typography a[href ^="siyuan"]::before {
+    content: "";
+    background-image: url('../icon/qipao.png');
+}
+
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="zhihu.com"]:not(:empty)::before,
 .b3-typography a[href *="zhihu.com"]::before {
     content: "";

@@ -250,7 +250,6 @@ function forceReload() {
 window.addEventListener("keydown", (event) => {
 	const keycode = event.key;
 	const ctrlKeyCode = event.ctrlKey;
-	console.log(keycode, ctrlKeyCode);
 	if (keycode === "F5" && ctrlKeyCode) {
 		console.log(23333);
 		forceReload();

@@ -20,10 +20,10 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:before {
     /* content: url("src/pdf1.svg"); */
-    content: url("../../src/pdf1.svg");
-    position: relative;
-    top: 0.1em;
-    margin-right: 4px;
+    content: url("../../src/pdf1.svg") !important;
+    position: relative  !important;
+    top: 0.1em  !important;
+    margin-right: 4px  !important;
 }
 
 

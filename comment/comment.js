@@ -195,7 +195,7 @@ class Comment {
 			activeEditor.querySelector(
 				"div.protyle:not(.fn__none) .protyle-background"
 			) || activeEditor.querySelector(".protyle-background"); // 获得桌面端当前编辑的文章
-		let docId = document.querySelector(".popover__block").dataset.id//background.dataset.nodeId; //获得当前编辑的文章 id
+		//let docId = document.querySelector(".popover__block").dataset.id//background.dataset.nodeId; //获得当前编辑的文章 id
 
 		 
 		// 批注 h1 标题
@@ -231,14 +231,14 @@ ${this.input.innerHTML}
       from
         attributes as a
       where
-        a.root_id = '${docId}'
+        a.root_id = '${document.querySelector(".popover__block").dataset.id}'
         and a.name = 'custom-quote-type'
         and a.value = '${config.attrs.type.heading}'
     `);
 		// console.log(res)
 		if (res && res.code == 0 && res.data.length == 0) {
 			// 没有批注标题块，则添加
-			await this.appendBlockMd(headerMd, docId);
+			await this.appendBlockMd(headerMd, document.querySelector(".popover__block").dataset.id);
 		}
 
 		res = await querySQL(`
@@ -251,7 +251,7 @@ ${this.input.innerHTML}
       on
         a.block_id = b.id
       where
-        a.root_id = '${docId}'
+        a.root_id = '${document.querySelector(".popover__block").dataset.id}'
         and a.name = 'custom-quote-id'
         and a.value = '${quoteId}'
         and b.type = 's'
@@ -268,7 +268,7 @@ ${commentMd}
 }}}
 {: custom-quote-id="${quoteId}" custom-quote-type="${config.attrs.type.container}"}
 `;
-				await this.appendBlockMd(containerMd, docId);
+				await this.appendBlockMd(containerMd, document.querySelector(".popover__block").dataset.id);
 			} else if (res.data.length == 1) {
 				let containerId = res.data[0].id;
 				

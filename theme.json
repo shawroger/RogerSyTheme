@@ -1,9 +1,7 @@
 {
-  "name": "RogerSyTheme",
-  "author": "shawroger",
-  "url": "https://github.com/shawroger/RogerSyTheme.git",
-  "version": "0.0.1",
-  "modes": [
-    "light"
-  ]
+	"name": "RogerSyTheme",
+	"author": "shawroger",
+	"url": "https://github.com/shawroger/RogerSyTheme.git",
+	"version": "0.0.1",
+	"modes": ["light"]
 }

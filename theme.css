@@ -1,40 +1,42 @@
-/* ----------------------------------------------------引入开始---------------------------------------------------------- */
-
-/* #barSync {
-    display: none;
-} */
-
-/* ————————————————————初始设置———————————————————— */
 /* 引入颜色和字体 */
 @import url("style/01-color-font/color-font.css");
+
 /* 引入一些初始设置 */
 @import url("style/07-others/begin-setting.css");
+
 /* 引入空行提示 */
 @import url("style/07-others/empty-letter.css");
+
 /* 设置打印样式 */
 @import url("style/07-others/print.css");
 
-/* ————————————————————界面修改———————————————————— */
-/* 修改上左右dock栏样式 */
-/* @import url("style/02-appearance/dock.css"); */
 /* 修改正文A4纸大小 */
 @import url("style/02-appearance/A4.css");
+
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
+
 /* 修改标签页样式 */
 @import url("style/02-appearance/tab-bar.css");
+
 /* 修改面包屑样式 */
 @import url("style/02-appearance/breadcrumb.css");
+
 /* 修改鼠标滑选块时光标颜色 */
 @import url("style/02-appearance/mouse.css");
+
 /* 修改选中文字后弹出的悬浮工具栏的样式 */
 @import url("style/02-appearance/toolbar.css");
+
 /* 修改弹出菜单的样式 */
 @import url("style/02-appearance/meun.css");
+
 /* 修改按钮样式 */
 @import url("style/02-appearance/button.css");
+
 /* 修改设置界面样式 */
 @import url("style/02-appearance/setting-option.css");
+
 /* 修改警告界面样式 */
 @import url("style/02-appearance/warning-color.css");
 
@@ -101,11 +103,11 @@
 @import url("style/markmap.css");
 /* 引入自定义配置 */
 @import url("custom.css");
-/* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+/* ———————————————————— others ———————————————————— */
 
 #toolbarVIP,
 #barSync,
 #dockLeft > div:nth-child(3) > span:nth-child(3) {
 	display: none;
 }
-

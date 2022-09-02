@@ -10,6 +10,7 @@ async function setSiyuanAttrs(id, attrs) {
 		})
 	);
 }
+
 async function fetchSiyuanData(url, data) {
 	let resData = null;
 	await fetch(url, {
@@ -23,6 +24,7 @@ async function fetchSiyuanData(url, data) {
 	});
 	return resData;
 }
+
 async function parseResponse(response) {
 	let r = await response;
 	return r.code === 0 ? r.data : null;
@@ -68,6 +70,7 @@ function GraphView(selectid) {
 	button.onclick = ViewMonitor;
 	return button;
 }
+
 function TableView(selectid) {
 	let button = document.createElement("button");
 	button.className = "b3-menu__item";
@@ -103,6 +106,7 @@ function DefaultView(selectid) {
 	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconList"></use></svg><span class="b3-menu__label">恢复为列表</span>`;
 	return button;
 }
+
 function FixWidth(selectid) {
 	let button = document.createElement("button");
 	button.className = "b3-menu__item";
@@ -238,11 +242,8 @@ inject();
 function forceReload() {
 	try {
 		const { session } = require("@electron/remote");
-		session.defaultSession
-			.clearCache()
-			.then((...args) => window.location.reload());
+		session.defaultSession.clearCache().then(() => window.location.reload());
 	} catch (err) {
-		console.warn(err);
 		window.location.reload();
 	}
 }
@@ -251,7 +252,6 @@ window.addEventListener("keydown", (event) => {
 	const keycode = event.key;
 	const ctrlKeyCode = event.ctrlKey;
 	if (keycode === "F5" && ctrlKeyCode) {
-		console.log(23333);
 		forceReload();
 	}
 });

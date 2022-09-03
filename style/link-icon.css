@@ -680,6 +680,23 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="360doc.com"]:not(:empty)::before,
+.b3-typography a[href*="360doc.com"]::before {
+	content: "";
+	background-image: url("../icon/360doc.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="sslforfree.com"]:not(:empty)::before,
+.b3-typography a[href*="sslforfree.com"]::before {
+	content: "";
+	background-image: url("../icon/sslforfree.com.ico");
+}
+
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="qukanvideo.com"]:not(:empty)::before,
 .b3-typography a[href*="qukanvideo.com"]::before {
 	content: "";

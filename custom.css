@@ -21,8 +21,9 @@
 .protyle-title.protyle-wysiwyg--attr {
     width: calc(100% - 4cm) !important;
     padding-left: 0vw !important;
-}
+}*/
 
 .protyle-background .protyle-background__iconw {
-    left: 5vw !important;
-} */
+    left: 85px !important;
+    padding-bottom: 25px !important;
+} 

@@ -10,7 +10,6 @@
 
 .b3-snackbar__content {
 	line-height: 20px;
-	transform: scale(0.8);
 	border-radius: var(--b3-border-radius-noraml);
 	/* padding: 8px 16px;
     color: #fff;

@@ -19,8 +19,9 @@
 
 /* 设置标题宽度 */
 .protyle-title.protyle-wysiwyg--attr {
-	width: 21cm;
+	/* width: 21cm; */
 	margin: 0 auto !important;
+	left: max(calc((100% - min(1380px, max(790px, 40vw))) / 2), 96px) !important;
 }
 
 /* 修改头图emoji位置 */

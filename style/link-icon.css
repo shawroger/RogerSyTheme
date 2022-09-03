@@ -688,6 +688,14 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="shawroger.com"]:not(:empty)::before,
+.b3-typography a[href*="shawroger.com"]::before {
+	content: "";
+	background-image: url("../icon/roger.jpg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="sslforfree.com"]:not(:empty)::before,
 .b3-typography a[href*="sslforfree.com"]::before {
 	content: "";

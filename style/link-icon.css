@@ -465,6 +465,14 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="godaddy.com"]:not(:empty)::before,
+.b3-typography a[href*="godaddy.com"]::before {
+	content: "";
+	background-image: url("../icon/godaddy.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="leancloud.cn"]:not(:empty)::before,
 .b3-typography a[href*="leancloud.cn"]::before {
 	content: "";

@@ -465,6 +465,15 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="leancloud.cn"]:not(:empty)::before,
+.b3-typography a[href*="leancloud.cn"]::before {
+	content: "";
+	background-image: url("../icon/leancloud.cn.ico");
+}
+
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="baike.baidu.com"]:not(:empty)::before,
 .b3-typography a[href*="baike.baidu.com"]::before {
 	content: "";

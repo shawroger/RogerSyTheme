@@ -489,6 +489,23 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="tencent.com"]:not(:empty)::before,
+.b3-typography a[href*="tencent.com"]::before {
+	content: "";
+	background-image: url("../icon/tencent.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="meeting.tencent.com"]:not(:empty)::before,
+.b3-typography a[href*="meeting.tencent.com"]::before {
+	content: "";
+	background-image: url("../icon/meeting.tencent.com.ico");
+}
+
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="huawei.com"]:not(:empty)::before,
 .b3-typography a[href*="huawei.com"]::before {
 	content: "";

@@ -81,6 +81,14 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="qzone.qq.com"]:not(:empty)::before,
+.b3-typography a[href*="qzone.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/qzone.qq.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href^="siyuan"]:not(:empty)::before,
 .b3-typography a[href^="siyuan"]::before {
 	content: "";
@@ -883,6 +891,70 @@
 .b3-typography a[href*="redditinc.com"]::before {
 	content: "";
 	background-image: url("../icon/reddit.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="xmind.cn"]:not(:empty)::before,
+.b3-typography a[href*="xmind.cn"]::before {
+	content: "";
+	background-image: url("../icon/xmind.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="u.tools"]:not(:empty)::before,
+.b3-typography a[href*="u.tools"]::before {
+	content: "";
+	background-image: url("../icon/u.tools.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ffmpeg"]:not(:empty)::before,
+.b3-typography a[href*="ffmpeg"]::before {
+	content: "";
+	background-image: url("../icon/ffmpeg.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="angusj.com"]:not(:empty)::before,
+.b3-typography a[href*="angusj.com"]::before {
+	content: "";
+	background-image: url("../icon/angusj.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mrdoc.pro"]:not(:empty)::before,
+.b3-typography a[href*="mrdoc.pro"]::before {
+	content: "";
+	background-image: url("../icon/mrdoc.pro.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="angusj.com"]:not(:empty)::before,
+.b3-typography a[href*="angusj.com"]::before {
+	content: "";
+	background-image: url("../icon/angusj.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="getquicker.net"]:not(:empty)::before,
+.b3-typography a[href*="getquicker.net"]::before {
+	content: "";
+	background-image: url("../icon/getquicker.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="xmind.app"]:not(:empty)::before,
+.b3-typography a[href*="xmind.app"]::before {
+	content: "";
+	background-image: url("../icon/xmind.ico");
 }
 
 /* Instagram.com */

@@ -481,11 +481,20 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="cubox.pro"]:not(:empty)::before,
+.b3-typography a[href*="cubox.pro"]::before {
+	content: "";
+	background-image: url("../icon/cubox.pro.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="huawei.com"]:not(:empty)::before,
 .b3-typography a[href*="huawei.com"]::before {
 	content: "";
 	background-image: url("../icon/huawei_com.png");
 }
+
 
 .protyle-wysiwyg
 	[data-node-id]
@@ -661,7 +670,6 @@
 	background-image: url("../icon/souhu.svg");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="51cto.com"]:not(:empty)::before,
@@ -688,6 +696,28 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="microsoft.com"]:not(:empty)::before,
+.b3-typography a[href*="microsoft.com"]::before {
+	content: "";
+	background-image: url("../icon/microsoft.ico");
+}
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="huya.com"]:not(:empty)::before,
+.b3-typography a[href*="huya.com"]::before {
+	content: "";
+	background-image: url("../icon/huya.ico");
+}
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="douyu.com"]:not(:empty)::before,
+.b3-typography a[href*="douyu.com"]::before {
+	content: "";
+	background-image: url("../icon/douyu.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="shawroger.com"]:not(:empty)::before,
 .b3-typography a[href*="shawroger.com"]::before {
 	content: "";
@@ -701,7 +731,6 @@
 	content: "";
 	background-image: url("../icon/sslforfree.com.ico");
 }
-
 
 .protyle-wysiwyg
 	[data-node-id]

@@ -105,9 +105,3 @@
 @import url("custom.css");
 
 /* ———————————————————— others ———————————————————— */
-
-#toolbarVIP,
-#barSync,
-#dockLeft > div:nth-child(3) > span:nth-child(3) {
-	display: none;
-}

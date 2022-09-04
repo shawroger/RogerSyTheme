@@ -22,12 +22,26 @@
     padding-left: 0vw !important;
 }*/
 
+#toolbarVIP,
+#barSync,
+#dockLeft > div:nth-child(3) {
+	display: none;
+}
+
 .protyle-background .protyle-background__iconw {
-	/* left: 85px !important; */
+	left: 96px !important;
 	padding-bottom: 5px !important;
 }
 
 .protyle-title .protyle-attr {
 	top: 30px !important;
-	right: 190px !important;
+	right: 3% !important;
+}
+
+/* .protyle-content {
+    overflow-x: hidden !important;
+} */
+
+.protyle-title.protyle-wysiwyg--attr {
+	margin: 16px 96px 0px !important;
 }

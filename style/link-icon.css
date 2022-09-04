@@ -473,12 +473,75 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="mpvue.com"]:not(:empty)::before,
+.b3-typography a[href*="mpvue.com"]::before {
+	content: "";
+	background-image: url("../icon/mpvue.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="youzan.com"]:not(:empty)::before,
+.b3-typography a[href*="youzan.com"]::before {
+	content: "";
+	background-image: url("../icon/yanzan.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="buaa.edu.cn"]:not(:empty)::before,
+.b3-typography a[href*="buaa.edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/buaa.webp");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mikecrm.com"]:not(:empty)::before,
+.b3-typography a[href*="mikecrm.com"]::before {
+	content: "";
+	background-image: url("../icon/mikecrm.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="docin.com"]:not(:empty)::before,
+.b3-typography a[href*="docin.com"]::before {
+	content: "";
+	background-image: url("../icon/docin.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="hexo.io"]:not(:empty)::before,
+.b3-typography a[href*="hexo.io"]::before {
+	content: "";
+	background-image: url("../icon/hexo.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="dcloud.net.cn"]:not(:empty)::before,
+.b3-typography a[href*="dcloud.net.cn"]::before {
+	content: "";
+	background-image: url("../icon/dcloud.net.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ext.dcloud.net.cn"]:not(:empty)::before,
+.b3-typography a[href*="ext.dcloud.net.cn"]::before {
+	content: "";
+	background-image: url("../icon/ext.dcloud.net.cn.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="leancloud.cn"]:not(:empty)::before,
 .b3-typography a[href*="leancloud.cn"]::before {
 	content: "";
 	background-image: url("../icon/leancloud.cn.ico");
 }
-
 
 .protyle-wysiwyg
 	[data-node-id]
@@ -520,7 +583,6 @@
 	background-image: url("../icon/meeting.tencent.com.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="huawei.com"]:not(:empty)::before,
@@ -528,7 +590,6 @@
 	content: "";
 	background-image: url("../icon/huawei_com.png");
 }
-
 
 .protyle-wysiwyg
 	[data-node-id]
@@ -552,6 +613,22 @@
 .b3-typography a[href*="gitee.com"]::before {
 	content: "";
 	background-image: url("../icon/gitee.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="gitee.io"]:not(:empty)::before,
+.b3-typography a[href*="gitee.io"]::before {
+	content: "";
+	background-image: url("../icon/gitee.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="shawroger.gitee.io"]:not(:empty)::before,
+.b3-typography a[href*="shawroger.gitee.io"]::before {
+	content: "";
+	background-image: url("../icon/hanhan.jpg");
 }
 
 .protyle-wysiwyg

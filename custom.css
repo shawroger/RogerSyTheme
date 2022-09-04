@@ -24,8 +24,24 @@
 
 #toolbarVIP,
 #barSync,
+#editorEmptyHelp,
+#layouts
+	> div.fn__flex.fn__flex-1
+	> div.layout__center.fn__flex-column.fn__flex-1
+	> div
+	> div
+	> div
+	> div.fn__flex-1
+	> div
+	> h1,
 #dockLeft > div:nth-child(3) {
 	display: none;
+}
+
+.layout__empty::before {
+	content: "Hi, Roger";
+	font-size: 32px;
+	transform: translateX(-34px);
 }
 
 .protyle-background .protyle-background__iconw {

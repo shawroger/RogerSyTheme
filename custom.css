@@ -5,7 +5,6 @@
 /* 03 设置标题距离左侧5% */
 /* 04 设置图标距离左侧5% */
 
-
 /* 使用方法：将下面代码取消注释 */
 /* 使用缺陷：标题和正文中存在较大间隔 */
 
@@ -24,6 +23,11 @@
 }*/
 
 .protyle-background .protyle-background__iconw {
-    /* left: 85px !important; */
-    padding-bottom: 5px !important;
-} 
+	/* left: 85px !important; */
+	padding-bottom: 5px !important;
+}
+
+.protyle-title .protyle-attr {
+	top: 30px !important;
+	right: 190px !important;
+}

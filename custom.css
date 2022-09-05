@@ -47,6 +47,7 @@
 .protyle-background .protyle-background__iconw {
 	left: 96px !important;
 	padding-bottom: 5px !important;
+	transform: translateY(10px) !important;
 }
 
 .protyle-title .protyle-attr {
@@ -69,5 +70,5 @@
 }
 
 .protyle-background .protyle-background__img img {
-	min-height: 35vh !important;
+	min-height: 33vh !important;
 }

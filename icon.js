@@ -6,7 +6,7 @@ const download = require("download");
 
 const url = `
 
-https://www.xuetangx.com/
+https://www.gfbzb.gov.cn/
 
 `;
 

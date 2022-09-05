@@ -1,7 +1,0 @@
-.protyle-wysiwyg
-	[data-node-id]
-	span[data-type="a"][data-href*="angusj.com"]:not(:empty)::before,
-.b3-typography a[href*="angusj.com"]::before {
-	content: "";
-	background-image: url("../icon/angusj.com.ico");
-}

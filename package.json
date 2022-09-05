@@ -1,0 +1,11 @@
+{
+	"name": "roger-sy-theme",
+	"private": true,
+	"scripts": {
+		"start": "node icon.js"
+	},
+	"devDependencies": {
+		"download": "^8.0.0",
+		"favicon": "^0.0.2"
+	}
+}

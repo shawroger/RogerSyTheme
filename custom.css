@@ -8,7 +8,7 @@
 /* 使用方法：将下面代码取消注释 */
 /* 使用缺陷：标题和正文中存在较大间隔 */
 
-/* .protyle .protyle-wysiwyg {
+.protyle .protyle-wysiwyg {
     width: calc(100% - 4cm) !important;
     box-shadow: none;
 }
@@ -20,7 +20,9 @@
 .protyle-title.protyle-wysiwyg--attr {
     width: calc(100% - 4cm) !important;
     padding-left: 0vw !important;
-}*/
+}
+
+/* extra css */
 
 #toolbarVIP,
 #barSync,

@@ -1097,6 +1097,8 @@
 	background-image: url("../icon/fold/txt.svg");
 }
 
+
+
 /* 视频 */
 .protyle-wysiwyg
 	[data-node-id]
@@ -1133,6 +1135,11 @@
 	span[data-type="a"][data-href$=".jpg"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href$=".jpg"]::before,
 .b3-typography [href^="assets/"][href$=".jpg"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".jpeg"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".jpeg"]::before,
+.b3-typography [href^="assets/"][href$=".jpeg"]::before,
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href$=".png"]:not(:empty)::before,

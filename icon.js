@@ -4,9 +4,13 @@ const path = require("path");
 const favicon = require("favicon");
 const download = require("download");
 
-const url = "https://blog.csdn.net/weixin_38208401/article/details/85227676";
+const url = `
 
-const info = URL.parse(url, true);
+https://www.xuetangx.com/
+
+`;
+
+const info = URL.parse(url.trim(), true);
 
 const hostname = info.hostname;
 const cssFile = path.resolve(__dirname, "extra-icon.css");
@@ -25,13 +29,20 @@ function appendCSS(hostname, filename) {
 	fs.appendFileSync(cssFile, tpl);
 }
 
+function pureExt(ext) {
+	if (ext.includes("?")) {
+		return ext.split("?")[0];
+	}
+	return ext;
+}
+
 favicon(url, function (err, faviconUrl) {
 	if (err != null) {
 		throw err;
 	}
 
 	const ext = path.extname(faviconUrl);
-	const filename = hostname + ext;
+	const filename = hostname + pureExt(ext);
 	const savePath = path.resolve(__dirname, "extra-icon", filename);
 
 	if (!fs.existsSync(savePath)) {

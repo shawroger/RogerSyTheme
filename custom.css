@@ -61,3 +61,9 @@
 .protyle-title.protyle-wysiwyg--attr {
 	margin: 16px 96px 0px !important;
 }
+
+.render-node .protyle-wysiwyg__embed > p {
+	font-size: 10px !important;
+	text-align: right !important;
+	color: var(--b3-font-color4) !important;
+}

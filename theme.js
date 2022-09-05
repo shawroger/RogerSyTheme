@@ -320,6 +320,10 @@ function request(url, data, method = "POST") {
 	}
 }
 
+window["roger_custom_state"] = {
+	renderNotes: 0,
+};
+
 function addRenderNoteRoute() {
 	const list = document.querySelectorAll(
 		".render-node .protyle-wysiwyg__embed"
@@ -333,8 +337,17 @@ function addRenderNoteRoute() {
 			const p = document.createElement("p");
 			p.innerText = res.data;
 			e.prepend(p);
+			window["roger_custom_state"].renderNotes++;
 		});
 	});
 }
 
 setTimeout(addRenderNoteRoute, 2000);
+
+if (window["roger_custom_state"].renderNotes < 1) {
+	setTimeout(addRenderNoteRoute, 5000);
+}
+
+if (window["roger_custom_state"].renderNotes < 1) {
+	setTimeout(addRenderNoteRoute, 10000);
+}

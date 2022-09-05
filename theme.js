@@ -335,7 +335,6 @@ function addRenderNoteRoute() {
 	});
 }
 
-
 window.addEventListener("keydown", (event) => {
 	const keycode = event.key;
 	const ctrlKeyCode = event.ctrlKey;
@@ -348,4 +347,9 @@ window.addEventListener("keydown", (event) => {
 	}
 });
 
-
+function hideTitle() {
+	const title = document.querySelector("#drag");
+	if (title.innerHTML.trim().startsWith("思源笔记 v2.")) {
+		title.innerHTML = "❤️‍🔥Roger's note —— " + new Date().toLocaleDateString();
+	}
+}

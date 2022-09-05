@@ -67,3 +67,7 @@
 	text-align: right !important;
 	color: grey !important;
 }
+
+.protyle-background .protyle-background__img img {
+	min-height: 35vh !important;
+}

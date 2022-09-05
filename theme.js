@@ -343,11 +343,3 @@ function addRenderNoteRoute() {
 }
 
 setTimeout(addRenderNoteRoute, 2000);
-
-if (window["roger_custom_state"].renderNotes < 1) {
-	setTimeout(addRenderNoteRoute, 5000);
-}
-
-if (window["roger_custom_state"].renderNotes < 1) {
-	setTimeout(addRenderNoteRoute, 10000);
-}

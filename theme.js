@@ -342,4 +342,4 @@ function addRenderNoteRoute() {
 	});
 }
 
-setTimeout(addRenderNoteRoute, 2000);
+setTimeout(addRenderNoteRoute, 1500);

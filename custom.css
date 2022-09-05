@@ -27,7 +27,7 @@
 #editorEmptyHelp,
 #layouts
 	> div.fn__flex.fn__flex-1
-	> div.layout__center.fn__flex-column.fn__flex-1
+	> div.layout__center.fn__flex.fn__flex-1
 	> div
 	> div
 	> div
@@ -39,9 +39,9 @@
 }
 
 .layout__empty::before {
-	content: "Hi, Roger";
+	content: "Hi, Roger 😎";
 	font-size: 32px;
-	transform: translateX(-34px);
+	transform: translateX(-6px);
 }
 
 .protyle-background .protyle-background__iconw {
@@ -65,5 +65,5 @@
 .render-node .protyle-wysiwyg__embed > p {
 	font-size: 10px !important;
 	text-align: right !important;
-	color: var(--b3-font-color4) !important;
+	color: grey !important;
 }

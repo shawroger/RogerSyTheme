@@ -96,6 +96,8 @@
 
 @import url("style/link-icon.css");
 
+@import url("extra-icon.css");
+
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */
 @import url("style/CtrlP.css");

@@ -246,14 +246,6 @@ function forceReload() {
 	}
 }
 
-window.addEventListener("keydown", (event) => {
-	const keycode = event.key;
-	const ctrlKeyCode = event.ctrlKey;
-	if (keycode === "F5" && ctrlKeyCode) {
-		forceReload();
-	}
-});
-
 function getHPathByPath(data) {
 	return request("/api/filetree/getHPathByID", data);
 }
@@ -331,15 +323,27 @@ function addRenderNoteRoute() {
 
 	list.forEach((e) => {
 		const id = e.dataset.id;
-		getHPathByPath({
-			id,
-		}).then((res) => {
-			const p = document.createElement("p");
-			p.innerText = res.data;
-			e.prepend(p);
-			window["roger_custom_state"].renderNotes++;
-		});
+		if (e.childElementCount === 1) {
+			getHPathByPath({
+				id,
+			}).then((res) => {
+				const p = document.createElement("p");
+				p.innerText = "📁" + res.data;
+				e.prepend(p);
+			});
+		}
 	});
 }
 
-setTimeout(addRenderNoteRoute, 1500);
+
+window.addEventListener("keydown", (event) => {
+	const keycode = event.key;
+	const ctrlKeyCode = event.ctrlKey;
+	if (keycode === "F5" && ctrlKeyCode) {
+		forceReload();
+	}
+
+	if (keycode === "F3" && ctrlKeyCode) {
+		addRenderNoteRoute();
+	}
+});

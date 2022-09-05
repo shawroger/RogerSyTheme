@@ -1177,6 +1177,16 @@
 	background-image: url("../icon/fold/css.svg");
 }
 
+/* ts */
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".ts"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".ts"]::before,
+.b3-typography [href^="assets/"][href$=".ts"]::before {
+	content: "";
+	background-image: url("../icon/fold/ts.webp");
+}
+
 /* js,c++等 */
 .protyle-wysiwyg
 	[data-node-id]

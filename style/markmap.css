@@ -120,18 +120,19 @@
 
 /*上竖线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::before {
-	bottom: 50%;
-	border-left: 2px solid #cfcece;
+	bottom: 50% !important;
+	border-left: 2px solid #cfcece !important;
 }
 
 /*下竖线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::after {
-	content: "";
-	position: absolute;
-	bottom: 50%;
-	border-left: 2px solid #cfcece;
-	width: 20px;
-	height: 0px;
+	content: "" !important;
+	position: absolute !important;
+	bottom: 50% !important;
+	border-left: 2px solid #cfcece !important;
+	width: 20px !important;
+	height: 50%  !important;
+	left: 3px !important; 
 }
 
 /*单个子项直线*/
@@ -173,7 +174,7 @@
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 50% !important;
 	border-top: 2px solid #cfcece;
 	width: 20px;
 	height: 0;

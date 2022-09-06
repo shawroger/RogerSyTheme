@@ -43,8 +43,8 @@
 .protyle-wysiwyg [data-node-id].li > [data-node-id]:before {
 	/* content: "";
     position: absolute; */
-	border-left: 1.5px solid var(--b3-border-color1);
-
+	/* border-left: 1.5px solid var(--b3-border-color1); */
+	border-left: 1px solid lightgray;
 	z-index: 3;
 	/* transform: translate(1px, 5px); */
 }

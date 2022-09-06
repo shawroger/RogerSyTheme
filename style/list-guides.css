@@ -48,7 +48,9 @@
 }
 
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id] > .protyle-action {
-	height: 34px !important;
+	top: 0.2em;
+	height: 36px !important;
+	width: 36px !important;
 }
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id]:hover > .protyle-action {
 	border-radius: 50%;

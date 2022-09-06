@@ -4,9 +4,9 @@
 	color: var(--b3-theme-on-error);
 }
 
-.fn__flex-1 div.b3-snackbar {
+/* .fn__flex-1 div.b3-snackbar {
 	width: 600px;
-}
+} */
 
 .b3-snackbar__content {
 	line-height: 20px;

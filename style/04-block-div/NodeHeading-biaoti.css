@@ -112,7 +112,7 @@
 
 /* 单独设置样式 */
 
-.protyle-wysiwyg [data-node-id].h1:hover::before {
+/* .protyle-wysiwyg [data-node-id].h1:hover::before {
 	content: "H₁";
 	color: var(--b3-font-color1);
 }
@@ -139,6 +139,47 @@
 
 .protyle-wysiwyg [data-node-id].h6:hover::before {
 	content: "H₆";
+	color: var(--b3-font-color6);
+} */
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id]::after {
+	position: absolute;
+	left: 5px;
+	top: -0.9em;
+	font-size: 1em;
+}
+
+.protyle-wysiwyg div[data-type="NodeSuperBlock"] ::after {
+	content: none !important;
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h1:hover::after {
+	content: ".";
+	color: var(--b3-font-color1);
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h2:hover::after {
+	content: "..";
+	color: var(--b3-font-color2);
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h3:hover::after {
+	content: "...";
+	color: var(--b3-font-color3);
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h4:hover::after {
+	content: "....";
+	color: var(--b3-font-color4);
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h5:hover::after {
+	content: ".....";
+	color: var(--b3-font-color5);
+}
+
+.protyle-wysiwyg [data-node-id].li > [data-node-id].h6:hover::after {
+	content: "......";
 	color: var(--b3-font-color6);
 }
 

@@ -49,6 +49,7 @@
 
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id] > .protyle-action {
 	top: 0.2em;
+	left: -1px;
 	height: 36px !important;
 	width: 36px !important;
 }

@@ -11,9 +11,9 @@
 	display: block !important;
 } */
 
-[data-type="NodeSuperBlock"] span[data-type="block-ref"]::before {
+/* [data-type="NodeSuperBlock"] span[data-type="block-ref"]::before {
 	content: none !important;
-}
+} */
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
 	content: "[[";
@@ -24,10 +24,10 @@
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
-	content: "]]";
-	position: relative;
-	font-size: 80%;
-	top: -0.05em;
+	content: "]]" !important;
+	position: relative !important;
+	font-size: 80% !important;
+	top: -0.05em !important;
 	color: lightgrey !important;
 }
 

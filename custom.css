@@ -33,14 +33,10 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 #barSync,
 #editorEmptyHelp,
 #layouts
-	> div.fn__flex.fn__flex-1
-	> div.layout__center.fn__flex.fn__flex-1
-	> div
-	> div
-	> div
-	> div.fn__flex-1
-	> div
-	> h1,
+	div.fn__flex.fn__flex-1
+	div.layout__center.fn__flex-column.fn__flex-1
+	div.fn__flex-1
+	h1,
 #dockLeft > div:nth-child(3) {
 	display: none;
 }
@@ -68,7 +64,6 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 
 .protyle-title.protyle-wysiwyg--attr {
 	margin: 16px 83px 0px !important;
-	
 }
 
 .render-node .protyle-wysiwyg__embed > p {

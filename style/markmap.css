@@ -109,12 +109,13 @@
 
 /*前继承线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	border-top: 2px solid #cfcece;
-	width: 20px;
-	height: 50%;
+	content: "" !important;
+	position: absolute !important;
+	top: 50% !important;
+	border-top: 2px solid #cfcece !important;
+	width: 20px !important;
+	height: 50% !important;
+	left: 3px !important;
 }
 
 /*上竖线*/

@@ -54,12 +54,24 @@
 }
 
 [custom-f*="dt"] [data-node-id]::before {
-	top: 50px !important;
+	/* top: 50px !important;
 	left: 0px !important;
-	width: 22px !important;
+	width: 22px !important; */
+	/* display: none !important; */
 }
 
 [custom-f*="bg"] [data-node-id]::before {
+	border-left: none !important;
+} 
+
+.protyle-wysiwyg
+	[custom-f="bg"]
+	[data-node-id].li 
+	.protyle-action,.protyle-wysiwyg
+	[custom-f="dt"]
+	[data-node-id].li 
+	.protyle-action {
+	display: none !important;
 	border-left: none !important;
 }
 

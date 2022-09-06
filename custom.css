@@ -52,7 +52,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 .protyle-background .protyle-background__iconw {
-	left: 96px !important;
+	left: 83px !important;
 	padding-bottom: 5px !important;
 	transform: translateY(10px) !important;
 }
@@ -67,7 +67,8 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 } */
 
 .protyle-title.protyle-wysiwyg--attr {
-	margin: 16px 96px 0px !important;
+	margin: 16px 83px 0px !important;
+	
 }
 
 .render-node .protyle-wysiwyg__embed > p {

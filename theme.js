@@ -328,7 +328,7 @@ function addRenderNoteRoute() {
 				id,
 			}).then((res) => {
 				const p = document.createElement("p");
-				p.innerText = "🎯  " + res.data.slice(1);
+				p.innerText = "🎯 " + res.data.slice(1);
 				e.prepend(p);
 			});
 		}

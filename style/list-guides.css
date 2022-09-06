@@ -23,6 +23,7 @@
 	/* 与本层节点的接缝 */
 	right: calc(14px + 1em);
 }
+
 .protyle-wysiwyg
 	.list[data-node-id]
 	.list[data-node-id]
@@ -34,6 +35,11 @@
 	position: absolute;
 	border-left: 2px solid transparent;
 }
+
+/* *[custom-f="dt"] [data-node-id]::before {
+	left: 0px;
+} */
+
 .protyle-wysiwyg
 	.list[data-node-id]
 	.list[data-node-id]
@@ -45,6 +51,16 @@
 	> [data-node-id]::before {
 	/* 与上层节点的接缝 */
 	top: -4px;
+}
+
+[custom-f*="dt"] [data-node-id]::before {
+	top: 50px !important;
+	left: 0px !important;
+	width: 22px !important;
+}
+
+[custom-f*="bg"] [data-node-id]::before {
+	border-left: none !important;
 }
 
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id] > .protyle-action {

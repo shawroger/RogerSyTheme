@@ -328,7 +328,7 @@ function addRenderNoteRoute() {
 				id,
 			}).then((res) => {
 				const p = document.createElement("p");
-				p.innerText = "📁" + res.data;
+				p.innerText = "🎯  " + res.data.slice(1);
 				e.prepend(p);
 			});
 		}
@@ -342,7 +342,12 @@ window.addEventListener("keydown", (event) => {
 		forceReload();
 	}
 
-	if (keycode === "F3" && ctrlKeyCode) {
+	if (
+		(keycode === "F1" && ctrlKeyCode) ||
+		(keycode === "F2" && ctrlKeyCode) ||
+		(keycode === "F3" && ctrlKeyCode) ||
+		(keycode === "F4" && ctrlKeyCode)
+	) {
 		addRenderNoteRoute();
 	}
 });
@@ -353,3 +358,11 @@ function hideTitle() {
 		title.innerHTML = "❤️‍🔥Roger's note —— " + new Date().toLocaleDateString();
 	}
 }
+
+// document
+// 	.querySelector(
+// 		"#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div > div.fn__flex-1.protyle > div.protyle-content > div.protyle-wysiwyg.protyle-wysiwyg--attr > div.render-node > div.protyle-icons > span.protyle-icon.protyle-action__reload.protyle-icon--first"
+// 	)
+// 	.addEventListener("click", () => {
+// 		
+// 	});

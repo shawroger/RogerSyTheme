@@ -6,14 +6,16 @@
 }
 
 /* 进行SQL查询时嵌入块之间分割线颜色 */
-div.render-node > div:nth-child(2) {
+
+/* div.render-node > div:nth-child(2) {
 	border-top: none !important;
 }
 
 .render-node .protyle-wysiwyg__embed {
-	/* border-top: 0.1em dashed rgba(128, 128, 128, 0.3) !important; */
+	border-top: 0.1em dashed rgba(128, 128, 128, 0.3) !important;
 	border-top: 1px solid var(--b3-border-color1) !important;
 }
+*/
 
 /* 嵌入块中标题外边距为4px */
 .render-node [data-type="NodeHeading"] {

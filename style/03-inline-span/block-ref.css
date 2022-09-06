@@ -1,14 +1,15 @@
 /* -----块引用/引用块------ */
 
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"] {
-	/* color: #d71a1b !important;
+/* .protyle-wysiwyg [data-node-id] span[data-type="block-ref"] {
+	 color: #d71a1b !important;
     border-bottom: 0.1em solid gray;
     margin-left: 2px;
     margin-right: 2px;
-    padding-left: 2px;
-    padding-right: 2px; */
 	display: block !important;
-}
+    padding-left: 2px;
+    padding-right: 2px; 
+	display: block !important;
+} */
 
 [data-type="NodeSuperBlock"] span[data-type="block-ref"]::before {
 	content: none !important;

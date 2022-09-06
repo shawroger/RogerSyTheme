@@ -15,6 +15,13 @@
 	}
 	*/
 
+	.list[data-node-id] .li[data-node-id] > .protyle-action {
+		top: 0.2em !important;
+		left: -2px !important;
+		height: 36px !important;
+		width: 36px !important;
+	}
+
 	/* 打印时不显示标题前面的H1等符号 */
 	div.h1::before,
 	div.h2::before,
@@ -34,6 +41,10 @@
 /* 在一级标题和分割线处打印分页 */
 @media print {
 	.h1 {
+		page-break-before: always;
+	}
+
+	.h2 {
 		page-break-before: always;
 	}
 

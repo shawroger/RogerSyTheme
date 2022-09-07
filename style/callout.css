@@ -33,6 +33,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/prohibited.png);
@@ -52,6 +53,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/warning.png);
@@ -71,6 +73,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/bug.png);
@@ -90,6 +93,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/check.png);
@@ -109,6 +113,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/light-bulb.png);
@@ -128,6 +133,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/question.png);
@@ -147,6 +153,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/cross.png);
@@ -166,6 +173,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/info.png);
@@ -185,6 +193,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/pen.png);
@@ -204,6 +213,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/notebook.png);
@@ -223,6 +233,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/bell.png);
@@ -242,12 +253,12 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/rocket.png);
 	background-size: 100% 100%;
 }
-
 
 .protyle-wysiwyg [data-node-id][custom-co~="example"].bq {
 	border: none;
@@ -262,6 +273,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/example.png);
@@ -272,7 +284,7 @@
 	border: none;
 	border-radius: 10px;
 	padding: 0.3em 1em;
-	box-shadow: 0 0 0 1px #F9B865 inset;
+	box-shadow: 0 0 0 1px #f9b865 inset;
 	left: 0.25em;
 }
 
@@ -281,6 +293,7 @@
 	position: absolute;
 	margin-left: -3px;
 	top: 0.668em;
+	right: 0.75em;
 	width: 1.5em;
 	height: 1.5em;
 	background-image: url(callout/huaji.png);

@@ -7,7 +7,7 @@ const download = require("download");
 
 const url = `
 
-https://www.langxi.xyz/
+https://natapp.cn/
 
 `;
 

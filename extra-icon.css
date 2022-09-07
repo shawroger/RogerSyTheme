@@ -365,3 +365,11 @@
 	background-image: url("./extra-icon/aliyun.com.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="typedoc.org"]:not(:empty)::before,
+.b3-typography a[href*="typedoc.org"]::before {
+	content: "";
+	background-image: url("./extra-icon/typedoc.org.png");
+}
+

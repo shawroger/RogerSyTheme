@@ -342,13 +342,17 @@ window.addEventListener("keydown", (event) => {
 		forceReload();
 	}
 
-	if (
-		(keycode === "F1" && ctrlKeyCode) ||
-		(keycode === "F2" && ctrlKeyCode) ||
-		(keycode === "F3" && ctrlKeyCode) ||
-		(keycode === "F4" && ctrlKeyCode)
-	) {
+	if ((keycode === "F3" && ctrlKeyCode) || (keycode === "F4" && ctrlKeyCode)) {
 		addRenderNoteRoute();
+	}
+
+	if ((keycode === "F1" && ctrlKeyCode) || (keycode === "F2" && ctrlKeyCode)) {
+		const style = document.querySelector(".toolbar").style.display;
+		if (style !== "none") {
+			document.querySelector(".toolbar").style.display = "none";
+		} else {
+			document.querySelector(".toolbar").style.display = "flex";
+		}
 	}
 });
 
@@ -364,5 +368,5 @@ function hideTitle() {
 // 		"#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div > div.fn__flex-1.protyle > div.protyle-content > div.protyle-wysiwyg.protyle-wysiwyg--attr > div.render-node > div.protyle-icons > span.protyle-icon.protyle-action__reload.protyle-icon--first"
 // 	)
 // 	.addEventListener("click", () => {
-// 		
+//
 // 	});

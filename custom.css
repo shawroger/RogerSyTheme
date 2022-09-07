@@ -68,11 +68,14 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 
 .render-node .protyle-wysiwyg__embed > p {
 	font-size: 14px !important;
-	/* text-align: right !important; */
 	color: grey !important;
 	background-color: whitesmoke !important;
 }
 
 .protyle-background .protyle-background__img img {
 	min-height: 33vh !important;
+}
+
+.toolbar {
+	display: none;
 }

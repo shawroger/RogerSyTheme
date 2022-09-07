@@ -1,0 +1,250 @@
+/* 引述 */
+.protyle-wysiwyg .bq {
+	padding: 0.35em 0.3em;
+	border-radius: 0 2px 5px 0;
+	color: var(--b3-theme-on-background);
+	border-left: 0.25em groove lightgrey;
+	background-color: var(--b3-bq-background);
+}
+
+/*引述callout第一行样式 */
+.bq[custom-co] .p:first-child,
+.bq[custom-co][data-type="NodeHeading"]:first-child {
+	padding: 2px 8px 2px 30px;
+}
+
+/* 引述callout段落的内边距 */
+.bq[custom-co] .p,
+.bq[custom-co] [data-node-id][data-type="NodeHeading"] {
+	padding-left: 45px !important;
+}
+
+/*错误*/
+.protyle-wysiwyg [data-node-id][custom-co~="error"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px red inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="error"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/prohibited.png);
+	background-size: 100% 100%;
+}
+/*警告*/
+.protyle-wysiwyg [data-node-id][custom-co~="warn"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px orange inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="warn"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/warning.png);
+	background-size: 100% 100%;
+}
+/*bug*/
+.protyle-wysiwyg [data-node-id][custom-co~="bug"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px black inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="bug"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/bug.png);
+	background-size: 100% 100%;
+}
+/*正确*/
+.protyle-wysiwyg [data-node-id][custom-co~="check"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #79b453 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="check"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/check.png);
+	background-size: 100% 100%;
+}
+/*灵感*/
+.protyle-wysiwyg [data-node-id][custom-co~="light"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #ffda84 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="light"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/light-bulb.png);
+	background-size: 100% 100%;
+}
+/*问题*/
+.protyle-wysiwyg [data-node-id][custom-co~="question"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #bf122d inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="question"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/question.png);
+	background-size: 100% 100%;
+}
+/*错误*/
+.protyle-wysiwyg [data-node-id][custom-co~="wrong"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #de2a42 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="wrong"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/cross.png);
+	background-size: 100% 100%;
+}
+/*信息*/
+.protyle-wysiwyg [data-node-id][custom-co~="info"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #3889c4 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="info"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/info.png);
+	background-size: 100% 100%;
+}
+/*记录*/
+.protyle-wysiwyg [data-node-id][custom-co~="pen"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #586770 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="pen"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/pen.png);
+	background-size: 100% 100%;
+}
+/*汇总*/
+.protyle-wysiwyg [data-node-id][custom-co~="note"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #667680 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="note"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/notebook.png);
+	background-size: 100% 100%;
+}
+/*提醒*/
+.protyle-wysiwyg [data-node-id][custom-co~="bell"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #ffad30 inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="bell"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/bell.png);
+	background-size: 100% 100%;
+}
+
+
+.protyle-wysiwyg [data-node-id][custom-co~="rocket"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #74C1DE inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="rocket"]::after {
+	content: "";
+	position: absolute;
+    margin-left: -8px;
+    top: 0.435em;
+    width: 2em;
+    height: 2em;
+	background-image: url(callout/rocket.png);
+	background-size: 100% 100%;
+}

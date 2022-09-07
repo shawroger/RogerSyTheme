@@ -222,3 +222,10 @@
 	background-image: url("./extra-icon/www.jiaoyimao.com.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="myhentaigallery.com"]:not(:empty)::before,
+.b3-typography a[href*="myhentaigallery.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/myhentaigallery.com.png");
+}

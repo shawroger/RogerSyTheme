@@ -238,3 +238,82 @@
 	content: "";
 	background-image: url("./extra-icon/patreon.com.png");
 }
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="yz.chsi.com.cn"]:not(:empty)::before,
+.b3-typography a[href*="yz.chsi.com.cn"]::before {
+	content: "";
+	background-image: url("./extra-icon/yz.chsi.com.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.chsi.com.cn"]:not(:empty)::before,
+.b3-typography a[href*="www.chsi.com.cn"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.chsi.com.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="fanyi.baidu.com"]:not(:empty)::before,
+.b3-typography a[href*="fanyi.baidu.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/fanyi.baidu.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="z-lib.org"]:not(:empty)::before,
+.b3-typography a[href*="z-lib.org"]::before {
+	content: "";
+	background-image: url("./extra-icon/z-lib.org.svg");
+}
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.tomatolist.com"]:not(:empty)::before,
+.b3-typography a[href*="www.tomatolist.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.tomatolist.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.appinn.com"]:not(:empty)::before,
+.b3-typography a[href*="www.appinn.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.appinn.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="pxhere.com"]:not(:empty)::before,
+.b3-typography a[href*="pxhere.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/pxhere.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.dayanzai.me"]:not(:empty)::before,
+.b3-typography a[href*="www.dayanzai.me"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.dayanzai.me.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.jiumodiary.com"]:not(:empty)::before,
+.b3-typography a[href*="www.jiumodiary.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.jiumodiary.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="notion.pet"]:not(:empty)::before,
+.b3-typography a[href*="notion.pet"]::before {
+	content: "";
+	background-image: url("./extra-icon/notion.pet.svg");
+}
+

@@ -214,3 +214,11 @@
 	background-image: url("./extra-icon/ipaddress.com.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.jiaoyimao.com"]:not(:empty)::before,
+.b3-typography a[href*="www.jiaoyimao.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.jiaoyimao.com.ico");
+}
+

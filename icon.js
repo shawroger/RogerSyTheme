@@ -16,12 +16,6 @@ const url = `
 
 
 
-https://ipaddress.com/website/fastly.net
-
-
-
-
-
 
 
 

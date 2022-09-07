@@ -267,3 +267,22 @@
 	background-image: url(callout/example.png);
 	background-size: 100% 100%;
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="huaji"].bq {
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em 1em;
+	box-shadow: 0 0 0 1px #FDE58B inset;
+	left: 0.25em;
+}
+
+.bq[custom-co~="huaji"]::after {
+	content: "";
+	position: absolute;
+	margin-left: -3px;
+	top: 0.668em;
+	width: 1.5em;
+	height: 1.5em;
+	background-image: url(callout/huaji.png);
+	background-size: 100% 100%;
+}

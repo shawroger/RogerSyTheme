@@ -14,10 +14,10 @@
 }
 
 /* 引述callout段落的内边距 */
-.bq[custom-co] .p,
+/* .bq[custom-co] .p,
 .bq[custom-co] [data-node-id][data-type="NodeHeading"] {
 	padding-left: 40px !important;
-}
+} */
 
 /*错误*/
 .protyle-wysiwyg [data-node-id][custom-co~="error"].bq {

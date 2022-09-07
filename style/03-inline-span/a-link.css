@@ -1,6 +1,7 @@
 /* -----------------------------------------超链接 a----------------------------------- */
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty) {
+    padding-right: 0.1em;
     border-bottom: 0.08em dashed var(--b3-link-underline-color);
 }
 

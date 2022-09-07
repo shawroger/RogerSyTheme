@@ -5,10 +5,6 @@ const favicon = require("favicon");
 const download = require("download");
 
 
-
-
-
-
 const url = `
 
 
@@ -16,27 +12,9 @@ const url = `
 
 
 
-https://notion.pet/home.html
-
-
+https://crates.io/
 
 `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const info = URL.parse(url.trim(), true);

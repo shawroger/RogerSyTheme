@@ -12,6 +12,15 @@
 	margin-right: 0.2em !important;
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="@"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href^="@"]::before,
+.b3-typography a[href^="@"]::before {
+	content: "";
+	background-image: url("../icon/fold/question.png");
+}
+
 /* ————————————————————为常见的文件格式设置图标———————————————————— */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href^="file://"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href^="file://"]::before,
@@ -1104,8 +1113,6 @@
 	content: "";
 	background-image: url("../icon/fold/txt.svg");
 }
-
-
 
 /* 视频 */
 .protyle-wysiwyg

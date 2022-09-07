@@ -317,3 +317,19 @@
 	background-image: url("./extra-icon/notion.pet.svg");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="crate.io"]:not(:empty)::before,
+.b3-typography a[href*="crate.io"]::before {
+	content: "";
+	background-image: url("./extra-icon/crate.io.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="crates.io"]:not(:empty)::before,
+.b3-typography a[href*="crates.io"]::before {
+	content: "";
+	background-image: url("./extra-icon/crates.io.ico");
+}
+

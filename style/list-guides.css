@@ -61,12 +61,12 @@
 
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id] > .protyle-action {
 	left: -1.05px;
-	top: 0px !important;
+	top: 3px !important;
 	height: 36px !important;
 	width: 36px !important;
 }
 .protyle-wysiwyg .list[data-node-id] .li[data-node-id]:hover > .protyle-action {
 	border-radius: 50%;
 	box-sizing: border-box;
-	border: solid 8px skyblue;
+	border: inset 4px lightgrey;
 }

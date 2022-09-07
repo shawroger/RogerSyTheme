@@ -16,7 +16,7 @@ const url = `
 
 
 
-https://www.ztxz.org.cn/canger/549.html
+https://ipaddress.com/website/fastly.net
 
 
 

@@ -206,3 +206,11 @@
 	background-image: url("./extra-icon/www.ztxz.org.cn.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ipaddress.com"]:not(:empty)::before,
+.b3-typography a[href*="ipaddress.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/ipaddress.com.ico");
+}
+

@@ -346,13 +346,27 @@ window.addEventListener("keydown", (event) => {
 		addRenderNoteRoute();
 	}
 
-	if ((keycode === "F1" && ctrlKeyCode) || (keycode === "F2" && ctrlKeyCode)) {
+	if (keycode === "F1" && ctrlKeyCode) {
 		const style = document.querySelector(".toolbar").style.display;
 		if (style !== "none") {
 			document.querySelector(".toolbar").style.display = "none";
 		} else {
 			document.querySelector(".toolbar").style.display = "flex";
 		}
+	}
+
+	if (keycode === "F2" && ctrlKeyCode) {
+		const style = document.querySelector("#dockLeft").style.display;
+		if (style !== "none") {
+			document.querySelector("#dockLeft").style.display = "none";
+		} else {
+			dockRight;
+			document.querySelector("#dockLeft").style.display = "flex";
+		}
+
+		document.querySelector("#dockRight").style.display = document.querySelector(
+			"#dockLeft"
+		).style.display;
 	}
 });
 

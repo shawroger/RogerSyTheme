@@ -9,6 +9,7 @@
 
 /*引述callout第一行样式 */
 .bq[custom-co] .p:first-child,
+.bq[custom-co] .li:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
 	padding-right: 1.6em;
 }
@@ -19,283 +20,162 @@
 	padding-left: 40px !important;
 } */
 
-/*错误*/
-.protyle-wysiwyg [data-node-id][custom-co~="error"].bq {
+.protyle-wysiwyg [data-node-id][custom-co].bq {
 	border: none;
 	border-radius: 10px;
 	padding: 0.3em 1em;
-	box-shadow: 0 0 0 1px red inset;
 	left: 0.25em;
+}
+
+.bq[custom-co]::after {
+	content: "";
+	position: absolute;
+	margin-left: -3px;
+	top: 0.668em;
+	right: 0.65em;
+	width: 1.5em;
+	height: 1.5em;
+	background-size: 100% 100%;
+}
+
+/*错误*/
+.protyle-wysiwyg [data-node-id][custom-co~="error"].bq {
+	box-shadow: 0 0 0 1px red inset;
 }
 
 .bq[custom-co~="error"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/prohibited.png);
-	background-size: 100% 100%;
+	background-image: url("callout/prohibited.png");
 }
+
 /*警告*/
 .protyle-wysiwyg [data-node-id][custom-co~="warn"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px orange inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="warn"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/warning.png);
-	background-size: 100% 100%;
+	background-image: url("callout/warning.png");
 }
+
 /*bug*/
 .protyle-wysiwyg [data-node-id][custom-co~="bug"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px black inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="bug"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/bug.png);
-	background-size: 100% 100%;
+	background-image: url("callout/bug.png");
 }
 /*正确*/
 .protyle-wysiwyg [data-node-id][custom-co~="check"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #79b453 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="check"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/check.png);
-	background-size: 100% 100%;
+	background-image: url("callout/check.png");
 }
 /*灵感*/
 .protyle-wysiwyg [data-node-id][custom-co~="light"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #ffda84 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="light"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/light-bulb.png);
-	background-size: 100% 100%;
+	background-image: url("callout/light-bulb.png");
 }
+
 /*问题*/
 .protyle-wysiwyg [data-node-id][custom-co~="question"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #bf122d inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="question"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/question.png);
-	background-size: 100% 100%;
+	background-image: url("callout/question.png");
 }
+
 /*错误*/
 .protyle-wysiwyg [data-node-id][custom-co~="wrong"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #de2a42 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="wrong"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/cross.png);
-	background-size: 100% 100%;
+	background-image: url("callout/cross.png");
 }
 /*信息*/
 .protyle-wysiwyg [data-node-id][custom-co~="info"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #3889c4 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="info"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/info.png);
-	background-size: 100% 100%;
+	background-image: url("callout/info.png");
 }
+
 /*记录*/
 .protyle-wysiwyg [data-node-id][custom-co~="pen"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #586770 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="pen"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/pen.png);
-	background-size: 100% 100%;
+	background-image: url("callout/pen.png");
 }
 /*汇总*/
 .protyle-wysiwyg [data-node-id][custom-co~="note"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #667680 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="note"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/notebook.png);
-	background-size: 100% 100%;
+	background-image: url("callout/notebook.png");
 }
 /*提醒*/
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #ffad30 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="bell"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/bell.png);
-	background-size: 100% 100%;
+	background-image: url("callout/bell.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="rocket"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #74c1de inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="rocket"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/rocket.png);
-	background-size: 100% 100%;
+	background-image: url("callout/rocket.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="example"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px black inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="example"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/example.png);
-	background-size: 100% 100%;
+	background-image: url("callout/example.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="huaji"].bq {
-	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	box-shadow: 0 0 0 1px #f9b865 inset;
-	left: 0.25em;
 }
 
 .bq[custom-co~="huaji"]::after {
-	content: "";
-	position: absolute;
-	margin-left: -3px;
-	top: 0.668em;
-	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
-	background-image: url(callout/huaji.png);
-	background-size: 100% 100%;
+	background-image: url("callout/huaji.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="ocr"].bq {
+	box-shadow: 0 0 0 1px #669182 inset;
+}
+
+.bq[custom-co~="ocr"]::after {
+	background-image: url("callout/ocr.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="comment"].bq {
+	box-shadow: 0 0 0 1px #eb5c02 inset;
+}
+
+.bq[custom-co~="comment"]::after {
+	background-image: url("callout/comment.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="no18"].bq {
+	box-shadow: 0 0 10px 1px #f1363c inset;
+}
+
+.bq[custom-co~="no18"]::after {
+	background-image: url("callout/no18.png");
 }

@@ -381,3 +381,19 @@
 	background-image: url("./extra-icon/natapp.cn.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="sourceforge.net"]:not(:empty)::before,
+.b3-typography a[href*="sourceforge.net"]::before {
+	content: "";
+	background-image: url("./extra-icon/sourceforge.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="keepass.info"]:not(:empty)::before,
+.b3-typography a[href*="keepass.info"]::before {
+	content: "";
+	background-image: url("./extra-icon/keepass.info.ico");
+}
+

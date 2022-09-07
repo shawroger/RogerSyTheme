@@ -7,7 +7,7 @@ const download = require("download");
 
 const url = `
 
-https://natapp.cn/
+https://keepass.info/
 
 `;
 

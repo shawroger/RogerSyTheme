@@ -136,6 +136,14 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="www.langxi.me"]:not(:empty)::before,
+.b3-typography a[href*="www.langxi.me"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.langxi.xyz.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="wantquotes.net"]:not(:empty)::before,
 .b3-typography a[href*="wantquotes.net"]::before {
 	content: "";
@@ -331,5 +339,29 @@
 .b3-typography a[href*="crates.io"]::before {
 	content: "";
 	background-image: url("./extra-icon/crates.io.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.onlinedown.net"]:not(:empty)::before,
+.b3-typography a[href*="www.onlinedown.net"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.onlinedown.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.vmware.com"]:not(:empty)::before,
+.b3-typography a[href*="www.vmware.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.vmware.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="aliyun.com"]:not(:empty)::before,
+.b3-typography a[href*="aliyun.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/aliyun.com.ico");
 }
 

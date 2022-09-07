@@ -7,12 +7,7 @@ const download = require("download");
 
 const url = `
 
-
-
-
-
-
-https://crates.io/
+https://www.langxi.xyz/
 
 `;
 

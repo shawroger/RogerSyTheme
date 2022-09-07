@@ -45,9 +45,9 @@
 		page-break-before: always;
 	}
 
-	.h2 {
+	/* .h2 {
 		page-break-before: always;
-	}
+	} */
 
 	div.hr {
 		page-break-after: always;

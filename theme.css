@@ -111,3 +111,14 @@
 @import url("custom.css");
 
 /* ———————————————————— others ———————————————————— */
+@media print {
+	.protyle-wysiwyg
+		[data-node-id]
+		span[data-type="a"][data-href^="http"]:not(:empty)::before,
+	.protyle-wysiwyg [data-node-id] a[href^="http"]::before,
+	.b3-typography a[href^="http"]::before {
+		content: "";
+		display: none !important;
+		background-image: none !important;
+	}
+}

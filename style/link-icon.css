@@ -1092,7 +1092,7 @@
 	span[data-type="a"][data-href*=".pdf?p"]:not(:empty)::before,
 .b3-typography a[href*=".pdf?p"]::before {
 	content: "";
-	background-image: url("../icon/fold/pdf.svg");
+	background-image: url("../icon/fold/pdf.svg") !important;
 }
 
 /* txt */

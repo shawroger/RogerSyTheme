@@ -31,10 +31,10 @@
 .bq[custom-co~="error"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/prohibited.png);
 	background-size: 100% 100%;
 }
@@ -50,10 +50,10 @@
 .bq[custom-co~="warn"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/warning.png);
 	background-size: 100% 100%;
 }
@@ -69,10 +69,10 @@
 .bq[custom-co~="bug"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/bug.png);
 	background-size: 100% 100%;
 }
@@ -88,10 +88,10 @@
 .bq[custom-co~="check"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/check.png);
 	background-size: 100% 100%;
 }
@@ -107,10 +107,10 @@
 .bq[custom-co~="light"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/light-bulb.png);
 	background-size: 100% 100%;
 }
@@ -126,10 +126,10 @@
 .bq[custom-co~="question"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/question.png);
 	background-size: 100% 100%;
 }
@@ -145,10 +145,10 @@
 .bq[custom-co~="wrong"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/cross.png);
 	background-size: 100% 100%;
 }
@@ -164,10 +164,10 @@
 .bq[custom-co~="info"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/info.png);
 	background-size: 100% 100%;
 }
@@ -183,10 +183,10 @@
 .bq[custom-co~="pen"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/pen.png);
 	background-size: 100% 100%;
 }
@@ -202,10 +202,10 @@
 .bq[custom-co~="note"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/notebook.png);
 	background-size: 100% 100%;
 }
@@ -221,30 +221,29 @@
 .bq[custom-co~="bell"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/bell.png);
 	background-size: 100% 100%;
 }
-
 
 .protyle-wysiwyg [data-node-id][custom-co~="rocket"].bq {
 	border: none;
 	border-radius: 10px;
 	padding: 0.3em 1em;
-	box-shadow: 0 0 0 1px #74C1DE inset;
+	box-shadow: 0 0 0 1px #74c1de inset;
 	left: 0.25em;
 }
 
 .bq[custom-co~="rocket"]::after {
 	content: "";
 	position: absolute;
-    margin-left: -8px;
-    top: 0.435em;
-    width: 2em;
-    height: 2em;
+	margin-left: -3px;
+	top: 0.7em;
+	width: 1.5em;
+	height: 1.5em;
 	background-image: url(callout/rocket.png);
 	background-size: 100% 100%;
 }

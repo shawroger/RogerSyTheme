@@ -630,7 +630,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="dm"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="bc"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="code"].bq {
-	box-shadow: 0 0 0 2px #3a3947 inset;
+	box-shadow: 0 0 0 2px #bc69e4 inset;
 }
 
 .bq[custom-co~="dm"]::after,
@@ -757,7 +757,7 @@
 /* 墨镜 */
 .protyle-wysiwyg [data-node-id][custom-co~="mj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="sunglasses"].bq {
-	box-shadow: 0 0 0 2px #E78000 inset;
+	box-shadow: 0 0 0 2px #e78000 inset;
 }
 
 .bq[custom-co~="mj"]::after,

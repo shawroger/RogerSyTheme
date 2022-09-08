@@ -717,9 +717,9 @@
 .protyle-wysiwyg [data-node-id][custom-co~="jm"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="lock"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="secret"].bq {
-	box-shadow: 0 0 0 2px #e84c3d inset;
-	background-color: #e84c3d;
-	color: #e84c3d;
+	box-shadow: 0 0 0 2px #40a8b3 inset;
+	background-color: #40a8b3;
+	color: #40a8b3;
 	transition: all 0.3s;
 }
 

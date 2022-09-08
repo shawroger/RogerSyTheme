@@ -70,7 +70,7 @@
 /*正确*/
 .protyle-wysiwyg [data-node-id][custom-co~="check"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="done"].bq {
-	box-shadow: 0 0 0 2px #79b453 inset;
+	box-shadow: 0 0 0 2px #34B297 inset;
 }
 
 .bq[custom-co~="check"]::after,

@@ -301,3 +301,59 @@
 .bq[custom-co~="think"]::after {
 	background-image: url("callout/think.png");
 }
+
+/* 增 */
+
+.protyle-wysiwyg [data-node-id][custom-co~="c"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="create"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="c"]::after,
+.bq[custom-co~="create"]::after {
+	background-image: url("callout/create.png");
+}
+
+/* 删 */
+
+.protyle-wysiwyg [data-node-id][custom-co~="d"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="delete"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="d"]::after,
+.bq[custom-co~="delete"]::after {
+	background-image: url("callout/delete.png");
+}
+
+/* 改 */
+
+.protyle-wysiwyg [data-node-id][custom-co~="u"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="e"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="edit"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="update"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="u"]::after,
+.bq[custom-co~="e"]::after,
+.bq[custom-co~="edit"]::after,
+.bq[custom-co~="update"]::after {
+	background-image: url("callout/update.png");
+}
+
+/* 查 */
+
+.protyle-wysiwyg [data-node-id][custom-co~="q"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="s"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="query"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="search"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="q"]::after,
+.bq[custom-co~="s"]::after,
+.bq[custom-co~="query"]::after,
+.bq[custom-co~="search"]::after {
+	background-image: url("callout/query.png");
+}

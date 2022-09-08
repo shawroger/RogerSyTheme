@@ -615,15 +615,154 @@
 	background-image: url("callout/regret.png");
 }
 
-/* 结束、再见 */
-.protyle-wysiwyg [data-node-id][custom-co~="bye"].bq,
-.protyle-wysiwyg [data-node-id][custom-co~="end"].bq {
+/* 收入 */
+.protyle-wysiwyg [data-node-id][custom-co~="sr"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="incomet"].bq {
+	box-shadow: 0 0 0 2px #00a1f1 inset;
+}
+
+.bq[custom-co~="sr"]::after,
+.bq[custom-co~="income"]::after {
+	background-image: url("callout/income.png");
+}
+
+/* 代码、编程 */
+.protyle-wysiwyg [data-node-id][custom-co~="dm"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="bc"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="code"].bq {
+	box-shadow: 0 0 0 2px #3a3947 inset;
+}
+
+.bq[custom-co~="dm"]::after,
+.bq[custom-co~="bc"]::after,
+.bq[custom-co~="code"]::after {
+	background-image: url("callout/code.png");
+}
+
+/* 消费、花费 */
+.protyle-wysiwyg [data-node-id][custom-co~="xf"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="hf"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="cost"].bq {
+	box-shadow: 0 0 0 2px #548aff inset;
+}
+
+.bq[custom-co~="xf"]::after,
+.bq[custom-co~="hf"]::after,
+.bq[custom-co~="cost"]::after {
+	background-image: url("callout/cost.png");
+}
+
+/*  再见 */
+.protyle-wysiwyg [data-node-id][custom-co~="bye"].bq {
 	box-shadow: 0 0 0 2px #ffdcd5 inset;
 }
 
-.bq[custom-co~="bye"]::after,
-.bq[custom-co~="end"]::after {
+.bq[custom-co~="bye"]::after {
 	background-image: url("callout/bye.png");
+}
+
+/* 定义 */
+.protyle-wysiwyg [data-node-id][custom-co~="dy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="define"].bq {
+	box-shadow: 0 0 0 2px #000 inset;
+}
+
+.bq[custom-co~="dy"]::after,
+.bq[custom-co~="define"]::after {
+	background-image: url("callout/define.png");
+}
+
+/* 计划 */
+.protyle-wysiwyg [data-node-id][custom-co~="jh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="plan"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="aim"].bq {
+	box-shadow: 0 0 0 2px #81d2eb inset;
+}
+
+.bq[custom-co~="jh"]::after,
+.bq[custom-co~="plan"]::after,
+.bq[custom-co~="aim"]::after {
+	background-image: url("callout/plan.png");
+}
+
+/* 困惑 */
+.protyle-wysiwyg [data-node-id][custom-co~="kh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="yh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="mess"].bq {
+	box-shadow: 0 0 0 2px #deffd2 inset;
+}
+
+.bq[custom-co~="kh"]::after,
+.bq[custom-co~="key"]::after,
+.bq[custom-co~="mess"]::after {
+	background-image: url("callout/mess.png");
+}
+
+/* 答案 */
+.protyle-wysiwyg [data-node-id][custom-co~="da"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="key"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="answer"].bq {
+	box-shadow: 0 0 0 2px #3b73af inset;
+}
+
+.bq[custom-co~="da"]::after,
+.bq[custom-co~="yh"]::after,
+.bq[custom-co~="answer"]::after {
+	background-image: url("callout/answer.png");
+}
+
+/* 秘密、加密、隐私 */
+.protyle-wysiwyg [data-node-id][custom-co~="mm"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="ys"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="jm"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="lock"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="secret"].bq {
+	box-shadow: 0 0 0 2px #e84c3d inset;
+	background-color: #e84c3d;
+	color: #e84c3d;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mm"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="ys"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="jm"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="lock"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="secret"].bq:hover {
+	background-color: inherit;
+	color: inherit;
+	transition: all 0.3s;
+}
+
+.bq[custom-co~="mm"]::after,
+.bq[custom-co~="ys"]::after,
+.bq[custom-co~="jm"]::after,
+.bq[custom-co~="lock"]::after,
+.bq[custom-co~="secret"]::after {
+	background-image: url("callout/lock.png");
+}
+
+/* 结束 */
+.protyle-wysiwyg [data-node-id][custom-co~="js"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="end"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="finish"].bq {
+	box-shadow: 0 0 0 2px #ffd500 inset;
+}
+
+.bq[custom-co~="js"]::after,
+.bq[custom-co~="end"]::after,
+.bq[custom-co~="finish"]::after {
+	background-image: url("callout/end.png");
+}
+
+/* 墨镜 */
+.protyle-wysiwyg [data-node-id][custom-co~="mj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="sunglasses"].bq {
+	box-shadow: 0 0 0 2px #473080 inset;
+}
+
+.bq[custom-co~="mj"]::after,
+.bq[custom-co~="sunglasses"]::after {
+	background-image: url("callout/sunglasses.jpg");
 }
 
 /* 表单 */

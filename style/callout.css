@@ -3,15 +3,14 @@
 	padding: 0.35em 0.3em;
 	border-radius: 0 2px 5px 0;
 	color: var(--b3-theme-on-background);
-	border-left: 0.25em groove lightgrey;
-	background-color: var(--b3-bq-background);
+	border-left: 0.25em double lightgrey;
 }
 
 /*引述callout第一行样式 */
 .bq[custom-co] .p:first-child,
 .bq[custom-co] .li:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
-	padding-right: 1.6em;
+	padding-right: 1.8em;
 }
 
 /* 引述callout段落的内边距 */
@@ -22,19 +21,20 @@
 
 .protyle-wysiwyg [data-node-id][custom-co].bq {
 	border: none;
-	border-radius: 10px;
-	padding: 0.3em 1em;
 	left: 0.25em;
+	min-height: 2.7em;
+	padding: 0.3em 1em;
+	border-radius: 15px;
 }
 
 .bq[custom-co]::after {
 	content: "";
 	position: absolute;
 	margin-left: -3px;
-	top: 0.668em;
+	top: 0.65em;
 	right: 0.65em;
-	width: 1.5em;
-	height: 1.5em;
+	width: 2em;
+	height: 2em;
 	background-size: 100% 100%;
 }
 
@@ -65,27 +65,35 @@
 	background-image: url("callout/bug.png");
 }
 /*正确*/
-.protyle-wysiwyg [data-node-id][custom-co~="check"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="check"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="done"].bq {
 	box-shadow: 0 0 0 1px #79b453 inset;
 }
 
-.bq[custom-co~="check"]::after {
+.bq[custom-co~="check"]::after,
+.bq[custom-co~="done"]::after {
 	background-image: url("callout/check.png");
 }
 /*灵感*/
-.protyle-wysiwyg [data-node-id][custom-co~="light"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="light"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="bulb"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="idea"].bq {
 	box-shadow: 0 0 0 1px #ffda84 inset;
 }
 
-.bq[custom-co~="light"]::after {
+.bq[custom-co~="light"]::after,
+.bq[custom-co~="bulb"]::after,
+.bq[custom-co~="idea"]::after {
 	background-image: url("callout/light-bulb.png");
 }
 
 /*问题*/
+.protyle-wysiwyg [data-node-id][custom-co~="faq"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="question"].bq {
 	box-shadow: 0 0 0 1px #bf122d inset;
 }
 
+.bq[custom-co~="faq"]::after,
 .bq[custom-co~="question"]::after {
 	background-image: url("callout/question.png");
 }
@@ -124,11 +132,15 @@
 	background-image: url("callout/notebook.png");
 }
 /*提醒*/
-.protyle-wysiwyg [data-node-id][custom-co~="bell"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="bell"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="notice"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq {
 	box-shadow: 0 0 0 1px #ffad30 inset;
 }
 
-.bq[custom-co~="bell"]::after {
+.bq[custom-co~="bell"]::after,
+.bq[custom-co~="notice"]::after,
+.bq[custom-co~="reminder"]::after {
 	background-image: url("callout/bell.png");
 }
 
@@ -178,4 +190,22 @@
 
 .bq[custom-co~="no18"]::after {
 	background-image: url("callout/no18.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="todo"].bq {
+	box-shadow: 0 0 10px 1px #333333 inset;
+}
+
+.bq[custom-co~="todo"]::after {
+	background-image: url("callout/todo.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="zy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="important"].bq {
+	box-shadow: 0 0 10px 1.5px #febb37 inset;
+}
+
+.bq[custom-co~="zy"]::after,
+.bq[custom-co~="important"]::after {
+	background-image: url("callout/important.webp");
 }

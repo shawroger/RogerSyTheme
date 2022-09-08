@@ -79,3 +79,17 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 .toolbar {
 	display: none;
 }
+
+.protyle-wysiwyg [data-node-id][custom-f~="wk"] {
+	color: lightgrey;
+	background-color: lightgrey;
+	border-radius: 15px;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="wk"]:hover {
+	color: initial;
+	background-color: initial;
+	border-radius: 0px;
+	transition: all 0.3s;
+}

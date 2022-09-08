@@ -447,13 +447,11 @@
 }
 
 /* 憨憨 */
-.protyle-wysiwyg [data-node-id][custom-co~="hh"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="fool"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="stupid"].bq {
 	box-shadow: 0 0 0 2px #ffbc2a inset;
 }
 
-.bq[custom-co~="hh"]::after,
 .bq[custom-co~="fool"]::after,
 .bq[custom-co~="stupid"]::after {
 	background-image: url("callout/fool.png");
@@ -476,7 +474,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="xx"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="chan"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="zen"].bq {
-	box-shadow: 0 0 0 2px #FAA68E inset;
+	box-shadow: 0 0 0 2px #faa68e inset;
 }
 
 .bq[custom-co~="xx"]::after,
@@ -595,6 +593,52 @@
 	background-image: url("callout/dd.png");
 }
 
+/* 反思 */
+.protyle-wysiwyg [data-node-id][custom-co~="fs"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="reflect"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="fs"]::after,
+.bq[custom-co~="reflect"]::after {
+	background-image: url("callout/reflect.png");
+}
+
+/* 后悔 */
+.protyle-wysiwyg [data-node-id][custom-co~="hh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="regret"].bq {
+	box-shadow: 0 0 0 2px #ef313b inset;
+}
+
+.bq[custom-co~="hh"]::after,
+.bq[custom-co~="regret"]::after {
+	background-image: url("callout/regret.png");
+}
+
+/* 结束、再见 */
+.protyle-wysiwyg [data-node-id][custom-co~="bye"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="end"].bq {
+	box-shadow: 0 0 0 2px #ffdcd5 inset;
+}
+
+.bq[custom-co~="bye"]::after,
+.bq[custom-co~="end"]::after {
+	background-image: url("callout/bye.png");
+}
+
+/* 撤销、重做 */
+.protyle-wysiwyg [data-node-id][custom-co~="cz"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="cx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="undo"].bq {
+	box-shadow: 0 0 0 2px #ffc107 inset;
+}
+
+.bq[custom-co~="cz"]::after,
+.bq[custom-co~="cx"]::after,
+.bq[custom-co~="undo"]::after {
+	background-image: url("callout/undo.png");
+}
+
 /* 聊天、对话 */
 .protyle-wysiwyg [data-node-id][custom-co~="dh"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="lt"].bq,
@@ -606,6 +650,21 @@
 .bq[custom-co~="lt"]::after,
 .bq[custom-co~="chat"]::after {
 	background-image: url("callout/chat.png");
+}
+
+/* 感恩、感谢 */
+.protyle-wysiwyg [data-node-id][custom-co~="gn"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="gx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="thank"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="thanks"].bq {
+	box-shadow: 0 0 0 2px #e20000 inset;
+}
+
+.bq[custom-co~="gn"]::after,
+.bq[custom-co~="gx"]::after,
+.bq[custom-co~="thank"]::after,
+.bq[custom-co~="thanks"]::after {
+	background-image: url("callout/thank.png");
 }
 
 /* 彩蛋 */

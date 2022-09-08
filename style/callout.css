@@ -46,7 +46,7 @@
 }
 
 .bq[custom-co~="stop"]::after {
-	background-image: url("callout/prohibited.png");
+	background-image: url("callout/stop.png");
 }
 
 /*警告*/
@@ -55,7 +55,7 @@
 }
 
 .bq[custom-co~="warn"]::after {
-	background-image: url("callout/warning.png");
+	background-image: url("callout/warn.png");
 }
 
 /*bug*/
@@ -74,7 +74,7 @@
 
 .bq[custom-co~="check"]::after,
 .bq[custom-co~="done"]::after {
-	background-image: url("callout/check.png");
+	background-image: url("callout/done.png");
 }
 /*灵感*/
 .protyle-wysiwyg [data-node-id][custom-co~="light"].bq,
@@ -86,7 +86,7 @@
 .bq[custom-co~="light"]::after,
 .bq[custom-co~="bulb"]::after,
 .bq[custom-co~="idea"]::after {
-	background-image: url("callout/light-bulb.png");
+	background-image: url("callout/idea.png");
 }
 
 /*问题*/
@@ -110,7 +110,7 @@
 
 .bq[custom-co~="error"]::after,
 .bq[custom-co~="wrong"]::after {
-	background-image: url("callout/cross.png");
+	background-image: url("callout/error.png");
 }
 /*信息*/
 .protyle-wysiwyg [data-node-id][custom-co~="info"].bq {
@@ -147,7 +147,7 @@
 .bq[custom-co~="bell"]::after,
 .bq[custom-co~="notice"]::after,
 .bq[custom-co~="reminder"]::after {
-	background-image: url("callout/bell.png");
+	background-image: url("callout/notice.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="rocket"].bq {
@@ -206,6 +206,7 @@
 	background-image: url("callout/todo.png");
 }
 
+/* 重要 */
 .protyle-wysiwyg [data-node-id][custom-co~="zy"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="important"].bq {
 	box-shadow: 0 0 0 2px #febb37 inset;
@@ -216,6 +217,7 @@
 	background-image: url("callout/important.webp");
 }
 
+/* 推荐 */
 .protyle-wysiwyg [data-node-id][custom-co~="tj"].bq {
 	box-shadow: 0 0 0 2px #00a552 inset;
 }
@@ -228,6 +230,7 @@
 	box-shadow: 0 0 0 2px #ed1a25 inset;
 }
 
+/* 不推荐 */
 .bq[custom-co~="btj"]::after {
 	background-image: url("callout/btj.png");
 }
@@ -240,6 +243,7 @@
 	background-image: url("callout/news.png");
 }
 
+/* 听说 */
 .protyle-wysiwyg [data-node-id][custom-co~="ts"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="hear"].bq {
 	box-shadow: 0 0 0 2px #01b3bb inset;
@@ -250,6 +254,7 @@
 	background-image: url("callout/hear.png");
 }
 
+/* 转载 */
 .protyle-wysiwyg [data-node-id][custom-co~="zz"].bq {
 	box-shadow: 0 0 0 2px #3c4049 inset;
 }
@@ -258,6 +263,7 @@
 	background-image: url("callout/zz.png");
 }
 
+/* 资源 */
 .protyle-wysiwyg [data-node-id][custom-co~="source"].bq {
 	box-shadow: 0 0 0 2px #2aaadc inset;
 }

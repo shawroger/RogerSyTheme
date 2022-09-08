@@ -757,7 +757,7 @@
 /* 墨镜 */
 .protyle-wysiwyg [data-node-id][custom-co~="mj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="sunglasses"].bq {
-	box-shadow: 0 0 0 2px #473080 inset;
+	box-shadow: 0 0 0 2px #E78000 inset;
 }
 
 .bq[custom-co~="mj"]::after,

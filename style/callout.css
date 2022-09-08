@@ -626,6 +626,69 @@
 	background-image: url("callout/bye.png");
 }
 
+/* 表单 */
+.protyle-wysiwyg [data-node-id][custom-co~="bd"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="form"].bq {
+	box-shadow: 0 0 0 2px #473080 inset;
+}
+
+.bq[custom-co~="bd"]::after,
+.bq[custom-co~="form"]::after {
+	background-image: url("callout/form.png");
+}
+
+/* 考试、题目 */
+.protyle-wysiwyg [data-node-id][custom-co~="ks"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="tm"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="exam"].bq {
+	box-shadow: 0 0 0 2px #8ebfe8 inset;
+}
+
+.bq[custom-co~="ks"]::after,
+.bq[custom-co~="tm"]::after,
+.bq[custom-co~="undo"]::after {
+	background-image: url("callout/exam.png");
+}
+
+/* 评价、看法 */
+.protyle-wysiwyg [data-node-id][custom-co~="pj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="kf"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="judge"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="pj"]::after,
+.bq[custom-co~="kf"]::after,
+.bq[custom-co~="judge"]::after {
+	background-image: url("callout/judge.png");
+}
+
+/* 游戏、娱乐 */
+.protyle-wysiwyg [data-node-id][custom-co~="yx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="yl"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="game"].bq {
+	box-shadow: 0 0 0 2px #71acad inset;
+}
+
+.bq[custom-co~="yx"]::after,
+.bq[custom-co~="yl"]::after,
+.bq[custom-co~="game"]::after {
+	background-image: url("callout/game.png");
+}
+
+/* 调控、讽刺 */
+.protyle-wysiwyg [data-node-id][custom-co~="tk"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="fc"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="tease"].bq {
+	box-shadow: 0 0 0 2px #dfc530 inset;
+}
+
+.bq[custom-co~="tk"]::after,
+.bq[custom-co~="fc"]::after,
+.bq[custom-co~="tease"]::after {
+	background-image: url("callout/tease.png");
+}
+
 /* 撤销、重做 */
 .protyle-wysiwyg [data-node-id][custom-co~="cz"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="cx"].bq,

@@ -8,10 +8,13 @@
 
 /*引述callout第一行样式 */
 .bq[custom-co] .p:first-child,
-.bq[custom-co] .li:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
 	padding-right: 2em;
 	padding-top: 0.35em;
+}
+
+.bq[custom-co] .li:first-child {
+	padding-right: 2em;
 }
 
 /* 引述callout段落的内边距 */
@@ -81,7 +84,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="light"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="bulb"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="idea"].bq {
-	box-shadow: 0 0 0 2px #ef5052 inset;
+	box-shadow: 0 0 0 2px #f4c95b inset;
 }
 
 .bq[custom-co~="light"]::after,
@@ -291,6 +294,38 @@
 	background-image: url("callout/source.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="shit"].bq {
+	box-shadow: 0 0 0 2px #723a2d inset;
+}
+
+.bq[custom-co~="source"]::after {
+	background-image: url("callout/shit.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="cry"].bq {
+	box-shadow: 0 0 0 2px #f7b239 inset;
+}
+
+.bq[custom-co~="cry"]::after {
+	background-image: url("callout/cry.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="love"].bq {
+	box-shadow: 0 0 0 2px #ff5677 inset;
+}
+
+.bq[custom-co~="love"]::after {
+	background-image: url("callout/love.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="happy"].bq {
+	box-shadow: 0 0 0 2px #f7b239 inset;
+}
+
+.bq[custom-co~="happy"]::after {
+	background-image: url("callout/happy.png");
+}
+
 /* 思考 */
 .protyle-wysiwyg [data-node-id][custom-co~="sk"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="think"].bq {
@@ -300,6 +335,126 @@
 .bq[custom-co~="sk"]::after,
 .bq[custom-co~="think"]::after {
 	background-image: url("callout/think.png");
+}
+
+/* 愤怒 */
+.protyle-wysiwyg [data-node-id][custom-co~="sq"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="fn"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="angry"].bq {
+	box-shadow: 0 0 0 2px #e84f4f inset;
+}
+
+.bq[custom-co~="sq"]::after,
+.bq[custom-co~="fn"]::after,
+.bq[custom-co~="angry"]::after {
+	background-image: url("callout/angry.png");
+}
+
+/* 呕吐 */
+.protyle-wysiwyg [data-node-id][custom-co~="ot"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="vomit"].bq {
+	box-shadow: 0 0 0 2px #4f9e42 inset;
+}
+
+.bq[custom-co~="ot"]::after,
+.bq[custom-co~="vomit"]::after {
+	background-image: url("callout/vomit.png");
+}
+
+/* 爆炸 */
+.protyle-wysiwyg [data-node-id][custom-co~="bz"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="boom"].bq {
+	box-shadow: 0 0 0 2px #f38c57 inset;
+}
+
+.bq[custom-co~="bz"]::after,
+.bq[custom-co~="boom"]::after {
+	background-image: url("callout/boom.png");
+}
+
+/* 震惊 */
+.protyle-wysiwyg [data-node-id][custom-co~="zj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="shock"].bq {
+	box-shadow: 0 0 0 2px #f38c57 inset;
+}
+
+.bq[custom-co~="zj"]::after,
+.bq[custom-co~="shock"]::after {
+	background-image: url("callout/shock.png");
+}
+
+/* 睡觉、无聊 */
+.protyle-wysiwyg [data-node-id][custom-co~="sleep"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="boring"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="sleep"]::after,
+.bq[custom-co~="boring"]::after {
+	background-image: url("callout/sleep.png");
+}
+
+/* 容易、简单 */
+.protyle-wysiwyg [data-node-id][custom-co~="jd"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="ry"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="easy"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="jd"]::after,
+.bq[custom-co~="ry"]::after,
+.bq[custom-co~="easy"]::after {
+	background-image: url("callout/easy.png");
+}
+
+/* 适中、调整 */
+.protyle-wysiwyg [data-node-id][custom-co~="sz"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="tz"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="medium"].bq {
+	box-shadow: 0 0 0 2px #ff8c00 inset;
+}
+
+.bq[custom-co~="sz"]::after,
+.bq[custom-co~="tz"]::after,
+.bq[custom-co~="medium"]::after {
+	background-image: url("callout/medium.png");
+}
+
+/* 失败 */
+.protyle-wysiwyg [data-node-id][custom-co~="sb"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="fail"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="failed"].bq {
+	box-shadow: 0 0 0 2px #d8453e inset;
+}
+
+.bq[custom-co~="sb"]::after,
+.bq[custom-co~="fail"]::after,
+.bq[custom-co~="failed"]::after {
+	background-image: url("callout/failed.png");
+}
+
+/* 憨憨 */
+.protyle-wysiwyg [data-node-id][custom-co~="hh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="fool"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="stupid"].bq {
+	box-shadow: 0 0 0 2px #ffbc2a inset;
+}
+
+.bq[custom-co~="hh"]::after,
+.bq[custom-co~="fool"]::after,
+.bq[custom-co~="stupid"]::after {
+	background-image: url("callout/fool.png");
+}
+
+/* 困难 */
+.protyle-wysiwyg [data-node-id][custom-co~="kn"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="hard"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="kn"]::after,
+.bq[custom-co~="hard"]::after {
+	background-image: url("callout/hard.png");
 }
 
 /* 增 */
@@ -356,4 +511,22 @@
 .bq[custom-co~="query"]::after,
 .bq[custom-co~="search"]::after {
 	background-image: url("callout/query.png");
+}
+
+/* 彩蛋 */
+
+.protyle-wysiwyg [data-node-id][custom-co~="kirby"].bq {
+	box-shadow: 0 0 0 2px #f8a5b7 inset;
+}
+
+.bq[custom-co~="kirby"]::after {
+	background-image: url("callout/kirby.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="roger"].bq {
+	box-shadow: 0 0 0 2px #666666 inset;
+}
+
+.bq[custom-co~="roger"]::after {
+	background-image: url("callout/roger.jpg");
 }

@@ -113,7 +113,7 @@
 	position: absolute !important;
 	top: 50% !important;
 	border-top: 2px solid #cfcece !important;
-	width: 20px !important;
+	width: 17px !important;
 	height: 50% !important;
 	left: 3px !important;
 }
@@ -130,9 +130,9 @@
 	position: absolute !important;
 	bottom: 50% !important;
 	border-left: 2px solid #cfcece !important;
-	width: 20px !important;
-	height: 50%  !important;
-	left: 3px !important; 
+	width: 17px !important;
+	height: 50% !important;
+	left: 3px !important;
 }
 
 /*单个子项直线*/
@@ -141,9 +141,9 @@
 	.list
 	> .li:first-child:nth-last-child(2)::after {
 	border-radius: 0px;
-	width: 42px;
 	margin-bottom: -2px;
-	margin-left: -20px;
+	margin-left: -23px;
+	width: 42.5px !important;
 }
 
 /*单子项居中*/
@@ -176,8 +176,9 @@
 	left: 0;
 	top: 50% !important;
 	border-top: 2px solid #cfcece;
-	width: 20px;
+	width: 25.5px;
 	height: 0;
+	left: -1px !important;
 }
 
 /*取消根目录线*/

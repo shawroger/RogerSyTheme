@@ -317,17 +317,19 @@ window["roger_custom_state"] = {
 };
 
 function addRenderNoteRoute() {
+	const checkClassName = "roger-sy-theme-addRenderNoteRoute";
 	const list = document.querySelectorAll(
 		".render-node .protyle-wysiwyg__embed"
 	);
 
 	list.forEach((e) => {
 		const id = e.dataset.id;
-		if (e.childElementCount === 1) {
+		if (!e.firstChild.className.includes(checkClassName)) {
 			getHPathByPath({
 				id,
 			}).then((res) => {
 				const p = document.createElement("p");
+				p.className = checkClassName;
 				p.innerText = "🎯 " + res.data.slice(1);
 				e.prepend(p);
 			});

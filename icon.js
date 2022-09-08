@@ -6,7 +6,7 @@ const download = require("download");
 
 
 const url = `
-http://cn.wizbrother.com/
+https://bbs.uestc.edu.cn/
 
 
 `;

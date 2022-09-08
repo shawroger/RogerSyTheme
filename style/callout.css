@@ -150,7 +150,8 @@
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="notice"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq {
-	box-shadow: 0 0 0 2px #c1d354 inset;
+	color: #ff8e31;
+	box-shadow: 0 0 0 2px #ff8e31 inset;
 }
 
 .bq[custom-co~="bell"]::after,

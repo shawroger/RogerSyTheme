@@ -209,3 +209,19 @@
 .bq[custom-co~="important"]::after {
 	background-image: url("callout/important.webp");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="tj"].bq {
+	box-shadow: 0 0 10px 1px #00a552 inset;
+}
+
+.bq[custom-co~="tj"]::after {
+	background-image: url("callout/tj.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="btj"].bq {
+	box-shadow: 0 0 10px 1px #ed1a25 inset;
+}
+
+.bq[custom-co~="btj"]::after {
+	background-image: url("callout/btj.png");
+}

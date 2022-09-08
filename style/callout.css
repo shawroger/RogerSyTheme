@@ -10,7 +10,7 @@
 .bq[custom-co] .p:first-child,
 .bq[custom-co] .li:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
-	padding-right: 1.8em;
+	padding-right: 2em;
 }
 
 /* 引述callout段落的内边距 */

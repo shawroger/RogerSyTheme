@@ -44,12 +44,13 @@
 	background-size: 100% 100%;
 }
 
-/*错误*/
-.protyle-wysiwyg [data-node-id][custom-co~="stop"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="stop"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="forbid"].bq {
 	box-shadow: 0 0 0 2px red inset;
 }
 
-.bq[custom-co~="stop"]::after {
+.bq[custom-co~="stop"]::after,
+.bq[custom-co~="forbid"]::after {
 	background-image: url("callout/stop.png");
 }
 
@@ -94,12 +95,14 @@
 }
 
 /*问题*/
+.protyle-wysiwyg [data-node-id][custom-co~="?"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="wt"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="faq"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="question"].bq {
 	box-shadow: 0 0 0 2px #445a64 inset;
 }
 
+.bq[custom-co~="?"]::after,
 .bq[custom-co~="wt"]::after,
 .bq[custom-co~="faq"]::after,
 .bq[custom-co~="question"]::after {
@@ -312,6 +315,14 @@
 	background-image: url("callout/cry.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="wait"].bq {
+	box-shadow: 0 0 0 2px #52b1b1 inset;
+}
+
+.bq[custom-co~="cry"]::after {
+	background-image: url("callout/wait.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="love"].bq {
 	box-shadow: 0 0 0 2px #ff5677 inset;
 }
@@ -448,6 +459,32 @@
 	background-image: url("callout/fool.png");
 }
 
+/* 方法、技巧 */
+.protyle-wysiwyg [data-node-id][custom-co~="ff"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="jq"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="skill"].bq {
+	box-shadow: 0 0 0 2px #54be99 inset;
+}
+
+.bq[custom-co~="ff"]::after,
+.bq[custom-co~="jq"]::after,
+.bq[custom-co~="skill"]::after {
+	background-image: url("callout/skill.png");
+}
+
+/* 禅、修行 */
+.protyle-wysiwyg [data-node-id][custom-co~="xx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="chan"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="zen"].bq {
+	box-shadow: 0 0 0 2px #FAA68E inset;
+}
+
+.bq[custom-co~="xx"]::after,
+.bq[custom-co~="chan"]::after,
+.bq[custom-co~="zen"]::after {
+	background-image: url("callout/zen.png");
+}
+
 /* 困难 */
 .protyle-wysiwyg [data-node-id][custom-co~="kn"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="hard"].bq {
@@ -545,6 +582,30 @@
 
 .bq[custom-co~="review"]::after {
 	background-image: url("callout/review.jpg");
+}
+
+/* 待定、存疑 */
+.protyle-wysiwyg [data-node-id][custom-co~="dd"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="cy"].bq {
+	box-shadow: 0 0 0 2px blue inset;
+}
+
+.bq[custom-co~="dd"]::after,
+.bq[custom-co~="cy"]::after {
+	background-image: url("callout/dd.png");
+}
+
+/* 聊天、对话 */
+.protyle-wysiwyg [data-node-id][custom-co~="dh"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="lt"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="chat"].bq {
+	box-shadow: 0 0 0 2px #324a5e inset;
+}
+
+.bq[custom-co~="dh"]::after,
+.bq[custom-co~="lt"]::after,
+.bq[custom-co~="chat"]::after {
+	background-image: url("callout/chat.png");
 }
 
 /* 彩蛋 */

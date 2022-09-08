@@ -37,8 +37,9 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	div.layout__center.fn__flex-column.fn__flex-1
 	div.fn__flex-1
 	h1,
+.layout__empty.b3-list h1,
 #dockLeft > div:nth-child(3) {
-	display: none;
+	display: none !important;
 }
 
 .layout__empty::before {

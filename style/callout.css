@@ -11,6 +11,7 @@
 .bq[custom-co] .li:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
 	padding-right: 2em;
+	padding-top: 0.35em;
 }
 
 /* 引述callout段落的内边距 */
@@ -122,11 +123,13 @@
 }
 
 /*记录*/
-.protyle-wysiwyg [data-node-id][custom-co~="pen"].bq {
-	box-shadow: 0 0 0 2px #586770 inset;
+.protyle-wysiwyg [data-node-id][custom-co~="pen"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="write"].bq {
+	box-shadow: 0 0 0 2px #2f4257 inset;
 }
 
-.bq[custom-co~="pen"]::after {
+.bq[custom-co~="pen"]::after,
+.bq[custom-co~="write"]::after {
 	background-image: url("callout/pen.png");
 }
 /*汇总*/
@@ -266,9 +269,20 @@
 /* 资源 */
 .protyle-wysiwyg [data-node-id][custom-co~="source"].bq {
 	/* box-shadow: 0 0 0 2px #2aaadc inset; */
-	box-shadow: 0 0 0 2px #000000 inset;
+	box-shadow: 0 0 0 2px #96c402 inset;
 }
 
 .bq[custom-co~="source"]::after {
 	background-image: url("callout/source.png");
+}
+
+/* 思考 */
+.protyle-wysiwyg [data-node-id][custom-co~="sk"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="think"].bq {
+	box-shadow: 0 0 0 2px #f04b45 inset;
+}
+
+.bq[custom-co~="sk"]::after,
+.bq[custom-co~="think"]::after {
+	background-image: url("callout/think.png");
 }

@@ -6,8 +6,7 @@ const download = require("download");
 
 
 const url = `
-
-https://www.paddlepaddle.org.cn/
+https://www.cadzxw.com/5303.html
 
 `;
 

@@ -257,3 +257,11 @@
 .bq[custom-co~="zz"]::after {
 	background-image: url("callout/zz.png");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="source"].bq {
+	box-shadow: 0 0 0 2px #2aaadc inset;
+}
+
+.bq[custom-co~="source"]::after {
+	background-image: url("callout/source.webp");
+}

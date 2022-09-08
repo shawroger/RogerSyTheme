@@ -249,3 +249,11 @@
 .bq[custom-co~="hear"]::after {
 	background-image: url("callout/hear.png");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="zz"].bq {
+	box-shadow: 0 0 0 2px #3c4049 inset;
+}
+
+.bq[custom-co~="zz"]::after {
+	background-image: url("callout/zz.png");
+}

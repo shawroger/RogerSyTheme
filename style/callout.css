@@ -258,11 +258,22 @@
 .protyle-wysiwyg [data-node-id][custom-co~="mg"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq {
 	box-shadow: 0 0 0 2px #010101 inset;
+	background-color: #010101;
+	color: #010101;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mg"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq:hover {
+	background-color: inherit;
+	color: inherit;
+	transition: all 0.3s;
 }
 
 .bq[custom-co~="mg"]::after,
 .bq[custom-co~="mingan"]::after {
 	background-image: url("callout/mg.png");
+	border-radius: 50%;
 }
 
 /* 听说 */
@@ -739,6 +750,7 @@
 .bq[custom-co~="lock"]::after,
 .bq[custom-co~="secret"]::after {
 	background-image: url("callout/lock.png");
+	border-radius: 50%;
 }
 
 /* 结束 */

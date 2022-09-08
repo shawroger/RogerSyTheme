@@ -117,8 +117,9 @@
 }
 
 /* ———————————————加粗————————————— */
-.protyle-wysiwyg [data-node-id][custom-f~="jc"] {
-	font-weight: bold;
+.protyle-wysiwyg [data-node-id][custom-f~="jc"],
+.protyle-wysiwyg [data-node-id][custom-f~="bold"] {
+	font-weight: bold !important;
 }
 
 /* ————————————文字下划线———————————— */
@@ -290,7 +291,6 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 	border-bottom: 0.08em solid var(--b3-table-border-color) !important;
 	background-color: var(--b3-table-trn-color) !important;
 }
-
 
 .protyle-wysiwyg [data-node-id][custom-f~="biaotou-r"] table th {
 	font-weight: normal !important;

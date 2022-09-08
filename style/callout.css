@@ -144,7 +144,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="notice"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq {
-	box-shadow: 0 0 0 2px #C1D354 inset;
+	box-shadow: 0 0 0 2px #c1d354 inset;
 }
 
 .bq[custom-co~="bell"]::after,

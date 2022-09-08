@@ -429,3 +429,19 @@
 	background-image: url("./extra-icon/www.cadzxw.com.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.jq22.com"]:not(:empty)::before,
+.b3-typography a[href*="www.jq22.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.jq22.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cn.wizbrother.com"]:not(:empty)::before,
+.b3-typography a[href*="cn.wizbrother.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/cn.wizbrother.com.ico");
+}
+

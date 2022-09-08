@@ -6,7 +6,8 @@ const download = require("download");
 
 
 const url = `
-https://www.cadzxw.com/5303.html
+http://cn.wizbrother.com/
+
 
 `;
 

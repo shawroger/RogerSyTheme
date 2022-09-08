@@ -265,9 +265,10 @@
 
 /* 资源 */
 .protyle-wysiwyg [data-node-id][custom-co~="source"].bq {
-	box-shadow: 0 0 0 2px #2aaadc inset;
+	/* box-shadow: 0 0 0 2px #2aaadc inset; */
+	box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .bq[custom-co~="source"]::after {
-	background-image: url("callout/source.webp");
+	background-image: url("callout/source.png");
 }

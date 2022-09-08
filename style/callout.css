@@ -204,10 +204,12 @@
 	background-image: url("callout/no18.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="task"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="todo"].bq {
-	box-shadow: 0 0 0 2px #ffa827 inset;
+	box-shadow: 0 0 0 2px #306bff inset;
 }
 
+.bq[custom-co~="task"]::after,
 .bq[custom-co~="todo"]::after {
 	background-image: url("callout/todo.png");
 }
@@ -511,6 +513,38 @@
 .bq[custom-co~="query"]::after,
 .bq[custom-co~="search"]::after {
 	background-image: url("callout/query.png");
+}
+
+/* 学习 */
+.protyle-wysiwyg [data-node-id][custom-co~="xx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="learn"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="study"].bq {
+	box-shadow: 0 0 0 2px #2ea2db inset;
+}
+
+.bq[custom-co~="xx"]::after,
+.bq[custom-co~="learn"]::after,
+.bq[custom-co~="study"]::after {
+	background-image: url("callout/study.png");
+}
+
+/* 时间 */
+.protyle-wysiwyg [data-node-id][custom-co~="sj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="time"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="sj"]::after,
+.bq[custom-co~="learn"]::after {
+	background-image: url("callout/time.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="review"].bq {
+	box-shadow: 0 0 0 2px #7e7469 inset;
+}
+
+.bq[custom-co~="review"]::after {
+	background-image: url("callout/review.jpg");
 }
 
 /* 彩蛋 */

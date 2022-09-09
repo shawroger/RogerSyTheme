@@ -3,7 +3,8 @@
 	padding: 0.35em 0.3em;
 	border-radius: 0 2px 5px 0;
 	color: var(--b3-theme-on-background);
-	border-left: 0.25em double lightgrey;
+	border-left: 0.25em dashed #b0c4de;
+	/* border-left: 0.25em double lightgrey; */
 }
 
 /*引述callout第一行样式 */
@@ -148,11 +149,13 @@
 }
 
 /*记录*/
+.protyle-wysiwyg [data-node-id][custom-co~="tip"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="pen"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="write"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
+.bq[custom-co~="tip"]::after,
 .bq[custom-co~="pen"]::after,
 .bq[custom-co~="write"]::after {
 	background-image: url("callout/pen.png");
@@ -523,11 +526,20 @@
 
 /* 憨憨 */
 .protyle-wysiwyg [data-node-id][custom-co~="fool"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="dizzy"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="stupid"].bq {
+	transform: rotateX(180deg);
 	box-shadow: 0 0 0 2px #ffbc2a inset;
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="fool"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="dizzy"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="stupid"].bq:hover {
+	transform: rotateX(0deg);
+}
+
 .bq[custom-co~="fool"]::after,
+.bq[custom-co~="dizzy"]::after,
 .bq[custom-co~="stupid"]::after {
 	background-image: url("callout/fool.png");
 }

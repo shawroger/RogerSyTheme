@@ -1,69 +1,182 @@
-/*链滴id：abbj，如果兄弟们用的满意，别忘了使用我得推荐码：K9TdVww */
-/*---------ctrl+p窗口改造-------------*/
-/*放大ctrl+p窗口尺寸*/
-/*不添加[data-key]属性选择器将会同时影响alt+p窗口*/
-/* div[data-key] .b3-dialog__container {
-	width: 95vw !important;
-} */
-
-div[data-key] .b3-dialog__container .fn__flex-column {
-	height: 75vh !important;
-	/* width: 95vw !important; */
+/* 对话框 */
+.b3-dialog__container {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-attachment: fixed !important;
+	/* background-color: whitesmoke !important; */
 }
 
-/*ctrl+p改造成左右排列*/
-/*先把容器改成左右排列并自动换行*/
-div[data-key] .b3-dialog__container .fn__flex-column {
-	flex-direction: row !important;
-	flex-wrap: wrap;
+.b3-dialog__container > .b3-dialog__close {
+	top: 2.5px;
+	color: whitesmoke !important;
+	right: calc((100vw - 95vw) / -2);
+	transform: rotate(0deg);
+	transition: all 0.3s;
 }
 
-/*设置需要占满一行的项目*/
-div[data-key] .b3-dialog__container .fn__flex-column .search__header,
-div[data-key] .b3-dialog__container .fn__flex-column .b3-form__space--small {
-	width: 100vw;
-	/*flex-shrink:0;*/
+.b3-dialog__container > .b3-dialog__close:hover {
+	/* 关闭按钮 */
+	color: whitesmoke !important;
+	transform: rotate(180deg);
+	transition: all 0.3s;
 }
 
-/*窗口宽度大于一定尺寸时候，左右排列*/
+.b3-dialog__container > .b3-dialog__header {
+	background-color: #eeec;
+}
+.b3-dialog__container > div:nth-child(3) {
+	background-color: #eeec;
+}
+.b3-dialog__container > div:nth-child(3) .search__header,
+.b3-dialog__container > div:nth-child(3) .search__header > input {
+	background-color: transparent;
+}
+.b3-dialog__container > div:nth-child(3) .layout-tab-bar {
+	background-color: transparent;
+}
+.b3-dialog__container > div:nth-child(3) .layout-tab-bar .item__text {
+	/* 对话框页签 */
+	padding: 0 0.5em;
+}
+.b3-dialog__container
+	.fn__flex
+	> .b3-list
+	> .b3-list-item:not(.b3-list-item--focus) {
+	background-color: transparent;
+}
+.b3-dialog__container .fn__flex > .b3-tab-container,
+.b3-dialog__container
+	.fn__flex
+	> .b3-tab-container
+	.config-account__center--text {
+	background-color: transparent;
+}
+.b3-dialog__container .fn__flex > .b3-tab-container .config-bazaar__readme {
+	/* 主题预览对话框 */
+	background-color: #eeee;
+}
+.b3-dialog__container label.customItem > span.ft__on-surface.fn__flex-center {
+	/* 自定义属性名称全宽显示 */
+	min-width: 100px;
+	width: auto !important;
+}
+.b3-dialog__container #searchList .b3-list-item[data-type="search-item"] {
+	padding-bottom: calc(1.25em + 1px);
+}
+.b3-dialog__container
+	#searchList
+	.b3-list-item[data-type="search-item"]
+	.b3-list-item__text {
+	display: table-cell;
+}
+.b3-dialog__container
+	#searchList
+	.b3-list-item[data-type="search-item"]
+	.b3-list-item__meta {
+	position: absolute;
+	right: 8px;
+	bottom: 0.25em;
+	max-width: calc(100% - 12px);
+	line-height: 1.25em;
+}
+/* 搜索结果列表 */
+#searchList,
+#searchPreview {
+	background-color: transparent;
+}
+/* 历史容器 */
+#historyContainer > * {
+	background-color: transparent !important;
+}
+#historyContainer .history__asset,
+#historyContainer .history__text {
+	/* 历史对话框内容框 */
+	background-color: transparent;
+}
+#historyContainer .b3-dialog__scrim {
+	/* 对话框遮罩 */
+	background-color: whitesmoke;
+}
+
+body > div[data-key] > .b3-dialog > .b3-dialog__container,
+body
+	> div[data-key]
+	> .b3-dialog
+	> .b3-dialog__container
+	> div
+	> .fn__flex
+	> .fn__flex-column {
+	width: 80vw !important;
+	height: 90vh !important;
+}
+
+/* 窗口较宽时并排显示搜索结果 */
 @media screen and (min-width: 960px) {
-
-	/*搜索结果列表占一半宽度，靠左排列*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchList {
-		float: left;
-		/*width:45vw;*/
-		width: calc(50%);
-		height: calc(100% - 85px) !important;
-		/*禁止搜索结果水平滚动*/
-		overflow-x: hidden !important;
-		overflow-y: auto;
+	body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column {
+		/* 弹性盒子模式: 水平显示, 必要时折行 */
+		flex-direction: row !important;
+		flex-wrap: wrap;
 	}
-
-	/*结果预览自动占满剩余宽度，高度和结果列表等高*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchPreview {
-		/*width:45vw;*/
-		height: calc(100% - 85px) !important;
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		*:is(.search__header, .b3-form__space--small) {
+		/* 设置需要占满一行的项目 */
+		width: 100%;
+	}
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		#searchList,
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		#searchPreview {
+		/* 搜索结果与搜索结果预览分栏 */
+		float: left;
+		width: 50% !important;
+	}
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		.search__header:first-child
+		+ .search__header:is(.fn__none)
+		~ #searchList,
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		.search__header:first-child
+		+ .search__header:is(.fn__none)
+		~ #searchPreview {
+		height: calc(100% - 92px) !important;
+	}
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		.search__header:first-child
+		+ .search__header:not(.fn__none)
+		~ #searchList,
+	body
+		> div[data-key]
+		> .b3-dialog
+		> .b3-dialog__container
+		.fn__flex-column
+		.search__header:first-child
+		+ .search__header:not(.fn__none)
+		~ #searchPreview {
+		height: calc(100% - 142px) !important;
 	}
 }
-
-/*窗口宽度小于一定尺寸时候，上下排列*/
-@media screen and (max-width: 960px) {
-	div[data-key] .b3-dialog__container .fn__flex-column #searchList {
-		float: left;
-		/*width:45vw;*/
-		width: calc(100%);
-		height: calc(40% - 85px) !important;
-		/*禁止搜索结果水平滚动*/
-		overflow-x: hidden !important;
-		overflow-y: auto;
-	}
-
-	/*结果预览自动占满剩余高度*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchPreview {
-		/*width:45vw;*/
-		height: calc(60%) !important;
-	}
-}
-
-
-/*---------ctrl+p窗口改造 end -------------*/

@@ -228,14 +228,16 @@ function ViewMonitor(event) {
 setTimeout(() => ClickMonitor(), 1000);
 
 /* inject local script */
-(function inject() {
+function injectCommentFunc() {
 	const script = document.querySelector("#emojiScript");
 	const js = document.createElement("script");
 	js.setAttribute("src", "./appearance/themes/RogerSyTheme/comment/index.js");
 	js.setAttribute("type", "module");
 	js.setAttribute("defer", "defer");
 	document.head.insertBefore(js, script);
-})();
+}
+
+injectCommentFunc();
 
 function forceReload() {
 	try {
@@ -344,7 +346,11 @@ window.addEventListener("keydown", (event) => {
 		forceReload();
 	}
 
-	if ((keycode === "F3" && ctrlKeyCode) || (keycode === "F4" && ctrlKeyCode)) {
+	if (keycode === "F4" && ctrlKeyCode) {
+		injectCommentFunc();
+	}
+
+	if (keycode === "F3" && ctrlKeyCode) {
 		addRenderNoteRoute();
 	}
 

@@ -455,7 +455,7 @@
 
 /* 推荐 */
 .protyle-wysiwyg [data-node-id][custom-co~="tj"].bq {
-	box-shadow: 0 0 0 2px #ffdc64 inset;
+	box-shadow: 0 0 0 2px #e1a546 inset;
 }
 
 .bq[custom-co~="tj"]::after {
@@ -548,14 +548,14 @@
 }
 
 .bq[custom-co~="cry"]::after {
-	background-image: url("callout/cry.png");
+	background-image: url("callout/cry.webp");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="wait"].bq {
 	box-shadow: 0 0 0 2px #52b1b1 inset;
 }
 
-.bq[custom-co~="cry"]::after {
+.bq[custom-co~="wait"]::after {
 	background-image: url("callout/wait.png");
 }
 
@@ -1183,14 +1183,14 @@
 .protyle-wysiwyg [data-node-id][custom-co~="gx"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="thank"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="thanks"].bq {
-	box-shadow: 0 0 0 2px #e20000 inset;
+	box-shadow: 0 0 0 2px #fbdd45 inset;
 }
 
 .bq[custom-co~="gn"]::after,
 .bq[custom-co~="gx"]::after,
 .bq[custom-co~="thank"]::after,
 .bq[custom-co~="thanks"]::after {
-	background-image: url("callout/thank.png");
+	background-image: url("callout/thank.gif");
 }
 
 /* 彩蛋 */

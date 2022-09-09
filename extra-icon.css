@@ -507,4 +507,19 @@
 .b3-typography a[href*="souyix.com"]::before {
 	content: "";
 	background-image: url("./extra-icon/souyix.com.ico");
+}.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="vsgif.com"]:not(:empty)::before,
+.b3-typography a[href*="vsgif.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/vsgif.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.weshineapp.com"]:not(:empty)::before,
+.b3-typography a[href*="www.weshineapp.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.weshineapp.com.ico");
+}
+

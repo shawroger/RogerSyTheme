@@ -453,3 +453,35 @@
 	background-image: url("./extra-icon/bbs.uestc.edu.cn.ico");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="new.qq.com"]:not(:empty)::before,
+.b3-typography a[href*="new.qq.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/new.qq.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="box-shadow.dev"]:not(:empty)::before,
+.b3-typography a[href*="box-shadow.dev"]::before {
+	content: "";
+	background-image: url("./extra-icon/box-shadow.dev.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="getcssscan.com"]:not(:empty)::before,
+.b3-typography a[href*="getcssscan.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/getcssscan.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="box-shadow.art"]:not(:empty)::before,
+.b3-typography a[href*="box-shadow.art"]::before {
+	content: "";
+	background-image: url("./extra-icon/box-shadow.art.png");
+}
+

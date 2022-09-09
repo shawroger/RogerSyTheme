@@ -6,8 +6,7 @@ const download = require("download");
 
 
 const url = `
-https://bbs.uestc.edu.cn/
-
+https://box-shadow.art/
 
 `;
 

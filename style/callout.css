@@ -73,15 +73,33 @@
 	background-image: url("callout/bug.png");
 }
 /*正确*/
+
+@keyframes InfiniteRotate {
+	50% {
+		transform: rotate(360deg);
+	}
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="check"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="done"].bq {
 	box-shadow: 0 0 0 2px #34b297 inset;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="check"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="done"].bq:hover {
+	color: #34b297;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="check"].bq:hover::after,
+.protyle-wysiwyg [data-node-id][custom-co~="done"].bq:hover::after {
+	animation: InfiniteRotate 2s infinite;
 }
 
 .bq[custom-co~="check"]::after,
 .bq[custom-co~="done"]::after {
 	background-image: url("callout/done.png");
 }
+
 /*灵感*/
 .protyle-wysiwyg [data-node-id][custom-co~="light"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="bulb"].bq,
@@ -207,14 +225,6 @@
 
 .bq[custom-co~="ocr"]::after {
 	background-image: url("callout/ocr.png");
-}
-
-.protyle-wysiwyg [data-node-id][custom-co~="comment"].bq {
-	box-shadow: 0 0 0 2px #32d736 inset;
-}
-
-.bq[custom-co~="comment"]::after {
-	background-image: url("callout/comment.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="no18"].bq {
@@ -858,14 +868,33 @@
 /* 评价、看法 */
 .protyle-wysiwyg [data-node-id][custom-co~="pj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="kf"].bq,
-.protyle-wysiwyg [data-node-id][custom-co~="judge"].bq {
-	box-shadow: 0 0 0 2px #000000 inset;
+.protyle-wysiwyg [data-node-id][custom-co~="judge"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="comment"].bq {
+	font-weight: bold;
+	font-style: italic;
+	font-family: FangSong;
+	box-shadow: 0 0 0 2px #ff9833 inset;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="pj"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="kf"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="judge"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="comment"].bq:hover {
+	font-style: initial;
+}
+
+.bq[custom-co~="pj"]:hover::after,
+.bq[custom-co~="kf"]:hover::after,
+.bq[custom-co~="judge"]:hover::after,
+.bq[custom-co~="comment"]:hover::after {
+	animation: InfiniteRotate 2s infinite;
 }
 
 .bq[custom-co~="pj"]::after,
 .bq[custom-co~="kf"]::after,
-.bq[custom-co~="judge"]::after {
-	background-image: url("callout/judge.png");
+.bq[custom-co~="judge"]::after,
+.bq[custom-co~="comment"]::after {
+	background-image: url("callout/comment.png");
 }
 
 /* 游戏、娱乐 */

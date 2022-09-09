@@ -333,7 +333,7 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="data"].bq {
-	box-shadow: 0 0 5px 1px #48acdd inset;
+	box-shadow: 0 0 5px 1px #00338f inset;
 }
 
 .bq[custom-co~="data"]::after {
@@ -1019,12 +1019,14 @@
 /* 答案 */
 .protyle-wysiwyg [data-node-id][custom-co~="da"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="key"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="solve"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="answer"].bq {
-	box-shadow: 0 0 0 2px #3b73af inset;
+	box-shadow: 0 0 0 2px #00a8f3 inset;
 }
 
 .bq[custom-co~="da"]::after,
 .bq[custom-co~="yh"]::after,
+.bq[custom-co~="solve"]::after,
 .bq[custom-co~="answer"]::after {
 	background-image: url("callout/answer.png");
 }

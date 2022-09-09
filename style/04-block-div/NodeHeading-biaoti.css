@@ -142,7 +142,9 @@
 	color: var(--b3-font-color6);
 } */
 
-.protyle-wysiwyg [data-node-id].li > [data-node-id]:not([custom-co])::after {
+.protyle-wysiwyg
+	[data-node-id].li
+	> [data-node-id]:not([custom-card]):not([custom-co])::after {
 	left: 5px;
 	top: -30px;
 	font-size: 2em;

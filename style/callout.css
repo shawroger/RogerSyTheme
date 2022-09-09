@@ -42,6 +42,7 @@
 	width: 2em;
 	height: 2em;
 	background-size: 100% 100%;
+	border-radius: 50%;
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="stop"].bq,
@@ -146,6 +147,15 @@
 .bq[custom-co~="note"]::after {
 	background-image: url("callout/notebook.png");
 }
+
+/*总结*/
+.protyle-wysiwyg [data-node-id][custom-co~="summary"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="note"]::after {
+	background-image: url("callout/summary.png");
+}
 /*提醒*/
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="notice"].bq,
@@ -208,6 +218,22 @@
 	background-image: url("callout/no18.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="data"].bq {
+	box-shadow: 0 0 5px 1px #48acdd inset;
+}
+
+.bq[custom-co~="data"]::after {
+	background-image: url("callout/data.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="new"].bq {
+	box-shadow: 0 0 5px 1px #cd2324 inset;
+}
+
+.bq[custom-co~="new"]::after {
+	background-image: url("callout/new.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="task"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="todo"].bq {
 	box-shadow: 0 0 0 2px #306bff inset;
@@ -216,6 +242,26 @@
 .bq[custom-co~="task"]::after,
 .bq[custom-co~="todo"]::after {
 	background-image: url("callout/todo.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="jl"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="conclusion"].bq {
+	box-shadow: 0 0 0 2px #ac000c inset;
+}
+
+.bq[custom-co~="jl"]::after,
+.bq[custom-co~="conclusion"]::after {
+	background-image: url("callout/conclusion.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="fy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="translate"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="fy"]::after,
+.bq[custom-co~="translate"]::after {
+	background-image: url("callout/translate.png");
 }
 
 /* 重要 */

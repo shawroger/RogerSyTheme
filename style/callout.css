@@ -318,11 +318,11 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="ocr"].bq {
-	box-shadow: 0 0 0 2px #000000 inset;
+	box-shadow: 0 0 0 2px #39c390 inset;
 }
 
 .bq[custom-co~="ocr"]::after {
-	background-image: url("callout/ocr.png");
+	background-image: url("callout/ocr.jpg");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="no18"].bq {

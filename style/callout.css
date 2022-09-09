@@ -1209,6 +1209,14 @@
 	background-image: url("callout/roger.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="book"].bq {
+	box-shadow: 0 0 0 2px #ffc43a inset;
+}
+
+.bq[custom-co~="book"]::after {
+	background-image: url("callout/book.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="cd"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="archive"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
@@ -1217,6 +1225,16 @@
 .bq[custom-co~="cd"]::after,
 .bq[custom-co~="archive"]::after {
 	background-image: url("callout/archive.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="shop"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="shopping"].bq {
+	box-shadow: 0 0 0 2px #1c8adb inset;
+}
+
+.bq[custom-co~="shop"]::after,
+.bq[custom-co~="shopping"]::after {
+	background-image: url("callout/shopping.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="sj"].bq,

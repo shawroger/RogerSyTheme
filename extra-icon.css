@@ -485,3 +485,11 @@
 	background-image: url("./extra-icon/box-shadow.art.png");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.44886.com"]:not(:empty)::before,
+.b3-typography a[href*="www.44886.com"]::before {
+	content: "";
+	background-image: url("./extra-icon/www.44886.com.ico");
+}
+

@@ -53,3 +53,7 @@ div[style*="background-color:"] {
 .b3-dialog__content .fn__flex-1 {
     overflow: hidden;
 }
+
+.b3-dialog__content textarea {
+    resize: auto !important;
+}

@@ -146,7 +146,7 @@
 	[data-node-id].li
 	> [data-node-id]:not([custom-card]):not([custom-co])::after {
 	left: 5px;
-	top: -30px;
+	top: -42px;
 	font-size: 2em;
 	position: absolute;
 }

@@ -64,7 +64,7 @@
 	width: 3em;
 	min-height: 3.5em;
 	padding-top: 2.5em;
-	white-space: pre;
+	/* white-space: pre; */
 	background-size: 2.5em 2.5em;
 	text-align: center;
 	color: #00008b;

@@ -52,7 +52,7 @@ strong[style*="quote"] {
 	padding-bottom: 1px;
 	font-weight: normal;
 	cursor: pointer;
-	border-radius: 0.5em;
+	/* border-radius: 0.5em; */
 }
 
 #lz-comment-box {

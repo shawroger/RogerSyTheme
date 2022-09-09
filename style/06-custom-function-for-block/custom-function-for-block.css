@@ -496,6 +496,10 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 	cursor: pointer;
 }
 
+.protyle-wysiwyg .li [data-node-id][custom-card] {
+	margin-bottom: 12px;
+}
+
 .protyle-wysiwyg [data-node-id][custom-card]:hover {
 	display: block;
 }

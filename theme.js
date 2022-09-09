@@ -1,17 +1,16 @@
 /***js form Morgan***/
 /****************************思源API操作**************************/
 
-async function setSiyuanAttrs(id, attrs) {
+async function 设置思源块属性(内容块id, 属性对象) {
 	let url = "/api/attr/setBlockAttrs";
-	return parseResponse(
-		fetchSiyuanData(url, {
-			id,
-			attrs,
+	return 解析响应体(
+		向思源请求数据(url, {
+			id: 内容块id,
+			attrs: 属性对象,
 		})
 	);
 }
-
-async function fetchSiyuanData(url, data) {
+async function 向思源请求数据(url, data) {
 	let resData = null;
 	await fetch(url, {
 		body: JSON.stringify(data),
@@ -24,8 +23,7 @@ async function fetchSiyuanData(url, data) {
 	});
 	return resData;
 }
-
-async function parseResponse(response) {
+async function 解析响应体(response) {
 	let r = await response;
 	return r.code === 0 ? r.data : null;
 }
@@ -36,7 +34,7 @@ function ViewSelect(selectid, selecttype) {
 	button.id = "viewselect";
 	button.className = "b3-menu__item";
 	button.innerHTML =
-		'<svg class="b3-menu__icon" style="null"><use xlink:href="#iconGlobalGraph"></use></svg><span class="b3-menu__label" style="">视图选择</span><svg class="b3-menu__icon b3-menu__icon--arrow" style="null"><use xlink:href="#iconRight"></use></svg></button>';
+		'<svg class="b3-menu__icon" style="null"><use xlink:href="#iconPreview"></use></svg><span class="b3-menu__label" style="">选择视图</span><svg class="b3-menu__icon b3-menu__icon--arrow" style="null"><use xlink:href="#iconRight"></use></svg></button>';
 	button.appendChild(SubMenu(selectid, selecttype));
 	return button;
 }
@@ -47,14 +45,8 @@ function SubMenu(selectid, selecttype, className = "b3-menu__submenu") {
 	if (selecttype == "NodeList") {
 		node.appendChild(GraphView(selectid));
 		node.appendChild(TableView(selectid));
-		// node.appendChild(kanbanView(selectid))
+		node.appendChild(kanbanView(selectid));
 		node.appendChild(DefaultView(selectid));
-	}
-	if (selecttype == "NodeTable") {
-		node.appendChild(FixWidth(selectid));
-		node.appendChild(AutoWidth(selectid));
-		node.appendChild(Removeth(selectid));
-		node.appendChild(Defaultth(selectid));
 	}
 	return node;
 }
@@ -70,7 +62,6 @@ function GraphView(selectid) {
 	button.onclick = ViewMonitor;
 	return button;
 }
-
 function TableView(selectid) {
 	let button = document.createElement("button");
 	button.className = "b3-menu__item";
@@ -82,7 +73,6 @@ function TableView(selectid) {
 	button.onclick = ViewMonitor;
 	return button;
 }
-
 function kanbanView(selectid) {
 	let button = document.createElement("button");
 	button.className = "b3-menu__item";
@@ -94,7 +84,6 @@ function kanbanView(selectid) {
 	button.onclick = ViewMonitor;
 	return button;
 }
-
 function DefaultView(selectid) {
 	let button = document.createElement("button");
 	button.className = "b3-menu__item";
@@ -104,50 +93,6 @@ function DefaultView(selectid) {
 	button.setAttribute("custom-attr-value", "");
 
 	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconList"></use></svg><span class="b3-menu__label">恢复为列表</span>`;
-	return button;
-}
-
-function FixWidth(selectid) {
-	let button = document.createElement("button");
-	button.className = "b3-menu__item";
-	button.onclick = ViewMonitor;
-	button.setAttribute("data-node-id", selectid);
-	button.setAttribute("custom-attr-name", "f");
-	button.setAttribute("custom-attr-value", "");
-
-	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconTable"></use></svg><span class="b3-menu__label">页面宽度</span>`;
-	return button;
-}
-
-function AutoWidth(selectid) {
-	let button = document.createElement("button");
-	button.className = "b3-menu__item";
-	button.setAttribute("data-node-id", selectid);
-	button.setAttribute("custom-attr-name", "f");
-	button.setAttribute("custom-attr-value", "auto");
-	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconTable"></use></svg><span class="b3-menu__label">自动宽度</span>`;
-	button.onclick = ViewMonitor;
-	return button;
-}
-function Removeth(selectid) {
-	let button = document.createElement("button");
-	button.className = "b3-menu__item";
-	button.onclick = ViewMonitor;
-	button.setAttribute("data-node-id", selectid);
-	button.setAttribute("custom-attr-name", "t");
-	button.setAttribute("custom-attr-value", "biaotou");
-
-	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconTable"></use></svg><span class="b3-menu__label">取消表头样式</span>`;
-	return button;
-}
-function Defaultth(selectid) {
-	let button = document.createElement("button");
-	button.className = "b3-menu__item";
-	button.setAttribute("data-node-id", selectid);
-	button.setAttribute("custom-attr-name", "t");
-	button.setAttribute("custom-attr-value", "");
-	button.innerHTML = `<svg class="b3-menu__icon" style=""><use xlink:href="#iconTable"></use></svg><span class="b3-menu__label">默认表头样式</span>`;
-	button.onclick = ViewMonitor;
 	return button;
 }
 function MenuSeparator(className = "b3-menu__separator") {
@@ -168,9 +113,7 @@ function MenuSeparator(className = "b3-menu__separator") {
  * }
  * @returns {null} 没有找到块 ID */
 function getBlockSelected() {
-	let node_list = document.querySelectorAll(
-		".protyle:not(.fn__none)>.protyle-content .protyle-wysiwyg--select"
-	);
+	let node_list = document.querySelectorAll(".protyle-wysiwyg--select");
 	if (node_list.length === 1 && node_list[0].dataset.nodeId != null)
 		return {
 			id: node_list[0].dataset.nodeId,
@@ -190,7 +133,7 @@ function MenuShow() {
 		if (selectinfo) {
 			let selecttype = selectinfo.type;
 			let selectid = selectinfo.id;
-			if (selecttype == "NodeList" || selecttype == "NodeTable") {
+			if (selecttype == "NodeList") {
 				setTimeout(() => InsertMenuItem(selectid, selecttype), 0);
 			}
 		}
@@ -222,11 +165,10 @@ function ViewMonitor(event) {
 	}
 	let attrs = {};
 	attrs[attrName] = attrValue;
-	setSiyuanAttrs(id, attrs);
+	设置思源块属性(id, attrs);
 }
 
 setTimeout(() => ClickMonitor(), 1000);
-
 /* inject local script */
 function injectCommentFunc() {
 	const script = document.querySelector("#emojiScript");
@@ -384,11 +326,3 @@ function hideTitle() {
 		title.innerHTML = "❤️‍🔥Roger's note —— " + new Date().toLocaleDateString();
 	}
 }
-
-// document
-// 	.querySelector(
-// 		"#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div > div.fn__flex-1.protyle > div.protyle-content > div.protyle-wysiwyg.protyle-wysiwyg--attr > div.render-node > div.protyle-icons > span.protyle-icon.protyle-action__reload.protyle-icon--first"
-// 	)
-// 	.addEventListener("click", () => {
-//
-// 	});

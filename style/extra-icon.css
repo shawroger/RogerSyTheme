@@ -3,7 +3,7 @@
 	span[data-type="a"][data-href*="ankiweb.net"]:not(:empty)::before,
 .b3-typography a[href*="ankiweb.net"]::before {
 	content: "";
-	background-image: url("./extra-icon/ankiweb.net.ico");
+	background-image: url("../icon/ankiweb.net.ico");
 }
 
 .protyle-wysiwyg
@@ -11,7 +11,7 @@
 	span[data-type="a"][data-href*="photos.google.com"]:not(:empty)::before,
 .b3-typography a[href*="photos.google.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/photos.google.com.png");
+	background-image: url("../icon/photos.google.com.png");
 }
 
 .protyle-wysiwyg
@@ -19,7 +19,7 @@
 	span[data-type="a"][data-href*="npmjs.com"]:not(:empty)::before,
 .b3-typography a[href*="npmjs.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/npmjs.com.png");
+	background-image: url("../icon/npmjs.com.png");
 }
 
 .protyle-wysiwyg
@@ -27,7 +27,7 @@
 	span[data-type="a"][data-href*="qq.com"]:not(:empty)::before,
 .b3-typography a[href*="qq.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/qq.png");
+	background-image: url("../icon/qq.png");
 }
 
 .protyle-wysiwyg
@@ -35,7 +35,7 @@
 	span[data-type="a"][data-href*="www.voidtools.com"]:not(:empty)::before,
 .b3-typography a[href*="www.voidtools.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.voidtools.com.ico");
+	background-image: url("../icon/www.voidtools.com.ico");
 }
 
 .protyle-wysiwyg
@@ -43,7 +43,7 @@
 	span[data-type="a"][data-href*="tableconvert.com"]:not(:empty)::before,
 .b3-typography a[href*="tableconvert.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/tableconvert.com.png?v=1");
+	background-image: url("../icon/tableconvert.com.png?v=1");
 }
 
 .protyle-wysiwyg
@@ -51,7 +51,7 @@
 	span[data-type="a"][data-href*="tableconvert.com"]:not(:empty)::before,
 .b3-typography a[href*="tableconvert.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/tableconvert.com.png");
+	background-image: url("../icon/tableconvert.com.png");
 }
 
 .protyle-wysiwyg
@@ -59,7 +59,7 @@
 	span[data-type="a"][data-href*="www.pushbullet.com"]:not(:empty)::before,
 .b3-typography a[href*="www.pushbullet.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.pushbullet.com.ico");
+	background-image: url("../icon/www.pushbullet.com.ico");
 }
 
 .protyle-wysiwyg
@@ -67,7 +67,7 @@
 	span[data-type="a"][data-href*="docs.yunzai.org"]:not(:empty)::before,
 .b3-typography a[href*="docs.yunzai.org"]::before {
 	content: "";
-	background-image: url("./extra-icon/docs.yunzai.org.ico");
+	background-image: url("../icon/docs.yunzai.org.ico");
 }
 
 .protyle-wysiwyg
@@ -75,7 +75,7 @@
 	span[data-type="a"][data-href*="cn.bluehost.com"]:not(:empty)::before,
 .b3-typography a[href*="cn.bluehost.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/cn.bluehost.com.ico");
+	background-image: url("../icon/cn.bluehost.com.ico");
 }
 
 .protyle-wysiwyg
@@ -83,7 +83,7 @@
 	span[data-type="a"][data-href*="www.dongchedi.com"]:not(:empty)::before,
 .b3-typography a[href*="www.dongchedi.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.dongchedi.com.ico");
+	background-image: url("../icon/www.dongchedi.com.ico");
 }
 
 .protyle-wysiwyg
@@ -91,7 +91,7 @@
 	span[data-type="a"][data-href*="wwn.lanzoul.com"]:not(:empty)::before,
 .b3-typography a[href*="wwn.lanzoul.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/wwn.lanzoul.com.ico");
+	background-image: url("../icon/wwn.lanzoul.com.ico");
 }
 
 .protyle-wysiwyg
@@ -99,7 +99,7 @@
 	span[data-type="a"][data-href*="www.keycurriculum.com"]:not(:empty)::before,
 .b3-typography a[href*="www.keycurriculum.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.keycurriculum.com.ico");
+	background-image: url("../icon/www.keycurriculum.com.ico");
 }
 
 .protyle-wysiwyg
@@ -107,7 +107,7 @@
 	span[data-type="a"][data-href*="www.lightnode.com"]:not(:empty)::before,
 .b3-typography a[href*="www.lightnode.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.lightnode.com.ico");
+	background-image: url("../icon/www.lightnode.com.ico");
 }
 
 .protyle-wysiwyg
@@ -115,7 +115,7 @@
 	span[data-type="a"][data-href*="www.mrdoc.fun"]:not(:empty)::before,
 .b3-typography a[href*="www.mrdoc.fun"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.mrdoc.fun.ico");
+	background-image: url("../icon/www.mrdoc.fun.ico");
 }
 
 .protyle-wysiwyg
@@ -123,7 +123,7 @@
 	span[data-type="a"][data-href*="www.sanguosha.com"]:not(:empty)::before,
 .b3-typography a[href*="www.sanguosha.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.sanguosha.com.ico");
+	background-image: url("../icon/www.sanguosha.com.ico");
 }
 
 .protyle-wysiwyg
@@ -131,7 +131,7 @@
 	span[data-type="a"][data-href*="www.langxi.xyz"]:not(:empty)::before,
 .b3-typography a[href*="www.langxi.xyz"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.langxi.xyz.ico");
+	background-image: url("../icon/www.langxi.xyz.ico");
 }
 
 .protyle-wysiwyg
@@ -139,7 +139,7 @@
 	span[data-type="a"][data-href*="www.langxi.me"]:not(:empty)::before,
 .b3-typography a[href*="www.langxi.me"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.langxi.xyz.ico");
+	background-image: url("../icon/www.langxi.xyz.ico");
 }
 
 .protyle-wysiwyg
@@ -147,7 +147,7 @@
 	span[data-type="a"][data-href*="wantquotes.net"]:not(:empty)::before,
 .b3-typography a[href*="wantquotes.net"]::before {
 	content: "";
-	background-image: url("./extra-icon/wantquotes.net.ico");
+	background-image: url("../icon/wantquotes.net.ico");
 }
 
 .protyle-wysiwyg
@@ -155,7 +155,7 @@
 	span[data-type="a"][data-href*="wantwords.net"]:not(:empty)::before,
 .b3-typography a[href*="wantwords.net"]::before {
 	content: "";
-	background-image: url("./extra-icon/wantwords.net.ico");
+	background-image: url("../icon/wantwords.net.ico");
 }
 
 .protyle-wysiwyg
@@ -163,7 +163,7 @@
 	span[data-type="a"][data-href*="wqbook.wqxuetang.com"]:not(:empty)::before,
 .b3-typography a[href*="wqbook.wqxuetang.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/wqbook.wqxuetang.com.ico");
+	background-image: url("../icon/wqbook.wqxuetang.com.ico");
 }
 
 .protyle-wysiwyg
@@ -171,7 +171,7 @@
 	span[data-type="a"][data-href*="www.ijiaodui.com"]:not(:empty)::before,
 .b3-typography a[href*="www.ijiaodui.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.ijiaodui.com.ico");
+	background-image: url("../icon/www.ijiaodui.com.ico");
 }
 
 .protyle-wysiwyg
@@ -179,7 +179,7 @@
 	span[data-type="a"][data-href*="www.xuetangx.com"]:not(:empty)::before,
 .b3-typography a[href*="www.xuetangx.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.xuetangx.com.ico");
+	background-image: url("../icon/www.xuetangx.com.ico");
 }
 
 .protyle-wysiwyg
@@ -187,7 +187,7 @@
 	span[data-type="a"][data-href*="hsk.oray.com"]:not(:empty)::before,
 .b3-typography a[href*="hsk.oray.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/hsk.oray.com.ico");
+	background-image: url("../icon/hsk.oray.com.ico");
 }
 
 .protyle-wysiwyg
@@ -195,7 +195,7 @@
 	span[data-type="a"][data-href*="svelte.dev"]:not(:empty)::before,
 .b3-typography a[href*="svelte.dev"]::before {
 	content: "";
-	background-image: url("./extra-icon/svelte.dev.png");
+	background-image: url("../icon/svelte.dev.png");
 }
 
 .protyle-wysiwyg
@@ -203,7 +203,7 @@
 	span[data-type="a"][data-href*="www.gfbzb.gov.cn"]:not(:empty)::before,
 .b3-typography a[href*="www.gfbzb.gov.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.gfbzb.gov.cn.ico");
+	background-image: url("../icon/www.gfbzb.gov.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -211,7 +211,7 @@
 	span[data-type="a"][data-href*="www.ztxz.org.cn"]:not(:empty)::before,
 .b3-typography a[href*="www.ztxz.org.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.ztxz.org.cn.ico");
+	background-image: url("../icon/www.ztxz.org.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -219,7 +219,7 @@
 	span[data-type="a"][data-href*="ipaddress.com"]:not(:empty)::before,
 .b3-typography a[href*="ipaddress.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/ipaddress.com.ico");
+	background-image: url("../icon/ipaddress.com.ico");
 }
 
 .protyle-wysiwyg
@@ -227,7 +227,7 @@
 	span[data-type="a"][data-href*="www.jiaoyimao.com"]:not(:empty)::before,
 .b3-typography a[href*="www.jiaoyimao.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.jiaoyimao.com.ico");
+	background-image: url("../icon/www.jiaoyimao.com.ico");
 }
 
 .protyle-wysiwyg
@@ -235,23 +235,22 @@
 	span[data-type="a"][data-href*="myhentaigallery.com"]:not(:empty)::before,
 .b3-typography a[href*="myhentaigallery.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/myhentaigallery.com.png");
+	background-image: url("../icon/myhentaigallery.com.png");
 }
-
 
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="patreon.com"]:not(:empty)::before,
 .b3-typography a[href*="patreon.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/patreon.com.png");
+	background-image: url("../icon/patreon.com.png");
 }
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="yz.chsi.com.cn"]:not(:empty)::before,
 .b3-typography a[href*="yz.chsi.com.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/yz.chsi.com.cn.ico");
+	background-image: url("../icon/yz.chsi.com.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -259,7 +258,7 @@
 	span[data-type="a"][data-href*="www.chsi.com.cn"]:not(:empty)::before,
 .b3-typography a[href*="www.chsi.com.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.chsi.com.cn.ico");
+	background-image: url("../icon/www.chsi.com.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -267,7 +266,7 @@
 	span[data-type="a"][data-href*="fanyi.baidu.com"]:not(:empty)::before,
 .b3-typography a[href*="fanyi.baidu.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/fanyi.baidu.com.ico");
+	background-image: url("../icon/fanyi.baidu.com.ico");
 }
 
 .protyle-wysiwyg
@@ -275,14 +274,14 @@
 	span[data-type="a"][data-href*="z-lib.org"]:not(:empty)::before,
 .b3-typography a[href*="z-lib.org"]::before {
 	content: "";
-	background-image: url("./extra-icon/z-lib.org.svg");
+	background-image: url("../icon/z-lib.org.svg");
 }
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="www.tomatolist.com"]:not(:empty)::before,
 .b3-typography a[href*="www.tomatolist.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.tomatolist.com.ico");
+	background-image: url("../icon/www.tomatolist.com.ico");
 }
 
 .protyle-wysiwyg
@@ -290,7 +289,7 @@
 	span[data-type="a"][data-href*="www.appinn.com"]:not(:empty)::before,
 .b3-typography a[href*="www.appinn.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.appinn.com.ico");
+	background-image: url("../icon/www.appinn.com.ico");
 }
 
 .protyle-wysiwyg
@@ -298,7 +297,7 @@
 	span[data-type="a"][data-href*="pxhere.com"]:not(:empty)::before,
 .b3-typography a[href*="pxhere.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/pxhere.com.ico");
+	background-image: url("../icon/pxhere.com.ico");
 }
 
 .protyle-wysiwyg
@@ -306,7 +305,7 @@
 	span[data-type="a"][data-href*="www.dayanzai.me"]:not(:empty)::before,
 .b3-typography a[href*="www.dayanzai.me"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.dayanzai.me.ico");
+	background-image: url("../icon/www.dayanzai.me.ico");
 }
 
 .protyle-wysiwyg
@@ -314,7 +313,7 @@
 	span[data-type="a"][data-href*="www.jiumodiary.com"]:not(:empty)::before,
 .b3-typography a[href*="www.jiumodiary.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.jiumodiary.com.ico");
+	background-image: url("../icon/www.jiumodiary.com.ico");
 }
 
 .protyle-wysiwyg
@@ -322,7 +321,7 @@
 	span[data-type="a"][data-href*="notion.pet"]:not(:empty)::before,
 .b3-typography a[href*="notion.pet"]::before {
 	content: "";
-	background-image: url("./extra-icon/notion.pet.svg");
+	background-image: url("../icon/notion.pet.svg");
 }
 
 .protyle-wysiwyg
@@ -330,7 +329,7 @@
 	span[data-type="a"][data-href*="crate.io"]:not(:empty)::before,
 .b3-typography a[href*="crate.io"]::before {
 	content: "";
-	background-image: url("./extra-icon/crate.io.ico");
+	background-image: url("../icon/crate.io.ico");
 }
 
 .protyle-wysiwyg
@@ -338,7 +337,7 @@
 	span[data-type="a"][data-href*="crates.io"]:not(:empty)::before,
 .b3-typography a[href*="crates.io"]::before {
 	content: "";
-	background-image: url("./extra-icon/crates.io.ico");
+	background-image: url("../icon/crates.io.ico");
 }
 
 .protyle-wysiwyg
@@ -346,7 +345,7 @@
 	span[data-type="a"][data-href*="www.onlinedown.net"]:not(:empty)::before,
 .b3-typography a[href*="www.onlinedown.net"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.onlinedown.net.ico");
+	background-image: url("../icon/www.onlinedown.net.ico");
 }
 
 .protyle-wysiwyg
@@ -354,7 +353,7 @@
 	span[data-type="a"][data-href*="www.vmware.com"]:not(:empty)::before,
 .b3-typography a[href*="www.vmware.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.vmware.com.ico");
+	background-image: url("../icon/www.vmware.com.ico");
 }
 
 .protyle-wysiwyg
@@ -362,7 +361,7 @@
 	span[data-type="a"][data-href*="aliyun.com"]:not(:empty)::before,
 .b3-typography a[href*="aliyun.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/aliyun.com.ico");
+	background-image: url("../icon/aliyun.com.ico");
 }
 
 .protyle-wysiwyg
@@ -370,7 +369,7 @@
 	span[data-type="a"][data-href*="typedoc.org"]:not(:empty)::before,
 .b3-typography a[href*="typedoc.org"]::before {
 	content: "";
-	background-image: url("./extra-icon/typedoc.org.png");
+	background-image: url("../icon/typedoc.org.png");
 }
 
 .protyle-wysiwyg
@@ -378,7 +377,7 @@
 	span[data-type="a"][data-href*="natapp.cn"]:not(:empty)::before,
 .b3-typography a[href*="natapp.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/natapp.cn.ico");
+	background-image: url("../icon/natapp.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -386,7 +385,7 @@
 	span[data-type="a"][data-href*="sourceforge.net"]:not(:empty)::before,
 .b3-typography a[href*="sourceforge.net"]::before {
 	content: "";
-	background-image: url("./extra-icon/sourceforge.net.ico");
+	background-image: url("../icon/sourceforge.net.ico");
 }
 
 .protyle-wysiwyg
@@ -394,7 +393,7 @@
 	span[data-type="a"][data-href*="keepass.info"]:not(:empty)::before,
 .b3-typography a[href*="keepass.info"]::before {
 	content: "";
-	background-image: url("./extra-icon/keepass.info.ico");
+	background-image: url("../icon/keepass.info.ico");
 }
 
 .protyle-wysiwyg
@@ -402,7 +401,7 @@
 	span[data-type="a"][data-href*="www.sina.com.cn"]:not(:empty)::before,
 .b3-typography a[href*="www.sina.com.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.sina.com.cn.ico");
+	background-image: url("../icon/www.sina.com.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -410,7 +409,7 @@
 	span[data-type="a"][data-href*="ishare.iask.sina.com.cn"]:not(:empty)::before,
 .b3-typography a[href*="ishare.iask.sina.com.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/ishare.iask.sina.com.cn.ico");
+	background-image: url("../icon/ishare.iask.sina.com.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -418,7 +417,7 @@
 	span[data-type="a"][data-href*="www.paddlepaddle.org.cn"]:not(:empty)::before,
 .b3-typography a[href*="www.paddlepaddle.org.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.paddlepaddle.org.cn.png");
+	background-image: url("../icon/www.paddlepaddle.org.cn.png");
 }
 
 .protyle-wysiwyg
@@ -426,7 +425,7 @@
 	span[data-type="a"][data-href*="www.cadzxw.com"]:not(:empty)::before,
 .b3-typography a[href*="www.cadzxw.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.cadzxw.com.ico");
+	background-image: url("../icon/www.cadzxw.com.ico");
 }
 
 .protyle-wysiwyg
@@ -434,7 +433,7 @@
 	span[data-type="a"][data-href*="www.jq22.com"]:not(:empty)::before,
 .b3-typography a[href*="www.jq22.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.jq22.com.ico");
+	background-image: url("../icon/www.jq22.com.ico");
 }
 
 .protyle-wysiwyg
@@ -442,7 +441,7 @@
 	span[data-type="a"][data-href*="cn.wizbrother.com"]:not(:empty)::before,
 .b3-typography a[href*="cn.wizbrother.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/cn.wizbrother.com.ico");
+	background-image: url("../icon/cn.wizbrother.com.ico");
 }
 
 .protyle-wysiwyg
@@ -450,7 +449,7 @@
 	span[data-type="a"][data-href*="bbs.uestc.edu.cn"]:not(:empty)::before,
 .b3-typography a[href*="bbs.uestc.edu.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/bbs.uestc.edu.cn.ico");
+	background-image: url("../icon/bbs.uestc.edu.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -458,7 +457,7 @@
 	span[data-type="a"][data-href*="new.qq.com"]:not(:empty)::before,
 .b3-typography a[href*="new.qq.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/new.qq.com.ico");
+	background-image: url("../icon/new.qq.com.ico");
 }
 
 .protyle-wysiwyg
@@ -466,7 +465,7 @@
 	span[data-type="a"][data-href*="box-shadow.dev"]:not(:empty)::before,
 .b3-typography a[href*="box-shadow.dev"]::before {
 	content: "";
-	background-image: url("./extra-icon/box-shadow.dev.svg");
+	background-image: url("../icon/box-shadow.dev.svg");
 }
 
 .protyle-wysiwyg
@@ -474,7 +473,7 @@
 	span[data-type="a"][data-href*="getcssscan.com"]:not(:empty)::before,
 .b3-typography a[href*="getcssscan.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/getcssscan.com.ico");
+	background-image: url("../icon/getcssscan.com.ico");
 }
 
 .protyle-wysiwyg
@@ -482,7 +481,7 @@
 	span[data-type="a"][data-href*="box-shadow.art"]:not(:empty)::before,
 .b3-typography a[href*="box-shadow.art"]::before {
 	content: "";
-	background-image: url("./extra-icon/box-shadow.art.png");
+	background-image: url("../icon/box-shadow.art.png");
 }
 
 .protyle-wysiwyg
@@ -490,7 +489,7 @@
 	span[data-type="a"][data-href*="www.44886.com"]:not(:empty)::before,
 .b3-typography a[href*="www.44886.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.44886.com.ico");
+	background-image: url("../icon/www.44886.com.ico");
 }
 
 .protyle-wysiwyg
@@ -498,7 +497,7 @@
 	span[data-type="a"][data-href*="pan.quark.cn"]:not(:empty)::before,
 .b3-typography a[href*="pan.quark.cn"]::before {
 	content: "";
-	background-image: url("./extra-icon/pan.quark.cn.ico");
+	background-image: url("../icon/pan.quark.cn.ico");
 }
 
 .protyle-wysiwyg
@@ -506,13 +505,14 @@
 	span[data-type="a"][data-href*="souyix.com"]:not(:empty)::before,
 .b3-typography a[href*="souyix.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/souyix.com.ico");
-}.protyle-wysiwyg
+	background-image: url("../icon/souyix.com.ico");
+}
+.protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="vsgif.com"]:not(:empty)::before,
 .b3-typography a[href*="vsgif.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/vsgif.com.ico");
+	background-image: url("../icon/vsgif.com.ico");
 }
 
 .protyle-wysiwyg
@@ -520,6 +520,5 @@
 	span[data-type="a"][data-href*="www.weshineapp.com"]:not(:empty)::before,
 .b3-typography a[href*="www.weshineapp.com"]::before {
 	content: "";
-	background-image: url("./extra-icon/www.weshineapp.com.ico");
+	background-image: url("../icon/www.weshineapp.com.ico");
 }
-

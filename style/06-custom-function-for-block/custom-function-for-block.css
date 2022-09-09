@@ -156,13 +156,15 @@
 .protyle-wysiwyg [data-node-id][custom-f~="sp"] {
 	writing-mode: vertical-rl;
 	background-color: #f0efe2;
-	padding: 10px;
+	padding: 10px !important;
 	border: 5px solid #e1e0c7;
 	max-width: 100%;
 	margin: 0 auto;
 	font-size: 120%;
 	font-family: KaiTi;
 	margin-bottom: 10px;
+	overflow-y: auto;
+	font-weight: bold;
 }
 
 /* ————————————文本缩进———————————— */

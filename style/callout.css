@@ -160,14 +160,21 @@
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="notice"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq {
-	color: #ff8e31;
-	box-shadow: 0 0 0 2px #ff8e31 inset;
+	box-shadow: 0 0 0 2px #e83a2a inset;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="bell"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="notice"].bq:hover,
+.protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq:hover {
+	font-size: 120%;
+	transition: all 0.3s;
 }
 
 .bq[custom-co~="bell"]::after,
 .bq[custom-co~="notice"]::after,
 .bq[custom-co~="reminder"]::after {
-	background-image: url("callout/notice.png");
+	background-image: url("callout/notice.webp");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="rocket"].bq {

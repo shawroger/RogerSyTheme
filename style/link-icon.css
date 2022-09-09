@@ -1114,6 +1114,15 @@
 	background-image: url("../icon/fold/txt.svg");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".exe"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".exe"]::before,
+.b3-typography [href^="assets/"][href$=".exe"]::before {
+	content: "";
+	background-image: url("../icon/fold/exe.png");
+}
+
 /* 视频 */
 .protyle-wysiwyg
 	[data-node-id]

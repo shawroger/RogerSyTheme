@@ -651,12 +651,10 @@
 }
 
 /* 时间 */
-.protyle-wysiwyg [data-node-id][custom-co~="sj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="time"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
-.bq[custom-co~="sj"]::after,
 .bq[custom-co~="learn"]::after {
 	background-image: url("callout/time.png");
 }
@@ -992,4 +990,25 @@
 
 .bq[custom-co~="roger"]::after {
 	background-image: url("callout/roger.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="cd"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="archive"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="cd"]::after,
+.bq[custom-co~="archive"]::after {
+	background-image: url("callout/archive.png");
+}
+
+
+.protyle-wysiwyg [data-node-id][custom-co~="sj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="collect"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="sj"]::after,
+.bq[custom-co~="collect"]::after {
+	background-image: url("callout/collect.png");
 }

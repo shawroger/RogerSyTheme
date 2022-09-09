@@ -548,7 +548,7 @@
 }
 
 .bq[custom-co~="cry"]::after {
-	background-image: url("callout/cry.webp");
+	background-image: url("callout/cry.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="wait"].bq {

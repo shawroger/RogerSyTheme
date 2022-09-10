@@ -191,7 +191,7 @@ function forceReload() {
 }
 
 function getHPathByPath(data) {
-	return request("/api/filetree/getHPathByID");
+	return request("/api/filetree/getHPathByID", data);
 }
 
 function sendSyMsg(msg, timeout) {

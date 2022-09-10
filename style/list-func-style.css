@@ -63,12 +63,45 @@
 	margin-left: -6px;
 	padding: 5px 10px;
 	margin-top: 2px;
-	background-color: #f6f6f6 !important;
+	/* background-color: #f6f6f6 !important; */
 	border-radius: 3px;
 	box-shadow: #0f0f0f1a 0px 0px 0px 1px, #0f0f0f1a 0px 2px 4px;
 	/*max-width:20vw; */
 	z-index: 1;
 }
+
+.protyle-wysiwyg
+	*[custom-f="dt"]
+	.li[custom-bgcolor="grey"]
+	div
+	> div[spellcheck="false"] {
+	background-color: #f6f6f6;
+}
+
+.protyle-wysiwyg
+	*[custom-f="dt"]
+	.li[custom-bgcolor="red"]
+	div
+	> div[spellcheck="false"] {
+	background-color: #ffb6c1;
+}
+
+.protyle-wysiwyg
+	*[custom-f="dt"]
+	.li[custom-bgcolor="blue"]
+	div
+	> div[spellcheck="false"] {
+	background-color: #e0ffff;
+}
+
+.protyle-wysiwyg
+	*[custom-f="dt"]
+	.li[custom-bgcolor="green"]
+	div
+	> div[spellcheck="false"] {
+	background-color: #90ee90;
+}
+
 .protyle-wysiwyg
 	*[custom-f="dt"]
 	[data-subtype="t"]

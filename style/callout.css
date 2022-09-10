@@ -509,14 +509,24 @@
 .protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq {
 	box-shadow: 0 0 0 2px #010101 inset;
 	background-color: #010101;
-	color: #010101;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mg"].bq div,
+.protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq div {
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mg"].bq:hover div,
+.protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq:hover div {
+	opacity: 1;
 	transition: all 0.3s;
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="mg"].bq:hover,
 .protyle-wysiwyg [data-node-id][custom-co~="mingan"].bq:hover {
 	background-color: inherit;
-	color: inherit;
 	transition: all 0.3s;
 }
 
@@ -611,7 +621,7 @@
 /* 思考 */
 .protyle-wysiwyg [data-node-id][custom-co~="sk"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="think"].bq {
-	box-shadow: 0 0 0 2px #e84f4f inset;
+	box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .bq[custom-co~="sk"]::after,
@@ -1064,7 +1074,24 @@
 .protyle-wysiwyg [data-node-id][custom-co~="secret"].bq {
 	box-shadow: 0 0 0 2px #40a8b3 inset;
 	background-color: #40a8b3;
-	color: #40a8b3;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mm"].bq div,
+.protyle-wysiwyg [data-node-id][custom-co~="ys"].bq div,
+.protyle-wysiwyg [data-node-id][custom-co~="jm"].bq div,
+.protyle-wysiwyg [data-node-id][custom-co~="lock"].bq div,
+.protyle-wysiwyg [data-node-id][custom-co~="secret"].bq div {
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="mm"].bq:hover div,
+.protyle-wysiwyg [data-node-id][custom-co~="ys"].bq:hover div,
+.protyle-wysiwyg [data-node-id][custom-co~="jm"].bq:hover div,
+.protyle-wysiwyg [data-node-id][custom-co~="lock"].bq:hover div,
+.protyle-wysiwyg [data-node-id][custom-co~="secret"].bq:hover div {
+	opacity: 1;
 	transition: all 0.3s;
 }
 
@@ -1074,7 +1101,6 @@
 .protyle-wysiwyg [data-node-id][custom-co~="lock"].bq:hover,
 .protyle-wysiwyg [data-node-id][custom-co~="secret"].bq:hover {
 	background-color: inherit;
-	color: inherit;
 	transition: all 0.3s;
 }
 

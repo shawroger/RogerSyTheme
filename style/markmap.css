@@ -56,7 +56,7 @@
 	margin-top: 2px;
 	background-color: transparent;
 	border-radius: 1px;
-	border: 1px solid #cfcece;
+	border: 1px solid 89a3e0;
 	/*white-space: pre;*/
 	max-width: 15vw;
 }
@@ -112,7 +112,7 @@
 	content: "" !important;
 	position: absolute !important;
 	top: 50% !important;
-	border-top: 2px solid #cfcece !important;
+	border-top: 2px solid 89a3e0 !important;
 	width: 17px !important;
 	height: 50% !important;
 	left: 3px !important;
@@ -121,7 +121,7 @@
 /*上竖线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::before {
 	bottom: 50% !important;
-	border-left: 2px solid #cfcece !important;
+	border-left: 2px solid #89a3e0 !important;
 }
 
 /*下竖线*/
@@ -129,7 +129,7 @@
 	content: "" !important;
 	position: absolute !important;
 	bottom: 50% !important;
-	border-left: 2px solid #cfcece !important;
+	border-left: 2px solid #89a3e0 !important;
 	width: 17px !important;
 	height: 50% !important;
 	left: 3px !important;
@@ -165,7 +165,7 @@
 
 /*下框线*/
 .protyle-wysiwyg *[custom-f="dt"] .li:nth-last-child(2)::after {
-	border-bottom: 2px solid #cfcece !important;
+	border-bottom: 2px solid #89a3e0 !important;
 	border-radius: 0px;
 }
 
@@ -175,7 +175,7 @@
 	position: absolute;
 	left: 0;
 	top: 50% !important;
-	border-top: 2px solid #cfcece;
+	border-top: 2px solid #89a3e0;
 	width: 25.5px;
 	height: 0;
 	left: -1px !important;

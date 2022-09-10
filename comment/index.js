@@ -119,4 +119,13 @@ class SiyuanUtil {
 	}
 }
 
+window.addEventListener("keydown", (event) => {
+	const keycode = event.key;
+	const ctrlKeyCode = event.ctrlKey;
+
+	if ((keycode === "`" && ctrlKeyCode) || (keycode === "F4" && ctrlKeyCode)) {
+		new SiyuanUtil();
+	}
+});
+
 new SiyuanUtil();

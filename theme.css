@@ -96,17 +96,18 @@
 
 @import url("style/link-icon.css");
 
-@import url("style/list-guides.css");
-
 @import url("style/callout.css");
 
-@import url("extra-icon.css");
+@import url("style/extra-icon.css");
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */
 @import url("style/CtrlP.css");
 /* 引入列表转思维导图的代码，来自roy */
-@import url("style/markmap.css");
+/* @import url("style/markmap.css"); */
+
+@import url("style/list-func-style.css");
+
 /* 引入自定义配置 */
 @import url("custom.css");
 

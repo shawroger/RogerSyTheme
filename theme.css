@@ -123,3 +123,7 @@
 		background-image: none !important;
 	}
 }
+
+marker.flowchart span.edgeLabel {
+	background: white !important;
+}

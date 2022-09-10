@@ -71,34 +71,50 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f="dt"][custom-bgcolor="grey"]
+	div[spellcheck="false"] {
+	background-color: #f6f6f6;
+}
+.protyle-wysiwyg
 	*[custom-f="dt"]
-	.li[custom-bgcolor="grey"]
-	div
-	> div[spellcheck="false"] {
+	[custom-bgcolor="grey"]
+	div[spellcheck="false"] {
 	background-color: #f6f6f6;
 }
 
 .protyle-wysiwyg
 	*[custom-f="dt"]
-	.li[custom-bgcolor="red"]
-	div
-	> div[spellcheck="false"] {
+	[custom-bgcolor="red"]
+	div[spellcheck="false"] {
+	background-color: #ffb6c1;
+}
+.protyle-wysiwyg
+	*[custom-f="dt"][custom-bgcolor="red"]
+	div[spellcheck="false"] {
 	background-color: #ffb6c1;
 }
 
 .protyle-wysiwyg
+	*[custom-f="dt"][custom-bgcolor="blue"]
+	div[spellcheck="false"] {
+	background-color: #e0ffff;
+}
+.protyle-wysiwyg
 	*[custom-f="dt"]
-	.li[custom-bgcolor="blue"]
-	div
-	> div[spellcheck="false"] {
+	[custom-bgcolor="blue"]
+	div[spellcheck="false"] {
 	background-color: #e0ffff;
 }
 
 .protyle-wysiwyg
+	*[custom-f="dt"][custom-bgcolor="green"]
+	div[spellcheck="false"] {
+	background-color: #90ee90;
+}
+.protyle-wysiwyg
 	*[custom-f="dt"]
-	.li[custom-bgcolor="green"]
-	div
-	> div[spellcheck="false"] {
+	[custom-bgcolor="green"]
+	div[spellcheck="false"] {
 	background-color: #90ee90;
 }
 

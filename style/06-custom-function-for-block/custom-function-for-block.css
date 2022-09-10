@@ -426,9 +426,10 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 .list[data-node-id][data-type="NodeList"][custom-f="bg"] {
 	padding: 4px;
 	font-size: 95%;
-	overflow-x: auto;
-	/* width: 100%; */
-	/* display: flex; */
+	padding-left: 1em;
+	/* overflow-x: auto;
+	width: 100%;
+	display: flex; */
 }
 
 /* 对所有子列表项设置格式*/
@@ -487,16 +488,12 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 } */
 
 .protyle-wysiwyg [data-node-id][custom-card] {
-	padding: 1em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 1em !important;
+	padding: 0.5em;
 	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
 }
 
 .protyle-wysiwyg .li [data-node-id][custom-card] {
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 }
 
 .protyle-wysiwyg [data-node-id][custom-card]:hover {
@@ -512,7 +509,9 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 }
 
 .protyle-wysiwyg [data-node-id][custom-card]::after {
-	font-size: 110%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	content: attr(custom-card);
 }
 
@@ -548,4 +547,33 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 
 .protyle-wysiwyg [data-node-id][custom-f~="blur-5"] {
 	filter: blur(5px);
+}
+
+/* 超级卡 */
+
+.protyle-wysiwyg div[data-type="NodeSuperBlock"][custom-f~="card"] {
+	padding: 0.5em;
+	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
+}
+
+.protyle-wysiwyg
+	div[data-type="NodeSuperBlock"][custom-f~="card"]
+	div:nth-child(2) {
+	display: none;
+}
+
+.protyle-wysiwyg
+	div[data-type="NodeSuperBlock"][custom-f~="card"]:hover
+	div:first-child {
+	display: none;
+}
+
+.protyle-wysiwyg
+	div[data-type="NodeSuperBlock"][custom-f~="card"]:hover
+	div:nth-child(2),
+.protyle-wysiwyg
+	div[data-type="NodeSuperBlock"][custom-f~="card"]:hover
+	div:nth-child(2)
+	div {
+	display: block;
 }

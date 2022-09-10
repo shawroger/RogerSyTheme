@@ -556,6 +556,10 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
 }
 
+.protyle-wysiwyg .li [data-type="NodeSuperBlock"][custom-f~="card"] {
+	margin-bottom: 15px;
+}
+
 .protyle-wysiwyg
 	div[data-type="NodeSuperBlock"][custom-f~="card"]
 	div:nth-child(2) {

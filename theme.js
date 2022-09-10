@@ -191,7 +191,14 @@ function forceReload() {
 }
 
 function getHPathByPath(data) {
-	return request("/api/filetree/getHPathByID", data);
+	return request("/api/filetree/getHPathByID");
+}
+
+function sendSyMsg(msg, timeout) {
+	request("/api/notification/pushMsg", {
+		msg,
+		timeout,
+	});
 }
 
 function request(url, data, method = "POST") {
@@ -298,6 +305,36 @@ function hideTitle() {
 	}
 }
 
+function calloutNoticeEmit(cotext) {
+	let msg = "本页面有提醒事项";
+
+	if (cotext) {
+		msg += " —— " + cotext;
+	}
+	sendSyMsg(msg);
+}
+
+function calloutEmit() {
+	const emitList = [
+		{
+			cotypes: ["notice", "todo", "plan", "wait"],
+			cb: calloutNoticeEmit,
+		},
+	];
+	const calloutList = document.querySelectorAll("[custom-co]");
+
+	calloutList.forEach((e) => {
+		const cotype = e.getAttribute("custom-co");
+		const cotext = e.getAttribute("custom-cot");
+
+		const item = emitList.find(({ cotypes }) => cotypes.includes(cotype));
+
+		if (item && item.cb) {
+			item.cb(cotext);
+		}
+	});
+}
+
 window.addEventListener("keydown", (event) => {
 	const keyBindList = [
 		{
@@ -311,6 +348,10 @@ window.addEventListener("keydown", (event) => {
 		{
 			code: ["F2"],
 			cb: hideBars,
+		},
+		{
+			code: ["F1"],
+			cb: calloutEmit,
 		},
 	];
 

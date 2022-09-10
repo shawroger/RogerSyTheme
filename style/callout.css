@@ -307,7 +307,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="bell"].bq:hover,
 .protyle-wysiwyg [data-node-id][custom-co~="notice"].bq:hover,
 .protyle-wysiwyg [data-node-id][custom-co~="reminder"].bq:hover {
-	font-size: 120%;
+	font-size: 105%;
 	transition: all 0.3s;
 }
 

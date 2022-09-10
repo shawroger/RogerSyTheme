@@ -349,10 +349,10 @@ window.addEventListener("keydown", (event) => {
 			code: ["F2"],
 			cb: hideBars,
 		},
-		{
-			code: ["F1"],
-			cb: calloutEmit,
-		},
+		// {
+		// 	code: ["F1"],
+		// 	cb: calloutEmit,
+		// },
 	];
 
 	if (event.ctrlKey) {

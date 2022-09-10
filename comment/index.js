@@ -123,7 +123,7 @@ window.addEventListener("keydown", (event) => {
 	const keycode = event.key;
 	const ctrlKeyCode = event.ctrlKey;
 
-	if ((keycode === "`" && ctrlKeyCode) || (keycode === "F4" && ctrlKeyCode)) {
+	if (keycode === "F1" && ctrlKeyCode) {
 		new SiyuanUtil();
 	}
 });

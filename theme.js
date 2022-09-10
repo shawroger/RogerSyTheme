@@ -277,47 +277,49 @@ function addRenderNoteRoute() {
 	});
 }
 
-window.addEventListener("keydown", (event) => {
-	const keycode = event.key;
-	const ctrlKeyCode = event.ctrlKey;
-	if (
-		(keycode === "F5" && ctrlKeyCode) ||
-		(keycode === "F5" && event.shiftKey)
-	) {
-		forceReload();
-	}
+function hideBars() {
+	let display =
+		document.querySelector(".toolbar").style.display === "none"
+			? "flex"
+			: "none";
 
-	if (keycode === "F3" && ctrlKeyCode) {
-		addRenderNoteRoute();
-	}
-
-	if (keycode === "F2" && ctrlKeyCode) {
-		const style = document.querySelector(".toolbar").style.display;
-		if (style !== "none") {
-			document.querySelector(".toolbar").style.display = "none";
-		} else {
-			document.querySelector(".toolbar").style.display = "flex";
-		}
-	}
-
-	if (keycode === "F1" && ctrlKeyCode) {
-		const style = document.querySelector("#dockLeft").style.display;
-		if (style !== "none") {
-			document.querySelector("#dockLeft").style.display = "none";
-		} else {
-			dockRight;
-			document.querySelector("#dockLeft").style.display = "flex";
-		}
-
-		document.querySelector("#dockRight").style.display = document.querySelector(
-			"#dockLeft"
-		).style.display;
-	}
-});
+	[".toolbar", "#dockLeft", "#dockRight"].forEach((item) => {
+		const el = document.querySelector(item);
+		el.style.display = display;
+	});
+}
 
 function hideTitle() {
 	const title = document.querySelector("#drag");
 	if (title.innerHTML.trim().startsWith("思源笔记 v2.")) {
-		title.innerHTML = "❤️‍🔥Roger's note —— " + new Date().toLocaleDateString();
+		title.innerHTML =
+			"❤️‍🔥 Roger's note —— on " +
+			new Date().toLocaleDateString().split("/").join(".");
 	}
 }
+
+window.addEventListener("keydown", (event) => {
+	const keyBindList = [
+		{
+			code: ["F5"],
+			cb: forceReload,
+		},
+		{
+			code: ["F3"],
+			cb: addRenderNoteRoute,
+		},
+		{
+			code: ["F2"],
+			cb: hideBars,
+		},
+	];
+
+	if (event.ctrlKey) {
+		hideTitle();
+		const item = keyBindList.find(({ code }) => code.includes(event.key));
+
+		if (item && item.cb) {
+			item.cb();
+		}
+	}
+});

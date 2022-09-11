@@ -700,7 +700,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="bh"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="change"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="changing"].bq {
-	box-shadow: 0 0 0 2px #000000 inset;
+	box-shadow: 0 0 0 2px #47acb4 inset;
 }
 
 .bq[custom-co~="bh"]::after,
@@ -837,7 +837,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="e"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="edit"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="update"].bq {
-	box-shadow: 0 0 0 2px black inset;
+	box-shadow: 0 0 0 2px #77cc7d inset;
 }
 
 .bq[custom-co~="u"]::after,

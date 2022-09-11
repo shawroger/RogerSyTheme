@@ -278,12 +278,14 @@
 
 .protyle-wysiwyg [data-node-id][custom-co~="wj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="fj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="file"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="attachment"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .bq[custom-co~="wj"]::after,
 .bq[custom-co~="fj"]::after,
+.bq[custom-co~="file"]::after,
 .bq[custom-co~="attachment"]::after {
 	background-image: url("callout/attachment.png");
 }

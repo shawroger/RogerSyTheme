@@ -34,8 +34,8 @@
 	min-height: 2.7em;
 	padding: 0.3em 1em;
 	margin-right: 25px;
-	border-radius: 15px;
 	margin-bottom: 10px;
+	border-radius: 15px !important;
 }
 
 .protyle-wysiwyg [data-node-id][custom-co][custom-cot].bq {

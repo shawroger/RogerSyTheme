@@ -149,7 +149,8 @@
 .protyle-wysiwyg [data-node-id].li > [data-node-id].h5::after,
 .protyle-wysiwyg [data-node-id].li > [data-node-id].h6::after {
 	left: 5px;
-	top: -44px;
+	/* top: -44px; */
+	top: -35px;
 	font-size: 2em;
 	position: absolute;
 }

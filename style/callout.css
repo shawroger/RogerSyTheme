@@ -342,7 +342,7 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="ocr"].bq {
-	box-shadow: 0 0 0 2px #39c390 inset;
+	box-shadow: 0 0 0 2px #5f82ca inset;
 }
 
 .bq[custom-co~="ocr"]::after {
@@ -1148,7 +1148,7 @@
 /* 表单 */
 .protyle-wysiwyg [data-node-id][custom-co~="bd"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="form"].bq {
-	box-shadow: 0 0 0 2px #473080 inset;
+	box-shadow: 0 0 0 2px #0e9cf5 inset;
 }
 
 .bq[custom-co~="bd"]::after,

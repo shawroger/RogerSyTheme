@@ -305,32 +305,100 @@ function hideTitle() {
 	}
 }
 
-function calloutNoticeEmit(cotext) {
-	let msg = "本页面有提醒事项";
+function abs(n) {
+	return n >= 0 ? n : -1 * n;
+}
 
-	if (cotext) {
-		msg += " —— " + cotext;
+const DifferDayTime = function (startDate, endDate) {
+	return Math.floor(abs(endDate - startDate) / 86400000) + " 天 ";
+};
+
+const DifferHourTime = function (startDate, endDate) {
+	return (
+		(Math.floor(abs(endDate - startDate - 86400000) / 3600000) % 24) + " 小时 "
+	);
+};
+
+const DifferMinuteTime = function (startDate, endDate) {
+	return (Math.floor(abs(endDate - startDate) / 60000) % 60) + " 分 ";
+};
+
+const DifferSecondTime = function (startDate, endDate) {
+	return (Math.floor((endDate - startDate) / 1000) % 60) + " 秒";
+};
+
+function calcTime(time) {
+	const start = new Date().getTime();
+	const end = new Date(time).getTime();
+
+	let msg = end > start ? "剩余时间 " : "逾期时间";
+
+	const day = DifferDayTime(start, end);
+	const hour = DifferHourTime(start, end);
+	const minu = DifferMinuteTime(start, end);
+	const seco = DifferSecondTime(start, end);
+
+	return " @" + msg + day + hour + minu + seco;
+}
+
+function calloutNoticeEmit(title, content, time) {
+	let msg = "发现提醒事项";
+
+	if (title || content) {
+		msg += "：";
 	}
+
+	if (content) {
+		msg += content;
+	} else if (title) {
+		msg += title;
+	}
+
+	if (time) {
+		msg += calcTime(time);
+	}
+
 	sendSyMsg(msg);
 }
 
+function calloutFormEmit() {
+	let msg = "发现表单";
+
+	if (cotext || cocontent) {
+		msg += "：";
+	}
+
+	if (cocontent) {
+		msg += cocontent;
+	} else if (cotext) {
+		msg += cotext;
+	}
+
+	sendSyMsg(msg);
+}
 function calloutEmit() {
 	const emitList = [
 		{
-			cotypes: ["notice", "todo", "plan", "wait"],
+			cotypes: ["notice", "todo", "plan", "wait", "homework"],
 			cb: calloutNoticeEmit,
+		},
+		{
+			cotypes: ["form"],
+			cb: calloutFormEmit,
 		},
 	];
 	const calloutList = document.querySelectorAll("[custom-co]");
 
 	calloutList.forEach((e) => {
 		const cotype = e.getAttribute("custom-co");
-		const cotext = e.getAttribute("custom-cot");
+		const title = e.getAttribute("custom-cot");
+		const content = e.getAttribute("custom-coc");
+		const time = e.getAttribute("custom-cotime");
 
 		const item = emitList.find(({ cotypes }) => cotypes.includes(cotype));
 
 		if (item && item.cb) {
-			item.cb(cotext);
+			item.cb(title, content, time);
 		}
 	});
 }

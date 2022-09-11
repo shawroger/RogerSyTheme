@@ -1278,6 +1278,14 @@
 	background-image: url("callout/book.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="explain"]::after {
+	background-image: url("callout/explain.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="cd"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="archive"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;

@@ -1157,7 +1157,7 @@
 
 .bq[custom-co~="ks"]::after,
 .bq[custom-co~="tm"]::after,
-.bq[custom-co~="undo"]::after {
+.bq[custom-co~="exam"]::after {
 	background-image: url("callout/exam.png");
 }
 
@@ -1298,4 +1298,24 @@
 .bq[custom-co~="sj"]::after,
 .bq[custom-co~="collect"]::after {
 	background-image: url("callout/collect.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="jy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="advice"].bq {
+	box-shadow: 0 0 0 2px #a1d51c inset;
+}
+
+.bq[custom-co~="jy"]::after,
+.bq[custom-co~="advice"]::after {
+	background-image: url("callout/advice.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="zy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="homework"].bq {
+	box-shadow: 0 0 0 2px #7fcac9 inset;
+}
+
+.bq[custom-co~="zy"]::after,
+.bq[custom-co~="homework"]::after {
+	background-image: url("callout/homework.png");
 }

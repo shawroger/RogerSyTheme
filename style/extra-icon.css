@@ -522,3 +522,12 @@
 	content: "";
 	background-image: url("../icon/www.weshineapp.com.ico");
 }
+
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.pigai.org"]:not(:empty)::before,
+.b3-typography a[href*="www.pigai.org"]::before {
+	content: "";
+	background-image: url("../icon/www.pigai.org.ico");
+}

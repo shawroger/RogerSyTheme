@@ -327,6 +327,14 @@
 	background-image: url("callout/rocket.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="others"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="others"]::after {
+	background-image: url("callout/others.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="example"].bq {
 	box-shadow: 0 0 0 2px #f4aa73 inset;
 }
@@ -425,6 +433,26 @@
 .bq[custom-co~="class"]::after,
 .bq[custom-co~="lesson"]::after {
 	background-image: url("callout/lesson.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="more"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="other"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="except"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="more"]::after,
+.bq[custom-co~="other"]::after,
+.bq[custom-co~="except"]::after {
+	background-image: url("callout/except.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="more"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="more"]::after {
+	background-image: url("callout/more.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="td"].bq,

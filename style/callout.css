@@ -1076,6 +1076,26 @@
 	background-image: url("callout/refer.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="lx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="connect"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="lx"]::after,
+.bq[custom-co~="connect"]::after {
+	background-image: url("callout/connect.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="gx"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="object-connect"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="gx"]::after,
+.bq[custom-co~="object-connect"]::after {
+	background-image: url("callout/object-connect.png");
+}
+
 /* 计划 */
 .protyle-wysiwyg [data-node-id][custom-co~="jh"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="plan"].bq,
@@ -1284,14 +1304,12 @@
 
 /* 感恩、感谢 */
 .protyle-wysiwyg [data-node-id][custom-co~="gn"].bq,
-.protyle-wysiwyg [data-node-id][custom-co~="gx"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="thank"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="thanks"].bq {
 	box-shadow: 0 0 0 2px #fbdd45 inset;
 }
 
 .bq[custom-co~="gn"]::after,
-.bq[custom-co~="gx"]::after,
 .bq[custom-co~="thank"]::after,
 .bq[custom-co~="thanks"]::after {
 	background-image: url("callout/thank.gif");

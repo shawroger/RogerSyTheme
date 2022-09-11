@@ -296,7 +296,7 @@ function hideBars() {
 	});
 }
 
-function hideTitle() {
+function replaceTitle() {
 	const title = document.querySelector("#drag");
 	if (title.innerHTML.trim().startsWith("思源笔记 v2.")) {
 		title.innerHTML =
@@ -309,21 +309,21 @@ function abs(n) {
 	return n >= 0 ? n : -1 * n;
 }
 
-const DifferDayTime = function (startDate, endDate) {
+const differDayTime = function (startDate, endDate) {
 	return Math.floor(abs(endDate - startDate) / 86400000) + " 天 ";
 };
 
-const DifferHourTime = function (startDate, endDate) {
+const differHourTime = function (startDate, endDate) {
 	return (
 		(Math.floor(abs(endDate - startDate - 86400000) / 3600000) % 24) + " 小时 "
 	);
 };
 
-const DifferMinuteTime = function (startDate, endDate) {
+const differMinuteTime = function (startDate, endDate) {
 	return (Math.floor(abs(endDate - startDate) / 60000) % 60) + " 分 ";
 };
 
-const DifferSecondTime = function (startDate, endDate) {
+const differSecondTime = function (startDate, endDate) {
 	return (Math.floor((endDate - startDate) / 1000) % 60) + " 秒";
 };
 
@@ -333,10 +333,10 @@ function calcTime(time) {
 
 	let msg = end > start ? "剩余时间 " : "逾期时间";
 
-	const day = DifferDayTime(start, end);
-	const hour = DifferHourTime(start, end);
-	const minu = DifferMinuteTime(start, end);
-	const seco = DifferSecondTime(start, end);
+	const day = differDayTime(start, end);
+	const hour = differHourTime(start, end);
+	const minu = differMinuteTime(start, end);
+	const seco = differSecondTime(start, end);
 
 	return " @" + msg + day + hour + minu + seco;
 }
@@ -415,16 +415,16 @@ window.addEventListener("keydown", (event) => {
 		},
 		{
 			code: ["F2"],
-			cb: hideBars,
+			cb: calloutEmit,
 		},
 		{
 			code: ["F1"],
-			cb: calloutEmit,
+			cb: hideBars,
 		},
 	];
 
 	if (event.ctrlKey) {
-		hideTitle();
+		replaceTitle();
 		const item = keyBindList.find(({ code }) => code.includes(event.key));
 
 		if (item && item.cb) {

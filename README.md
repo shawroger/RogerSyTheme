@@ -1,123 +1,78 @@
-### 更新进度
+# RogerSyTheme
 
-#### 0.34版本
+参考 [Chrome-A4](https://github.com/UserZYF/Chrome-A4) 和 [zhang-light](https://github.com/UserZYF/zhang-light) 修改而来的思源笔记主题。
 
-- 修复切换标签页时导致没有正常出现列表转表格等功能的bug
-- 修复面包屑右侧出现滚动条的bug
+# 功能
 
-#### 0.33版本
+## 自定义属性
 
-- 修复反链面板显示更多时文字拥挤错乱bug
-- 修复钉住标签页时红点显示不圆的问题
-- 修改PDF双链样式，将边框修改为文字下划线
-- 一级标题和分割线打印时自动添加分页
-- 导出为PDF时去掉标题前面的“H1”等标识
+- 继承了 [zhang-light](https://github.com/UserZYF/zhang-light) 的所有自定义属性。
 
-#### 0.32版本
+# 特色功能
 
-- 修复思源笔记默认主题更新导致的兼容性问题
-- 取消显示标签页上的图标
-- 为钉住的标签页右上角添加红点标识
-- 优化了一些细节
+## 快捷键
 
-#### 0.31版本
+|按键|功能|
+|:-:|-|
+|ctrl+F1|隐藏边栏和标题|
+|ctrl+F2|通知页面事项|
+|ctrl+F3|展示 SQL 嵌入块的 hpath|
+|ctrl+F5|强制重新加载|
 
-- 增加一个文档自定义属性 f=heng ,将其设置为横版A4纸页面
-- 增加一个文档自定义属性 f=full，可以将页面设置为全屏
-  - #注意 设置了以上两个自定义属性，标题和题头图的位置不会发生改变，因为自定义属性仅对正文区域有效
+## callout 功能
 
-- 在主题文件夹增加一个 custom.css 文件，**将其中的代码取消注释，可永久实现全屏**，而不是只有 A4 纸大小
-  - 目前存在的问题：标题和正文之间可能存在较大空隙
-    - 如果想要解决这个问题，每次更新都需要删除 theme.css 文件中的 A4.css 一行，然后再保存
-    - 如果之后解决了这个问题，不需要每次更新都重新设置，会在集市说明文档中进行强调
+### `co` 属性
 
-- 为导出属性增加一个属性值 f=print（打印）；导出样式 f=print 或者 f=daochu（导出） 都行
-  - 导出 PDF 样式和自定义属性还是有很大差异，仅供参考
-  - 目前导出 PDF 不管有没有设置自定义属性，默认都是标题为黑体，段落为宋体，英文为 Times 字体
-    - 想取消掉此设置，需要将 theme.css 代码里边的 print.css 一行删除掉，再保存即可
+针对引述块的 callout 样式
 
-#### 0.3版本
+内置了 100 多个 callout 类型，只需要在引述块自定义 `co` 属性即可。
 
-- 修改代码块样式
-- 增加 Roy 的 js 脚本
+![co:example](./src/readme-source/co-example.png)
 
-#### 之前版本
+![set co:example](./src/readme-source/set-co-example.png)
 
-- 增加了列表转思维导图的功能（来自于 Roy 的源代码和萌新的修改）
-- 给表格增加了横向边框
-- 优化待办事项样式（折叠也有不同样式）
-- 修复有序列表折叠后不显示数字的 bug
-- 通过文档的自定义属性 f=full,可以将页面调整至全宽
-- 优化了一些细节
+其他 callout 名称参考 `style/callout` 文件夹内图片名称，当然也可以自定义替换。
 
-### 感谢列表
+### `cot` 属性
 
-* 本主题从 zhang-light 主题修改而来
-* 缝合了 Roundark 主题的标签页样式和 BearLight 主题的一些设计
-* 感谢 Rc 和 weihan-Chen 在标签页功能上给予的帮助
-* 搜索界面采用左右分栏，使用了链接社区 abbj 的代码
-* 感谢 Roy 开发的列表转思维导图的功能和萌新的修改；感谢九炎大佬提供的js脚本，可以省略输入自定义属性这个步骤
+在设置了正确的 `co` 属性之后，继续设置 `cot` 属性，就可以提供 callout 图片下方的提示文字。
 
-### 使用说明
+![cot:example](./src/readme-source/cot-example.png)
 
-* 本主题致力于无限接近于所见即所得，方便大家导出为PDF
-  * 现阶段还做不到完全一致
+### `coc` 属性
 
-* 本主题强制限制页面宽度为 21cm, 为 A4 纸的宽度
-* 页边距可以通过修改 CSS 进行设置
-* 导出PDF时，预览样式和导出样式存在一定误差，不是 100% 相同
-* 各种自定义属性和设置和 zhang-light 主题保持一致
-* 本主题将各种类型的代码块都进行了拆分，方便大家进行修改
-* 有一些 zhang-light 主题的功能并没有加到本主题中
-  * 比如链接前面的icon图标
-  * 比如“/”分栏
+由于在`通知页面事项`功能中提供额外信息。
 
+### `cotime` 属性
 
-### Style 文件夹代码分类
+由于在`通知页面事项`功能中提供时间检查。
 
-| 分类                      | 解释           | 分类                         |
-| --------------------------- | ---------------- | ------------------------------ |
-| color-font                | 颜色和字体     |                              |
-| appearance                | 界面外观       | 包含文档树，标签页，面包屑等 |
-| inline-span               | 行内元素       | 包含标签，行内代码，高亮等   |
-| block-div                 | 块级元素       | 包含表格，引用，代码块等     |
-| custom-function-for-file  | 文档自定义属性 |                              |
-| csutom-function-for-block | 块的自定义属性 |                              |
-| others                    | 其他样式       |                              |
+## 通知页面事项
 
-### Chrome-A4 主题专属属性
+当页面中存在属性值为 `"notice", "todo", "plan", "wait", "homework"` 的 callout 块时，使用快捷键 `ctrl+F1` 即可检索页面事项信息，并进行消息提示。
 
-| 名称              | 属性                  | 备注 |
-| ----------------- | --------------------- | ---- |
-| A4纸横排          | f=heng                |      |
-| 页面全宽          | f=ful                 |      |
-| 导出样式/打印样式 | f=daochu 或者 f=print |      |
+![msg-checker](./src/readme-source/msg-checker.png)
 
+如图配置之后，在页面中使用快捷键 `ctrl+F2` 即可检索页面事项信息，并进行消息提示。
 
+![msg-checker-emit](./src/readme-source/msg-checker-emit.png)
 
-### 列表转表格/思维导图用法
+## 展示 SQL 嵌入块的 hpath
 
-- 点击列表左上角图标，在弹出窗口中可以选择显示为导图，显示为表格，显示为默认
-  - 属性值为 f=dt(导图)，f=bg(表格)
+在任何使用了 SQL 检索的展示块中，使用 使用快捷键 `ctrl+F3`，即可展示 SQL 嵌入块的 hpath 信息。
 
-![列表转导图.gif](https://tva1.sinaimg.cn/large/0082QUidly1h236c9w14jg312j0rj7cc.gif)
+![sql](./src/readme-source/sql.png)
 
-### 图片展示
+## 卡片功能
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zd9vihsj31hc0smdmu.jpg)
+### 简单文字卡片
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zhob47xj31hc0smnbd.jpg)
+在任何文字块中，使用自定义属性 `card` 即可赋予卡片正面文字，原内容需要鼠标悬浮后才能显示。
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zjouv7sj31hc0sm46x.jpg)
+![card](./src/readme-source/card.png)
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zk6bjogj31hc0smn5q.jpg)
+### 超级块卡片
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zm61xdnj31hc0smx4o.jpg)
+对于只有两栏的超级块，设置自定义属性 `f` 为 `card` 即可实现复杂的卡片内容。
 
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zo3wn3pj31hc0smtij.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zp7rho7j31hc0sm7bz.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zpucx5fj31hc0sm4gg.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h14zs6jrdmj31hc0smdr6.jpg)
+![super-card](./src/readme-source/super-card.png)

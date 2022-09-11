@@ -1058,12 +1058,22 @@
 /* 定义 */
 .protyle-wysiwyg [data-node-id][custom-co~="dy"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="define"].bq {
-	box-shadow: 0 0 0 2px #000 inset;
+	box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .bq[custom-co~="dy"]::after,
 .bq[custom-co~="define"]::after {
 	background-image: url("callout/define.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="yy"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="refer"].bq {
+	box-shadow: 0 0 0 2px #3c58a1 inset;
+}
+
+.bq[custom-co~="yy"]::after,
+.bq[custom-co~="refer"]::after {
+	background-image: url("callout/refer.jpg");
 }
 
 /* 计划 */

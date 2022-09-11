@@ -1286,6 +1286,22 @@
 	background-image: url("callout/explain.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="break"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="break"]::after {
+	background-image: url("callout/break.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="attack"].bq {
+	box-shadow: 0 0 0 2px #fb5532 inset;
+}
+
+.bq[custom-co~="attack"]::after {
+	background-image: url("callout/attack.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="cd"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="archive"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;

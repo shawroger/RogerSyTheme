@@ -902,11 +902,11 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="review"].bq {
-	box-shadow: 0 0 0 2px #7e7469 inset;
+	box-shadow: 0 0 0 2px #b4362a inset;
 }
 
 .bq[custom-co~="review"]::after {
-	background-image: url("callout/review.jpg");
+	background-image: url("callout/review.png");
 }
 
 /* 待定、存疑 */

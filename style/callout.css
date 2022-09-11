@@ -831,6 +831,14 @@
 	background-image: url("callout/delete.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="relax"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="relax"]::after {
+	background-image: url("callout/relax.png");
+}
+
 /* 改 */
 
 .protyle-wysiwyg [data-node-id][custom-co~="u"].bq,

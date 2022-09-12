@@ -747,12 +747,14 @@
 
 /* 震惊 */
 .protyle-wysiwyg [data-node-id][custom-co~="zj"].bq,
-.protyle-wysiwyg [data-node-id][custom-co~="shock"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="shock"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="surprise"].bq {
 	box-shadow: 0 0 0 2px #f38c57 inset;
 }
 
 .bq[custom-co~="zj"]::after,
-.bq[custom-co~="shock"]::after {
+.bq[custom-co~="shock"]::after,
+.bq[custom-co~="surprise"]::after {
 	background-image: url("callout/shock.png");
 }
 

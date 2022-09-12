@@ -387,7 +387,10 @@ function calloutEmit() {
 			cb: calloutFormEmit,
 		},
 	];
+	let emitCount = 0;
 	const calloutList = document.querySelectorAll("[custom-co]");
+
+	console.log(calloutList);
 
 	calloutList.forEach((e) => {
 		const cotype = e.getAttribute("custom-co");
@@ -399,8 +402,19 @@ function calloutEmit() {
 
 		if (item && item.cb) {
 			item.cb(title, content, time);
+			emitCount++;
 		}
 	});
+
+	if (!emitCount) {
+		sendSyMsg("暂无通知事项");
+	}
+}
+
+function addRightBarIcon(href) {
+	return ` 
+	<img src="/appearance/themes/RogerSyTheme/src/${href}">
+	 `;
 }
 
 window.addEventListener("keydown", (event) => {
@@ -432,3 +446,39 @@ window.addEventListener("keydown", (event) => {
 		}
 	}
 });
+
+function initDOM() {
+	const rightDom = document.querySelector("#dockRight > div:nth-child(1)");
+
+	const domList = [
+		{
+			label: "展示 SQL 嵌入块的 hpath",
+			href: "show-sql.svg",
+			bindAction: addRenderNoteRoute,
+		},
+		{
+			label: "检查通知页面事项",
+			href: "check-notice.svg",
+			bindAction: calloutEmit,
+		},
+		{
+			label: "强制重新加载",
+			href: "refresh.svg",
+			bindAction: forceReload,
+		},
+	];
+
+	domList.forEach((item) => {
+		const span = document.createElement("span");
+		span.ariaLabel = item.label;
+		span.className =
+			"dock__item b3-tooltips b3-tooltips__w rg-sy-theme-add-right-bar";
+		span.innerHTML = addRightBarIcon(item.href);
+		span.addEventListener("click", item.bindAction);
+		rightDom.appendChild(span);
+	});
+}
+
+setTimeout(() => {
+	initDOM();
+}, 300);

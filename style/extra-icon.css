@@ -24,14 +24,6 @@
 
 .protyle-wysiwyg
 	[data-node-id]
-	span[data-type="a"][data-href*="qq.com"]:not(:empty)::before,
-.b3-typography a[href*="qq.com"]::before {
-	content: "";
-	background-image: url("../icon/qq.png");
-}
-
-.protyle-wysiwyg
-	[data-node-id]
 	span[data-type="a"][data-href*="www.voidtools.com"]:not(:empty)::before,
 .b3-typography a[href*="www.voidtools.com"]::before {
 	content: "";
@@ -454,14 +446,6 @@
 
 .protyle-wysiwyg
 	[data-node-id]
-	span[data-type="a"][data-href*="new.qq.com"]:not(:empty)::before,
-.b3-typography a[href*="new.qq.com"]::before {
-	content: "";
-	background-image: url("../icon/new.qq.com.ico");
-}
-
-.protyle-wysiwyg
-	[data-node-id]
 	span[data-type="a"][data-href*="box-shadow.dev"]:not(:empty)::before,
 .b3-typography a[href*="box-shadow.dev"]::before {
 	content: "";
@@ -523,7 +507,6 @@
 	background-image: url("../icon/www.weshineapp.com.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="www.pigai.org"]:not(:empty)::before,
@@ -532,11 +515,18 @@
 	background-image: url("../icon/www.pigai.org.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="vercel.com"]:not(:empty)::before,
 .b3-typography a[href*="vercel.com"]::before {
 	content: "";
 	background-image: url("../icon/vercel.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="freesvg.org"]:not(:empty)::before,
+.b3-typography a[href*="freesvg.org"]::before {
+	content: "";
+	background-image: url("../icon/freesvg.org.ico");
 }

@@ -50,6 +50,23 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="qq.com"]:not(:empty)::before,
+.b3-typography a[href*="qq.com"]::before {
+	content: "";
+	background-image: url("../icon/qq.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="new.qq.com"]:not(:empty)::before,
+.b3-typography a[href*="new.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/new.qq.com.ico");
+}
+
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="cnblogs.com"]:not(:empty)::before,
 .b3-typography a[href*="cnblogs.com"]::before {
 	content: "";

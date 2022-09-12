@@ -517,6 +517,10 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="vercel.app"]:not(:empty)::before,
+.b3-typography a[href*="vercel.app"]::before,
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="vercel.com"]:not(:empty)::before,
 .b3-typography a[href*="vercel.com"]::before {
 	content: "";

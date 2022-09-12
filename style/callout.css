@@ -452,12 +452,21 @@
 .bq[custom-co~="more"]::after {
 	background-image: url("callout/more.png");
 }
+
 .protyle-wysiwyg [data-node-id][custom-co~="wind"].bq {
 	box-shadow: 0 0 0 2px #cebeb1 inset;
 }
 
-.bq[custom-co~="more"]::after {
+.bq[custom-co~="wind"]::after {
 	background-image: url("callout/wind.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="observe"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="observe"]::after {
+	background-image: url("callout/observe.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="td"].bq,

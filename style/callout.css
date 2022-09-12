@@ -699,6 +699,30 @@
 	background-image: url("callout/happy.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="music"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="music"]::after {
+	background-image: url("callout/music.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="poem"].bq {
+	box-shadow: 0 0 0 2px #e865a1 inset;
+}
+
+.bq[custom-co~="poem"]::after {
+	background-image: url("callout/poem.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="read"].bq {
+	box-shadow: 0 0 0 2px #fd8469 inset;
+}
+
+.bq[custom-co~="read"]::after {
+	background-image: url("callout/read.png");
+}
+
 /* 思考 */
 .protyle-wysiwyg [data-node-id][custom-co~="sk"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="think"].bq {

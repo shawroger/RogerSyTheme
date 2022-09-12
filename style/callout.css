@@ -51,7 +51,10 @@
 	width: 2em;
 	height: 2em;
 	background-size: 2em 2em;
-	border-radius: 50%;
+}
+
+.bq[custom-co~="rad"]::after {
+	border-radius: 50% !important;
 }
 
 .bq[custom-co][custom-cot]::after {
@@ -459,6 +462,40 @@
 
 .bq[custom-co~="wind"]::after {
 	background-image: url("callout/wind.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="taiji"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="observe"]::after {
+	background-image: url("callout/taiji.gif");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="fire"].bq {
+	box-shadow: 0 0 0 2px #ef461e inset;
+}
+
+.bq[custom-co~="fire"]::after {
+	background-image: url("callout/fire.gif");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="travel"].bq {
+	box-shadow: 0 0 0 2px #3e6d8f inset;
+}
+
+.bq[custom-co~="travel"]::after {
+	background-image: url("callout/travel.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="road"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="route"].bq {
+	box-shadow: 0 0 0 2px #3e6d8f inset;
+}
+
+.bq[custom-co~="road"]::after,
+.bq[custom-co~="route"]::after {
+	background-image: url("callout/route.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="observe"].bq {

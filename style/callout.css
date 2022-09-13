@@ -110,8 +110,11 @@
 	height: 2em;
 	min-height: 2em;
 	background-size: 2em 2em;
-	border-radius: 50%;
 	animation: InfiniteRotate 1s linear infinite;
+}
+
+.bq[custom-co~="rad"]:hover::after {
+	border-radius: 50%;
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="stop"].bq,
@@ -181,6 +184,15 @@
 .bq[custom-co~="to"]::after {
 	background-image: url("callout/to.png");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="grade"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="grade"]::after {
+	background-image: url("callout/grade.png");
+}
+
 /*正确*/
 
 .protyle-wysiwyg [data-node-id][custom-co~="check"].bq,
@@ -1419,6 +1431,14 @@
 
 .bq[custom-co~="start"]::after {
 	background-image: url("callout/start.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="result"].bq {
+	box-shadow: 0 0 0 2px #65cecc inset;
+}
+
+.bq[custom-co~="result"]::after {
+	background-image: url("callout/result.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="cl"].bq,

@@ -1425,12 +1425,12 @@
 
 .protyle-wysiwyg [data-node-id][custom-co~="tl"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="discuss"].bq {
-	box-shadow: 0 0 0 2px #000000 inset;
+	box-shadow: 0 0 0 2px #b91901 inset;
 }
 
 .bq[custom-co~="tl"]::after,
 .bq[custom-co~="discuss"]::after {
-	background-image: url("callout/discuss.webp");
+	background-image: url("callout/discuss.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {

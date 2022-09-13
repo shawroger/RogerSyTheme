@@ -1433,6 +1433,14 @@
 	background-image: url("callout/discuss.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="eye"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="eye"]::after {
+	background-image: url("callout/eye.webp");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }

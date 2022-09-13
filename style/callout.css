@@ -1413,6 +1413,14 @@
 	background-image: url("callout/book.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="start"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="start"]::after {
+	background-image: url("callout/start.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="cl"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="material"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
@@ -1483,6 +1491,16 @@
 .bq[custom-co~="gg"]::after,
 .bq[custom-co~="embarrassed"]::after {
 	background-image: url("callout/embarrassed.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="wd"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="die"].bq {
+	box-shadow: 0 0 0 2px #ffcf00 inset;
+}
+
+.bq[custom-co~="wd"]::after,
+.bq[custom-co~="die"]::after {
+	background-image: url("callout/die.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="zs"].bq,

@@ -1413,6 +1413,26 @@
 	background-image: url("callout/book.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="cl"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="material"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="cl"]::after,
+.bq[custom-co~="material"]::after {
+	background-image: url("callout/material.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tl"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="discuss"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="tl"]::after,
+.bq[custom-co~="discuss"]::after {
+	background-image: url("callout/discuss.webp");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }

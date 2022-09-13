@@ -535,11 +535,18 @@
 	background-image: url("../icon/freesvg.org.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="myzaker.com"]:not(:empty)::before,
 .b3-typography a[href*="myzaker.com"]::before {
 	content: "";
 	background-image: url("../icon/myzaker.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="docs.qq.com"]:not(:empty)::before,
+.b3-typography a[href*="docs.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/docs.qq.com.ico");
 }

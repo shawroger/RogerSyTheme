@@ -1475,6 +1475,26 @@
 	background-image: url("callout/archive.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="gg"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="embarrassed"].bq {
+	box-shadow: 0 0 0 2px #ffcf00 inset;
+}
+
+.bq[custom-co~="gg"]::after,
+.bq[custom-co~="embarrassed"]::after {
+	background-image: url("callout/embarrassed.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="zs"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="cite"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="zs"]::after,
+.bq[custom-co~="cite"]::after {
+	background-image: url("callout/cite.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="shop"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="shopping"].bq {
 	box-shadow: 0 0 0 2px #1c8adb inset;

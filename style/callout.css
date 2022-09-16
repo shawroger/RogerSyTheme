@@ -185,6 +185,14 @@
 	background-image: url("callout/to.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="dyan"].bq {
+	box-shadow: 0 0 0 2px #f9e445 inset;
+}
+
+.bq[custom-co~="dyan"]::after {
+	background-image: url("callout/dyan.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="grade"].bq {
 	box-shadow: 0 0 0 2px black inset;
 }

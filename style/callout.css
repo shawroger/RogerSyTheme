@@ -185,12 +185,20 @@
 	background-image: url("callout/to.png");
 }
 
-.protyle-wysiwyg [data-node-id][custom-co~="dyan"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="stare"].bq {
 	box-shadow: 0 0 0 2px #f9e445 inset;
 }
 
-.bq[custom-co~="dyan"]::after {
-	background-image: url("callout/dyan.jpg");
+.bq[custom-co~="stare"]::after {
+	background-image: url("callout/stare.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="cheer"].bq {
+	box-shadow: 0 0 0 2px #f4e1a3 inset;
+}
+
+.bq[custom-co~="cheer"]::after {
+	background-image: url("callout/cheer.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="grade"].bq {

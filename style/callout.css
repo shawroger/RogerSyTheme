@@ -185,12 +185,60 @@
 	background-image: url("callout/to.png");
 }
 
-.protyle-wysiwyg [data-node-id][custom-co~="stare"].bq {
+.protyle-wysiwyg [data-node-id][custom-co~="tbzj"].bq {
 	box-shadow: 0 0 0 2px #f9e445 inset;
 }
 
-.bq[custom-co~="stare"]::after {
-	background-image: url("callout/stare.jpg");
+.bq[custom-co~="tbzj"]::after {
+	background-image: url("callout/tbzj.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tblh"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tblh"]::after {
+	background-image: url("callout/tblh.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbyh"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbyh"]::after {
+	background-image: url("callout/tbyh.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbdz"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbdz"]::after {
+	background-image: url("callout/tbdz.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbax"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbax"]::after {
+	background-image: url("callout/tbax.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbts"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbts"]::after {
+	background-image: url("callout/tbts.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbjj"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbjj"]::after {
+	background-image: url("callout/tbjj.jpg");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="cheer"].bq {

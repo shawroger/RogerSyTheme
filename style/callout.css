@@ -233,12 +233,68 @@
 	background-image: url("callout/tbts.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="tbps"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbps"]::after {
+	background-image: url("callout/tbps.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="tbjj"].bq {
 	box-shadow: 0 0 0 2px #fedf41 inset;
 }
 
 .bq[custom-co~="tbjj"]::after {
 	background-image: url("callout/tbjj.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbtx"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbtx"]::after {
+	background-image: url("callout/tbtx.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbwn"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbwn"]::after {
+	background-image: url("callout/tbwn.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbxn"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbxn"]::after {
+	background-image: url("callout/tbxn.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbxx"].bq {
+	box-shadow: 0 0 0 2px #fedf41 inset;
+}
+
+.bq[custom-co~="tbxx"]::after {
+	background-image: url("callout/tbxx.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbgg"].bq {
+	box-shadow: 0 0 0 2px #f3613a inset;
+}
+
+.bq[custom-co~="tbgg"]::after {
+	background-image: url("callout/tbgg.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tblz"].bq {
+	box-shadow: 0 0 0 2px #f3613a inset;
+}
+
+.bq[custom-co~="tblz"]::after {
+	background-image: url("callout/tblz.jpg");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="cheer"].bq {

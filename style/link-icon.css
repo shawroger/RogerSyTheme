@@ -64,7 +64,6 @@
 	background-image: url("../icon/new.qq.com.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="cnblogs.com"]:not(:empty)::before,
@@ -167,6 +166,14 @@
 .b3-typography a[href*="ld246.com"]::before {
 	content: "";
 	background-image: url("../icon/ld246_com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="163.com"]:not(:empty)::before,
+.b3-typography a[href*="163.com"]::before {
+	content: "";
+	background-image: url("../icon/163.com.ico");
 }
 
 .protyle-wysiwyg

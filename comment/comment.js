@@ -211,7 +211,7 @@ class Comment {
 ${this.input.innerHTML}
 {: custom-quote-id="${quoteId}" custom-quote-type="${
 			config.attrs.type.comment
-		}" custom-quote-time="${dateFormat("YYYY-mm-dd HH:MM:SS", new Date())}"}
+		}" custom-quote-time="${dateFormat("YYYY.mm.dd HH:MM:SS", new Date())}"}
 `;
 
 		// 引文内容块

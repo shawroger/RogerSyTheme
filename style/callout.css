@@ -273,6 +273,14 @@
 	background-image: url("callout/tbzb.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="tbfn"].bq {
+	box-shadow: 0 0 0 2px #f9e445 inset;
+}
+
+.bq[custom-co~="tbfn"]::after {
+	background-image: url("callout/tbfn.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="tbwg"].bq {
 	box-shadow: 0 0 0 2px #f9e445 inset;
 }

@@ -185,6 +185,30 @@
 	background-image: url("callout/to.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="talk"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="talk"]::after {
+	background-image: url("callout/talk.webp");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="sick"].bq {
+	box-shadow: 0 0 0 2px black inset;
+}
+
+.bq[custom-co~="sick"]::after {
+	background-image: url("callout/sick.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="hospital"].bq {
+	box-shadow: 0 0 0 2px #319997 inset;
+}
+
+.bq[custom-co~="hospital"]::after {
+	background-image: url("callout/hospital.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="food"].bq {
 	box-shadow: 0 0 0 2px #b289c9 inset;
 }

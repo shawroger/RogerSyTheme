@@ -1308,6 +1308,16 @@
 	background-image: url("callout/miss.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="select"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="choose"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="select"]::after,
+.bq[custom-co~="choose"]::after {
+	background-image: url("callout/choose.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="funny"].bq {
 	box-shadow: 0 0 0 2px #006098 inset;
 }
@@ -1588,6 +1598,16 @@
 .bq[custom-co~="mj"]::after,
 .bq[custom-co~="sunglasses"]::after {
 	background-image: url("callout/sunglasses.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="wyj"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="telescope"].bq {
+	box-shadow: 0 0 0 2px #073349 inset;
+}
+
+.bq[custom-co~="wyj"]::after,
+.bq[custom-co~="telescope"]::after {
+	background-image: url("callout/telescope.png");
 }
 
 /* 表单 */

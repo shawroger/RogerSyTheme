@@ -1308,6 +1308,14 @@
 	background-image: url("callout/miss.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="funny"].bq {
+	box-shadow: 0 0 0 2px #006098 inset;
+}
+
+.bq[custom-co~="funny"]::after {
+	background-image: url("callout/funny.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="review"].bq {
 	box-shadow: 0 0 0 2px #b4362a inset;
 }

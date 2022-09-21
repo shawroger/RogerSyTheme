@@ -119,13 +119,13 @@ class SiyuanUtil {
 	}
 }
 
-window.addEventListener("keydown", (event) => {
-	const keycode = event.key;
-	const ctrlKeyCode = event.ctrlKey;
+// window.addEventListener("keydown", (event) => {
+// 	const keycode = event.key;
+// 	const ctrlKeyCode = event.ctrlKey;
 
-	if (keycode === "`" && ctrlKeyCode) {
-		new SiyuanUtil();
-	}
-});
+// 	if (keycode === "`" && ctrlKeyCode) {
+// 		new SiyuanUtil();
+// 	}
+// });
 
 new SiyuanUtil();

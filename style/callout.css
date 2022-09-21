@@ -1294,7 +1294,7 @@
 
 .bq[custom-co~="ot"]::after,
 .bq[custom-co~="vomit"]::after {
-	background-image: url("callout/vomit.png");
+	background-image: url("callout/vomit.jpg");
 }
 
 /* 爆炸 */

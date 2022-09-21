@@ -1410,6 +1410,14 @@
 	background-image: url("callout/cost.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="quote"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="quote"]::after {
+	background-image: url("callout/quote.png");
+}
+
 /*  再见 */
 .protyle-wysiwyg [data-node-id][custom-co~="bye"].bq {
 	box-shadow: 0 0 0 2px #ffdcd5 inset;
@@ -1478,7 +1486,7 @@
 .protyle-wysiwyg [data-node-id][custom-co~="yh"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="mess"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="puzzle"].bq {
-	box-shadow: 0 0 0 2px #deffd2 inset;
+	box-shadow: 0 0 0 2px #3cd505 inset;
 }
 
 .bq[custom-co~="kh"]::after,

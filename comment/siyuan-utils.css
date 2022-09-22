@@ -46,13 +46,12 @@ strong[style="blank"]:hover {
 }
 
 /* Inline comment */
-strong[style*="quote"] {
-	border: 1.5px dashed #20b2aa;
-	background-color: #e0ffff;
-	padding-bottom: 1px;
-	font-weight: normal;
+span[style*="quote"] {
 	cursor: pointer;
-	/* border-radius: 0.5em; */
+	padding-bottom: 1px;
+	background-color: #e0ffff;
+	border: 1.5px dashed #20b2aa;
+	font-weight: normal !important;
 }
 
 #lz-comment-box {

@@ -124,3 +124,10 @@
 	}
 }
 
+span[data-type~="inline-memo"] {
+	cursor: pointer;
+	padding-bottom: 1px;
+	font-weight: normal !important;
+	background-color: lightpink !important;
+	border: 1.5px dashed #7c6a6d !important;
+}

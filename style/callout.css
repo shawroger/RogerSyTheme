@@ -1308,6 +1308,22 @@
 	background-image: url("callout/boom.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="kd"].bq {
+	box-shadow: 0 0 0 2px #262636 inset;
+}
+
+.bq[custom-co~="kd"]::after {
+	background-image: url("callout/kd.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="express"].bq {
+	box-shadow: 0 0 0 2px #0773b2 inset;
+}
+
+.bq[custom-co~="express"]::after {
+	background-image: url("callout/express.png");
+}
+
 /* 震惊 */
 .protyle-wysiwyg [data-node-id][custom-co~="zj"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="shock"].bq,

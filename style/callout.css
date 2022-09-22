@@ -1757,6 +1757,14 @@
 	background-image: url("callout/aim.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="weather"].bq {
+	box-shadow: 0 0 0 2px #0091cf inset;
+}
+
+.bq[custom-co~="weather"]::after {
+	background-image: url("callout/weather.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="shield"].bq {
 	box-shadow: 0 0 0 2px #273b7a inset;
 }

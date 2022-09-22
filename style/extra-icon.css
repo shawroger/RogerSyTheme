@@ -558,3 +558,11 @@
 	content: "";
 	background-image: url("../icon/freeiconspng.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ziquyun.com"]:not(:empty)::before,
+.b3-typography a[href*="ziquyun.com"]::before {
+	content: "";
+	background-image: url("../icon/ziquyun.com.ico");
+}

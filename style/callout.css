@@ -1246,6 +1246,22 @@
 	background-image: url("callout/music.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="upload"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="upload"]::after {
+	background-image: url("callout/upload.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="download"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="download"]::after {
+	background-image: url("callout/download.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="poem"].bq {
 	box-shadow: 0 0 0 2px #e865a1 inset;
 }

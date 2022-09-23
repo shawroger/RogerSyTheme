@@ -566,3 +566,11 @@
 	content: "";
 	background-image: url("../icon/ziquyun.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="kdocs.cn"]:not(:empty)::before,
+.b3-typography a[href*="kdocs.cn"]::before {
+	content: "";
+	background-image: url("../icon/kdocs.cn.png");
+}

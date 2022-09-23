@@ -1246,6 +1246,31 @@
 	background-image: url("callout/music.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="karma"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="karma"]::after {
+	background-image: url("callout/karma.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="dharma"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="dharma"]::after {
+	background-image: url("callout/dharma.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="feel"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="feeling"].bq {
+	box-shadow: 0 0 0 2px #ff5f96 inset;
+}
+
+.bq[custom-co~="feel"]::after .bq[custom-co~="feeling"]::after {
+	background-image: url("callout/feeling.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="sight"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }

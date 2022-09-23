@@ -273,6 +273,22 @@
 	background-image: url("callout/tbhjlh.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="tbbs"].bq {
+	box-shadow: 0 0 0 2px #f9e445 inset;
+}
+
+.bq[custom-co~="tbbs"]::after {
+	background-image: url("callout/tbbs.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="tbad"].bq {
+	box-shadow: 0 0 0 2px #f9e445 inset;
+}
+
+.bq[custom-co~="tbad"]::after {
+	background-image: url("callout/tbad.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="tbsx"].bq {
 	box-shadow: 0 0 0 2px #f9e445 inset;
 }
@@ -1191,11 +1207,11 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="shit"].bq {
-	box-shadow: 0 0 0 2px #723a2d inset;
+	box-shadow: 0 0 0 2px #fdb518 inset;
 }
 
 .bq[custom-co~="shit"]::after {
-	background-image: url("callout/shit.png");
+	background-image: url("callout/shit.jpg");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="cry"].bq {

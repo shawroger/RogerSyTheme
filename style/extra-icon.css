@@ -577,6 +577,10 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="wjx.top"]:not(:empty)::before,
+.b3-typography a[href*="wjx.cn"]::before,
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="wjx.cn"]:not(:empty)::before,
 .b3-typography a[href*="wjx.cn"]::before {
 	content: "";

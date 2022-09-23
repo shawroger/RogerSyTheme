@@ -1246,6 +1246,24 @@
 	background-image: url("callout/music.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="offer"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="offer"]::after {
+	background-image: url("callout/offer.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="status"].bq,
+.protyle-wysiwyg [data-node-id][custom-co~="state"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="state"]::after,
+.bq[custom-co~="status"]::after {
+	background-image: url("callout/status.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="karma"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }

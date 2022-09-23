@@ -1246,6 +1246,14 @@
 	background-image: url("callout/music.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="sight"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="sight"]::after {
+	background-image: url("callout/sight.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="upload"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }

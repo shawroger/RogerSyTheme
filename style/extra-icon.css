@@ -586,3 +586,11 @@
 	content: "";
 	background-image: url("../icon/wjx.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="weibo.cn"]:not(:empty)::before,
+.b3-typography a[href*="weibo.cn"]::before {
+	content: "";
+	background-image: url("../icon/weibo.cn.ico");
+}

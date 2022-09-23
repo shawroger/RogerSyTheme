@@ -1262,6 +1262,14 @@
 	background-image: url("callout/music.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="job"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="job"]::after {
+	background-image: url("callout/job.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="offer"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
@@ -1670,6 +1678,14 @@
 
 .bq[custom-co~="funny"]::after {
 	background-image: url("callout/funny.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="event"].bq {
+	box-shadow: 0 0 0 2px #a4cff2 inset;
+}
+
+.bq[custom-co~="event"]::after {
+	background-image: url("callout/event.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="review"].bq {
@@ -2153,12 +2169,28 @@
 	background-image: url("callout/eye.webp");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="location"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="location"]::after {
+	background-image: url("callout/location.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .bq[custom-co~="explain"]::after {
 	background-image: url("callout/explain.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="work"].bq {
+	box-shadow: 0 0 0 2px #304269 inset;
+}
+
+.bq[custom-co~="work"]::after {
+	background-image: url("callout/work.webp");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="break"].bq {

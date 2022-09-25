@@ -1023,8 +1023,16 @@
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
-.bq[custom-co~="observe"]::after {
+.bq[custom-co~="taiji"]::after {
 	background-image: url("callout/taiji.gif");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="rust"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="rust"]::after {
+	background-image: url("../icon/rust-lang.org.svg");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="fire"].bq {
@@ -1033,6 +1041,38 @@
 
 .bq[custom-co~="fire"]::after {
 	background-image: url("callout/fire.gif");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="thunder"].bq {
+	box-shadow: 0 0 0 2px #353f58 inset;
+}
+
+.bq[custom-co~="thunder"]::after {
+	background-image: url("callout/thunder.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="gongan"].bq {
+	box-shadow: 0 0 0 2px #2dbc97 inset;
+}
+
+.bq[custom-co~="gongan"]::after {
+	background-image: url("callout/gongan.webp");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="gongan"].bq {
+	box-shadow: 0 0 0 2px #2dbc97 inset;
+}
+
+.bq[custom-co~="gongan"]::after {
+	background-image: url("callout/gongan.webp");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="gonggao"].bq {
+	box-shadow: 0 0 0 2px #262636 inset;
+}
+
+.bq[custom-co~="gonggao"]::after {
+	background-image: url("callout/gonggao.webp");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="travel"].bq {
@@ -1686,6 +1726,30 @@
 
 .bq[custom-co~="event"]::after {
 	background-image: url("callout/event.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="fear"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="fear"]::after {
+	background-image: url("callout/fear.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="history"].bq {
+	box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.bq[custom-co~="history"]::after {
+	background-image: url("callout/history.jpg");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="winnie"].bq {
+	box-shadow: 0 0 0 2px #fcc75f inset;
+}
+
+.bq[custom-co~="winnie"]::after {
+	background-image: url("callout/winnie.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="review"].bq {

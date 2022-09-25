@@ -594,3 +594,43 @@
 	content: "";
 	background-image: url("../icon/weibo.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="segmentfault.com"]:not(:empty)::before,
+.b3-typography a[href*="segmentfault.com"]::before {
+	content: "";
+	background-image: url("../icon/segmentfault.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="onlineconvertfree.com"]:not(:empty)::before,
+.b3-typography a[href*="onlineconvertfree.com"]::before {
+	content: "";
+	background-image: url("../icon/onlineconvertfree.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="docs.rs"]:not(:empty)::before,
+.b3-typography a[href*="docs.rs"]::before {
+	content: "";
+	background-image: url("../icon/docs.rs.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="rust-lang.org"]:not(:empty)::before,
+.b3-typography a[href*="rust-lang.org"]::before {
+	content: "";
+	background-image: url("../icon/rust-lang.org.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="bsigroup.com"]:not(:empty)::before,
+.b3-typography a[href*="bsigroup.com"]::before {
+	content: "";
+	background-image: url("../icon/bsigroup.com.ico");
+}

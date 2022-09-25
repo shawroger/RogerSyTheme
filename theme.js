@@ -168,8 +168,6 @@ function ViewMonitor(event) {
 	设置思源块属性(id, attrs);
 }
 
-setTimeout(() => ClickMonitor(), 1000);
-/* inject local script */
 function injectCommentFunc() {
 	const script = document.querySelector("#emojiScript");
 	const js = document.createElement("script");
@@ -447,19 +445,56 @@ window.addEventListener("keydown", (event) => {
 	}
 });
 
+function toggleCalender() {
+	const widgetDOM = document.createElement("div");
+	widgetDOM.id = "calendar-bar";
+	widgetDOM.className = "iframe";
+	widgetDOM.innerHTML = `<div class="iframe-content">
+	<iframe 
+		src="/widgets/calendar-bar"
+		data-src="/widgets/calendar-bar"
+		data-subtype="widget"
+	></iframe>
+</div>`;
+	const container = document.getElementById("dockRight");
+
+	if (!document.getElementById("calendar-bar")) {
+		container.prepend(widgetDOM);
+	}
+
+	const widgetDiv = document.getElementById("calendar-bar");
+
+	if (widgetDiv.style.visibility === "visible") {
+		widgetDiv.style.visibility = "hidden";
+	} else {
+		widgetDiv.style.visibility = "visible";
+	}
+}
+
 function initDOM() {
 	const rightDom = document.querySelector("#dockRight > div:nth-child(1)");
 
 	const domList = [
+		{
+			label: "检查通知页面事项",
+			href: "check-notice.svg",
+			bindAction: calloutEmit,
+		},
+		{
+			label: "检索笔记 history 信息",
+			href: "history-icon.png",
+			id: "history",
+			bindAction: checkNoteHistory,
+		},
 		{
 			label: "展示 SQL 嵌入块的 hpath",
 			href: "show-sql.svg",
 			bindAction: addRenderNoteRoute,
 		},
 		{
-			label: "检查通知页面事项",
-			href: "check-notice.svg",
-			bindAction: calloutEmit,
+			label: "检索 calender 笔记",
+			href: "calender-bar.webp",
+			bindAction: toggleCalender,
 		},
 		{
 			label: "强制重新加载",
@@ -471,6 +506,9 @@ function initDOM() {
 	domList.forEach((item) => {
 		const span = document.createElement("span");
 		span.ariaLabel = item.label;
+		if (item.id) {
+			span.id = item.id;
+		}
 		span.className =
 			"dock__item b3-tooltips b3-tooltips__w rg-sy-theme-add-right-bar";
 		span.innerHTML = addRightBarIcon(item.href);
@@ -482,3 +520,434 @@ function initDOM() {
 setTimeout(() => {
 	initDOM();
 }, 300);
+
+function checkNoteHistory() {
+	let myHistory = document.getElementById("myHistory");
+
+	if (myHistory.style.visibility === "hidden") {
+		myHistory.style.visibility = "visible";
+	}
+}
+
+function formatIndex(index) {
+	let s = "";
+	return (index = index + 1);
+
+	if (index >= 100) {
+		s = index;
+	} else if (index >= 10) {
+		s = "&nbsp;" + index;
+	} else {
+		s = "&nbsp;&nbsp;" + index;
+	}
+
+	return "#" + s;
+}
+
+function parseTime(time, onlyEmoji = false) {
+	const hourEmojis = [
+		"🕐",
+		"🕑",
+		"🕒",
+		"🕓",
+		"🕔",
+		"🕕",
+		"🕖",
+		"🕗",
+		"🕘",
+		"🕙",
+		"🕚",
+		"🕛",
+	];
+
+	if (onlyEmoji) {
+		return hourEmojis[(new Date(time).getHours() + 11) % 12] || "⌚";
+	}
+
+	return (
+		(hourEmojis[(new Date(time).getHours() + 11) % 12] || "⌚") +
+		time.replace(/-/g, ".")
+	);
+}
+
+function initHistoryCheck() {
+	Date.prototype.Format = function (fmt) {
+		var o = {
+			"M+": this.getMonth() + 1,
+			"d+": this.getDate(),
+			"h+": this.getHours(),
+			"m+": this.getMinutes(),
+			"s+": this.getSeconds(),
+			"q+": Math.floor((this.getMonth() + 3) / 3),
+			S: this.getMilliseconds(),
+		};
+		if (/(y+)/.test(fmt))
+			fmt = fmt.replace(
+				RegExp.$1,
+				(this.getFullYear() + "").substr(4 - RegExp.$1.length)
+			);
+		for (var k in o)
+			if (new RegExp("(" + k + ")").test(fmt))
+				fmt = fmt.replace(
+					RegExp.$1,
+					RegExp.$1.length == 1
+						? o[k]
+						: ("00" + o[k]).substr(("" + o[k]).length)
+				);
+		return fmt;
+	};
+
+	let historyArr = [];
+	if (localStorage.getItem("historyArr")) {
+		historyArr = JSON.parse(localStorage.getItem("historyArr"));
+	}
+
+	function update_history_tags(newTag) {
+		if (!newTag) return;
+		let tag = undefined;
+		if (newTag.tagName === "DIV") {
+			tag = newTag.querySelector("li[data-type='tab-header']");
+		} else if (newTag.tagName === "LI") {
+			tag = newTag;
+		} else {
+			return;
+		}
+		let historyItemIcon = `<use xlink:href="#icon-1f4c4"></use>`;
+		let docIcon = tag.querySelector(".item__icon > svg");
+		if (docIcon) {
+			historyItemIcon = docIcon.innerHTML;
+		}
+
+		let nodeText = tag.querySelector("span.item__text").innerText;
+
+		let timeStamp = tag.getAttribute("data-activetime");
+		timeStamp = new Date(parseInt(timeStamp)).Format("yyyy-MM-dd hh:mm:ss");
+		let data_id = tag.getAttribute("data-id");
+		setTimeout(() => {
+			let current_doc = document.querySelector(
+				`div.fn__flex-1.protyle[data-id="${data_id}"] >div.protyle-content>div.protyle-background`
+			);
+			if (current_doc) {
+				let doc_link =
+					"siyuan://blocks/" + current_doc.getAttribute("data-node-id");
+				let newTag = `${timeStamp}--${nodeText}--${doc_link}--${historyItemIcon}`;
+				if (!historyArr.includes(newTag)) {
+					historyArr.push(newTag);
+				}
+
+				while (historyArr.length > 200) {
+					historyArr.shift();
+				}
+				localStorage.setItem("historyArr", JSON.stringify(historyArr));
+			}
+		}, 700);
+	}
+
+	let tab_containers = document.querySelectorAll(
+		"div[data-type='wnd'] > div.fn__flex ul.fn__flex.layout-tab-bar.fn__flex-1"
+	);
+	const config = { attributes: false, childList: true, subtree: false };
+
+	const tag_change = function (mutationsList, observer) {
+		if (
+			mutationsList[0].type === "childList" &&
+			mutationsList[0].addedNodes.length
+		) {
+			update_history_tags(mutationsList[0].addedNodes[0]);
+		}
+	};
+
+	const tab_container_change = function (mutationsList, observer) {
+		if (mutationsList[0].type === "childList") {
+			update_history_tags(mutationsList[0].addedNodes[0]);
+			updateNode();
+		}
+	};
+
+	const tabs_observer = new MutationObserver(tag_change);
+
+	const tabs_container_observer = new MutationObserver(tab_container_change);
+
+	for (let tab_container of tab_containers) {
+		tabs_observer.observe(tab_container, config);
+	}
+
+	function updateNode() {
+		tabs_observer.disconnect();
+
+		tab_containers = document.querySelectorAll(
+			"div[data-type='wnd'] > div.fn__flex ul.fn__flex.layout-tab-bar.fn__flex-1"
+		);
+
+		for (let tab_container of tab_containers) {
+			tabs_observer.observe(tab_container, config);
+		}
+	}
+
+	let parentNode = document.querySelector(
+		"div#layouts > div.fn__flex.fn__flex-1 >div.layout__center.fn__flex.fn__flex-1"
+	);
+	tabs_container_observer.observe(parentNode, config);
+
+	var settingBtn = document.getElementById("dockRight");
+
+	settingBtn.insertAdjacentHTML(
+		"afterend",
+		`
+<div
+	id="myHistory"
+	style="
+		z-index: 1000;
+		border-radius: 8px;
+		position: absolute;
+		bottom: 0.25em;
+		max-width: calc(100% - 12px);
+		line-height: 1.25em;
+		top: 50vh;
+		left: 50vw;
+		width: 60vw;
+		height: 80vh;
+		background: white;
+		box-shadow: 0px 0px 6px 0px #0000008c;
+		visibility: hidden;
+		transform: translate(-50%, -50%);
+		padding: 0px 27px;
+	"
+>
+	<div
+		id="close-icon"
+		style="
+			width: 25px;
+			height: 25px;
+			top: 9px;
+			right: 8px;
+			cursor: pointer;
+			z-index: 1001;
+			position: absolute;
+		"
+	>
+		<img src="/appearance/themes/RogerSyTheme/src/close-icon.svg" />
+	</div>
+	<div
+		style="
+			top: 0px;
+			display: flex;
+			margin-top: 35px;
+			position: sticky;
+			margin-bottom: 20px;
+			flex-direction: column;
+			background-color: white;
+		"
+		class="topBar"
+	>
+		<input
+			id="history_input"
+			type="text"
+			placeholder="搜索历史记录"
+			style="
+				appearance: none;
+				text-align: center;
+				height: 36px;
+				border-radius: 15px;
+				border: 0px solid #fff;
+				padding: 0 8px;
+				outline: 0;
+				letter-spacing: 1px;
+				color: #202124;
+				font-weight: 600;
+				margin: 0 20px;
+				background: rgba(45, 45, 45, 0.1);
+				border: 1px solid rgba(255, 255, 255, 0.15);
+				box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+			"
+		/>
+		<div
+			style="display: flex; justify-content: space-between; margin-top: 16px;"
+		>
+			<button
+				id="showAllHistory"
+				class="b3-button b3-button--small b3-button--cancel"
+			>
+				检索全部
+			</button>
+			<button
+				id="clearHistory"
+				class="b3-button b3-button--small b3-button--cancel"
+			>
+				清除全部
+			</button>
+		</div>
+	</div>
+	<div
+		id="historyContainer"
+		style="
+			height: 60vh;
+			overflow: auto;
+    		padding-right: 10px;
+		"
+	></div>
+</div>
+
+`
+	);
+
+	let showAllHistoryBtn = document.getElementById("showAllHistory");
+	let historyInputArea = document.getElementById("history_input");
+	var historyDom = document.getElementById("history");
+	let myHistory = document.getElementById("myHistory");
+
+	let historyContainer = document.getElementById("historyContainer");
+
+	function openHistoryDoc(e) {
+		e.stopPropagation();
+		if (e.target.tagName == "SPAN" && e.target.getAttribute("data-href")) {
+			try {
+				window.open(e.target.getAttribute("data-href"));
+			} catch (err) {
+				console.error(err);
+			}
+		}
+	}
+
+	myHistory.addEventListener("click", openHistoryDoc, false);
+
+	let clearHistory = document.getElementById("clearHistory");
+
+	function clearAllHistory(e) {
+		e.stopPropagation();
+		historyArr = [];
+		localStorage.setItem("historyArr", JSON.stringify(historyArr));
+		historyContainer.innerHTML = "";
+		myHistory.style.visibility = "hidden";
+	}
+	clearHistory.addEventListener("click", clearAllHistory, false);
+
+	function showAllHistoryItems(e) {
+		e.stopPropagation();
+		document.getElementById("history_input").value = "";
+		if (myHistory.style.visibility === "hidden") {
+			myHistory.style.visibility = "visible";
+		}
+		if (
+			localStorage.getItem("historyArr") &&
+			JSON.parse(localStorage.getItem("historyArr")).length > 0
+		) {
+			historyArr = JSON.parse(localStorage.getItem("historyArr"));
+			const fragment = document.createDocumentFragment();
+			historyContainer.innerHTML = "";
+			let tempArr = [...historyArr];
+			tempArr.reverse();
+			tempArr.forEach((value, index) => {
+				let [item_time, item_text, href, history_item_icon] = value.split("--");
+				const timeEmoji = parseTime(item_time, true);
+				item_text = item_text.replace(/</g, "&lt;");
+				item_text = item_text.replace(/>/g, "&gt;");
+				const elem_div = document.createElement("div");
+				elem_div.className = "historyItem";
+				elem_div.style.display = "flex";
+				elem_div.style.justifyContent = "space-between";
+				elem_div.style.marginTop = "10px";
+				elem_div.innerHTML = `
+<span style="width:40px;color: darkcyan;">${formatIndex(index)}</span>
+<span class="historyTimeStamp" style="color:#4c5059;margin-right:2em;flex:1;">
+	${timeEmoji}${item_time}
+</span>
+<span 
+	style="color:#3481c5;margin-right:5px;cursor:pointer;"
+	data-href="${href}"
+	title="${href}"
+>
+	${item_text}
+</span>
+				`;
+				fragment.appendChild(elem_div);
+			});
+			historyContainer.appendChild(fragment);
+		}
+	}
+
+	function debounce(func, wait = 500) {
+		let timer = null;
+		return function (...args) {
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				func.apply(this, args);
+			}, wait);
+		};
+	}
+
+	function historyKeySubmit(e) {
+		if (historyInputArea.value.trim()) {
+			let keyword = historyInputArea.value.trim();
+			if (
+				localStorage.getItem("historyArr") &&
+				JSON.parse(localStorage.getItem("historyArr")).length > 0
+			) {
+				historyArr = JSON.parse(localStorage.getItem("historyArr"));
+				const fragment = document.createDocumentFragment();
+				historyContainer.innerHTML = "";
+				let tempArr = [...historyArr];
+				tempArr.reverse();
+				tempArr = tempArr.filter((item) => item.includes(keyword));
+				tempArr.forEach((value, index) => {
+					let [item_time, item_text, href, history_item_icon] = value.split(
+						"--"
+					);
+					const timeEmoji = parseTime(item_time, true);
+					item_time = item_time.replace(/-/g, ".");
+					const regExp = new RegExp(`${keyword}`, "g");
+					item_text = item_text
+						.replace(/</g, "&lt;")
+						.replace(/>/g, "&gt;")
+						.replace(regExp, function (value) {
+							return `<span style="background-color:#ffe955;color:black;">${value}</span>`;
+						});
+					item_time = item_time.replace(regExp, function (value) {
+						return `<span style="background-color:#ffe955;color:black;">${value}</span>`;
+					});
+					const elem_div = document.createElement("div");
+					elem_div.className = "historyItem";
+					elem_div.style.marginTop = "10px";
+					elem_div.style.display = "flex";
+					elem_div.style.justifyContent = "space-between";
+					elem_div.innerHTML = `
+<span style="width:40px;color: darkcyan;">${formatIndex(index)}</span>
+<span class="historyTimeStamp" style="color:#4c5059;margin-right:2em;flex:1;">
+	${timeEmoji}${item_time}
+</span>
+<span
+style="color:#3481c5;margin-right:5px;cursor:pointer;"
+	data-href="${href}"
+	title="${href}"
+	>${item_text}</span
+>`;
+					fragment.appendChild(elem_div);
+				});
+				historyContainer.appendChild(fragment);
+			}
+		} else {
+			showAllHistoryItems(e);
+		}
+	}
+
+	historyDom.addEventListener("click", showAllHistoryItems, false);
+
+	showAllHistoryBtn.addEventListener("click", showAllHistoryItems, false);
+
+	historyInputArea.addEventListener("input", debounce(historyKeySubmit), false);
+
+	function hideHistoryPanel() {
+		const myHistory = document.getElementById("myHistory");
+		if (myHistory.style.visibility !== "hidden") {
+			myHistory.style.visibility = "hidden";
+		}
+	}
+
+	const closeIcon = document.getElementById("close-icon");
+	closeIcon.onclick = hideHistoryPanel;
+}
+
+window.onload = setTimeout(() => {
+	ClickMonitor();
+	initHistoryCheck();
+}, 1000);

@@ -263,6 +263,14 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="pan.baidu.com"]:not(:empty)::before,
+.b3-typography a[href*="pan.baidu.com"]::before {
+	content: "";
+	background-image: url("../icon/pan.baidu.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="z-lib.org"]:not(:empty)::before,
 .b3-typography a[href*="z-lib.org"]::before {
 	content: "";

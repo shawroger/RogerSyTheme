@@ -2233,18 +2233,22 @@
 	background-image: url("callout/eye.webp");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="place"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="location"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
+.bq[custom-co~="place"]::after,
 .bq[custom-co~="location"]::after {
 	background-image: url("callout/location.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="why"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="explain"].bq {
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
+.bq[custom-co~="why"]::after,
 .bq[custom-co~="explain"]::after {
 	background-image: url("callout/explain.png");
 }

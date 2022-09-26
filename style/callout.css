@@ -829,7 +829,7 @@
 	box-shadow: 0 0 0 2px #000000 inset;
 }
 
-.bq[custom-co~="note"]::after {
+.bq[custom-co~="summary"]::after {
 	background-image: url("callout/summary.png");
 }
 /*提醒*/

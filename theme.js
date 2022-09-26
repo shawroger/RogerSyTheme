@@ -267,7 +267,7 @@ function addRenderNoteRoute() {
 		".render-node .protyle-wysiwyg__embed"
 	);
 
-	list.forEach((e) => {
+	list.forEach((e, index) => {
 		const id = e.dataset.id;
 		if (!e.firstChild.className.includes(checkClassName)) {
 			getHPathByPath({
@@ -275,7 +275,10 @@ function addRenderNoteRoute() {
 			}).then((res) => {
 				const p = document.createElement("p");
 				p.className = checkClassName;
-				p.innerText = "🎯 " + res.data.slice(1);
+				p.innerHTML = `<span style="font-weight:bold;color:orange">#${
+					index + 1
+				}</span> ${res.data.slice(1)}`;
+
 				e.prepend(p);
 			});
 		}

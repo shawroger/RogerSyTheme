@@ -634,3 +634,11 @@
 	content: "";
 	background-image: url("../icon/bsigroup.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="convertio.co"]:not(:empty)::before,
+.b3-typography a[href*="convertio.co"]::before {
+	content: "";
+	background-image: url("../icon/convertio.co.ico");
+}

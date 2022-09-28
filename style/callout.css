@@ -770,7 +770,7 @@
 }
 /*信息*/
 .protyle-wysiwyg [data-node-id][custom-co~="info"].bq {
-	box-shadow: 0 0 0 2px #00cde2 inset;
+	box-shadow: 0 0 0 2px #00a4b5 inset;
 }
 
 .bq[custom-co~="info"]::after {

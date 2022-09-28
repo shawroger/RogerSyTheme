@@ -149,17 +149,17 @@ div[style*="background-color: var(--b3-font-background12);"],
 }
 
 [style*="color: var(--b3-font-color12);"] {
-	text-underline-offset: 3px;
+	text-underline-offset: 4px;
 	color: inherit !important;
 	font-weight: normal !important;
-	text-decoration: underline double black 1.5px;
+	text-decoration: underline solid black 1.5px;
 }
 
 [style*="color: var(--b3-font-color13);"] {
 	color: inherit !important;
 	text-underline-offset: 3px;
 	font-weight: normal !important;
-	text-decoration: underline wavy black;
+	text-decoration: underline wavy black 1.5px;
 }
 
 /* ---------------------------------------修改文字更多样式中的字体效果 END----------------------------------------- */
@@ -253,7 +253,7 @@ div[style*="background-color: var(--b3-font-background12);"],
 
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color12)"]:before {
-	content: "=";
+	content: "-";
 	/* text-decoration: underline dashed var(--b3-theme-on-background);
     text-underline-offset: 3px; */
 }

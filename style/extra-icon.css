@@ -666,3 +666,11 @@
 	content: "";
 	background-image: url("../icon/haokan.baidu.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="apption.co"]:not(:empty)::before,
+.b3-typography a[href*="apption.co"]::before {
+	content: "";
+	background-image: url("../icon/apption.co.ico");
+}

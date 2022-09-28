@@ -650,3 +650,19 @@
 	content: "";
 	background-image: url("../icon/convertio.co.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="gmw.cn"]:not(:empty)::before,
+.b3-typography a[href*="gmw.cn"]::before {
+	content: "";
+	background-image: url("../icon/gmw.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="haokan.baidu.com"]:not(:empty)::before,
+.b3-typography a[href*="haokan.baidu.com"]::before {
+	content: "";
+	background-image: url("../icon/haokan.baidu.com.ico");
+}

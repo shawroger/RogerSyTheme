@@ -682,3 +682,19 @@
 	content: "";
 	background-image: url("../icon/chinanews.com.cn.jpg");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="tuna.tsinghua.edu.cn"]:not(:empty)::before,
+.b3-typography a[href*="tuna.tsinghua.edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/tuna.tsinghua.edu.cn.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="julialang.org"]:not(:empty)::before,
+.b3-typography a[href*="julialang.org"]::before {
+	content: "";
+	background-image: url("../icon/julialang.org.ico");
+}

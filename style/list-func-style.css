@@ -80,9 +80,10 @@
 	padding: 5px 10px;
 	margin-top: 2px;
 	border-radius: 3px;
-	box-shadow: #0f0f0f1a 0px 0px 0px 1px, #0f0f0f1a 0px 2px 4px;
-	max-width: 45vw;
+	/* box-shadow: #0f0f0f1a 0px 0px 0px 1px, #0f0f0f1a 0px 2px 4px; */
+	max-width: 300px;
 	z-index: 1;
+	border: solid #0f0f0f1a;
 }
 
 .protyle-wysiwyg
@@ -164,7 +165,7 @@
 	position: absolute;
 	top: 50%;
 	border-top: 2px solid #89a3e0;
-	width: 20px;
+	width: 23px;
 	height: 50%;
 }
 /*上竖线*/
@@ -179,7 +180,7 @@
 	position: absolute;
 	bottom: 50%;
 	border-left: 2px solid #89a3e0;
-	width: 20px;
+	width: 23px;
 	height: 50%;
 }
 /*单个子项直线*/
@@ -188,7 +189,7 @@
 	.list
 	> .li:first-child:nth-last-child(2)::after {
 	border-radius: 0px;
-	width: 22px;
+	width: 24px;
 	margin-bottom: -2px;
 }
 /*单子项居中*/
@@ -236,7 +237,7 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	.li
 	div
 	> [spellcheck="false"] {
-	box-shadow: #aaa 0px 0px 0px 1px, #aaa 0px 2px 4px;
+	border: solid #89a3e0;
 }
 [custom-f="dt"] .protyle-linenumber__rows {
 	top: 3px;
@@ -273,7 +274,7 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	> .protyle-action--task::before {
 	background-color: transparent;
 	border: none !important;
-	font-family: "Font Awesome 6 Free Solid";
+	font-family: "Font Awesome 6 Free solid";
 	content: "\f058" !important;
 	display: inline-block;
 	position: absolute;
@@ -448,7 +449,7 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	> .protyle-action--task::before {
 	background-color: transparent;
 	border: none !important;
-	font-family: "Font Awesome 6 Free Solid";
+	font-family: "Font Awesome 6 Free solid";
 	content: "\f058" !important;
 	display: inline-block;
 	position: absolute;

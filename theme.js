@@ -262,24 +262,31 @@ function request(url, data, method = "POST") {
 }
 
 function addRenderNoteRoute() {
+	const noteIndex = {};
 	const checkClassName = "roger-sy-theme-addRenderNoteRoute";
 	const list = document.querySelectorAll(
 		".render-node .protyle-wysiwyg__embed"
 	);
 
-	list.forEach((e, index) => {
+	list.forEach((e) => {
 		const id = e.dataset.id;
+		const parentId = e.parentNode.dataset.id || "$PARENT_D";
 		if (!e.firstChild.className.includes(checkClassName)) {
+			if (noteIndex[parentId] === undefined) {
+				noteIndex[parentId] = 0;
+			}
+
 			getHPathByPath({
 				id,
 			}).then((res) => {
 				const p = document.createElement("p");
 				p.className = checkClassName;
 				p.innerHTML = `<span style="font-weight:bold;color:orange">#${
-					index + 1
+					noteIndex[parentId] + 1
 				}</span> ${res.data.slice(1)}`;
 
 				e.prepend(p);
+				noteIndex[parentId] += 1;
 			});
 		}
 	});
@@ -412,12 +419,6 @@ function calloutEmit() {
 	}
 }
 
-function addRightBarIcon(href) {
-	return ` 
-	<img src="/appearance/themes/RogerSyTheme/src/${href}">
-	 `;
-}
-
 window.addEventListener("keydown", (event) => {
 	const keyBindList = [
 		{
@@ -514,7 +515,7 @@ function initDOM() {
 		}
 		span.className =
 			"dock__item b3-tooltips b3-tooltips__w rg-sy-theme-add-right-bar";
-		span.innerHTML = addRightBarIcon(item.href);
+		span.innerHTML = `<img src="/appearance/themes/RogerSyTheme/src/${item.href}">`;
 		span.addEventListener("click", item.bindAction);
 		rightDom.appendChild(span);
 	});

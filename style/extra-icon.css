@@ -698,3 +698,27 @@
 	content: "";
 	background-image: url("../icon/julialang.org.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="jianpian.cn"]:not(:empty)::before,
+.b3-typography a[href*="jianpian.cn"]::before {
+	content: "";
+	background-image: url("../icon/jianpian.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="getpaint.net"]:not(:empty)::before,
+.b3-typography a[href*="getpaint.net"]::before {
+	content: "";
+	background-image: url("../icon/getpaint.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="lanzoup.com"]:not(:empty)::before,
+.b3-typography a[href*="lanzoup.com"]::before {
+	content: "";
+	background-image: url("../icon/lanzoup.com.ico");
+}

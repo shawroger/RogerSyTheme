@@ -20,6 +20,14 @@
 	background-image: url("../icon/star-icon.png");
 }
 
+.protyle-wysiwyg
+	.list[data-node-id][custom-f="kb"]
+	.li[data-node-id]:hover
+	> .protyle-action::after {
+	top: 0px;
+	left: 0px;
+}
+
 .protyle-wysiwyg *[custom-f="dt"] .li .list {
 	padding: 0px;
 	margin: 0px;
@@ -346,6 +354,8 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 }
 .protyle-wysiwyg *[custom-f~="kb"] [data-node-id].li {
 	margin: 5px;
+	padding-top: 10px;
+	padding-left: 10px;
 	padding-bottom: 8px;
 	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
 }
@@ -399,7 +409,8 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	*[custom-f~="kb"][data-node-index]:not([data-type="NodeBlockquote"])
 	> div
 	> div:nth-child(1) {
-	transform: translate(3px, 4px);
+	/* transform: translate(3px, 4px); */
+	transform: translate(15px, 14px);
 	z-index: 2;
 }
 /* 去除小竖线 */
@@ -501,7 +512,7 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	top: 1.25em;
 }
 
-/* .protyle-wysiwyg
+.protyle-wysiwyg
 	.list[data-node-id][custom-f="kb"]
 	.li[data-node-id]
 	> .protyle-action {
@@ -509,4 +520,19 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	top: inherit !important;
 	height: inherit !important;
 	width: inherit !important;
-} */
+	transform: translate(10px, 10px);
+}
+
+.protyle-wysiwyg
+	.list[data-node-id][custom-f="kb"]
+	> .li[data-node-id]
+	> .protyle-action {
+	transform: translate(15px, 14px);
+}
+
+.protyle-wysiwyg
+	.list[data-node-id][custom-f="kb"]
+	.li[data-node-id]
+	.protyle-attr--refcount {
+	right: -21px;
+}

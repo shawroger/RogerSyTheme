@@ -59,6 +59,11 @@
 	background-size: 2em 2em;
 }
 
+.li .bq[custom-co]::after {
+	top: 0.4em;
+	right: 0.4em;
+}
+
 .bq[custom-co~="r"]::after,
 .bq[custom-co~="rad"]::after {
 	border-radius: 50% !important;

@@ -25,6 +25,7 @@
 	margin: 0px;
 	transition: all 0.5s;
 }
+
 .protyle-wysiwyg *[custom-f="dt"].list[data-node-index] {
 	width: 100%;
 	overflow-x: auto; /*溢出滚动*/
@@ -35,6 +36,11 @@
 	margin-left: 20px !important;
 	margin-right: -14px !important;
 }
+
+.protyle-wysiwyg *[custom-f="dt"] [data-node-id].li .bq[custom-co] {
+	margin-left: 17px !important;
+}
+
 .protyle-wysiwyg *[custom-f="dt"] [data-node-id].li > .list {
 	padding-left: 20px;
 }
@@ -63,7 +69,6 @@
 	margin-left: -6px;
 	padding: 5px 10px;
 	margin-top: 2px;
-	/* background-color: #f6f6f6 !important; */
 	border-radius: 3px;
 	box-shadow: #0f0f0f1a 0px 0px 0px 1px, #0f0f0f1a 0px 2px 4px;
 	max-width: 45vw;

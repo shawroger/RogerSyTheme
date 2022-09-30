@@ -11,10 +11,23 @@
 	border-left: 0.25em double #b0c4de;
 }
 
+.protyle-wysiwyg .bq[custom-co] .protyle-attr--refcount {
+	right: -20px;
+}
+
+.protyle-wysiwyg .bq[custom-co] div[spellcheck="false"] {
+	box-shadow: none !important;
+}
+
 .bq[custom-co] .p:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
-	padding-right: 2em;
-	padding-top: 0.35em;
+	padding-right: 2em !important;
+	padding-top: 0.35em !important;
+}
+
+.li .bq[custom-co] .p:first-child,
+.li .bq[custom-co][data-type="NodeHeading"]:first-child {
+	padding-right: 2.8em !important;
 }
 
 .bq[custom-co] .li:first-child {

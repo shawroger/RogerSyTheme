@@ -19,6 +19,10 @@
 	box-shadow: none !important;
 }
 
+.protyle-wysiwyg [custom-f~="dt"] .bq[custom-co] div[spellcheck="false"] {
+	border: none !important;
+}
+
 .bq[custom-co] .p:first-child,
 .bq[custom-co][data-type="NodeHeading"]:first-child {
 	padding-right: 2em !important;

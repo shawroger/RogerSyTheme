@@ -1354,7 +1354,8 @@
 	box-shadow: 0 0 0 1.5px #ff5f96 inset;
 }
 
-.bq[custom-co~="feel"]::after .bq[custom-co~="feeling"]::after {
+.bq[custom-co~="feel"]::after,
+.bq[custom-co~="feeling"]::after {
 	background-image: url("callout/feeling.png");
 }
 

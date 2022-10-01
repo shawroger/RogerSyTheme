@@ -77,11 +77,11 @@
 /*文字框*/
 .protyle-wysiwyg *[custom-f="dt"] .li div > div[spellcheck="false"] {
 	margin-left: -6px;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	margin-top: 2px;
 	border-radius: 3px;
 	/* box-shadow: #0f0f0f1a 0px 0px 0px 1px, #0f0f0f1a 0px 2px 4px; */
-	max-width: 450px;
+	max-width: 800px;
 	z-index: 1;
 	border: solid #0f0f0f1a;
 }

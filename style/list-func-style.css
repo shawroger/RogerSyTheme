@@ -189,8 +189,9 @@
 	.list
 	> .li:first-child:nth-last-child(2)::after {
 	border-radius: 0px;
-	width: 24px;
-	margin-bottom: -2px;
+	width: 45px;
+    margin-bottom: -2.2px;
+    transform: translateX(-20px);
 }
 /*单子项居中*/
 .protyle-wysiwyg *[custom-f="dt"] .list > .li:first-child:nth-last-child(2) {
@@ -219,7 +220,7 @@
 	left: 0;
 	top: 50%;
 	border-top: 2px solid #89a3e0;
-	width: 20px;
+	width: 0px;
 	height: 0;
 }
 /*取消根目录线*/
@@ -237,7 +238,7 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	.li
 	div
 	> [spellcheck="false"] {
-	border: solid #89a3e0;
+	border: solid orange;
 }
 [custom-f="dt"] .protyle-linenumber__rows {
 	top: 3px;

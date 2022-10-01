@@ -170,7 +170,7 @@
 
 .list[custom-f="dt"][data-node-id] .protyle-action--task {
 	top: 23px !important;
-    left: 23px !important;
+	left: 23px !important;
 	position: absolute;
 	transform: translate(0, -50%);
 	z-index: 2;
@@ -540,6 +540,17 @@ div[custom-f="dt"] > [data-type="NodeListItem"]::before {
 	height: inherit !important;
 	width: inherit !important;
 	transform: translate(10px, 10px);
+}
+
+.protyle-wysiwyg
+	.list[data-node-id][custom-f="kb"]
+	.li[data-node-id]
+	.protyle-action--order {
+	left: inherit !important;
+	top: inherit !important;
+	height: inherit !important;
+	width: inherit !important;
+	transform: translate(10px, -2px);
 }
 
 .protyle-wysiwyg

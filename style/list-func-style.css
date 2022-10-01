@@ -159,6 +159,17 @@
 	transform: translate(0, -50%);
 	z-index: 2;
 }
+
+/*圆点符号居中对齐*/
+.list[custom-f="dt"][data-node-id] .protyle-action--order {
+	top: calc(50% + 1px);
+	left: -3px;
+	position: absolute;
+	transform: translate(0, -50%);
+	z-index: 2;
+}
+
+
 /*前继承线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::before {
 	content: "" !important;

@@ -697,8 +697,17 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 10%);
 }
 
+.protyle-wysiwyg [custom-f~="dt"] div[data-type="NodeSuperBlock"][custom-f~="card"] {
+	padding: 0;
+	box-shadow: none;
+}
+
 .protyle-wysiwyg .li [data-type="NodeSuperBlock"][custom-f~="card"] {
 	margin-bottom: 15px;
+}
+
+.protyle-wysiwyg [custom-f~="dt"] .li [data-type="NodeSuperBlock"][custom-f~="card"] {
+	margin-bottom: 0px;
 }
 
 .protyle-wysiwyg

@@ -49,10 +49,6 @@
 	/* transform: translate(1px, 5px); */
 }
 
-.protyle-wysiwyg *[custom-f="dt"] ::before {
-	border-left: none !important;
-}
-
 /* ---------------------给有颜色背景的块设置前面无序列表的样式---------------- */
 .list[style*="background-color: var(--b3-font-background"] .li > :before {
 	border-color: #00000033 !important;

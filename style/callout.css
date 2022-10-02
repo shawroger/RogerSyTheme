@@ -15,15 +15,15 @@
 	display: none;
 } */
 
-.protyle-wysiwyg [custom-f~="kb"] .bq[custom-co] {
+/* .protyle-wysiwyg [custom-f~="kb"] .bq[custom-co] {
 	margin: 0;
 	padding: 0;
 	box-shadow: none !important;
-}
+} */
 
-.protyle-wysiwyg [custom-f~="kb"] .bq[custom-co]::after {
+/* .protyle-wysiwyg [custom-f~="kb"] .bq[custom-co]::after {
 	display: none;
-}
+} */
 
 .protyle-wysiwyg .bq:not([custom-co]) {
 	padding: 0.1em 0.4em;

@@ -24,13 +24,14 @@
 	> div.li
 	> div.p
 	> div:not(.protyle-attr) {
-	background-color: #65a3ff;
-	color: white;
+	/* background-color: #65a3ff;
+	color: white; */
 	outline: none;
 	/* border-radius: 50px; */
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
+	border: solid #0f0f0f1a;
 }
 
 /* 首项中修改块引用颜色 */
@@ -40,7 +41,7 @@
 	> div.p
 	> div
 	span[data-type="block-ref"] {
-	color: white;
+	/* color: white; */
 }
 
 .protyle-wysiwyg
@@ -77,12 +78,13 @@
 	> div.p
 	> div:not(.protyle-attr) {
 	/* color: white; */
-	background-color: #c0f0e7;
+	/* background-color: #c0f0e7; */
 	outline: none;
 	/* border-radius: 50px; */
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
+	border: solid #0f0f0f1a;
 }
 
 /*子项设偏移调整*/
@@ -125,8 +127,8 @@
 	margin-left: -8px;
 	padding: 5px 10px;
 	margin-top: 2px;
-	color: gray;
-	background-color: #e3e9f0;
+	/* color: gray;
+	background-color: #e3e9f0; */
 	/* border-radius: 50px; */
 	/* border: 2px solid #cfcece; */
 	/* outline: 1px solid #cfcece; */
@@ -135,6 +137,7 @@
 	min-width: 2.5em;
 	text-align: center;
 	/* max-width: 15vw; */
+	border: solid #0f0f0f1a;
 }
 
 .protyle-wysiwyg
@@ -143,6 +146,14 @@
 	> [data-node-id]
 	> div[spellcheck="false"] {
 	padding: 5px 10px 5px 32px;
+}
+
+.protyle-wysiwyg
+	*[custom-f="dt"]
+	.li
+	div.bq[custom-co]
+	div[spellcheck="false"] {
+	border: none;
 }
 
 .protyle-wysiwyg

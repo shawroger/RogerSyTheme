@@ -27,7 +27,7 @@
 	background-color: #65a3ff;
 	color: white;
 	outline: none;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
@@ -58,6 +58,16 @@
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.protyle-wysiwyg
+	*[custom-f="dt"].list[data-node-index]
+	div.list
+	div.li
+	div.p
+	div
+	> span.img {
+	padding-top: 10px;
+}
+
 /* 第二项颜色 */
 .protyle-wysiwyg
 	*[custom-f="dt"].list[data-node-index]
@@ -66,10 +76,10 @@
 	> div.li
 	> div.p
 	> div:not(.protyle-attr) {
-	color: white;
-	background-color: lightblue;
+	/* color: white; */
+	background-color: #c0f0e7;
 	outline: none;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
@@ -117,7 +127,7 @@
 	margin-top: 2px;
 	color: gray;
 	background-color: #e3e9f0;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 	/* border: 2px solid #cfcece; */
 	/* outline: 1px solid #cfcece; */
 	white-space: nowrap;

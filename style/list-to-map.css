@@ -24,7 +24,7 @@
 	> div.li
 	> div.p
 	> div:not(.protyle-attr) {
-	background-color: #34455d;
+	background-color: #65a3ff;
 	color: white;
 	outline: none;
 	border-radius: 50px;
@@ -67,7 +67,7 @@
 	> div.p
 	> div:not(.protyle-attr) {
 	color: white;
-	background-color: #84a2ca;
+	background-color: lightblue;
 	outline: none;
 	border-radius: 50px;
 	padding: 1px 8px;

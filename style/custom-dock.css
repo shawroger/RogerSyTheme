@@ -1,0 +1,19 @@
+div#dockLeft {
+	background: #65a3ff;
+}
+
+div#dockLeft .dock__item {
+	color: white;
+}
+
+div#dockLeft .dock__item:hover {
+	background-color: lightblue;
+}
+
+div#dockLeft .dock__item--active {
+	transform: scale(1.2);
+}
+div .block__icons {
+	padding: 5px 8px;
+	height: 20px;
+}

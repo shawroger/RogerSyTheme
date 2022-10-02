@@ -152,3 +152,24 @@ span[data-type~="inline-memo"] {
 	transform: translate(-50%, -50%);
 	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 6px 0px;
 }
+
+div#dockLeft {
+	background: #65a3ff;
+}
+
+div#dockLeft .dock__item {
+	color: white;
+}
+
+div#dockLeft .dock__item:hover {
+	background-color: lightblue;
+}
+
+div#dockLeft .dock__item--active {
+	transform: scale(1.2);
+}
+
+div .block__icons {
+	padding: 5px 8px;
+	height: 20px;
+}

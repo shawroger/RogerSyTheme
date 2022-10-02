@@ -124,6 +124,11 @@
 	font-family: "Times New Roman", "宋体";
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="lw"] {
+	font-family: "Times New Roman", "宋体";
+	font-size: 90%;
+}
+
 /* ———————————————加粗————————————— */
 .protyle-wysiwyg [data-node-id][custom-f~="jc"],
 .protyle-wysiwyg [data-node-id][custom-f~="bold"] {

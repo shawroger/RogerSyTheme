@@ -169,3 +169,8 @@ div .block__icons {
 	padding: 5px 8px;
 	height: 20px;
 }
+
+/* 恢复标题宽度 */
+div.protyle-title.protyle-wysiwyg--attr {
+	width: inherit !important;
+}

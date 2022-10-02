@@ -48,7 +48,8 @@ strong[style="blank"]:hover {
 /* Inline comment */
 span[style*="quote"] {
 	cursor: pointer;
-	padding-bottom: 1px;
+	margin: 1px 2px;
+	padding: 1px 1px;
 	background-color: #e0ffff;
 	border: 1.5px dashed #20b2aa;
 	font-weight: normal !important;

@@ -143,16 +143,17 @@ div[style*="background-color: var(--b3-font-background12);"],
 }
 
 [style*="color: var(--b3-font-color11);"] {
-	font-family: "黑体" !important;
 	font-weight: bold;
 	color: inherit !important;
+	font-family: "黑体" !important;
 }
 
 [style*="color: var(--b3-font-color12);"] {
-	text-underline-offset: 4px;
 	color: inherit !important;
 	font-weight: normal !important;
-	text-decoration: underline solid black 1.5px;
+	margin: 1px 2px;
+	padding: 1px 1px;
+	outline: solid black 1.5px;
 }
 
 [style*="color: var(--b3-font-color13);"] {
@@ -253,7 +254,7 @@ div[style*="background-color: var(--b3-font-background12);"],
 
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color12)"]:before {
-	content: "-";
+	content: "▢";
 	/* text-decoration: underline dashed var(--b3-theme-on-background);
     text-underline-offset: 3px; */
 }

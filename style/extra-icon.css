@@ -722,3 +722,11 @@
 	content: "";
 	background-image: url("../icon/lanzoup.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="savefrom.net"]:not(:empty)::before,
+.b3-typography a[href*="savefrom.net"]::before {
+	content: "";
+	background-image: url("../icon/savefrom.net.ico");
+}

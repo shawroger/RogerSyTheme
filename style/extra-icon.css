@@ -730,3 +730,11 @@
 	content: "";
 	background-image: url("../icon/savefrom.net.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ilovefishc.com"]:not(:empty)::before,
+.b3-typography a[href*="ilovefishc.com"]::before {
+	content: "";
+	background-image: url("../icon/ilovefishc.com.ico");
+}

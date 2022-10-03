@@ -269,6 +269,10 @@
 	height: 0;
 }
 
+.list[custom-f="dt"] [custom-co] > .list::after {
+	display: none;
+}
+
 /*取消根目录线*/
 div[data-node-index] > [data-type="NodeListItem"]::after,
 div[data-node-index] > [data-type="NodeListItem"]::before {

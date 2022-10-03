@@ -25,7 +25,7 @@
 }
 
 /* ————————————————————调整每个子列表项右侧边距———————————————————— */
-.protyle-wysiwyg *[custom-f="bg"] .li > div {
+.protyle-wysiwyg *[custom-f="bg"] .li div[contenteditable] {
 	margin-right: 6px;
 	max-height: 450px;
 	overflow-y: auto;
@@ -38,6 +38,7 @@
 /* ————————————————————大神增加代码———————————————————— */
 .protyle-wysiwyg *[custom-f="bg"] [data-node-id].li > [data-node-id] {
 	margin-left: 4px !important;
+	min-width: 8em;
 }
 
 /* ————————————————————对符号后文字设置格式———————————————————— */

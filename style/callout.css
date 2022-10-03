@@ -259,7 +259,7 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="reply"].bq {
-	box-shadow: 0 0 0 1.5px #24ae1c inset;
+	box-shadow: 0 0 0 1.5px #000000 inset;
 }
 
 .bq[custom-co~="reply"]::after {

@@ -154,6 +154,7 @@
 }
 
 .list[data-node-id][data-type="NodeList"][custom-f~="bg"] [custom-co] {
+	padding-right: 3em;
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }

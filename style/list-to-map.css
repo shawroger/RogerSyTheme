@@ -136,10 +136,67 @@
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	/* max-width: 15vw; */
 	border: solid #0f0f0f1a;
-	max-width: 400px;
-	overflow: auto;
+	max-width: 450px;
+	overflow-x: auto;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="wn"]
+	.li
+	div
+	> div[spellcheck="false"],
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="winf"]
+	.li
+	div
+	> div[spellcheck="false"],
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="fullwidth"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: none !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w100"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 100px !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w200"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 200px !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w400"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 400px !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w600"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 600px !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w800"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 800px !important;
 }
 
 .protyle-wysiwyg

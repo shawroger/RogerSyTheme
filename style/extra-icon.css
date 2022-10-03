@@ -738,3 +738,27 @@
 	content: "";
 	background-image: url("../icon/ilovefishc.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="pdf365.cn"]:not(:empty)::before,
+.b3-typography a[href*="pdf365.cn"]::before {
+	content: "";
+	background-image: url("../icon/pdf365.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="fanyigou.com"]:not(:empty)::before,
+.b3-typography a[href*="fanyigou.com"]::before {
+	content: "";
+	background-image: url("../icon/fanyigou.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="shihangbiji.com"]:not(:empty)::before,
+.b3-typography a[href*="shihangbiji.com"]::before {
+	content: "";
+	background-image: url("../icon/shihangbiji.com.png");
+}

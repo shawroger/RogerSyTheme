@@ -14,6 +14,13 @@
 	margin: 0px;
 }
 
+.protyle-wysiwyg
+	[custom-f="dt"]
+	[data-node-id]
+	span[data-type="file-annotation-ref"] {
+	padding: 4px 0px;
+}
+
 .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:hover {
 	text-decoration: 0.06em wavy var(--b3-font-color8) underline;
 }

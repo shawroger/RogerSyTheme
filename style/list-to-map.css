@@ -139,7 +139,7 @@
 	/* max-width: 15vw; */
 	border: solid #0f0f0f1a;
 	max-width: 400px;
-	overflow-x: auto;
+	overflow: auto;
 }
 
 .protyle-wysiwyg

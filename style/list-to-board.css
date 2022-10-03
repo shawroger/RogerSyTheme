@@ -159,4 +159,9 @@
 	padding-left: 2.5em !important;
 }
 
+.protyle-wysiwyg *[custom-f="kb"] div[contenteditable] {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
 /*————————————————————列表转化看板 END————————————————————*/

@@ -27,6 +27,8 @@
 /* ————————————————————调整每个子列表项右侧边距———————————————————— */
 .protyle-wysiwyg *[custom-f="bg"] .li > div {
 	margin-right: 6px;
+	max-height: 450px;
+	overflow-y: auto;
 }
 
 .protyle-wysiwyg *[custom-f="bg"] .li:hover {

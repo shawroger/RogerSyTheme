@@ -258,6 +258,14 @@
 	background-image: url("callout/flower.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="reply"].bq {
+	box-shadow: 0 0 0 1.5px #24ae1c inset;
+}
+
+.bq[custom-co~="reply"]::after {
+	background-image: url("callout/reply.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="heart"].bq {
 	box-shadow: 0 0 0 1.5px #ff3728 inset;
 }

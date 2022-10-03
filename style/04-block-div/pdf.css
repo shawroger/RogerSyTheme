@@ -15,7 +15,7 @@
 }
 
 .protyle-wysiwyg
-	[custom-f="dt"]
+	[custom-f~="dt"]
 	[data-node-id]
 	span[data-type="file-annotation-ref"] {
 	padding: 4px 0px;

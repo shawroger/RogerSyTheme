@@ -1,6 +1,6 @@
 /*————————————————————列表转看板————————————————————*/
 
-.protyle-wysiwyg *[custom-f="kb"] {
+.protyle-wysiwyg *[custom-f~="kb"] {
 	outline: 2px dashed #e9e9e9;
 }
 
@@ -122,7 +122,7 @@
 }
 
 /* ————————————————————去除小竖线———————————————————— */
-.list[custom-f="kb"][data-node-id] .li > :before {
+.list[custom-f~="kb"][data-node-id] .li > :before {
 	display: none;
 }
 
@@ -135,7 +135,7 @@
 }
 
 /* 引用计数 */
-.list[custom-f="kb"] .protyle-attr--refcount {
+.list[custom-f~="kb"] .protyle-attr--refcount {
 	height: 14px;
 	width: 14px;
 	left: -44px;
@@ -145,7 +145,7 @@
 	text-align: center;
 }
 
-.list[custom-f="kb"] .list .protyle-attr--refcount {
+.list[custom-f~="kb"] .list .protyle-attr--refcount {
 	height: 14px;
 	width: 14px;
 	left: -14px;
@@ -155,11 +155,43 @@
 	text-align: center;
 }
 
-.list[custom-f="kb"] div[custom-co] {
+.list[custom-f~="kb"] div[custom-co] {
 	padding-left: 2.5em !important;
 }
 
-.protyle-wysiwyg *[custom-f="kb"] div[contenteditable] {
+.list[custom-f~="kb"] > div.li {
+	min-width: 450px;
+}
+
+.list[custom-f~="kb"][custom-f~="w100"] > div.li {
+	min-width: 100px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w200"] > div.li {
+	min-width: 200px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w400"] > div.li {
+	min-width: 400px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w600"] > div.li {
+	min-width: 600px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w800"] > div.li {
+	min-width: 800px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w1000"] > div.li {
+	min-width: 1000px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w1200"] > div.li {
+	min-width: 1200px !important;
+}
+
+.protyle-wysiwyg *[custom-f~="kb"] div[contenteditable] {
 	max-height: 300px;
 	overflow-y: auto;
 }

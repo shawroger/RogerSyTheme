@@ -762,3 +762,19 @@
 	content: "";
 	background-image: url("../icon/shihangbiji.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="tana.inc"]:not(:empty)::before,
+.b3-typography a[href*="tana.inc"]::before {
+	content: "";
+	background-image: url("../icon/tana.inc.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="vimeo.com"]:not(:empty)::before,
+.b3-typography a[href*="vimeo.com"]::before {
+	content: "";
+	background-image: url("../icon/vimeo.com.ico");
+}

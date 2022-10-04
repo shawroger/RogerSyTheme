@@ -778,3 +778,11 @@
 	content: "";
 	background-image: url("../icon/vimeo.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="dianping.com"]:not(:empty)::before,
+.b3-typography a[href*="dianping.com"]::before {
+	content: "";
+	background-image: url("../icon/dianping.com.ico");
+}

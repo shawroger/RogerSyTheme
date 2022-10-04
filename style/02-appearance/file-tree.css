@@ -1,5 +1,7 @@
 /* 修改 文档树 大纲 收集箱 文字的颜色 */
 .block__logo {
+	padding-left: 5px;
+	font-size: 120%;
 	color: #80808080;
 }
 
@@ -67,7 +69,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 .sy__file > .fn__flex-1 {
 	background-color: #f3f3f5 !important;
 	padding-right: 8px;
-    padding-top: 10px;
+	padding-top: 10px;
 }
 
 /* 设置反链面板图标位置（不设置对不齐） */
@@ -240,6 +242,10 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 		80px 0 rgba(231, 231, 231, 1) inset, 101px 0 rgba(255, 255, 255, 1) inset,
 		102px 0 rgba(231, 231, 231, 1) inset, 123px 0 rgba(255, 255, 255, 1) inset,
 		124px 0 rgba(231, 231, 231, 1) inset;
+}
+
+.b3-list-item__icon img {
+	padding-left: 3.5px;
 }
 
 .b3-list:not(.b3-list--border)

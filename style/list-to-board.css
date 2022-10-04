@@ -156,6 +156,7 @@
 }
 
 .list[custom-f~="kb"] div[custom-co] {
+	margin-right: 60px;
 	padding-left: 2.5em !important;
 }
 
@@ -171,8 +172,16 @@
 	min-width: 200px !important;
 }
 
+.list[custom-f~="kb"][custom-f~="w300"] > div.li {
+	min-width: 300px !important;
+}
+
 .list[custom-f~="kb"][custom-f~="w400"] > div.li {
 	min-width: 400px !important;
+}
+
+.list[custom-f~="kb"][custom-f~="w500"] > div.li {
+	min-width: 500px !important;
 }
 
 .list[custom-f~="kb"][custom-f~="w600"] > div.li {

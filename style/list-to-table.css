@@ -39,8 +39,16 @@
 	max-height: 200px !important;
 }
 
+.protyle-wysiwyg *[custom-f~="bg"][custom-f~="h300"] .li div[contenteditable] {
+	max-height: 300px !important;
+}
+
 .protyle-wysiwyg *[custom-f~="bg"][custom-f~="h400"] .li div[contenteditable] {
 	max-height: 400px !important;
+}
+
+.protyle-wysiwyg *[custom-f~="bg"][custom-f~="h500"] .li div[contenteditable] {
+	max-height: 500px !important;
 }
 
 .protyle-wysiwyg *[custom-f~="bg"][custom-f~="h600"] .li div[contenteditable] {
@@ -62,10 +70,24 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w0.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 0.5em !important;
+}
+
+.protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w1"]
 	[data-node-id].li
 	> [data-node-id] {
 	min-width: 1em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w1.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 1.5em !important;
 }
 
 .protyle-wysiwyg
@@ -76,10 +98,45 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w2.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 2.5em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w3"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 3em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w3.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 3.5em !important;
+}
+
+.protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w4"]
 	[data-node-id].li
 	> [data-node-id] {
 	min-width: 4em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w4.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 4.5em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 5em !important;
 }
 
 .protyle-wysiwyg
@@ -90,10 +147,24 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w7"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 7em !important;
+}
+
+.protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w8"]
 	[data-node-id].li
 	> [data-node-id] {
 	min-width: 8em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w9"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 9em !important;
 }
 
 .protyle-wysiwyg

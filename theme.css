@@ -10,9 +10,6 @@
 /* 设置打印样式 */
 @import url("style/07-others/print.css");
 
-/* 修改正文A4纸大小 */
-@import url("style/02-appearance/A4.css");
-
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
 
@@ -102,7 +99,7 @@
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */
-@import url("style/CtrlP.css");
+@import url("style/search-panel.css");
 
 /* 增加列表转表格代码 */
 @import url("style/list-to-table.css");

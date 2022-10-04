@@ -308,3 +308,8 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 	> .b3-list-item {
 	margin-left: 42px;
 }
+
+/* 删除已关闭笔记本的阴影 */
+div.layout-tab-container.fn__flex-1 > div > ul > ul {
+	box-shadow: none !important;
+}

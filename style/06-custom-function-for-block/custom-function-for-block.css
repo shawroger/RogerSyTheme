@@ -116,35 +116,18 @@
 	font-family: "隶书";
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~="tnr"] {
+.protyle-wysiwyg [data-node-id][custom-f~="tnr"],
+.protyle-wysiwyg [data-node-id][custom-f~="eng"] {
 	font-family: "Times New Roman";
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~="tnrs"] {
+.protyle-wysiwyg [data-node-id][custom-f~="lw"],
+.protyle-wysiwyg [data-node-id][custom-f~="zw"] {
 	font-family: "Times New Roman", "宋体";
-}
-
-.protyle-wysiwyg [data-node-id][custom-f~="lw"] {
-	font-family: "Times New Roman", "宋体";
-	font-size: 90%;
 }
 
 .protyle-wysiwyg [data-node-id][custom-f~="pz"] {
-	font-size: 85%;
-	font-weight: bold;
 	font-family: "Times New Roman", "仿宋";
-}
-
-.protyle-wysiwyg [data-node-id][custom-f~="ysb"] {
-	color: #008b8b;
-}
-
-.protyle-wysiwyg [data-node-id][custom-f~="ysr"] {
-	color: #d2691e;
-}
-
-.protyle-wysiwyg [data-node-id][custom-f~="ysg"] {
-	color: #008080;
 }
 
 /* ———————————————加粗————————————— */

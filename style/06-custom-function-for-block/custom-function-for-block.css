@@ -129,6 +129,24 @@
 	font-size: 90%;
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="pz"] {
+	font-size: 85%;
+	font-weight: bold;
+	font-family: "Times New Roman", "仿宋";
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="ysb"] {
+	color: #008b8b;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="ysr"] {
+	color: #d2691e;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="ysg"] {
+	color: #008080;
+}
+
 /* ———————————————加粗————————————— */
 .protyle-wysiwyg [data-node-id][custom-f~="jc"],
 .protyle-wysiwyg [data-node-id][custom-f~="bold"] {
@@ -313,6 +331,10 @@
 
 .protyle-wysiwyg [data-node-id][custom-f~="0.6"] {
 	font-size: 60%;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="0.65"] {
+	font-size: 65%;
 }
 
 .protyle-wysiwyg [data-node-id][custom-f~="0.7"] {

@@ -245,7 +245,8 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list-item__icon img {
-	padding-left: 3.5px;
+	padding-left: 6px;
+	transform: translateX(-3.5px);
 }
 
 .b3-list:not(.b3-list--border)

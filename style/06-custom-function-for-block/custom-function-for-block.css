@@ -130,6 +130,14 @@
 	font-family: "Times New Roman", "仿宋";
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="pj"] {
+	font-family: "Times New Roman", "楷体";
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="zz"] {
+	font-family: "Times New Roman", "黑体";
+}
+
 /* ———————————————加粗————————————— */
 .protyle-wysiwyg [data-node-id][custom-f~="jc"],
 .protyle-wysiwyg [data-node-id][custom-f~="bold"] {

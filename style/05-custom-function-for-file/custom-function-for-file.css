@@ -21,19 +21,19 @@
 	font-family: "Microsoft YaHei";
 }
 
-*[custom-f~="zw"] {
+.protyle-wysiwyg[custom-f~="zw"] {
 	font-family: "Times New Roman", "宋体";
 }
 
-*[custom-f~="pz"] {
+.protyle-wysiwyg[custom-f~="pz"] {
 	font-family: "Times New Roman", "仿宋";
 }
 
-*[custom-f~="pj"] {
+.protyle-wysiwyg[custom-f~="pj"] {
 	font-family: "Times New Roman", "楷体";
 }
 
-*[custom-f~="zz"] {
+.protyle-wysiwyg[custom-f~="zz"] {
 	font-family: "Times New Roman", "黑体";
 }
 

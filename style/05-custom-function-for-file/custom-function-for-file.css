@@ -21,22 +21,6 @@
 	font-family: "Microsoft YaHei";
 }
 
-.protyle-wysiwyg[custom-f~="zw"] {
-	font-family: "Times New Roman", "宋体";
-}
-
-.protyle-wysiwyg[custom-f~="pz"] {
-	font-family: "Times New Roman", "仿宋";
-}
-
-.protyle-wysiwyg[custom-f~="pj"] {
-	font-family: "Times New Roman", "楷体";
-}
-
-.protyle-wysiwyg[custom-f~="zz"] {
-	font-family: "Times New Roman", "黑体";
-}
-
 /* ————————————————————修改背景颜色———————————————————— */
 .protyle-wysiwyg[custom-f~="blue"] {
 	background-color: rgba(128, 213, 206, 0.1) !important;

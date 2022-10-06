@@ -1770,6 +1770,14 @@
 	background-image: url("callout/fear.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="baozi"].bq {
+	box-shadow: 0 0 0 1.5px #000000 inset;
+}
+
+.bq[custom-co~="baozi"]::after {
+	background-image: url("callout/baozi.jpg");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="history"].bq {
 	box-shadow: 0 0 0 1.5px #000000 inset;
 }
@@ -1778,10 +1786,12 @@
 	background-image: url("callout/history.jpg");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="xjp"].bq,
 .protyle-wysiwyg [data-node-id][custom-co~="winnie"].bq {
 	box-shadow: 0 0 0 1.5px #fcc75f inset;
 }
 
+.bq[custom-co~="xjp"]::after,
 .bq[custom-co~="winnie"]::after {
 	background-image: url("callout/winnie.png");
 }

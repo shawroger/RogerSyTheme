@@ -914,3 +914,30 @@
 	content: "";
 	background-image: url("../icon/lanniaojiasu.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="zhishikoo.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="zhishikoo.com"]::before,
+.b3-typography a[href*="zhishikoo.com"]::before {
+	content: "";
+	background-image: url("../icon/zhishikoo.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="lorefree.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="lorefree.com"]::before,
+.b3-typography a[href*="lorefree.com"]::before {
+	content: "";
+	background-image: url("../icon/lorefree.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="literatureandlatte.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="literatureandlatte.com"]::before,
+.b3-typography a[href*="literatureandlatte.com"]::before {
+	content: "";
+	background-image: url("../icon/literatureandlatte.com.ico");
+}

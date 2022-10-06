@@ -112,7 +112,7 @@
 @import url("custom.css");
 
 /* ———————————————————— others ———————————————————— */
-@media print {
+/* @media print {
 	.protyle-wysiwyg
 		[data-node-id]
 		span[data-type="a"][data-href^="http"]:not(:empty)::before,
@@ -122,7 +122,7 @@
 		display: none !important;
 		background-image: none !important;
 	}
-}
+} */
 
 /* ———————————————————— theme tools  ———————————————————— */
 span[data-type~="inline-memo"] {

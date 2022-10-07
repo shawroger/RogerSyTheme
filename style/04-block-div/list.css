@@ -42,18 +42,18 @@
 }
 
 .li.protyle-task--done .p {
+	color: #55555a44;
 	text-decoration: line-through;
 	text-decoration-color: #55555a3f;
-	color: #55555a44;
 }
 
 .protyle-task--done[fold="1"] > .protyle-action--task::before,
 .b3-typography[fold="1"] .protyle-task--done::before {
+	background-color: white !important;
+	background-repeat: no-repeat !important;
+	background-position: -1.5px -1px !important;
 	outline: 0.1em solid var(--b3-theme-primary) !important;
-	background-color: var(--b3-theme-primary) !important;
-	background-image: url("../../src/dui.svg");
-	background-position: -1.5px -1px;
-	background-repeat: no-repeat;
+	background-image: url("../../src/dui-2.svg") !important;
 }
 
 /* 加深列表辅助线 */

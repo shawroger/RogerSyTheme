@@ -262,34 +262,62 @@ function request(url, data, method = "POST") {
 }
 
 function addRenderNoteRoute() {
-	const noteIndex = {};
-	const checkClassName = "roger-sy-theme-addRenderNoteRoute";
+	const box = {};
+	const sqlClass = "rg-sql-hpath-render";
 	const list = document.querySelectorAll(
 		".render-node .protyle-wysiwyg__embed"
 	);
 
 	list.forEach((e) => {
 		const id = e.dataset.id;
-		const parentId = e.parentNode.dataset.id || "$PARENT_D";
-		if (!e.firstChild.className.includes(checkClassName)) {
-			if (noteIndex[parentId] === undefined) {
-				noteIndex[parentId] = 0;
-			}
+		const content = e.parentNode.dataset.content;
 
+		if (box[content] === undefined) {
+			box[content] = {};
+		}
+
+		const count = Object.keys(box[content]).length;
+		box[content][id] = count + 1;
+	});
+
+	list.forEach((e) => {
+		const id = e.dataset.id;
+		const content = e.parentNode.dataset.content;
+		if (!e.firstChild.className.includes(sqlClass)) {
 			getHPathByPath({
 				id,
 			}).then((res) => {
+				const showIndex = box[content][id];
+				const showHpath = "📄" + res.data.slice(1);
 				const p = document.createElement("p");
-				p.className = checkClassName;
-				p.innerHTML = `<span style="font-weight:bold;color:orange">#${
-					noteIndex[parentId] + 1
-				}</span> ${res.data.slice(1)}`;
-
+				p.innerHTML = `<span data-index=${showIndex}>#${showIndex}</span><span>${showHpath}</span>`;
+				p.className = sqlClass;
 				e.prepend(p);
-				noteIndex[parentId] += 1;
 			});
 		}
 	});
+
+	// list.forEach((e) => {
+	// 	const id = e.dataset.id;
+	// 	const content = e.parentNode.dataset.content;
+	// 	if (!e.firstChild.className.includes(sqlClass)) {
+	// 		if (box[content] === undefined) {
+	// 			box[content] = 0;
+	// 		}
+
+	// 		getHPathByPath({
+	// 			id,
+	// 		}).then((res) => {
+	// 			const showIndex = box[content] + 1;
+	// 			const showHpath = res.data.slice(1);
+	// 			const p = document.createElement("p");
+	// 			p.innerHTML = `<span data-index=${showIndex}>#${showIndex}</span> ${showHpath}`;
+	// 			p.className = sqlClass;
+	// 			box[content] += 1;
+	// 			e.prepend(p);
+	// 		});
+	// 	}
+	// });
 }
 
 function hideBars() {

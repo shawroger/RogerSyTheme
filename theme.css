@@ -111,18 +111,25 @@
 /* 引入自定义配置 */
 @import url("custom.css");
 
-/* ———————————————————— others ———————————————————— */
-/* @media print {
-	.protyle-wysiwyg
-		[data-node-id]
-		span[data-type="a"][data-href^="http"]:not(:empty)::before,
-	.protyle-wysiwyg [data-node-id] a[href^="http"]::before,
-	.b3-typography a[href^="http"]::before {
-		content: "";
-		display: none !important;
-		background-image: none !important;
-	}
-} */
+/* addRenderNoteRoute in theme.js */
+.rg-sql-hpath-render {
+	display: flex;
+	align-items: center;
+	padding: 2px 8px !important;
+	justify-content: space-between;
+	font-family: "Times New Roman", "宋体";
+}
+
+.rg-sql-hpath-render span:nth-of-type(1) {
+	font-size: 120%;
+	color: #65a3ff;
+	font-weight: bold;
+}
+
+.rg-sql-hpath-render span:nth-of-type(2) {
+	color: #778899;
+	font-size: 120%;
+}
 
 /* ———————————————————— theme tools  ———————————————————— */
 span[data-type~="inline-memo"] {

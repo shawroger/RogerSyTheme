@@ -161,14 +161,14 @@ div[style*="background-color: var(--b3-font-background12);"],
 	font-weight: normal !important;
 	margin: 1px 2px;
 	padding: 1px 1px;
-	outline: solid black 1.5px;
+	outline: dashed black 1.5px;
 }
 
 [style*="color: var(--b3-font-color13);"] {
 	color: inherit !important;
 	text-underline-offset: 3px;
 	font-weight: normal !important;
-	text-decoration: underline wavy black 1.5px;
+	text-decoration: underline wavy black 2px;
 }
 
 /* ---------------------------------------修改文字更多样式中的字体效果 END----------------------------------------- */

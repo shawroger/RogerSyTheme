@@ -117,12 +117,11 @@
 }
 
 .protyle-wysiwyg [data-node-id][custom-f~="tnr"],
-.protyle-wysiwyg [data-node-id][custom-f~="eng"] {
+.protyle-wysiwyg [data-node-id][custom-f~="en"] {
 	font-family: "Times New Roman";
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~="lw"],
-.protyle-wysiwyg [data-node-id][custom-f~="zw"] {
+.protyle-wysiwyg [data-node-id][custom-f~="yw"] {
 	font-family: "Times New Roman", "宋体";
 }
 

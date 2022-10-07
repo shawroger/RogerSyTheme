@@ -262,17 +262,13 @@ div[style*="background-color: var(--b3-font-background12);"],
 
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color12)"]:before {
-	content: "▢";
-	/* text-decoration: underline dashed var(--b3-theme-on-background);
-    text-underline-offset: 3px; */
+	content: "⿴";
+	font-weight: 200;
+	font-size: 1.45em;
 }
 
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color13)"]:before {
 	content: "~";
-	/* color: transparent !important;
-    background-color: #f3f5f7 !important;
-     text-decoration: underline wavy var(--b3-theme-on-background);
-    text-underline-offset: 2px;  */
 }
 
 /* ——————————————————————为样式中13种背景设置格式—————————————————————— */

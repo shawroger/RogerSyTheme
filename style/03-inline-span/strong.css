@@ -69,3 +69,122 @@
 [style*="background-color: var(--b3-font-background8)"] {
 	font-weight: normal !important;
 }
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background9);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background10);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background11);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background12);"] {
+	color: white !important;
+	font-weight: bold !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color9);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color10);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color11);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color12);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color13);"],
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background13);"] {
+	color: white !important;
+}
+
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color9);"],
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color10);"],
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color11);"],
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color12);"],
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color13);"],
+button.b3-menu__item:hover
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background13);"] {
+	color: var(--b3-theme-hover2) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color9);"]::before {
+	content: "宋";
+	font-family: "宋体";
+	font-size: 1.2em;
+	position: absolute;
+	color: var(--b3-theme-on-background) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color10);"]::before {
+	content: "楷";
+	font-weight: bold;
+	font-family: "楷体";
+	font-size: 1.4em;
+	position: absolute;
+	color: var(--b3-theme-on-background) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color11);"]::before {
+	content: "黑";
+	font-family: "黑体";
+	font-weight: bold;
+	position: absolute;
+	font-size: 1.2em;
+	color: var(--b3-theme-on-background) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color12);"]::before {
+	content: "⿴";
+	font-weight: 200;
+	font-size: 1.45em;
+	position: absolute;
+	color: var(--b3-theme-on-background) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color13);"]::before {
+	content: "~";
+	font-size: 1.45em;
+	position: absolute;
+	color: var(--b3-theme-on-background) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background13);"]::before {
+	content: "空";
+	box-sizing: border-box;
+	font-size: 1.2em;
+	position: absolute;
+	color: var(--b3-theme-on-background) !important;
+}

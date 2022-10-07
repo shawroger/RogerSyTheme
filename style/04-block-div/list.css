@@ -48,6 +48,7 @@
 }
 
 .protyle-task--done[fold="1"] > .protyle-action--task::before,
+.protyle-task--done[data-type="NodeListItem"] > .protyle-action--task::before,
 .b3-typography[fold="1"] .protyle-task--done::before {
 	background-color: white !important;
 	background-repeat: no-repeat !important;

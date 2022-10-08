@@ -1,110 +1,103 @@
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block {
-	border-radius: 4px;
-	padding-top: 32px !important;
-	line-height: 1.625;
-	height: 1px !important;
-	opacity: 1 !important;
-	font-size: inherit !important;
-	overflow: visible !important;
-	background-color: #dbe4f2 !important;
-}
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block .hljs,
-.protyle-wysiwyg
-	[data-node-id][fold="1"]:not(.li).code-block
-	.protyle-linenumber__rows {
-	overflow: hidden !important;
-	display: none;
-}
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block .protyle-icons {
-	opacity: 1;
-}
-[data-type="NodeCodeBlock"] .protyle-icons,
-[data-type="NodeCodeBlock"] .protyle-icons > span:hover {
-	background-color: transparent;
-}
-[data-type="NodeCodeBlock"] .protyle-icons > span:hover,
-[data-type="NodeCodeBlock"] .protyle-icons svg {
-	color: #999;
-}
-[data-type="NodeCodeBlock"] .protyle-action__language {
-	color: #999;
-	font-family: var(--b3-font-family-code);
-}
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block::before {
-	content: "Code ...";
-	color: #888;
-	font-size: 1.06em;
-	font-style: italic;
-	position: absolute;
-	top: 5px;
-	left: 10px;
-	z-index: 1;
-}
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block .protyle-action {
-	top: 0px;
+/* -------------------------------------------------代码块样式--------------------------------------------------- */
+.code-block {
+    margin: 4px !important;
+    border-radius: var(--b3-border-radius-noraml) !important;
+    background-color: var(--b3-theme-background2) !important;
 }
 
-[data-type="NodeCodeBlock"] .hljs {
-	background-color: #f9f9f9;
-	padding: 10px 4px;
+/* 代码块主体部分设置 */
+.b3-typography div.hljs,
+.protyle-wysiwyg div.hljs {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 16px;
+    font-family: var(--b3-font-family-code);
+    background-size: 20px 20px;
+    background-image: none !important;
+    background: transparent;
 }
-.b3-typography .hljs,
-.protyle-wysiwyg .hljs {
-	overflow: hidden;
+
+/* 代码块上方部分设置 */
+.protyle-wysiwyg .code-block,
+.b3-typography .code-block {
+    position: relative;
+    display: block;
+    border-radius: var(--b3-border-radius-noraml);
+    padding-top: 32px !important;
+    box-shadow: var(--b3-code-block-shadow);
+    border-bottom: var(--b3-border-wider);
+    border-top: 3px solid #65a3ff;
 }
-.b3-typography .hljs:hover,
-.protyle-wysiwyg .hljs:hover {
-	overflow-x: overlay;
+
+/* 设置顶部三个mac按钮样式 */
+.code-block::after {
+    content: ' ';
+    position: absolute;
+    background: #fa625c;
+    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
+    border-radius: var(--b3-border-radius-round);
+    top: 10px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    z-index: 1;
 }
-[data-type="NodeCodeBlock"] .protyle-linenumber__rows {
-	font-family: var(--b3-font-family-code);
-	color: #aaa !important;
-	font-weight: 400;
-	padding: 10px 4px;
+
+/*  ————————————————————————————————————代码块行数——————————————————————————————————*/
+.protyle-linenumber__rows {
+    margin-top: 32px !important;
+    padding: 4px;
+    background-color: var(--b3-theme-background2) !important;
+    margin-bottom: 0px;
+    font-family: var(--b3-font-family-code);
 }
+
+/* 代码块行数的数字  */
+.protyle-linenumber__rows span::before {
+    color: rgba(128, 128, 128, 0.5);
+}
+
+/* 代码块的语言代码 */
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-	margin-left: 0 !important;
+    margin-top: 0px;
+    position: absolute;
+    right: 4em;
+    border-radius: 4px;
+    opacity: 1 !important;
+    font-family: var(--b3-font-family-code);
 }
-.b3-typography .code-block .protyle-action,
-.protyle-wysiwyg .code-block .protyle-action {
-	width: 150px;
-	top: unset;
-	left: unset;
+
+.b3-typography .code-block .protyle-action .protyle-action__language::after,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
+    content: "›";
+    font-family: var(--b3-font-family-code);
+    color: #80808080;
+    opacity: 1;
 }
-.block__popover .protyle-wysiwyg .code-block .protyle-action {
-	margin-top: 3px;
+
+/* 复制和设置按钮样式 */
+.b3-typography .code-block .protyle-action .protyle-icon,
+.b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+    opacity: 1 !important;
+    background-color: transparent !important;
 }
-.protyle-wysiwyg--hl .protyle-linenumber__rows,
-.protyle-wysiwyg--select .protyle-linenumber__rows,
-[data-type="NodeCodeBlock"] .protyle-wysiwyg--select .protyle-linenumber__rows {
-	background-color: #f3f3f3 !important;
+
+.b3-typography .code-block .protyle-action .protyle-icon svg,
+.b3-typography .code-block .protyle-action .protyle-action__language svg,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
+    color: gray;
 }
-[data-type="NodeCodeBlock"] .protyle-action__language + .fn__flex-1 {
-	flex: none;
+
+/* ————————————————————————————————集市里边代码块的主题—————————————————————————————— */
+code.hljs {
+    background-color: var(--b3-theme-background2) !important;
+    border-top: 3px solid #2ea121;
+    border-bottom: var(--b3-border-wider);
+    box-shadow: var(--b3-point-shadow);
 }
-[data-type="NodeCodeBlock"] .protyle-action {
-	display: block !important;
-	text-align: right;
-}
-[data-type="NodeCodeBlock"] .protyle-action__language {
-	margin-right: 5px;
-	color: #999 !important;
-}
-[data-type="NodeCodeBlock"] .protyle-action__copy,
-[data-type="NodeCodeBlock"] .protyle-action__copy svg,
-[data-type="NodeCodeBlock"] .protyle-action__menu,
-[data-type="NodeCodeBlock"] .protyle-action__menu svg {
-	vertical-align: middle;
-}
-[data-type="NodeCodeBlock"] .protyle-action__copy svg,
-[data-type="NodeCodeBlock"] .protyle-action__menu svg {
-	margin-top: -5px !important;
-}
-[data-type="NodeCodeBlock"] .protyle-icon {
-	color: #666;
-	background-color: #eee;
-}
-[data-type="NodeCodeBlock"] .protyle-icon:hover {
-	background-color: #ddd;
-}
+
+/* -------------------------------------------------代码块样式 END--------------------------------------------------- */

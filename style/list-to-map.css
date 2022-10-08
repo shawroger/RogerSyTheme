@@ -1,5 +1,10 @@
 /*————————————————————————列表转导图————————————————————————*/
 
+.protyle-wysiwyg *[custom-f~="dt"] .render-node ::before,
+.protyle-wysiwyg *[custom-f~="dt"] .render-node ::after {
+	display: none !important;
+}
+
 /*整个导图取消缩进*/
 .protyle-wysiwyg *[custom-f~="dt"] {
 	outline: 2px dashed #e9e9e9;
@@ -32,16 +37,6 @@
 	min-width: 2.5em;
 	text-align: center;
 	border: solid #0f0f0f1a;
-}
-
-/* 首项中修改块引用颜色 */
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	> div.li
-	> div.p
-	> div
-	span[data-type="block-ref"] {
-	/* color: white; */
 }
 
 .protyle-wysiwyg
@@ -93,6 +88,14 @@
 	margin-right: -14px !important;
 }
 
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	[data-node-id].li
+	> [data-node-id] {
+	margin: 0 !important;
+}
+
 .protyle-wysiwyg *[custom-f~="dt"] [data-node-id].li > .list {
 	padding-left: 20px;
 }
@@ -127,11 +130,6 @@
 	margin-left: -8px;
 	padding: 5px 10px;
 	margin-top: 2px;
-	/* color: gray;
-	background-color: #e3e9f0; */
-	/* border-radius: 50px; */
-	/* border: 2px solid #cfcece; */
-	/* outline: 1px solid #cfcece; */
 	white-space: nowrap;
 	padding: 1px 8px;
 	min-width: 2.5em;
@@ -139,6 +137,15 @@
 	border: solid #0f0f0f1a;
 	max-width: 450px;
 	overflow-x: auto;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	.li
+	div
+	> div[spellcheck="false"] {
+	border: none !important;
 }
 
 .protyle-wysiwyg
@@ -294,6 +301,15 @@
 .protyle-wysiwyg *[custom-f~="dt"] .list > .li:first-child:nth-last-child(2) {
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	.list
+	> .li:first-child:nth-last-child(2) {
+	top: 0;
+	transform: none;
 }
 
 /*取消多余线条*/

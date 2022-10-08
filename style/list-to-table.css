@@ -4,6 +4,10 @@
 	padding: 4px;
 }
 
+.protyle-wysiwyg *[custom-f~="bg"] .render-node {
+	outline: none !important;
+}
+
 /* ————————————————————所有子项目的表格（除去第一列其余的列），包含溢出的空白部分，所以才会有边框—————————————————————— */
 .protyle-wysiwyg *[custom-f~="bg"] .li .list {
 	padding: 0px;

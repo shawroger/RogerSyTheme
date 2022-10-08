@@ -494,7 +494,13 @@
 	[data-node-id]
 	span[data-type="a"][data-href*="obsidian.md"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="obsidian.md"]::before,
-.b3-typography a[href*="obsidian.md"]::before {
+.b3-typography a[href*="obsidian.md"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="obsidian://"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href^="obsidian://"]::before,
+.b3-typography a[href^="obsidian://"]::before
+{
 	content: "";
 	background-image: url("../icon/obsidian_md.png");
 }

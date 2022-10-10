@@ -85,7 +85,6 @@
 /* 引入4种样式 */
 @import url("style/04-block-div/card.css");
 
-
 /* ————————————————————自定义属性———————————————————— */
 /* 增加文档的自定义属性 */
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
@@ -104,11 +103,12 @@
 
 /* 增加列表转表格代码 */
 @import url("style/list-to-table.css");
-/* 增加 Roy 的列表转思维导图代码 */
+
 @import url("style/list-to-map.css");
-/* 增加 Roy 的列表转看板代码 */
+
 @import url("style/list-to-board.css");
 
+@import url("style/custom-kw.css");
 
 @import url("style/yuque.css");
 
@@ -119,19 +119,20 @@
 .rg-sql-hpath-render {
 	display: flex;
 	align-items: center;
-	padding: 2px 8px !important;
+	padding: 4px 10px !important;
 	justify-content: space-between;
-	font-family: "Times New Roman", "宋体";
+	/* font-family: "Times New Roman", "宋体"; */
 }
 
 .rg-sql-hpath-render span:nth-of-type(1) {
 	font-size: 120%;
-	color: #65a3ff;
+	/* color: #65a3ff; */
 	font-weight: bold;
+	font-family: "Times New Roman";
 }
 
 .rg-sql-hpath-render span:nth-of-type(2) {
-	color: #778899;
+	/* color: #778899; */
 	font-size: 120%;
 }
 

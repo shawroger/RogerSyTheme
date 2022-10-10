@@ -208,7 +208,6 @@ function request(url, data, method = "POST") {
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify(data),
-				// body:data
 			})
 				.then(handleResponse)
 				.then((data) => resolve(data))
@@ -288,7 +287,8 @@ function addRenderNoteRoute() {
 				id,
 			}).then((res) => {
 				const showIndex = box[content][id];
-				const showHpath = "📄" + res.data.slice(1);
+				// "📂" +
+				const showHpath = res.data.slice(1);
 				const p = document.createElement("p");
 				p.innerHTML = `<span data-index=${showIndex}>#${showIndex}</span><span>${showHpath}</span>`;
 				p.className = sqlClass;

@@ -18,7 +18,7 @@
 .protyle-wysiwyg [data-node-id] a[href^="@"]::before,
 .b3-typography a[href^="@"]::before {
 	content: "";
-	background-image: url("../icon/fold/question.png");
+	background-image: url("../icon/question.png");
 }
 
 /* ————————————————————为常见的文件格式设置图标———————————————————— */
@@ -27,7 +27,7 @@
 .b3-typography a[href^="file://"]::before
 {
 	content: "";
-	background-image: url("../icon/fold/folder.svg");
+	background-image: url("../icon/folder.svg");
 }
 
 /* ————————————————————为没有收集icon图标的网站设置格式—————————————————— */
@@ -1171,7 +1171,7 @@
 .b3-typography a[href^="file://"]::before
 {
 	content: "";
-	background-image: url("../icon/fold/folder.svg");
+	background-image: url("../icon/folder.svg");
 }
 
 /* 压缩包 */
@@ -1191,7 +1191,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".7z"]::before,
 .b3-typography a[href^="assets/"][href$=".7z"]::before {
 	content: "";
-	background-image: url("../icon/fold/zip.svg");
+	background-image: url("../icon/zip.svg");
 }
 
 /* word */
@@ -1206,7 +1206,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".doc"]::before,
 .b3-typography [href^="assets/"][href$=".doc"]::before {
 	content: "";
-	background-image: url("../icon/fold/word.svg");
+	background-image: url("../icon/word.svg");
 }
 
 /* ppt */
@@ -1221,7 +1221,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".ppt"]::before,
 .b3-typography [href^="assets/"][href$=".ppt"]::before {
 	content: "";
-	background-image: url("../icon/fold/ppt.svg");
+	background-image: url("../icon/ppt.svg");
 }
 
 /* excel */
@@ -1236,7 +1236,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".xls"]::before,
 .b3-typography [href^="assets/"][href$=".xls"]::before {
 	content: "";
-	background-image: url("../icon/fold/excel.svg");
+	background-image: url("../icon/excel.svg");
 }
 
 /* pdf */
@@ -1246,7 +1246,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".pdf"]::before,
 .b3-typography [href^="assets/"][href$=".pdf"]::before {
 	content: "";
-	background-image: url("../icon/fold/pdf.svg");
+	background-image: url("../icon/pdf.svg");
 }
 
 .protyle-wysiwyg
@@ -1255,7 +1255,7 @@
 .protyle-wysiwyg [data-node-id] a[href*=".pdf?p"]::before,
 .b3-typography a[href*=".pdf?p"]::before {
 	content: "";
-	background-image: url("../icon/fold/pdf.svg") !important;
+	background-image: url("../icon/pdf.svg") !important;
 }
 
 /* txt */
@@ -1265,7 +1265,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".txt"]::before,
 .b3-typography [href^="assets/"][href$=".txt"]::before {
 	content: "";
-	background-image: url("../icon/fold/txt.svg");
+	background-image: url("../icon/txt.svg");
 }
 
 .protyle-wysiwyg
@@ -1274,7 +1274,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".exe"]::before,
 .b3-typography [href^="assets/"][href$=".exe"]::before {
 	content: "";
-	background-image: url("../icon/fold/exe.png");
+	background-image: url("../icon/exe.png");
 }
 
 /* 视频 */
@@ -1304,7 +1304,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".avi"]::before,
 .b3-typography [href^="assets/"][href$=".avi"]::before {
 	content: "";
-	background-image: url("../icon/fold/MP4.svg");
+	background-image: url("../icon/MP4.svg");
 }
 
 /* 图片 */
@@ -1324,7 +1324,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".png"]::before,
 .b3-typography [href^="assets/"][href$=".png"]::before {
 	content: "";
-	background-image: url("../icon/fold/jpg.svg");
+	background-image: url("../icon/jpg.svg");
 }
 
 /* html */
@@ -1332,7 +1332,7 @@
 .protyle-wysiwyg [data-node-id] a[href $=".html"]::before,
 .b3-typography [href ^="assets/"][href $=".html"]::before {
     content: "";
-    background-image: url('../icon/fold/html.svg');
+    background-image: url('../icon/html.svg');
 } */
 
 /* json */
@@ -1342,7 +1342,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".json"]::before,
 .b3-typography [href^="assets/"][href$=".json"]::before {
 	content: "";
-	background-image: url("../icon/fold/json.svg");
+	background-image: url("../icon/json.svg");
 }
 
 /* css */
@@ -1352,7 +1352,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".css"]::before,
 .b3-typography [href^="assets/"][href$=".css"]::before {
 	content: "";
-	background-image: url("../icon/fold/css.svg");
+	background-image: url("../icon/css.svg");
 }
 
 /* ts */
@@ -1362,7 +1362,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".ts"]::before,
 .b3-typography [href^="assets/"][href$=".ts"]::before {
 	content: "";
-	background-image: url("../icon/fold/ts.webp");
+	background-image: url("../icon/ts.webp");
 }
 
 /* js,c++等 */
@@ -1372,7 +1372,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".java"]::before,
 .b3-typography [href^="assets/"][href$=".java"]::before {
 	content: "";
-	background-image: url("../icon/fold/JAVA.svg");
+	background-image: url("../icon/JAVA.svg");
 }
 
 /* js,c++等 */
@@ -1382,7 +1382,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".js"]::before,
 .b3-typography [href^="assets/"][href$=".js"]::before {
 	content: "";
-	background-image: url("../icon/fold/js.png");
+	background-image: url("../icon/js.png");
 }
 
 .protyle-wysiwyg
@@ -1401,7 +1401,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".xmind"]::before,
 .b3-typography [href^="assets/"][href$=".xmind"]::before {
 	content: "";
-	background-image: url("../icon/fold/xmind.svg");
+	background-image: url("../icon/xmind.svg");
 }
 
 /* xmind */
@@ -1411,7 +1411,7 @@
 .protyle-wysiwyg [data-node-id] a[href$=".md"]::before,
 .b3-typography [href^="assets/"][href$=".md"]::before {
 	content: "";
-	background-image: url("../icon/fold/md.svg");
+	background-image: url("../icon/md.svg");
 }
 
 .protyle-wysiwyg

@@ -1005,3 +1005,30 @@
 	content: "";
 	background-image: url("../icon/twittervideodownloader.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="welkindust.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="welkindust.com"]::before,
+.b3-typography a[href*="welkindust.com"]::before {
+	content: "";
+	background-image: url("../icon/welkindust.com.jpg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="blog.sina.com.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="blog.sina.com.cn"]::before,
+.b3-typography a[href*="blog.sina.com.cn"]::before {
+	content: "";
+	background-image: url("../icon/blog.sina.com.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.rfi.fr"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="www.rfi.fr"]::before,
+.b3-typography a[href*="www.rfi.fr"]::before {
+	content: "";
+	background-image: url("../icon/www.rfi.fr.ico");
+}

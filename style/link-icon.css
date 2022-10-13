@@ -2448,3 +2448,12 @@
 	content: "";
 	background-image: url("../icon/www.rfi.fr.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ahu.edu.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="ahu.edu.cn"]::before,
+.b3-typography a[href*="ahu.edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/ahu.edu.cn.webp");
+}

@@ -13,8 +13,6 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	padding-top: 35px !important;
 }
 
-/* extra css */
-
 #toolbarVIP,
 #barSync,
 #editorEmptyHelp,
@@ -61,4 +59,75 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
 	border-left: none !important;
+}
+
+span[data-type~="inline-memo"] {
+	cursor: pointer;
+	margin: 1px 2px;
+	padding: 1px 1px;
+	font-weight: normal !important;
+	background-color: lightpink !important;
+	border: 1.5px dashed #7c6a6d !important;
+}
+
+#calendar-bar iframe {
+	top: 220px;
+	width: 300px;
+	right: -110px;
+	height: 360px;
+	z-index: 1000;
+	overflow: auto;
+	position: fixed;
+	background: white;
+	transform: translate(-50%, -50%);
+	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 6px 0px;
+}
+
+div#dockLeft {
+	background: #65a3ff;
+}
+
+div#dockLeft .dock__item {
+	color: white;
+}
+
+div#dockLeft .dock__item:hover {
+	background-color: lightblue;
+}
+
+div#dockLeft .dock__item--active {
+	transform: scale(1.2);
+}
+
+div .block__icons {
+	padding: 8px 8px;
+	height: 20px;
+}
+
+/* 恢复标题宽度 */
+div.protyle-title.protyle-wysiwyg--attr {
+	width: inherit !important;
+}
+
+.b3-typography u,
+.b3-typography span[data-type~="u"],
+.protyle-wysiwyg u,
+.protyle-wysiwyg span[data-type~="u"] {
+	border-bottom: 1.5px solid var(--b3-theme-on-background) !important;
+}
+
+.b3-typography s,
+.b3-typography span[data-type~="s"],
+.protyle-wysiwyg s,
+.protyle-wysiwyg span[data-type~="s"] {
+	color: lightgrey !important;
+	text-decoration-color: var(--b3-protyle-inline-s-color);
+}
+
+.b3-typography mark,
+.b3-typography span[data-type~="mark"],
+.protyle-wysiwyg mark,
+.protyle-wysiwyg span[data-type~="mark"] {
+	padding: 1px 2px;
+	background-color: #ffe4c4 !important;
 }

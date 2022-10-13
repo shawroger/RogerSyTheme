@@ -1,39 +1,38 @@
 /* -------------------------------------------------面包屑导航样式-------------------------------------------- */
 .protyle-breadcrumb {
-    color: gray;
-    background-color: white;
-    font-size: 14px !important;
-    height: 26px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 6px;
-    margin-left: 16px;
-    margin-right: 16px;
-    border: 1px solid var(--b3-border-color);
-    border-radius: var(--b3-border-radius-half-round);
-    padding-top: 0px;
+	color: gray;
+	background-color: white;
+	font-size: 14px !important;
+	height: 26px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 6px;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 1px solid var(--b3-border-color);
+	border-radius: var(--b3-border-radius-half-round);
+	padding-top: 0px;
 }
 
 .protyle-breadcrumb__bar {
-    overflow: hidden;
-    margin-top: -3px;
+	overflow: hidden;
+	margin-top: -3px;
 }
 
 .protyle-breadcrumb__item svg {
-    height: 14px;
-    width: 14px;
+	height: 14px;
+	width: 14px;
 }
 
 .fn__flex-1.protyle {
-    background-color: var(--b3-theme-background2);
+	background-color: var(--b3-theme-background2);
 }
 
 .protyle-content {
-    border-top: var(--b3-border-normal);
-    box-shadow: var(--b3-protyle-content-shadow);
+	border-top: var(--b3-border-normal);
+	box-shadow: var(--b3-protyle-content-shadow);
 }
-
 
 /* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
 
@@ -41,20 +40,34 @@
 svg.popover__block,
 .protyle-breadcrumb__arrow,
 .protyle-breadcrumb__item {
-    color: #55555a4d;
+	color: #55555a4d;
+}
+
+.protyle-wysiwyg .protyle-breadcrumb__bar {
+	margin-top: 10px;
+	background-color: whitesmoke;
+}
+
+.render-node > div:nth-child(2) > div.protyle-breadcrumb__bar {
+	margin-top: 0px !important;
+}
+
+.protyle-wysiwyg .protyle-breadcrumb__bar span {
+	color: var(--b3-theme-on-surface) !important;
 }
 
 /* 设置聚焦的块前面的符号颜色为深色 */
-span.protyle-breadcrumb__item.protyle-breadcrumb__item--active svg.popover__block {
-    color: var(--b3-theme-on-background);
+span.protyle-breadcrumb__item.protyle-breadcrumb__item--active
+	svg.popover__block {
+	color: var(--b3-theme-on-background);
 }
 
 /* 鼠标在面包屑上悬浮时更改文字和文字前面icon的颜色 */
 .protyle-breadcrumb__item:hover {
-    color: var(--b3-theme-on-background) !important;
-    background-color: rgba(154, 153, 155, .08) !important;
+	color: var(--b3-theme-on-background) !important;
+	background-color: rgba(154, 153, 155, 0.08) !important;
 }
 
 .protyle-breadcrumb__item:hover svg.popover__block {
-    color: var(--b3-theme-on-background) !important;
+	color: var(--b3-theme-on-background) !important;
 }

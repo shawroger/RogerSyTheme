@@ -38,56 +38,80 @@
 @import url("style/02-appearance/warning-color.css");
 
 /* ————————————————————行内元素———————————————————— */
+
 /* 修改高亮样式 */
 @import url("style/03-inline-span/mark.css");
+
 /* 修改加粗样式 */
 @import url("style/03-inline-span/strong.css");
+
 /* 修改下划线样式 */
 @import url("style/03-inline-span/underline.css");
+
 /* 修改删除线样式 */
 @import url("style/03-inline-span/line-through.css");
+
 /* 修改块引用样式 */
 @import url("style/03-inline-span/block-ref.css");
+
 /* 修改超链接样式 */
 @import url("style/03-inline-span/a-link.css");
+
 /* 修改标签样式 */
 @import url("style/03-inline-span/tag.css");
+
 /* 修改键盘keyboard样式 */
 @import url("style/03-inline-span/keyboard.css");
+
 /* 修改行内代码样式 */
 @import url("style/03-inline-span/inline-code.css");
+
 /* 修改上标和下标样式 */
 @import url("style/03-inline-span/sup-sub.css");
+
 /* 修改更多字体的样式 */
 @import url("style/03-inline-span/strong-morestyle.css");
 
 /* ————————————————————块级元素———————————————————— */
+
 /* 修改表格样式 */
 @import url("style/04-block-div/table.css");
+
 /* 修改引用样式 */
 @import url("style/04-block-div/blockquote.css");
+
 /* 修改嵌入块样式 */
 @import url("style/04-block-div/render-node.css");
+
 /* 修改图片样式 */
 @import url("style/04-block-div/image.css");
+
 /* 修改列表样式 */
 @import url("style/04-block-div/list.css");
+
 /* 修改代码块样式 */
 @import url("style/04-block-div/code-block.css");
+
 /* 修改超级块样式 */
 @import url("style/04-block-div/super-block.css");
+
 /* 修改PDF双链的样式 */
 @import url("style/04-block-div/pdf.css");
+
 /* 修改分割线样式 */
 @import url("style/04-block-div/divider-fengexian.css");
+
 /* 修改标题样式 */
 @import url("style/04-block-div/NodeHeading-biaoti.css");
+
 /* 引入4种样式 */
 @import url("style/04-block-div/card.css");
 
 /* ————————————————————自定义属性———————————————————— */
+
 /* 增加文档的自定义属性 */
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
+
 /* 增加块的自定义属性 */
 @import url("style/06-custom-function-for-block/custom-function-for-block.css");
 
@@ -95,9 +119,8 @@
 
 @import url("style/callout.css");
 
-@import url("style/extra-icon.css");
-
 /* ————————————————————引入自定义设置———————————————————— */
+
 /* 搜索界面左右排版 */
 @import url("style/search-panel.css");
 
@@ -114,96 +137,3 @@
 
 /* 引入自定义配置 */
 @import url("custom.css");
-
-/* addRenderNoteRoute in theme.js */
-.rg-sql-hpath-render {
-	display: flex;
-	align-items: center;
-	padding: 4px 10px !important;
-	justify-content: space-between;
-	/* font-family: "Times New Roman", "宋体"; */
-}
-
-.rg-sql-hpath-render span:nth-of-type(1) {
-	font-size: 120%;
-	/* color: #65a3ff; */
-	font-weight: bold;
-	font-family: "Times New Roman";
-}
-
-.rg-sql-hpath-render span:nth-of-type(2) {
-	/* color: #778899; */
-	font-size: 120%;
-}
-
-/* ———————————————————— theme tools  ———————————————————— */
-span[data-type~="inline-memo"] {
-	cursor: pointer;
-	margin: 1px 2px;
-	padding: 1px 1px;
-	font-weight: normal !important;
-	background-color: lightpink !important;
-	border: 1.5px dashed #7c6a6d !important;
-}
-
-#calendar-bar iframe {
-	top: 220px;
-	width: 300px;
-	right: -110px;
-	height: 360px;
-	z-index: 1000;
-	overflow: auto;
-	position: fixed;
-	background: white;
-	transform: translate(-50%, -50%);
-	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 6px 0px;
-}
-
-div#dockLeft {
-	background: #65a3ff;
-}
-
-div#dockLeft .dock__item {
-	color: white;
-}
-
-div#dockLeft .dock__item:hover {
-	background-color: lightblue;
-}
-
-div#dockLeft .dock__item--active {
-	transform: scale(1.2);
-}
-
-div .block__icons {
-	padding: 8px 8px;
-	height: 20px;
-}
-
-/* 恢复标题宽度 */
-div.protyle-title.protyle-wysiwyg--attr {
-	width: inherit !important;
-}
-
-.b3-typography u,
-.b3-typography span[data-type~="u"],
-.protyle-wysiwyg u,
-.protyle-wysiwyg span[data-type~="u"] {
-	border-bottom: 1.5px solid var(--b3-theme-on-background) !important;
-}
-
-.b3-typography s,
-.b3-typography span[data-type~="s"],
-.protyle-wysiwyg s,
-.protyle-wysiwyg span[data-type~="s"] {
-	color: lightgrey !important;
-	text-decoration-color: var(--b3-protyle-inline-s-color);
-}
-
-.b3-typography mark,
-.b3-typography span[data-type~="mark"],
-.protyle-wysiwyg mark,
-.protyle-wysiwyg span[data-type~="mark"] {
-	padding: 1px 2px;
-	background-color: #ffe4c4 !important;
-}

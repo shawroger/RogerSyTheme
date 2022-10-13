@@ -1,16 +1,12 @@
-/***js form Morgan***/
-/****************************思源API操作**************************/
-
-async function 设置思源块属性(内容块id, 属性对象) {
-	let url = "/api/attr/setBlockAttrs";
-	return 解析响应体(
-		向思源请求数据(url, {
-			id: 内容块id,
-			attrs: 属性对象,
+async function setSyAttr(id, attrs) {
+	return parseResponse(
+		fetchRequest("/api/attr/setBlockAttrs", {
+			id,
+			attrs,
 		})
 	);
 }
-async function 向思源请求数据(url, data) {
+async function fetchRequest(url, data) {
 	let resData = null;
 	await fetch(url, {
 		body: JSON.stringify(data),
@@ -23,13 +19,12 @@ async function 向思源请求数据(url, data) {
 	});
 	return resData;
 }
-async function 解析响应体(response) {
+async function parseResponse(response) {
 	let r = await response;
 	return r.code === 0 ? r.data : null;
 }
 
-/****UI****/
-function ViewSelect(selectid, selecttype) {
+function selectView(selectid, selecttype) {
 	let button = document.createElement("button");
 	button.id = "viewselect";
 	button.className = "b3-menu__item";
@@ -101,17 +96,6 @@ function MenuSeparator(className = "b3-menu__separator") {
 	return node;
 }
 
-/* 操作 */
-
-/**
- * 获得所选择的块对应的块 ID
- * @returns {string} 块 ID
- * @returns {
- *     id: string, // 块 ID
- *     type: string, // 块类型
- *     subtype: string, // 块子类型(若没有则为 null)
- * }
- * @returns {null} 没有找到块 ID */
 function getBlockSelected() {
 	let node_list = document.querySelectorAll(".protyle-wysiwyg--select");
 	if (node_list.length === 1 && node_list[0].dataset.nodeId != null)
@@ -146,7 +130,7 @@ function InsertMenuItem(selectid, selecttype) {
 	let selectview = commonMenu.querySelector('[id="viewselect"]');
 	if (readonly) {
 		if (!selectview) {
-			commonMenu.insertBefore(ViewSelect(selectid, selecttype), readonly);
+			commonMenu.insertBefore(selectView(selectid, selecttype), readonly);
 			commonMenu.insertBefore(MenuSeparator(), readonly);
 		}
 	}
@@ -165,19 +149,8 @@ function ViewMonitor(event) {
 	}
 	let attrs = {};
 	attrs[attrName] = attrValue;
-	设置思源块属性(id, attrs);
+	setSyAttr(id, attrs);
 }
-
-function injectCommentFunc() {
-	const script = document.querySelector("#emojiScript");
-	const js = document.createElement("script");
-	js.setAttribute("src", "./appearance/themes/RogerSyTheme/comment/index.js");
-	js.setAttribute("type", "module");
-	js.setAttribute("defer", "defer");
-	document.head.insertBefore(js, script);
-}
-
-injectCommentFunc();
 
 function forceReload() {
 	try {
@@ -186,10 +159,6 @@ function forceReload() {
 	} catch (err) {
 		window.location.reload();
 	}
-}
-
-function getHPathByPath(data) {
-	return request("/api/filetree/getHPathByID", data);
 }
 
 function sendSyMsg(msg, timeout) {
@@ -258,66 +227,6 @@ function request(url, data, method = "POST") {
 			}
 		});
 	}
-}
-
-function addRenderNoteRoute() {
-	const box = {};
-	const sqlClass = "rg-sql-hpath-render";
-	const list = document.querySelectorAll(
-		".render-node .protyle-wysiwyg__embed"
-	);
-
-	list.forEach((e) => {
-		const id = e.dataset.id;
-		const content = e.parentNode.dataset.content;
-
-		if (box[content] === undefined) {
-			box[content] = {};
-		}
-
-		const count = Object.keys(box[content]).length;
-		box[content][id] = count + 1;
-	});
-
-	list.forEach((e) => {
-		const id = e.dataset.id;
-		const content = e.parentNode.dataset.content;
-		if (!e.firstChild.className.includes(sqlClass)) {
-			getHPathByPath({
-				id,
-			}).then((res) => {
-				const showIndex = box[content][id];
-				// "📂" +
-				const showHpath = res.data.slice(1);
-				const p = document.createElement("p");
-				p.innerHTML = `<span data-index=${showIndex}>#${showIndex}</span><span>${showHpath}</span>`;
-				p.className = sqlClass;
-				e.prepend(p);
-			});
-		}
-	});
-
-	// list.forEach((e) => {
-	// 	const id = e.dataset.id;
-	// 	const content = e.parentNode.dataset.content;
-	// 	if (!e.firstChild.className.includes(sqlClass)) {
-	// 		if (box[content] === undefined) {
-	// 			box[content] = 0;
-	// 		}
-
-	// 		getHPathByPath({
-	// 			id,
-	// 		}).then((res) => {
-	// 			const showIndex = box[content] + 1;
-	// 			const showHpath = res.data.slice(1);
-	// 			const p = document.createElement("p");
-	// 			p.innerHTML = `<span data-index=${showIndex}>#${showIndex}</span> ${showHpath}`;
-	// 			p.className = sqlClass;
-	// 			box[content] += 1;
-	// 			e.prepend(p);
-	// 		});
-	// 	}
-	// });
 }
 
 function hideBars() {
@@ -519,11 +428,6 @@ function initDOM() {
 			bindAction: checkNoteHistory,
 		},
 		{
-			label: "展示 SQL 嵌入块的 hpath",
-			href: "show-sql.svg",
-			bindAction: addRenderNoteRoute,
-		},
-		{
 			label: "检索 calender 笔记",
 			href: "calender-bar.webp",
 			bindAction: toggleCalender,
@@ -559,21 +463,6 @@ function checkNoteHistory() {
 	if (myHistory.style.visibility === "hidden") {
 		myHistory.style.visibility = "visible";
 	}
-}
-
-function formatIndex(index) {
-	let s = "";
-	return (index = index + 1);
-
-	if (index >= 100) {
-		s = index;
-	} else if (index >= 10) {
-		s = "&nbsp;" + index;
-	} else {
-		s = "&nbsp;&nbsp;" + index;
-	}
-
-	return "#" + s;
 }
 
 function parseTime(time, onlyEmoji = false) {

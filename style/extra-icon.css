@@ -954,9 +954,54 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="doczj.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="doczj.com"]::before,
+.b3-typography a[href*="doczj.com"]::before {
+	content: "";
+	background-image: url("../icon/doczj.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="zhiyunwenxian.cn"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="zhiyunwenxian.cn"]::before,
 .b3-typography a[href*="zhiyunwenxian.cn"]::before {
 	content: "";
 	background-image: url("../icon/zhiyunwenxian.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="rockwellautomation.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="rockwellautomation.com"]::before,
+.b3-typography a[href*="rockwellautomation.com"]::before {
+	content: "";
+	background-image: url("../icon/rockwellautomation.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="huxiu.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="huxiu.com"]::before,
+.b3-typography a[href*="huxiu.com"]::before {
+	content: "";
+	background-image: url("../icon/huxiu.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="gucheng.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="gucheng.com"]::before,
+.b3-typography a[href*="gucheng.com"]::before {
+	content: "";
+	background-image: url("../icon/gucheng.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="twittervideodownloader.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="twittervideodownloader.com"]::before,
+.b3-typography a[href*="twittervideodownloader.com"]::before {
+	content: "";
+	background-image: url("../icon/twittervideodownloader.com.png");
 }

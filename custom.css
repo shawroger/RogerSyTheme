@@ -76,6 +76,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 #status svg,
+#status div.status__msg,
 #status div.status__counter,
 #status div.status__counter span {
 	color: white !important;

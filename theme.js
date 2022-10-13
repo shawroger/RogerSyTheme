@@ -356,36 +356,6 @@ function calloutEmit() {
 	}
 }
 
-window.addEventListener("keydown", (event) => {
-	const keyBindList = [
-		{
-			code: ["F5"],
-			cb: forceReload,
-		},
-		{
-			code: ["F3"],
-			cb: addRenderNoteRoute,
-		},
-		{
-			code: ["F2"],
-			cb: calloutEmit,
-		},
-		{
-			code: ["F1"],
-			cb: hideBars,
-		},
-	];
-
-	if (event.ctrlKey) {
-		replaceTitle();
-		const item = keyBindList.find(({ code }) => code.includes(event.key));
-
-		if (item && item.cb) {
-			item.cb();
-		}
-	}
-});
-
 function toggleCalender() {
 	const widgetDOM = document.createElement("div");
 	widgetDOM.id = "calendar-bar";
@@ -457,10 +427,14 @@ setTimeout(() => {
 	initDOM();
 }, 300);
 
+function formatIndex(index) {
+	return "#" + (index = index + 1);
+}
+
 function checkNoteHistory() {
 	let myHistory = document.getElementById("myHistory");
 
-	if (myHistory.style.visibility === "hidden") {
+	if (myHistory && myHistory.style && myHistory.style.visibility === "hidden") {
 		myHistory.style.visibility = "visible";
 	}
 }
@@ -677,7 +651,7 @@ function initHistoryCheck() {
 				color: #202124;
 				font-weight: 600;
 				margin: 0 20px;
-				background: rgba(45, 45, 45, 0.1);
+				background: rgba(45, 45, 45, 0.03);
 				border: 1px solid rgba(255, 255, 255, 0.15);
 				box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
 			"
@@ -769,9 +743,11 @@ function initHistoryCheck() {
 				elem_div.style.justifyContent = "space-between";
 				elem_div.style.marginTop = "10px";
 				elem_div.innerHTML = `
-<span style="width:40px;color: darkcyan;">${formatIndex(index)}</span>
-<span class="historyTimeStamp" style="color:#4c5059;margin-right:2em;flex:1;">
-	${timeEmoji}${item_time}
+<span style="width:40px;color:#3481c5;font-size:110%;font-weight:bold;font-family:'Times New Roman';">${formatIndex(
+					index
+				)}</span>
+<span class="historyTimeStamp" style="font-weight:bold;color:#4c5059;font-size:110%;margin-right:2em;flex:1;font-family:'Times New Roman';">
+	${timeEmoji}${item_time.replace(/-/g, ".")}
 </span>
 <span 
 	style="color:#3481c5;margin-right:5px;cursor:pointer;"
@@ -832,10 +808,12 @@ function initHistoryCheck() {
 					elem_div.style.display = "flex";
 					elem_div.style.justifyContent = "space-between";
 					elem_div.innerHTML = `
-<span style="width:40px;color: darkcyan;">${formatIndex(index)}</span>
-<span class="historyTimeStamp" style="color:#4c5059;margin-right:2em;flex:1;">
-	${timeEmoji}${item_time}
-</span>
+<span style="width:40px;color:#3481c5;font-size:110%;font-weight:bold;font-family:'Times New Roman';">${formatIndex(
+						index
+					)}</span>
+<span class="historyTimeStamp" style="font-weight:bold;color:#4c5059;font-size:110%;margin-right:2em;flex:1;font-family:'Times New Roman';">
+	${timeEmoji}${item_time.replace(/-/g, ".")}
+</span>	
 <span
 style="color:#3481c5;margin-right:5px;cursor:pointer;"
 	data-href="${href}"

@@ -34,9 +34,8 @@
 	box-shadow: var(--b3-protyle-content-shadow);
 }
 
-/* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
+/* 面包屑导航样式 */
 
-/* 调整面包屑条目颜色（依次为符号icon，小三角标志，文字颜色） */
 svg.popover__block,
 .protyle-breadcrumb__arrow,
 .protyle-breadcrumb__item {
@@ -52,8 +51,21 @@ svg.popover__block,
 	margin-top: 0px !important;
 }
 
+.protyle-wysiwyg .render-node {
+	counter-reset: sqlbreadcrumb 0;
+}
+
 .protyle-wysiwyg .protyle-breadcrumb__bar span {
 	color: var(--b3-theme-on-surface) !important;
+}
+
+.protyle-wysiwyg .protyle-breadcrumb__bar::before {
+	left: -1.8em;
+	font-weight: bold;
+	color: #65a3ff;
+	position: absolute;
+	content: "#" counter(sqlbreadcrumb);
+	counter-increment: sqlbreadcrumb;
 }
 
 /* 设置聚焦的块前面的符号颜色为深色 */

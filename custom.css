@@ -13,6 +13,8 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	padding-top: 35px !important;
 }
 
+#barHelp,
+#barFeedback,
 #toolbarVIP,
 #barSync,
 #editorEmptyHelp,
@@ -54,7 +56,29 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 .toolbar {
-	display: none;
+	height: 25px;
+	background: #65a3ff;
+}
+
+.toolbar svg {
+	color: white !important;
+}
+
+.toolbar #drag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white !important;
+}
+
+#status {
+	background-color: #65a3ff !important;
+}
+
+#status svg,
+#status div.status__counter,
+#status div.status__counter span {
+	color: white !important;
 }
 
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
@@ -85,6 +109,7 @@ span[data-type~="inline-memo"] {
 
 div#dockLeft {
 	background: #65a3ff;
+	padding-top: 3px !important;
 }
 
 div#dockLeft .dock__item {

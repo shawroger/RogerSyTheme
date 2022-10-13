@@ -1,29 +1,9 @@
-/* 引述 */
+
 .protyle-wysiwyg .bq[custom-co] {
 	padding: 0.35em 0.3em;
 	border-radius: 0 2px 5px 0;
 	color: var(--b3-theme-on-background);
 }
-
-/* .protyle-wysiwyg [custom-f~="dt"] .bq[custom-co] {
-	margin: 0;
-	padding: 0;
-	box-shadow: none !important;
-}
-
-.protyle-wysiwyg [custom-f~="dt"] .bq[custom-co]::after {
-	display: none;
-} */
-
-/* .protyle-wysiwyg [custom-f~="kb"] .bq[custom-co] {
-	margin: 0;
-	padding: 0;
-	box-shadow: none !important;
-} */
-
-/* .protyle-wysiwyg [custom-f~="kb"] .bq[custom-co]::after {
-	display: none;
-} */
 
 .protyle-wysiwyg .bq:not([custom-co]) {
 	padding: 0.1em 0.4em;

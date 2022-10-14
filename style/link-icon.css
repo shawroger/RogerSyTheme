@@ -2457,3 +2457,12 @@
 	content: "";
 	background-image: url("../icon/ahu.edu.cn.webp");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="eagle.cool"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="eagle.cool"]::before,
+.b3-typography a[href*="eagle.cool"]::before {
+	content: "";
+	background-image: url("../icon/eagle.cool.png");
+}

@@ -13,8 +13,6 @@ ul.fn__flex.layout-tab-bar {
 	position: relative;
 	background-color: #f3f3f5;
 	flex: none;
-	/* 设置标签页的宽度 */
-	/* max-width: 16em; */
 	min-width: 12em;
 	border-right: 1px solid #e6e6e8;
 	border-radius: 0px;
@@ -39,10 +37,9 @@ ul.fn__flex.layout-tab-bar {
 /* 设置当前标签页样式 */
 .layout-tab-bar .item--focus {
 	color: white;
-	background-image: linear-gradient(to right, #75a7f1, #65a3ff);
-	box-shadow: none !important;
 	border-radius: 0px;
-	/* border: 1px solid transparent !important; */
+	box-shadow: none !important;
+	background-image: linear-gradient(to right, #32cd32, #3cb371);
 }
 
 /* 设置当前标签页文字样式 */

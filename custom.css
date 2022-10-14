@@ -13,6 +13,10 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	padding-top: 35px !important;
 }
 
+.toolbar__item:hover svg {
+	color: black !important;
+}
+
 #barHelp,
 #barFeedback,
 #toolbarVIP,
@@ -57,7 +61,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 
 .toolbar {
 	height: 25px;
-	background: #65a3ff;
+	background: #3cb371;
 }
 
 .toolbar svg {
@@ -72,14 +76,14 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 #status {
-	background-color: #65a3ff !important;
+	background-color: #3cb371 !important;
 }
 
 #status svg,
 #status div.status__msg,
 #status div.status__counter,
 #status div.status__counter span {
-	color: white !important;
+	color: white;
 }
 
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
@@ -109,7 +113,7 @@ span[data-type~="inline-memo"] {
 }
 
 div#dockLeft {
-	background: #65a3ff;
+	background: #3cb371;
 	padding-top: 3px !important;
 }
 
@@ -118,11 +122,11 @@ div#dockLeft .dock__item {
 }
 
 div#dockLeft .dock__item:hover {
-	background-color: lightblue;
+	background-color: #00ff00;
 }
 
 div#dockLeft .dock__item--active {
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 div .block__icons {

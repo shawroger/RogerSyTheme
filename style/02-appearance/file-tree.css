@@ -2,7 +2,7 @@
 .block__logo {
 	padding-left: 5px;
 	font-size: 120%;
-	color: #80808080;
+	color: #000;
 }
 
 /* 取消文档树、大纲、反向链接左边的icon，感觉显示重复了 */

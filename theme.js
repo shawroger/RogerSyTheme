@@ -229,129 +229,68 @@ function request(url, data, method = "POST") {
 	}
 }
 
-function hideBars() {
-	let display =
-		document.querySelector(".toolbar").style.display === "none"
-			? "flex"
-			: "none";
-
-	[".toolbar", "#dockLeft", "#dockRight"].forEach((item) => {
-		const el = document.querySelector(item);
-		el.style.display = display;
-	});
-}
-
-function replaceTitle() {
-	const title = document.querySelector("#drag");
-	if (title.innerHTML.trim().startsWith("思源笔记 v2.")) {
-		title.innerHTML =
-			"❤️‍🔥 Roger's note —— on " +
-			new Date().toLocaleDateString().split("/").join(".");
-	}
-}
-
-function abs(n) {
-	return n >= 0 ? n : -1 * n;
-}
-
 const differDayTime = function (startDate, endDate) {
-	return Math.floor(abs(endDate - startDate) / 86400000) + " 天 ";
+	return Math.floor(Math.abs(endDate - startDate) / 86400000) + "D";
 };
 
 const differHourTime = function (startDate, endDate) {
 	return (
-		(Math.floor(abs(endDate - startDate - 86400000) / 3600000) % 24) + " 小时 "
+		(Math.floor(Math.abs(endDate - startDate - 86400000) / 3600000) % 24) + "H"
 	);
 };
 
 const differMinuteTime = function (startDate, endDate) {
-	return (Math.floor(abs(endDate - startDate) / 60000) % 60) + " 分 ";
+	return (Math.floor(Math.abs(endDate - startDate) / 60000) % 60) + "M";
 };
 
 const differSecondTime = function (startDate, endDate) {
-	return (Math.floor((endDate - startDate) / 1000) % 60) + " 秒";
+	return (Math.floor(Math.abs(endDate - startDate) / 1000) % 60) + "S";
 };
 
-function calcTime(time) {
+function calcuteTimeOffset(time) {
 	const start = new Date().getTime();
 	const end = new Date(time).getTime();
 
-	let msg = end > start ? "剩余时间 " : "逾期时间";
+	let msg = " @" + end > start ? "due-to" : "overdue";
 
 	const day = differDayTime(start, end);
 	const hour = differHourTime(start, end);
 	const minu = differMinuteTime(start, end);
 	const seco = differSecondTime(start, end);
 
-	return " @" + msg + day + hour + minu + seco;
+	return msg + " {" + day + hour + minu + seco + "}";
 }
 
-function calloutNoticeEmit(title, content, time) {
-	let msg = "发现提醒事项";
+function sendInfoMessage(content) {
+	const list = content.split("|");
 
-	if (title || content) {
-		msg += "：";
+	if (list.length < 2) {
+		return sendSyMsg(content);
 	}
 
-	if (content) {
-		msg += content;
-	} else if (title) {
-		msg += title;
-	}
-
-	if (time) {
-		msg += calcTime(time);
-	}
-
-	sendSyMsg(msg);
-}
-
-function calloutFormEmit() {
-	let msg = "发现表单";
-
-	if (cotext || cocontent) {
-		msg += "：";
-	}
-
-	if (cocontent) {
-		msg += cocontent;
-	} else if (cotext) {
-		msg += cotext;
-	}
-
-	sendSyMsg(msg);
-}
-function calloutEmit() {
-	const emitList = [
-		{
-			cotypes: ["notice", "todo", "plan", "wait", "homework"],
-			cb: calloutNoticeEmit,
-		},
-		{
-			cotypes: ["form"],
-			cb: calloutFormEmit,
-		},
-	];
-	let emitCount = 0;
-	const calloutList = document.querySelectorAll("[custom-co]");
-
-	console.log(calloutList);
-
-	calloutList.forEach((e) => {
-		const cotype = e.getAttribute("custom-co");
-		const title = e.getAttribute("custom-cot");
-		const content = e.getAttribute("custom-coc");
-		const time = e.getAttribute("custom-cotime");
-
-		const item = emitList.find(({ cotypes }) => cotypes.includes(cotype));
-
-		if (item && item.cb) {
-			item.cb(title, content, time);
-			emitCount++;
+	if (list.length === 2) {
+		if (list[1].startsWith("20") && list[1].includes(".")) {
+			return sendSyMsg(list[0] + calcuteTimeOffset(list[1]));
+		} else {
+			return sendSyMsg(list[0] + "：" + list[1]);
 		}
+	}
+
+	return sendSyMsg(list[0] + "：" + list[1] + calcuteTimeOffset(list[2]));
+}
+
+function checkInfoAttrs() {
+	let count = 0;
+	const attr = "info";
+	const selector = "[custom-" + attr + "]";
+	const list = document.querySelectorAll(selector);
+
+	list.forEach((e) => {
+		sendInfoMessage(e.getAttribute(selector));
+		count++;
 	});
 
-	if (!emitCount) {
+	if (!count) {
 		sendSyMsg("暂无通知事项");
 	}
 }
@@ -387,9 +326,9 @@ function initDOM() {
 
 	const domList = [
 		{
-			label: "检查通知页面事项",
+			label: "检查页面提醒事项",
 			href: "check-notice.svg",
-			bindAction: calloutEmit,
+			bindAction: checkInfoAttrs,
 		},
 		{
 			label: "检索笔记 history 信息",

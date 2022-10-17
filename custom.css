@@ -71,8 +71,13 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 .toolbar {
-	height: 30px;
+	display: flex;
+	align-items: center;
 	background: var(--b3-theme-primary) !important;
+}
+
+body > div.fn__flex-1.fn__flex {
+	overflow-y: hidden;
 }
 
 .toolbar svg {

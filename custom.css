@@ -23,6 +23,10 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	align-items: center;
 }
 
+#barHistory svg {
+	transform: translateY(1px);
+}
+
 #barHelp,
 #barMode,
 #barFeedback,
@@ -68,7 +72,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 
 .toolbar {
 	height: 30px;
-	background: #3cb371;
+	background: var(--b3-theme-primary) !important;
 }
 
 .toolbar svg {
@@ -83,7 +87,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 #status {
-	background-color: #3cb371 !important;
+	background-color: var(--b3-theme-primary) !important;
 }
 
 #status svg,
@@ -120,7 +124,7 @@ span[data-type~="inline-memo"] {
 }
 
 div#dockLeft {
-	background: #3cb371;
+	background: var(--b3-theme-primary);
 	padding-top: 3px !important;
 }
 
@@ -129,11 +133,12 @@ div#dockLeft .dock__item {
 }
 
 div#dockLeft .dock__item:hover {
-	background-color: #00ff00;
+	background-color: var(--b3-theme-primary);
 }
 
 div#dockLeft .dock__item--active {
 	transform: scale(1.3);
+	background-color: var(--b3-theme-primary);
 }
 
 div .block__icons {

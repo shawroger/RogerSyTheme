@@ -27,7 +27,7 @@
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	border: 2px solid #3cb371;
+	border: 2px solid var(--b3-theme-primary);
 }
 
 .protyle-wysiwyg
@@ -67,7 +67,7 @@
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	border: 2px solid #3cb371; /*#3CB371*/
+	border: 2px solid var(--b3-theme-primary); /*var(--b3-theme-primary)*/
 }
 
 /*子项设偏移调整*/
@@ -122,7 +122,7 @@
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	border: 2px solid #3cb371;
+	border: 2px solid var(--b3-theme-primary);
 	max-width: 450px;
 	overflow-x: auto;
 }
@@ -254,7 +254,7 @@
 	content: "";
 	position: absolute;
 	top: 50%;
-	border-top: 2px solid #3cb371;
+	border-top: 2px solid var(--b3-theme-primary);
 	width: 20px;
 	height: 50%;
 }
@@ -262,7 +262,7 @@
 /*上竖线*/
 .protyle-wysiwyg *[custom-f~="dt"] .li::before {
 	bottom: 50%;
-	border-left: 2px solid #3cb371;
+	border-left: 2px solid var(--b3-theme-primary);
 }
 
 /*下竖线*/
@@ -270,7 +270,7 @@
 	content: "";
 	position: absolute;
 	bottom: 50%;
-	border-left: 2px solid #3cb371;
+	border-left: 2px solid var(--b3-theme-primary);
 	width: 20px;
 	height: 50%;
 }
@@ -314,7 +314,7 @@
 
 /*下框线*/
 .protyle-wysiwyg *[custom-f~="dt"] .li:nth-last-child(2)::after {
-	border-bottom: 2px solid #3cb371 !important;
+	border-bottom: 2px solid var(--b3-theme-primary) !important;
 	border-radius: 0 0 0 5px;
 	/* border-radius: 0; */
 }
@@ -325,7 +325,7 @@
 	position: absolute;
 	left: 0;
 	top: 50%;
-	border-top: 2px solid #3cb371;
+	border-top: 2px solid var(--b3-theme-primary);
 	width: 20px;
 	height: 0;
 }

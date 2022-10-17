@@ -2,6 +2,7 @@
 :root {
 	/* ————————————————————主要色———————————————————— */
 	--b3-theme-primary: #4c5059;
+
 	--b3-theme-primary-light: var(--b3-theme-primary);
 	--b3-theme-primary-lighter: var(--b3-theme-primary);
 	--b3-theme-primary-lightest: #4c50594d;
@@ -235,7 +236,7 @@
 	--b3-protyle-inline-code-background: var(--b3-theme-hover2);
 	/* 块引用颜色，不用管 */
 	/* --b3-protyle-inline-blockref-color: #0e7a88; */
-	--b3-protyle-inline-blockref-color: #3cb371;
+	--b3-protyle-inline-blockref-color: var(--b3-theme-primary);
 	--b3-protyle-inline-blockref-hover-color: red;
 
 	/* 表格 */

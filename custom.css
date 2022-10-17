@@ -17,12 +17,6 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	color: black !important;
 }
 
-#barHistory {
-	height: 30px;
-	display: flex;
-	align-items: center;
-}
-
 #barHistory svg {
 	transform: translateY(1px);
 }

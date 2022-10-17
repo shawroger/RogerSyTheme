@@ -21,16 +21,11 @@
 	padding: 4px 0px;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:hover {
-	text-decoration: 0.06em wavy var(--b3-font-color8) underline;
-}
-
 .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:before {
-	/* content: url("src/pdf1.svg"); */
-	content: url("../../src/pdf1.svg") !important;
-	position: relative !important;
 	top: 0.1em !important;
 	margin-right: 4px !important;
+	position: relative !important;
+	content: url("../../src/pdf1.svg") !important;
 }
 
 /* ——————————————————————pdf搜索高亮———————————————————— */

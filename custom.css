@@ -17,7 +17,14 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	color: black !important;
 }
 
+#barHistory {
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+
 #barHelp,
+#barMode,
 #barFeedback,
 #toolbarVIP,
 #barSync,
@@ -60,7 +67,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 }
 
 .toolbar {
-	height: 25px;
+	height: 30px;
 	background: #3cb371;
 }
 

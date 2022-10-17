@@ -43,9 +43,11 @@
 .protyle-wysiwyg [data-node-id][custom-co] {
 	border: none;
 	left: 0.25em;
+	margin-top: 10px;
 	min-height: 2.7em;
 	padding: 0.3em 1em;
 	margin-right: 25px;
+	margin-bottom: 10px;
 }
 
 .protyle-wysiwyg [data-node-id][custom-co][custom-cot] {

@@ -236,7 +236,7 @@
 	--b3-protyle-inline-code-background: var(--b3-theme-hover2);
 	/* 块引用颜色，不用管 */
 	/* --b3-protyle-inline-blockref-color: #0e7a88; */
-	--b3-protyle-inline-blockref-color: var(--b3-theme-primary);
+	--b3-protyle-inline-blockref-color: #0e7a88;
 	--b3-protyle-inline-blockref-hover-color: red;
 
 	/* 表格 */

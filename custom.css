@@ -80,6 +80,12 @@ body > div.fn__flex-1.fn__flex {
 	overflow-y: hidden;
 }
 
+.protyle-wysiwyg[contenteditable="true"] span[data-type~="block-ref"]:hover,
+.protyle-wysiwyg[contenteditable="true"]
+	span[data-type~="file-annotation-ref"]:hover {
+	color: deepskyblue;
+}
+
 .toolbar svg {
 	color: white !important;
 }

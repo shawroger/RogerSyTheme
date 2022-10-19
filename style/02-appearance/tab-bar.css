@@ -1,4 +1,3 @@
-
 /* 
 	标签页底部背景颜色
 	标签页数量较少时可以看到
@@ -62,11 +61,11 @@ ul.fn__flex.layout-tab-bar {
 	box-shadow: none;
 }
 
-.layout__wnd--active .layout-tab-bar .item--focus {
+.layout-tab-bar .item {
 	box-shadow: inset 0 2px 0 0 transparent, 0px 0px 0.5px rgba(0, 0, 0, 0.055),
 		0px 0px 4px rgba(0, 0, 0, 0.11) !important;
-	display: flex;
-	justify-content: space-between;
+	display: flex !important;
+	justify-content: space-between !important;
 }
 
 /* 显示钉住的标签页中的文字 */

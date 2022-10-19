@@ -1,20 +1,18 @@
 /* 隐藏左上角设置按钮，鼠标悬浮时显示 */
 #toolbar .toolbar__item svg {
-    opacity: 0;
-    /* background-color: red; */
+	opacity: 0;
 }
 
 #toolbar:hover svg {
-    opacity: 1;
+	opacity: 1;
 }
-
 
 /* 给左侧dock栏设置右边框 */
 div#dockLeft {
-    border-right: 1px solid var(--b3-border-color);
+	border-right: 1px solid var(--b3-border-color);
 }
 
 /* 给右侧dock栏设置左边框 */
 div#dockRight {
-    border-left: 1px solid var(--b3-border-color);
+	border-left: 1px solid var(--b3-border-color);
 }

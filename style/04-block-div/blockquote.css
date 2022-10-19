@@ -1,6 +1,13 @@
-/* ----------------------------------------------引用---------------------------------------------- */
-/* ——————————————————————————设置引用格式———————————————————————————— */
-/* .protyle-wysiwyg [data-node-id].bq,
-.b3-typography blockquote {
-    border-left: 4px solid rgb(207, 207, 207);
-} */
+.protyle-wysiwyg
+	[data-node-id].bq:not(div.list
+		div.bq):not([style*="background-color: var(--b3-card"]) {
+	border-left-color: transparent;
+	text-align: justify;
+	background-image: url(../../src/bq.svg);
+	background-repeat: no-repeat;
+	background-position: left 25px top 20px;
+	background-color: #f8f8f8;
+	color: rgba(0, 0, 0, 0.68);
+	margin: 30px 0;
+	padding: 30px 20px 20px;
+}

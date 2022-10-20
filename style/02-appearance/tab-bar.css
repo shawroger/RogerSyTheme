@@ -120,14 +120,11 @@ li.item.item--pin.item--focus:after {
 }
 
 /* 设置新建标签页位置跟随最后一个标签页，v2.1.14 代码来自于九炎，问题来自于赐我一胖 */
-ul.fn__flex.layout-tab-bar.fn__flex-1 {
+/* ul.fn__flex.layout-tab-bar.fn__flex-1 {
 	flex: none;
 	max-width: calc(100% - 64px);
 }
 
-ul.layout-tab-bar {
-	flex: 1;
-}
 
 /* 设置标签页关闭按钮悬浮时的背景颜色 */
 .layout-tab-bar .item__close:hover svg {

@@ -63,16 +63,17 @@
 	content: "";
 	width: 2em;
 	height: 2em;
-	right: 0.65em;
+	right: 0.75em;
 	margin-left: -3px;
 	position: absolute;
-	top: calc(50% - 1em);
+	top: 1em;
 	background-size: 2em 2em;
 }
 
-[custom-co~="t"]::after,
-[custom-co~="top"]::after {
-	top: 1em !important;
+[custom-co~="m"]::after,
+[custom-co~="mid"]::after,
+[custom-co~="middle"]::after {
+	top: calc(50% - 1em) !important;
 }
 
 [custom-co~="r"]::after,

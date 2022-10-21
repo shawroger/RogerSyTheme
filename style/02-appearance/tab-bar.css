@@ -107,8 +107,9 @@ li.item.item--pin.item--focus:after {
 	right: 5px;
 	top: 0px;
 	width: 12px;
-	/* height: 12px; */
+	height: 12px;
 	rotate: 45deg;
+	background-color: initial !important;
 }
 
 /* --------------------------------------------------标签页 END--------------------------------------------- */

@@ -2466,3 +2466,12 @@
 	content: "";
 	background-image: url("../icon/eagle.cool.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="caj2pdf.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="caj2pdf.cn"]::before,
+.b3-typography a[href*="caj2pdf.cn"]::before {
+	content: "";
+	background-image: url("../icon/caj2pdf.cn.ico");
+}

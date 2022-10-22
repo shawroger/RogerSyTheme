@@ -163,10 +163,11 @@ button.b3-menu__item
 button.b3-menu__item
 	> span.b3-menu__label
 	span[style*="color:var(--b3-font-color12);"]::before {
-	content: "⿴";
-	font-weight: 200;
-	font-size: 1.45em;
+	content: "T";
+	font-family: "Times New Roman";
+	font-weight: bold;
 	position: absolute;
+	font-size: 1.2em;
 	color: var(--b3-theme-on-background) !important;
 }
 

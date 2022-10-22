@@ -100,10 +100,7 @@ div[style*="background-color: var(--b3-font-background12);"],
 
 [style*="color: var(--b3-font-color12);"] {
 	color: inherit !important;
-	font-weight: normal !important;
-	margin: 1px 2px;
-	padding: 1px 1px;
-	outline: dashed black 1.5px;
+	font-family: "Times New Roman" !important;
 }
 
 [style*="color: var(--b3-font-color13);"] {
@@ -204,9 +201,8 @@ div[style*="background-color: var(--b3-font-background12);"],
 
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color12)"]:before {
-	content: "⿴";
-	font-weight: 200;
-	font-size: 1.45em;
+	content: "T";
+	font-family: "Times New Roman";
 }
 
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color13)"]:before {

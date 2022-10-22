@@ -1209,6 +1209,21 @@
 	background-image: url("../icon/word.svg");
 }
 
+/* visio */
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".vsdx"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".vsdx"]::before,
+.b3-typography [href^="assets/"][href$=".vsdx"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".vsd"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".vsd"]::before,
+.b3-typography [href^="assets/"][href$=".vsd"]::before {
+	content: "";
+	background-image: url("../icon/visio.png");
+}
+
 /* ppt */
 .protyle-wysiwyg
 	[data-node-id]
@@ -2474,4 +2489,13 @@
 .b3-typography a[href*="caj2pdf.cn"]::before {
 	content: "";
 	background-image: url("../icon/caj2pdf.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="huajclub.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="huajclub.com"]::before,
+.b3-typography a[href*="huajclub.com"]::before {
+	content: "";
+	background-image: url("../icon/huajclub.com.jpg");
 }

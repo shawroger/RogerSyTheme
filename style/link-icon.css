@@ -2527,3 +2527,17 @@
 	content: "";
 	background-image: url("../icon/yiibai.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mathworks.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="mathworks.cn"]::before,
+.b3-typography a[href*="mathworks.cn"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mathworks.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="mathworks.com"]::before,
+.b3-typography a[href*="mathworks.com"]::before {
+	content: "";
+	background-image: url("../icon/matlab.png");
+}

@@ -1254,6 +1254,16 @@
 	background-image: url("../icon/excel.svg");
 }
 
+/* matlab */
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".m"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".m"]::before,
+.b3-typography [href^="assets/"][href$=".m"]::before {
+	content: "";
+	background-image: url("../icon/matlab.png");
+}
+
 /* pdf */
 .protyle-wysiwyg
 	[data-node-id]
@@ -2498,4 +2508,22 @@
 .b3-typography a[href*="huajclub.com"]::before {
 	content: "";
 	background-image: url("../icon/huajclub.com.jpg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="people.com.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="people.com.cn"]::before,
+.b3-typography a[href*="people.com.cn"]::before {
+	content: "";
+	background-image: url("../icon/people.com.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="yiibai.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="yiibai.com"]::before,
+.b3-typography a[href*="yiibai.com"]::before {
+	content: "";
+	background-image: url("../icon/yiibai.com.ico");
 }

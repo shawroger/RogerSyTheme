@@ -1,7 +1,33 @@
-.protyle-wysiwyg *[custom-f~="dt"] .render-node ::before,
+/* .protyle-wysiwyg *[custom-f~="dt"] .render-node ::before,
 .protyle-wysiwyg *[custom-f~="dt"] .render-node ::after {
 	display: none !important;
 }
+
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	[data-node-id].li
+	> [data-node-id] {
+	margin: 0 !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	.li
+	div
+	> div[spellcheck="false"] {
+	border: none !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="dt"]
+	.render-node
+	.list
+	> .li:first-child:nth-last-child(2) {
+	top: 0;
+	transform: none;
+} */
 
 .protyle-wysiwyg *[custom-f~="dt"] .li .list {
 	padding: 0px;
@@ -76,14 +102,6 @@
 	margin-right: -14px !important;
 }
 
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	[data-node-id].li
-	> [data-node-id] {
-	margin: 0 !important;
-}
-
 .protyle-wysiwyg *[custom-f~="dt"] [data-node-id].li > .list {
 	padding-left: 20px;
 }
@@ -123,15 +141,6 @@
 	margin-left: -8px;
 	text-align: center;
 	border: 2px solid var(--b3-theme-primary);
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	.li
-	div
-	> div[spellcheck="false"] {
-	border: none !important;
 }
 
 .protyle-wysiwyg
@@ -287,15 +296,6 @@
 .protyle-wysiwyg *[custom-f~="dt"] .list > .li:first-child:nth-last-child(2) {
 	top: 50%;
 	transform: translate(0, -50%);
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	.list
-	> .li:first-child:nth-last-child(2) {
-	top: 0;
-	transform: none;
 }
 
 /*取消多余线条*/

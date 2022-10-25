@@ -2541,3 +2541,12 @@
 	content: "";
 	background-image: url("../icon/matlab.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="w3cschool.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="w3cschool.cn"]::before,
+.b3-typography a[href*="w3cschool.cn"]::before {
+	content: "";
+	background-image: url("../icon/w3cschool.cn.ico");
+}

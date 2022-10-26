@@ -2550,3 +2550,21 @@
 	content: "";
 	background-image: url("../icon/w3cschool.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="bjnews.com.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="bjnews.com.cn"]::before,
+.b3-typography a[href*="bjnews.com.cn"]::before {
+	content: "";
+	background-image: url("../icon/bjnews.com.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="rmzxb.com.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="rmzxb.com.cn"]::before,
+.b3-typography a[href*="rmzxb.com.cn"]::before {
+	content: "";
+	background-image: url("../icon/rmzxb.com.cn.ico");
+}

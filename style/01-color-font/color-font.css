@@ -2,6 +2,7 @@
 :root {
 	/* ————————————————————主要色———————————————————— */
 	--b3-theme-primary: #4c5059;
+	--b3-scroll-color: #4c5059;
 
 	--b3-theme-primary-light: var(--b3-theme-primary);
 	--b3-theme-primary-lighter: var(--b3-theme-primary);

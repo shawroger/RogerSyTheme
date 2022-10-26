@@ -269,7 +269,8 @@
 /*上竖线*/
 .protyle-wysiwyg *[custom-f~="dt"] .li::before {
 	bottom: 50%;
-	border-left: 2px solid var(--b3-theme-primary);
+	left: inherit;
+	border-left: 2px solid var(--b3-theme-primary) !important;
 }
 
 /*下竖线*/

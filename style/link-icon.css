@@ -2568,3 +2568,21 @@
 	content: "";
 	background-image: url("../icon/rmzxb.com.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cnki.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cnki.net"]::before,
+.b3-typography a[href*="cnki.net"]::before {
+	content: "";
+	background-image: url("../icon/cnki.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mayiwenku.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="mayiwenku.com"]::before,
+.b3-typography a[href*="mayiwenku.com"]::before {
+	content: "";
+	background-image: url("../icon/mayiwenku.com.png");
+}

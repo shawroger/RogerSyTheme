@@ -2586,3 +2586,12 @@
 	content: "";
 	background-image: url("../icon/mayiwenku.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="hqu.edu.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="hqu.edu.cn"]::before,
+.b3-typography a[href*="hqu.edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/hqu.edu.cn.ico");
+}

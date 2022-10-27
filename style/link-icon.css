@@ -2610,3 +2610,12 @@
 	content: "";
 	background-image: url("../icon/hqu.edu.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="zaobao.com.sg"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="zaobao.com.sg"]::before,
+.b3-typography a[href*="zaobao.com.sg"]::before {
+	content: "";
+	background-image: url("../icon/zaobao.com.sg.ico");
+}

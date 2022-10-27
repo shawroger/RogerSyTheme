@@ -1209,6 +1209,21 @@
 	background-image: url("../icon/word.svg");
 }
 
+/* simulink */
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".mdl"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".mdl"]::before,
+.b3-typography [href^="assets/"][href$=".mdl"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href$=".sxl"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href$=".sxl"]::before,
+.b3-typography [href^="assets/"][href$=".sxl"]::before {
+	content: "";
+	background-image: url("../icon/simulink.png");
+}
+
 /* visio */
 .protyle-wysiwyg
 	[data-node-id]

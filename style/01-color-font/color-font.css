@@ -1,8 +1,10 @@
 /* ---------------------------------需要修改的地方：主要色，背景色，文字色---------------------------------- */
 :root {
 	/* ————————————————————主要色———————————————————— */
-	--b3-theme-primary: #4c5059;
-	--b3-scroll-color: #4c5059;
+	--b3-theme-primary: #3573f0;
+	--b3-scroll-color: #3573f0;
+
+	--b3-theme-map-line: rgb(15 15 15 / 10%);
 
 	--b3-theme-primary-light: var(--b3-theme-primary);
 	--b3-theme-primary-lighter: var(--b3-theme-primary);

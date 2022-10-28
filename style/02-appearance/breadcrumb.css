@@ -52,17 +52,21 @@ svg.popover__block,
 }
 
 .protyle-wysiwyg .render-node {
-	counter-reset: sqlbreadcrumb 0;
+	counter-reset: sqlbreadcrumb 1;
 }
 
 .protyle-wysiwyg .protyle-breadcrumb__bar span {
 	color: var(--b3-theme-on-surface) !important;
 }
 
+div.render-node > div:nth-child(2) > div.protyle-breadcrumb__bar::before {
+	content: none !important;
+}
+
 .protyle-wysiwyg .protyle-breadcrumb__bar::before {
 	left: -2em;
 	font-weight: bold;
-	color: #65a3ff;
+	color: var(--b3-theme-primary);
 	position: absolute;
 	content: "#" counter(sqlbreadcrumb);
 	counter-increment: sqlbreadcrumb;

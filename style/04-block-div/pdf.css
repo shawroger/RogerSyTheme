@@ -22,10 +22,12 @@
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:before {
-	top: 0.1em !important;
+	
 	margin-right: 4px !important;
 	position: relative !important;
-	content: url("../../src/pdf1.svg") !important;
+	content: "🔖";
+	/* top: 0.1em !important;
+	content: url("../../src/pdf1.svg") !important; */
 }
 
 /* ——————————————————————pdf搜索高亮———————————————————— */

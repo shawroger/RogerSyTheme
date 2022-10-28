@@ -1,34 +1,3 @@
-/* .protyle-wysiwyg *[custom-f~="dt"] .render-node ::before,
-.protyle-wysiwyg *[custom-f~="dt"] .render-node ::after {
-	display: none !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	[data-node-id].li
-	> [data-node-id] {
-	margin: 0 !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	.li
-	div
-	> div[spellcheck="false"] {
-	border: none !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.render-node
-	.list
-	> .li:first-child:nth-last-child(2) {
-	top: 0;
-	transform: none;
-} */
-
 .protyle-wysiwyg *[custom-f~="dt"] .li .list {
 	padding: 0px;
 	margin: 0px;
@@ -40,20 +9,16 @@
 	width: 100% !important;
 }
 
-/* 设置首项底色为蓝色 */
 .protyle-wysiwyg
 	*[custom-f~="dt"].list[data-node-index]
 	> div.li
 	> div.p
 	> div:not(.protyle-attr) {
-	/* background-color: #65a3ff;
-	color: white; */
 	outline: none;
-	/* border-radius: 50px; */
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	border: 2px solid var(--b3-theme-primary);
+	border: 2px solid var(--b3-theme-map-line);
 }
 
 .protyle-wysiwyg
@@ -93,7 +58,7 @@
 	padding: 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
-	border: 2px solid var(--b3-theme-primary); /*var(--b3-theme-primary)*/
+	border: 2px solid var(--b3-theme-map-line); /*var(--b3-theme-map-line)*/
 }
 
 /*子项设偏移调整*/
@@ -140,7 +105,7 @@
 	overflow-x: auto;
 	margin-left: -8px;
 	text-align: center;
-	border: 2px solid var(--b3-theme-primary);
+	border: 2px solid var(--b3-theme-map-line);
 }
 
 .protyle-wysiwyg
@@ -261,7 +226,7 @@
 	content: "";
 	position: absolute;
 	top: 50%;
-	border-top: 2px solid var(--b3-theme-primary);
+	border-top: 2px solid var(--b3-theme-map-line);
 	width: 20px;
 	height: 50%;
 }
@@ -270,7 +235,7 @@
 .protyle-wysiwyg *[custom-f~="dt"] .li::before {
 	bottom: 50%;
 	left: inherit;
-	border-left: 2px solid var(--b3-theme-primary) !important;
+	border-left: 2px solid var(--b3-theme-map-line) !important;
 }
 
 /*下竖线*/
@@ -278,7 +243,7 @@
 	content: "";
 	position: absolute;
 	bottom: 50%;
-	border-left: 2px solid var(--b3-theme-primary);
+	border-left: 2px solid var(--b3-theme-map-line);
 	width: 20px;
 	height: 50%;
 }
@@ -313,7 +278,7 @@
 
 /*下框线*/
 .protyle-wysiwyg *[custom-f~="dt"] .li:nth-last-child(2)::after {
-	border-bottom: 2px solid var(--b3-theme-primary) !important;
+	border-bottom: 2px solid var(--b3-theme-map-line) !important;
 	border-radius: 0 0 0 5px;
 	/* border-radius: 0; */
 }
@@ -324,7 +289,7 @@
 	position: absolute;
 	left: 0;
 	top: 50%;
-	border-top: 2px solid var(--b3-theme-primary);
+	border-top: 2px solid var(--b3-theme-map-line);
 	width: 20px;
 	height: 0;
 }

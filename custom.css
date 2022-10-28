@@ -99,17 +99,6 @@ body > div.fn__flex-1.fn__flex {
 	color: white !important;
 }
 
-#status {
-	background-color: var(--b3-theme-primary) !important;
-}
-
-#status svg,
-#status div.status__msg,
-#status div.status__counter,
-#status div.status__counter span {
-	color: white;
-}
-
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
 	border-left: none !important;
 }
@@ -133,25 +122,22 @@ span[data-type~="inline-memo"] {
 	position: fixed;
 	background: white;
 	transform: translate(-50%, -50%);
-	box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 6px 0px;
+	box-shadow: rgb(0 0 0 / 5%) 2px 2px 5px 5px;
 }
 
 div#dockLeft {
-	background: var(--b3-theme-primary);
 	padding-top: 3px !important;
+	background: var(--b3-theme-surface);
 }
 
-div#dockLeft .dock__item {
-	color: white;
-}
-
-div#dockLeft .dock__item:hover {
-	background-color: var(--b3-theme-primary);
-}
-
+div#dockLeft .dock__item:hover,
 div#dockLeft .dock__item--active {
 	transform: scale(1.3);
-	background-color: var(--b3-theme-primary);
+}
+
+div#dockLeft .dock__item--activefocus {
+	color: var(--b3-theme-on-surface-light) !important;
+	background-color: var(--b3-theme-surface) !important;
 }
 
 div .block__icons {

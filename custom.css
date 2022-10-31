@@ -39,7 +39,7 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	div.fn__flex-1
 	h1,
 .layout__empty.b3-list h1,
-#dockLeft > div:nth-child(3) {
+#dockLeft > div:nth-child(3) > span {
 	display: none !important;
 }
 

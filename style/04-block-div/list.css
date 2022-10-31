@@ -10,7 +10,7 @@
 }
 
 .protyle-wysiwyg [data-node-id].li[fold="1"] > .protyle-action {
-	color: lightcoral;
+	color: var(--b3-theme-primary);
 }
 
 /* 鼠标悬浮时设置为透明，否则会有灰色圆形出现 */

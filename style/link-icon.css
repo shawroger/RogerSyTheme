@@ -2619,3 +2619,21 @@
 	content: "";
 	background-image: url("../icon/zaobao.com.sg.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="game.qq.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="qqgame.qq.com"]::before,
+.b3-typography a[href*="game.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/game.qq.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="qqgame.qq.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="qqgame.qq.com"]::before,
+.b3-typography a[href*="qqgame.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/qqgame.qq.com.ico");
+}

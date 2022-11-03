@@ -489,30 +489,43 @@ function clearDatabase(idbDatabase, cb) {
 	}
 }
 
+function downloadString(content, filename) {
+	var eleLink = document.createElement("a");
+	eleLink.download = filename;
+	eleLink.style.display = "none";
+	var blob = new Blob([content]);
+	eleLink.href = URL.createObjectURL(blob);
+	document.body.appendChild(eleLink);
+	eleLink.click();
+	document.body.removeChild(eleLink);
+}
 
-includeJs("/appearance/themes/RogerSyTheme/indexeddb.js");
-includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
-
+// includeJs("/appearance/themes/RogerSyTheme/indexeddb.js");
+// includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
 
 /*
 const db = new Dexie("NoteViews");
 
 db.open()
-		.then(function () {
-			const idbDatabase = db.backendDB();
+	.then(function () {
+		const idbDatabase = db.backendDB();
 
-			exportToJsonString(idbDatabase, function (err, data) {
-				if (err) {
-					console.error(err);
-				} else {
-					console.log(data);
-				}
-			});
-		})
-		.catch(function (e) {
-			console.error("Could not connect. " + e);
+		exportToJsonString(idbDatabase, function (err, data) {
+			if (err) {
+				console.error(err);
+			} else {
+				const uid = new Date().getTime();
+				downloadString(
+					"var noteViewsData = " + data,
+					"noteviews-data-" + uid + ".js"
+				);
+			}
 		});
-}
+	})
+	.catch(function (e) {
+		console.error("Could not connect. " + e);
+	});
+
 
 
 db.open()
@@ -520,7 +533,7 @@ db.open()
 		const idbDatabase = db.backendDB();
 		clearDatabase(idbDatabase, function (err) {
 			if (!err) {
-				importFromJsonString(idbDatabase, data, function (err) {
+				importFromJsonString(idbDatabase, noteViewsData, function (err) {
 					if (!err) {
 						console.log("Imported data successfully");
 					}

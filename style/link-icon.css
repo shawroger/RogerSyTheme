@@ -2646,3 +2646,21 @@
 	content: "";
 	background-image: url("../icon/wangdoc.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="latexstudio.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="latexstudio.net"]::before,
+.b3-typography a[href*="latexstudio.net"]::before {
+	content: "";
+	background-image: url("../icon/latexstudio.net.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mathcha.io"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="mathcha.io"]::before,
+.b3-typography a[href*="mathcha.io"]::before {
+	content: "";
+	background-image: url("../icon/mathcha.io.png");
+}

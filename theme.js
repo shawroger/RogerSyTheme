@@ -377,8 +377,6 @@ function includeJs(file, target) {
 	html_doc.appendChild(js);
 }
 
-includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
-
 function exportToJsonString(idbDatabase, cb) {
 	const exportObject = {};
 	const objectStoreNamesSet = new Set(idbDatabase.objectStoreNames);
@@ -408,7 +406,7 @@ function exportToJsonString(idbDatabase, cb) {
 	}
 }
 
-function importFromJsonString(idbDatabase, jsonString, cb) {
+function importFromJsonString(idbDatabase, data, cb) {
 	const objectStoreNamesSet = new Set(idbDatabase.objectStoreNames);
 	const size = objectStoreNamesSet.size;
 	if (size === 0) {
@@ -418,7 +416,7 @@ function importFromJsonString(idbDatabase, jsonString, cb) {
 		const transaction = idbDatabase.transaction(objectStoreNames, "readwrite");
 		transaction.onerror = (event) => cb(event);
 
-		const importObject = JSON.parse(jsonString);
+		const importObject = data;
 
 		// Delete keys present in JSON that are not present in database
 		Object.keys(importObject).forEach((storeName) => {
@@ -491,26 +489,23 @@ function clearDatabase(idbDatabase, cb) {
 	}
 }
 
-function transIndexedDB() {
-	const db = new Dexie("NoteViews");
-	db.open()
+
+includeJs("/appearance/themes/RogerSyTheme/indexeddb.js");
+includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
+
+
+/*
+const db = new Dexie("NoteViews");
+
+db.open()
 		.then(function () {
 			const idbDatabase = db.backendDB();
 
-			exportToJsonString(idbDatabase, function (err, jsonString) {
+			exportToJsonString(idbDatabase, function (err, data) {
 				if (err) {
 					console.error(err);
 				} else {
-					console.log("Exported as JSON: " + jsonString);
-					// clearDatabase(idbDatabase, function (err) {
-					// 	if (!err) {
-					// 		importFromJsonString(idbDatabase, jsonString, function (err) {
-					// 			if (!err) {
-					// 				console.log("Imported data successfully");
-					// 			}
-					// 		});
-					// 	}
-					// });
+					console.log(data);
 				}
 			});
 		})
@@ -518,3 +513,22 @@ function transIndexedDB() {
 			console.error("Could not connect. " + e);
 		});
 }
+
+
+db.open()
+	.then(function () {
+		const idbDatabase = db.backendDB();
+		clearDatabase(idbDatabase, function (err) {
+			if (!err) {
+				importFromJsonString(idbDatabase, data, function (err) {
+					if (!err) {
+						console.log("Imported data successfully");
+					}
+				});
+			}
+		});
+	})
+	.catch(function (e) {
+		console.error("Could not connect. " + e);
+	});
+*/

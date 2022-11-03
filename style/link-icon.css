@@ -2664,3 +2664,12 @@
 	content: "";
 	background-image: url("../icon/mathcha.io.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="farmostwood.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="farmostwood.net"]::before,
+.b3-typography a[href*="farmostwood.net"]::before {
+	content: "";
+	background-image: url("../icon/farmostwood.net.ico");
+}

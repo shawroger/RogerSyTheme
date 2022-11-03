@@ -365,103 +365,156 @@ window.onload = setTimeout(() => {
 	ClickMonitor();
 }, 1000);
 
-window.IDBExportImport = {
-	clearDatabase: (idbDatabase) => {
-		return new Promise((resolve, reject) => {
-			const transaction = idbDatabase.transaction(
-				idbDatabase.objectStoreNames,
-				"readwrite"
-			);
-			transaction.onerror = (event) => {
-				reject(event);
-			};
-			let count = 0;
-			Object.values(idbDatabase.objectStoreNames).forEach((storeName) => {
-				transaction.objectStore(storeName).clear().onsuccess = () => {
-					count++;
-					if (count === idbDatabase.objectStoreNames.length)
-						// cleared all object stores
-						resolve(null);
-				};
-			});
-		});
-	},
+function includeJs(file, target) {
+	var js;
+	if (target == undefined) {
+		target = self;
+	}
+	var html_doc = target.document.getElementsByTagName("head")[0];
+	js = target.document.createElement("script");
+	js.setAttribute("type", "text/javascript");
+	js.setAttribute("src", file);
+	html_doc.appendChild(js);
+}
 
-	/**
-	 * Export all data from an IndexedDB database
-	 *
-	 * @param {IDBDatabase} idbDatabase - to export from
-	 */
-	exportToObject: (idbDatabase) => {
-		return new Promise((resolve, reject) => {
-			const exportObject = {};
-			if (idbDatabase.objectStoreNames.length === 0) resolve(exportObject);
-			else {
-				const transaction = idbDatabase.transaction(
-					idbDatabase.objectStoreNames,
-					"readonly"
-				);
-				transaction.onerror = (event) => {
-					reject(event);
-				};
-				Object.values(idbDatabase.objectStoreNames).forEach((storeName) => {
-					const allObjects = {};
-					transaction.objectStore(storeName).openCursor().onsuccess = (
-						event
-					) => {
-						const cursor = event.target.result;
-						if (cursor) {
-							allObjects[cursor.key] = cursor.value;
-							cursor.continue();
-						} else {
-							exportObject[storeName] = allObjects;
-							if (
-								idbDatabase.objectStoreNames.length ===
-								Object.keys(exportObject).length
-							) {
-								resolve(exportObject);
+includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
+
+function exportToJsonString(idbDatabase, cb) {
+	const exportObject = {};
+	const objectStoreNamesSet = new Set(idbDatabase.objectStoreNames);
+	const size = objectStoreNamesSet.size;
+	if (size === 0) {
+		cb(null, JSON.stringify(exportObject));
+	} else {
+		const objectStoreNames = Array.from(objectStoreNamesSet);
+		const transaction = idbDatabase.transaction(objectStoreNames, "readonly");
+		transaction.onerror = (event) => cb(event, null);
+
+		objectStoreNames.forEach((storeName) => {
+			const allObjects = [];
+			transaction.objectStore(storeName).openCursor().onsuccess = (event) => {
+				const cursor = event.target.result;
+				if (cursor) {
+					allObjects.push(cursor.value);
+					cursor.continue();
+				} else {
+					exportObject[storeName] = allObjects;
+					if (objectStoreNames.length === Object.keys(exportObject).length) {
+						cb(null, JSON.stringify(exportObject));
+					}
+				}
+			};
+		});
+	}
+}
+
+function importFromJsonString(idbDatabase, jsonString, cb) {
+	const objectStoreNamesSet = new Set(idbDatabase.objectStoreNames);
+	const size = objectStoreNamesSet.size;
+	if (size === 0) {
+		cb(null);
+	} else {
+		const objectStoreNames = Array.from(objectStoreNamesSet);
+		const transaction = idbDatabase.transaction(objectStoreNames, "readwrite");
+		transaction.onerror = (event) => cb(event);
+
+		const importObject = JSON.parse(jsonString);
+
+		// Delete keys present in JSON that are not present in database
+		Object.keys(importObject).forEach((storeName) => {
+			if (!objectStoreNames.includes(storeName)) {
+				delete importObject[storeName];
+			}
+		});
+
+		if (Object.keys(importObject).length === 0) {
+			// no object stores exist to import for
+			cb(null);
+		}
+
+		objectStoreNames.forEach((storeName) => {
+			let count = 0;
+
+			const aux = Array.from(importObject[storeName] || []);
+
+			if (importObject[storeName] && aux.length > 0) {
+				aux.forEach((toAdd) => {
+					const request = transaction.objectStore(storeName).add(toAdd);
+					request.onsuccess = () => {
+						count++;
+						if (count === importObject[storeName].length) {
+							// added all objects for this store
+							delete importObject[storeName];
+							if (Object.keys(importObject).length === 0) {
+								// added all object stores
+								cb(null);
 							}
 						}
 					};
-				});
-			}
-		});
-	},
-
-	importFromObject: (idbDatabase, importObject) => {
-		return new Promise((resolve, reject) => {
-			const transaction = idbDatabase.transaction(
-				idbDatabase.objectStoreNames,
-				"readwrite"
-			);
-			transaction.onerror = (event) => {
-				reject(event);
-			};
-			Object.values(idbDatabase.objectStoreNames).forEach((storeName) => {
-				let count = 0;
-				Object.keys(importObject[storeName]).forEach((keyToAdd) => {
-					const numberKey = Number(keyToAdd);
-					const value = importObject[storeName][keyToAdd];
-					const params = [value];
-
-					if (!value.id) {
-						params.push(isNaN(numberKey) ? keyToAdd : numberKey);
-					}
-
-					const request = transaction.objectStore(storeName).put(...params);
-
-					request.onsuccess = (event) => {
-						count++;
-						if (count === Object.keys(importObject[storeName]).length) {
-							// added all objects for this store
-							delete importObject[storeName];
-							if (Object.keys(importObject).length === 0)
-								// added all object stores
-								resolve(null);
-						}
+					request.onerror = (event) => {
+						console.log(event);
 					};
 				});
-			});
+			} else {
+				if (importObject[storeName]) {
+					delete importObject[storeName];
+					if (Object.keys(importObject).length === 0) {
+						// added all object stores
+						cb(null);
+					}
+				}
+			}
 		});
-	},
-};
+	}
+}
+
+function clearDatabase(idbDatabase, cb) {
+	const objectStoreNamesSet = new Set(idbDatabase.objectStoreNames);
+	const size = objectStoreNamesSet.size;
+	if (size === 0) {
+		cb(null);
+	} else {
+		const objectStoreNames = Array.from(objectStoreNamesSet);
+		const transaction = idbDatabase.transaction(objectStoreNames, "readwrite");
+		transaction.onerror = (event) => cb(event);
+
+		let count = 0;
+		objectStoreNames.forEach(function (storeName) {
+			transaction.objectStore(storeName).clear().onsuccess = () => {
+				count++;
+				if (count === size) {
+					// cleared all object stores
+					cb(null);
+				}
+			};
+		});
+	}
+}
+
+function transIndexedDB() {
+	const db = new Dexie("NoteViews");
+	db.open()
+		.then(function () {
+			const idbDatabase = db.backendDB();
+
+			exportToJsonString(idbDatabase, function (err, jsonString) {
+				if (err) {
+					console.error(err);
+				} else {
+					console.log("Exported as JSON: " + jsonString);
+					// clearDatabase(idbDatabase, function (err) {
+					// 	if (!err) {
+					// 		importFromJsonString(idbDatabase, jsonString, function (err) {
+					// 			if (!err) {
+					// 				console.log("Imported data successfully");
+					// 			}
+					// 		});
+					// 	}
+					// });
+				}
+			});
+		})
+		.catch(function (e) {
+			console.error("Could not connect. " + e);
+		});
+}

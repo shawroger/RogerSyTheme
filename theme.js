@@ -262,7 +262,7 @@ function calcuteTimeOffset(time) {
 }
 
 function sendInfoMessage(content) {
-	const list = content.split("|");
+	const list = content ? content.split("|") : [];
 
 	if (list.length < 2) {
 		return sendSyMsg(content);
@@ -282,11 +282,12 @@ function sendInfoMessage(content) {
 function checkInfoAttrs() {
 	let count = 0;
 	const attr = "info";
-	const selector = "[custom-" + attr + "]";
-	const list = document.querySelectorAll(selector);
+	const selector = "custom-" + attr;
+	const list = document.querySelectorAll("[" + selector + "]");
 
-	list.forEach((e) => {
-		sendInfoMessage(e.getAttribute(selector));
+	list.forEach((e) => { 
+		const content = e.getAttribute(selector);
+		sendInfoMessage(content);
 		count++;
 	});
 

@@ -285,7 +285,7 @@ function checkInfoAttrs() {
 	const selector = "custom-" + attr;
 	const list = document.querySelectorAll("[" + selector + "]");
 
-	list.forEach((e) => { 
+	list.forEach((e) => {
 		const content = e.getAttribute(selector);
 		sendInfoMessage(content);
 		count++;
@@ -360,11 +360,8 @@ function initDOM() {
 
 setTimeout(() => {
 	initDOM();
-}, 300);
-
-window.onload = setTimeout(() => {
 	ClickMonitor();
-}, 1000);
+}, 300);
 
 function includeJs(file, target) {
 	var js;
@@ -427,7 +424,6 @@ function importFromJsonString(idbDatabase, data, cb) {
 		});
 
 		if (Object.keys(importObject).length === 0) {
-			// no object stores exist to import for
 			cb(null);
 		}
 
@@ -442,10 +438,8 @@ function importFromJsonString(idbDatabase, data, cb) {
 					request.onsuccess = () => {
 						count++;
 						if (count === importObject[storeName].length) {
-							// added all objects for this store
 							delete importObject[storeName];
 							if (Object.keys(importObject).length === 0) {
-								// added all object stores
 								cb(null);
 							}
 						}
@@ -458,7 +452,6 @@ function importFromJsonString(idbDatabase, data, cb) {
 				if (importObject[storeName]) {
 					delete importObject[storeName];
 					if (Object.keys(importObject).length === 0) {
-						// added all object stores
 						cb(null);
 					}
 				}
@@ -482,7 +475,6 @@ function clearDatabase(idbDatabase, cb) {
 			transaction.objectStore(storeName).clear().onsuccess = () => {
 				count++;
 				if (count === size) {
-					// cleared all object stores
 					cb(null);
 				}
 			};

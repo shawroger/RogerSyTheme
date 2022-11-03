@@ -172,3 +172,11 @@ div.protyle-title.protyle-wysiwyg--attr {
 	padding: 1px 2px;
 	background-color: #ffe4c4 !important;
 }
+
+/* 2022.11.03 remove dockLeft */
+div#dockLeft {
+	display: none;
+}
+.fn__flex-1 {
+	overflow-x: hidden;
+}

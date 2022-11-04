@@ -2673,3 +2673,21 @@
 	content: "";
 	background-image: url("../icon/farmostwood.net.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cqcb.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cqcb.com"]::before,
+.b3-typography a[href*="cqcb.com"]::before {
+	content: "";
+	background-image: url("../icon/cqcb.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="1ppt.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="1ppt.com"]::before,
+.b3-typography a[href*="1ppt.com"]::before {
+	content: "";
+	background-image: url("../icon/1ppt.com.ico");
+}

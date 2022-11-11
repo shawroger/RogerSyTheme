@@ -2691,3 +2691,48 @@
 	content: "";
 	background-image: url("../icon/1ppt.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cna.com.tw"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cna.com.tw"]::before,
+.b3-typography a[href*="cna.com.tw"]::before {
+	content: "";
+	background-image: url("../icon/cna.com.tw.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="thecover.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="thecover.cn"]::before,
+.b3-typography a[href*="thecover.cn"]::before {
+	content: "";
+	background-image: url("../icon/thecover.cn.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="thepaper.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="thepaper.cn"]::before,
+.b3-typography a[href*="thepaper.cn"]::before {
+	content: "";
+	background-image: url("../icon/thepaper.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cnhubei.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cnhubei.com"]::before,
+.b3-typography a[href*="cnhubei.com"]::before {
+	content: "";
+	background-image: url("../icon/cnhubei.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="graphviz.org"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="graphviz.org"]::before,
+.b3-typography a[href*="graphviz.org"]::before {
+	content: "";
+	background-image: url("../icon/graphviz.org.png");
+}

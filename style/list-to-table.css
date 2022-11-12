@@ -28,6 +28,10 @@
 	/* padding-right: 6px; */
 }
 
+.protyle-wysiwyg *[custom-f~="bg"] [data-node-id].li:before {
+	content: none !important;
+}
+
 /* ————————————————————调整每个子列表项右侧边距———————————————————— */
 .protyle-wysiwyg *[custom-f~="bg"] .li div[contenteditable] {
 	/* margin-right: 6px; */

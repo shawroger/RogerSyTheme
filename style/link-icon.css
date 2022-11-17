@@ -2745,3 +2745,13 @@
 	content: "";
 	background-image: url("../icon/mojidict.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="ankilink://"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href^="ankilink://"]::before,
+.b3-typography a[href^="ankilink://"]::before
+{
+	content: "";
+	background-image: url("../icon/ankilink.png");
+}

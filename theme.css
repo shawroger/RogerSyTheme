@@ -135,3 +135,9 @@
 
 /* 引入自定义配置 */
 @import url("custom.css");
+
+/* 开启右侧 dock栏 */
+div#dockRight {
+	border-left: 1px solid var(--b3-border-color);
+	display: inherit !important;
+}

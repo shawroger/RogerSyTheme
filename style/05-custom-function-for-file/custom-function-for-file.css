@@ -78,22 +78,17 @@
 }
 
 /* 导出的字体格式 */
-.protyle-wysiwyg[custom-f~="print"],
-.protyle-wysiwyg[custom-f~="daochu"] {
-	font-family: "Times New Roman", "宋体";
+.protyle-wysiwyg[custom-f~="print"] {
+	font-family: "Times New Roman", "宋体" !important;
 }
 
-.protyle-wysiwyg[custom-f~="daochu"] div[data-type="NodeHeading"],
-.b3-typography[custom-f~="daochu"] div[data-type="NodeHeading"],
 .protyle-wysiwyg[custom-f~="print"] div[data-type="NodeHeading"],
 .b3-typography[custom-f~="print"] div[data-type="NodeHeading"],
 [custom-f~="daochu"] table thead {
 	font-family: "Times New Roman", "黑体" !important;
-	font-weight: normal;
+	font-weight: normal !important;
 }
 
-.protyle-wysiwyg[custom-f~="daochu"] div[data-type="NodeHeading"]::before,
-.b3-typography[custom-f~="daochu"] div[data-type="NodeHeading"]::before,
 .protyle-wysiwyg[custom-f~="print"] div[data-type="NodeHeading"]::before,
 .b3-typography[custom-f~="print"] div[data-type="NodeHeading"]::before {
 	display: none !important;

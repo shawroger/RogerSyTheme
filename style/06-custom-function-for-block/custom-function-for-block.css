@@ -489,9 +489,9 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 
 /* 设置表格自动宽度 */
 .protyle-wysiwyg [data-node-id][custom-f~="auto"] table {
-	/* display: table; */
+	display: table;
 	width: auto !important;
-	/* overflow: scroll; */
+	overflow: scroll;
 	white-space: nowrap;
 }
 

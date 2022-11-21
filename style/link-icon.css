@@ -2755,3 +2755,30 @@
 	content: "";
 	background-image: url("../icon/ankilink.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="mem.ai"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="mem.ai"]::before,
+.b3-typography a[href*="mem.ai"]::before {
+	content: "";
+	background-image: url("../icon/mem.ai.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="chinadigitaltimes.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="chinadigitaltimes.net"]::before,
+.b3-typography a[href*="chinadigitaltimes.net"]::before {
+	content: "";
+	background-image: url("../icon/chinadigitaltimes.net.webp");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="codeberg.org"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="codeberg.org"]::before,
+.b3-typography a[href*="codeberg.org"]::before {
+	content: "";
+	background-image: url("../icon/codeberg.org.svg");
+}

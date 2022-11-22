@@ -495,6 +495,10 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 	white-space: nowrap;
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="biaoge-c"] table tr td {
+	text-align: center !important;
+}
+
 /* 表头和表行格式一致 */
 .protyle-wysiwyg [data-node-id][custom-f~="biaotou-l"] table th {
 	font-weight: normal !important;

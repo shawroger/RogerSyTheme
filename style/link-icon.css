@@ -2817,3 +2817,12 @@
 	content: "";
 	background-image: url("../icon/alternativeto.net.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="markmind.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="markmind.net"]::before,
+.b3-typography a[href*="markmind.net"]::before {
+	content: "";
+	background-image: url("../icon/markmind.net.ico");
+}

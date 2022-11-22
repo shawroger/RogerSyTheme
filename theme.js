@@ -493,11 +493,11 @@ function downloadString(content, filename) {
 	document.body.removeChild(eleLink);
 }
 
-// includeJs("/appearance/themes/RogerSyTheme/indexeddb.js");
+// includeJs("/appearance/themes/RogerSyTheme/noteviews-data-1669107669635.js");
 // includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
+// const db = new Dexie("NoteViews");
 
 /*
-const db = new Dexie("NoteViews");
 
 db.open()
 	.then(function () {
@@ -518,8 +518,6 @@ db.open()
 	.catch(function (e) {
 		console.error("Could not connect. " + e);
 	});
-
-
 
 db.open()
 	.then(function () {

@@ -21,6 +21,41 @@
 	background-image: url("../icon/question.png");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="siyuan"]:not(:empty),
+.protyle-wysiwyg [data-node-id] a[href^="siyuan"],
+.b3-typography a[href^="siyuan"] {
+	border-bottom: none !important;
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="siyuan"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href^="siyuan"]::before,
+.b3-typography a[href^="siyuan"]::before {
+	content: "[[";
+	position: relative;
+	font-size: 80%;
+	margin: 0 !important;
+	top: -0.05em !important;
+	width: initial !important;
+	color: lightgrey !important;
+	padding-right: 1.5px !important;
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href^="siyuan"]:not(:empty)::after,
+.protyle-wysiwyg [data-node-id] a[href^="siyuan"]::after,
+.b3-typography a[href^="siyuan"]::after {
+	content: "]]" !important;
+	position: relative !important;
+	font-size: 80% !important;
+	top: -0.05em !important;
+	color: lightgrey !important;
+}
+
 /* ————————————————————为常见的文件格式设置图标———————————————————— */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href^="file://"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href^="file://"]::before,
@@ -119,15 +154,6 @@
 .b3-typography a[href*="qzone.qq.com"]::before {
 	content: "";
 	background-image: url("../icon/qzone.qq.com.ico");
-}
-
-.protyle-wysiwyg
-	[data-node-id]
-	span[data-type="a"][data-href^="siyuan"]:not(:empty)::before,
-.protyle-wysiwyg [data-node-id] a[href^="siyuan"]::before,
-.b3-typography a[href^="siyuan"]::before {
-	content: "";
-	background-image: url("../icon/qipao.png");
 }
 
 .protyle-wysiwyg
@@ -2781,4 +2807,13 @@
 .b3-typography a[href*="codeberg.org"]::before {
 	content: "";
 	background-image: url("../icon/codeberg.org.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="alternativeto.net"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="alternativeto.net"]::before,
+.b3-typography a[href*="alternativeto.net"]::before {
+	content: "";
+	background-image: url("../icon/alternativeto.net.ico");
 }

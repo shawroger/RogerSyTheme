@@ -2826,3 +2826,21 @@
 	content: "";
 	background-image: url("../icon/markmind.net.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ywyj.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="ywyj.cn"]::before,
+.b3-typography a[href*="ywyj.cn"]::before {
+	content: "";
+	background-image: url("../icon/ywyj.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="bookmarkearth.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="bookmarkearth.com"]::before,
+.b3-typography a[href*="bookmarkearth.com"]::before {
+	content: "";
+	background-image: url("../icon/bookmarkearth.com.ico");
+}

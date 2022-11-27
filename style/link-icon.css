@@ -1939,6 +1939,15 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="sina.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="sina.cn"]::before,
+.b3-typography a[href*="sina.cn"]::before {
+	content: "";
+	background-image: url("../icon/sina.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="ishare.iask.sina.com.cn"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="ishare.iask.sina.com.cn"]::before,
 .b3-typography a[href*="ishare.iask.sina.com.cn"]::before {
@@ -2843,4 +2852,40 @@
 .b3-typography a[href*="bookmarkearth.com"]::before {
 	content: "";
 	background-image: url("../icon/bookmarkearth.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cs.toronto.edu"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cs.toronto.edu"]::before,
+.b3-typography a[href*="cs.toronto.edu"]::before {
+	content: "";
+	background-image: url("../icon/cs.toronto.edu.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="linyouliao.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="linyouliao.com"]::before,
+.b3-typography a[href*="linyouliao.com"]::before {
+	content: "";
+	background-image: url("../icon/linyouliao.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="twdown.online"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="twdown.online"]::before,
+.b3-typography a[href*="twdown.online"]::before {
+	content: "";
+	background-image: url("../icon/twdown.online.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="downloader.twdown.online"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="downloader.twdown.online"]::before,
+.b3-typography a[href*="downloader.twdown.online"]::before {
+	content: "";
+	background-image: url("../icon/downloader.twdown.online.png");
 }

@@ -181,3 +181,7 @@ div#dockLeft {
 .fn__flex-1 {
 	overflow-x: hidden;
 }
+
+.protyle-wysiwyg [data-node-id].li:before {
+	border-left: none;
+}

@@ -2657,6 +2657,15 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="zaobao.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="zaobao.com"]::before,
+.b3-typography a[href*="zaobao.com"]::before {
+	content: "";
+	background-image: url("../icon/zaobao.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="game.qq.com"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="qqgame.qq.com"]::before,
 .b3-typography a[href*="game.qq.com"]::before {

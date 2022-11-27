@@ -121,6 +121,31 @@
 	font-family: "Times New Roman";
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="dskg"],
+.protyle-wysiwyg [data-node-id][custom-f~="dskg2"] {
+	text-indent: 2em;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="dskg05"] {
+	text-indent: 0.5em;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="dskg5"] {
+	text-indent: 5em;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="dskg1"] {
+	text-indent: 1em;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="dskg3"] {
+	text-indent: 3em;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="dskg4"] {
+	text-indent: 4em;
+}
+
 .protyle-wysiwyg [data-node-id][custom-f~="yw"] {
 	font-family: "Times New Roman", "宋体";
 }

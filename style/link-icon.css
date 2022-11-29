@@ -2898,3 +2898,12 @@
 	content: "";
 	background-image: url("../icon/downloader.twdown.online.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="note.youdao.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="note.youdao.com"]::before,
+.b3-typography a[href*="note.youdao.com"]::before {
+	content: "";
+	background-image: url("../icon/note.youdao.com.ico");
+}

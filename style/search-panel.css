@@ -108,7 +108,13 @@ body
 	> .fn__flex
 	> .fn__flex-column {
 	width: 80vw !important;
-	height: 90vh !important;
+	height: 80vh !important;
+}
+
+div.b3-form__icon .block__icons {
+	height: 24px !important;
+	display: flex;
+	justify-content: center;
 }
 
 /* 窗口较宽时并排显示搜索结果 */
@@ -180,3 +186,8 @@ body
 		height: calc(100% - 142px) !important;
 	}
 }
+
+/* 固定页面的搜索样式 */
+/* .fn__flex-column {
+
+} */

@@ -1150,6 +1150,15 @@
 	background-image: url("../icon/ins.svg");
 }
 
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="instagram.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="instagram.com"]::before,
+.b3-typography a[href*="instagram.com"]::before {
+	content: "";
+	background-image: url("../icon/instagram.com.png");
+}
+
 /* twitter.com */
 .protyle-wysiwyg
 	[data-node-id]
@@ -2906,4 +2915,13 @@
 .b3-typography a[href*="note.youdao.com"]::before {
 	content: "";
 	background-image: url("../icon/note.youdao.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="101weiqi.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="101weiqi.com"]::before,
+.b3-typography a[href*="101weiqi.com"]::before {
+	content: "";
+	background-image: url("../icon/101weiqi.com.png");
 }

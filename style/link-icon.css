@@ -2925,3 +2925,26 @@
 	content: "";
 	background-image: url("../icon/101weiqi.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ptt.cc"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="ptt.cc"]::before,
+.b3-typography a[href*="ptt.cc"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="pttweb.cc"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="pttweb.cc"]::before,
+.b3-typography a[href*="pttweb.cc"]::before {
+	content: "";
+	background-image: url("../icon/ptt.cc.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="xiaohongshu.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="xiaohongshu.com"]::before,
+.b3-typography a[href*="xiaohongshu.com"]::before {
+	content: "";
+	background-image: url("../icon/xiaohongshu.com.ico");
+}

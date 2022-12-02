@@ -199,6 +199,14 @@
 	background-image: url("../callout/compass.png");
 }
 
+.protyle-wysiwyg [data-node-id][custom-co~="dingli"] {
+	box-shadow: 0 0 0 1.5px #000000 inset;
+}
+
+[custom-co~="dingli"]::after {
+	background-image: url("../callout/dingli.png");
+}
+
 .protyle-wysiwyg [data-node-id][custom-co~="from"] {
 	box-shadow: 0 0 0 1.5px #000000 inset;
 }
@@ -2256,12 +2264,12 @@
 
 .protyle-wysiwyg [data-node-id][custom-co~="cl"],
 .protyle-wysiwyg [data-node-id][custom-co~="material"] {
-	box-shadow: 0 0 0 1.5px #000000 inset;
+	box-shadow: 0 0 0 1.5px #222121 inset;
 }
 
 [custom-co~="cl"]::after,
 [custom-co~="material"]::after {
-	background-image: url("../callout/material.jpg");
+	background-image: url("../callout/material.png");
 }
 
 .protyle-wysiwyg [data-node-id][custom-co~="tl"],

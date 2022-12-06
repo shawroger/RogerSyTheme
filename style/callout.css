@@ -275,6 +275,14 @@
 	box-shadow: 0 0 0 1.5px #000000 inset;
 }
 
+[custom-co~="article"]::after {
+	background-image: url("../callout/article.webp");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="article"] {
+	box-shadow: 0 0 0 1.5px #000000 inset;
+}
+
 [custom-co~="reply"]::after {
 	background-image: url("../callout/reply.png");
 }

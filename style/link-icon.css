@@ -2948,3 +2948,12 @@
 	content: "";
 	background-image: url("../icon/xiaohongshu.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="swjtu.edu.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="swjtu.edu.cn"]::before,
+.b3-typography a[href*="swjtu.edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/swjtu.edu.cn.ico");
+}

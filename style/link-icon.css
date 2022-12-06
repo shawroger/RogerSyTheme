@@ -2957,3 +2957,21 @@
 	content: "";
 	background-image: url("../icon/swjtu.edu.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="colube.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="colube.cn"]::before,
+.b3-typography a[href*="colube.cn"]::before {
+	content: "";
+	background-image: url("../icon/colube.cn.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="lanhuapp.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="lanhuapp.com"]::before,
+.b3-typography a[href*="lanhuapp.com"]::before {
+	content: "";
+	background-image: url("../icon/lanhuapp.com.svg");
+}

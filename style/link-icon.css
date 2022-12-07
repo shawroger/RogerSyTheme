@@ -2975,3 +2975,48 @@
 	content: "";
 	background-image: url("../icon/lanhuapp.com.svg");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="aistudio.baidu.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="aistudio.baidu.com"]::before,
+.b3-typography a[href*="aistudio.baidu.com"]::before {
+	content: "";
+	background-image: url("../icon/aistudio.baidu.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="sms-activate.org"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="sms-activate.org"]::before,
+.b3-typography a[href*="sms-activate.org"]::before {
+	content: "";
+	background-image: url("../icon/sms-activate.org.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="openai.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="openai.com"]::before,
+.b3-typography a[href*="openai.com"]::before {
+	content: "";
+	background-image: url("../icon/openai.com.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="chat.openai.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="chat.openai.com"]::before,
+.b3-typography a[href*="chat.openai.com"]::before {
+	content: "";
+	background-image: url("../icon/chat.openai.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="juejin.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="juejin.cn"]::before,
+.b3-typography a[href*="juejin.cn"]::before {
+	content: "";
+	background-image: url("../icon/juejin.cn.ico");
+}

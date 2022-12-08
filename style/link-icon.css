@@ -3020,3 +3020,21 @@
 	content: "";
 	background-image: url("../icon/juejin.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="every.to"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="every.to"]::before,
+.b3-typography a[href*="every.to"]::before {
+	content: "";
+	background-image: url("../icon/every.to.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="essence-edu.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="essence-edu.cn"]::before,
+.b3-typography a[href*="essence-edu.cn"]::before {
+	content: "";
+	background-image: url("../icon/essence-edu.cn.png");
+}

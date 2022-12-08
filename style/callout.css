@@ -2429,3 +2429,30 @@
 [custom-co~="gpt"]::after {
 	background-image: url("../icon/chat.openai.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="lex.page"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="lex.page"]::before,
+.b3-typography a[href*="lex.page"]::before {
+	content: "";
+	background-image: url("../icon/lex.page.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="craft.do"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="craft.do"]::before,
+.b3-typography a[href*="craft.do"]::before {
+	content: "";
+	background-image: url("../icon/craft.do.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="readwise.io"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="readwise.io"]::before,
+.b3-typography a[href*="readwise.io"]::before {
+	content: "";
+	background-image: url("../icon/readwise.io.ico");
+}

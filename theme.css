@@ -121,9 +121,6 @@
 
 /* ————————————————————引入自定义设置———————————————————— */
 
-/* 搜索界面左右排版 
-@import url("style/search-panel.css");*/
-
 /* 增加列表转表格代码 */
 @import url("style/list-to-table.css");
 

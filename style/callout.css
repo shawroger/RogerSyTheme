@@ -2421,3 +2421,11 @@
 [custom-co~="homework"]::after {
 	background-image: url("../callout/homework.png");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="gpt"] {
+	box-shadow: 0 0 0 1.5px #75a99c inset;
+}
+
+[custom-co~="gpt"]::after {
+	background-image: url("../icon/chat.openai.com.png");
+}

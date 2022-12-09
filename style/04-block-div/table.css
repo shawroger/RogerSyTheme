@@ -7,16 +7,11 @@
 	font-size: 95%;
 	padding: 3px 2px;
 }
-
+.protyle-wysiwyg table thead,
+.b3-typography table thead,
 .b3-typography table tr,
 .protyle-wysiwyg table tr {
 	background-color: transparent;
-}
-
-/* 设置表头区域顶部边框，使表格更明显 */
-.protyle-wysiwyg table thead,
-.b3-typography table thead {
-	background-color: transparent !important;
 }
 
 /*设置表格表头样式，颜色，背景，加粗，居中对齐*/

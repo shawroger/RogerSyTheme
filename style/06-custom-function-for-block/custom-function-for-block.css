@@ -526,28 +526,21 @@ div[data-node-id][data-type="NodeHeading"][custom-f~="dm"]::after {
 }
 
 /* 表头和表行格式一致 */
-.protyle-wysiwyg [data-node-id][custom-f~="biaotou-l"] table th {
+.protyle-wysiwyg [data-node-id][custom-f*="biaotou"] table th {
+	color: inherit !important;
 	font-weight: normal !important;
+	background-color: var(--b3-table-trn-color) !important;
+}
+.protyle-wysiwyg [data-node-id][custom-f*="biaotou-l"] table th {
 	text-align: left !important;
-	color: inherit !important;
-	border-bottom: 0.08em solid var(--b3-table-border-color) !important;
-	background-color: var(--b3-table-trn-color) !important;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~="biaotou-c"] table th {
-	font-weight: normal !important;
+.protyle-wysiwyg [data-node-id][custom-f*="biaotou-c"] table th {
 	text-align: center !important;
-	color: inherit !important;
-	border-bottom: 0.08em solid var(--b3-table-border-color) !important;
-	background-color: var(--b3-table-trn-color) !important;
 }
 
-.protyle-wysiwyg [data-node-id][custom-f~="biaotou-r"] table th {
-	font-weight: normal !important;
+.protyle-wysiwyg [data-node-id][custom-f*="biaotou-r"] table th {
 	text-align: right !important;
-	color: inherit !important;
-	border-bottom: 0.08em solid var(--b3-table-border-color) !important;
-	background-color: var(--b3-table-trn-color) !important;
 }
 
 /* 通过自定义属性去掉图片边框和阴影 */

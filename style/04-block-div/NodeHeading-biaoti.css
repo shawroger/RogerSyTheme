@@ -195,13 +195,18 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 /* remcraft style */
 
 .protyle-background:not([style*="30vh"]) {
-	padding-top: 20px;
+	padding-top: 30px;
+}
+
+.protyle-background__tags {
+	top: 0px;
+	position: absolute;
 }
 
 /* 无题头图，无 emoji */
 .protyle-background .protyle-background__iconw {
 	height: 0;
-	top: 34px;
+	top: 30px;
 	padding-bottom: 5px !important;
 	transform: translateY(10px) !important;
 	left: max(64px, 50% - 381px) !important;
@@ -210,11 +215,20 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 .protyle-background__iconw .protyle-icons {
 	height: 28px;
 	margin: 8px 0 0 -1px;
-	transform: translate(7px, 3px);
+	transform: translate(3px, 0px);
 	transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* 无题头图，有 emoji */
+
+.protyle-background[style*="56px"],
+.protyle-background[style*="64px"],
+.protyle-background[style*="92px"],
+.protyle-background[style*="96px"],
+.protyle-background[style*="100px"] {
+	min-height: 64px !important;
+}
+
 .protyle-background[style*="56px"] .protyle-background__iconw .protyle-icons,
 .protyle-background[style*="64px"] .protyle-background__iconw .protyle-icons,
 .protyle-background[style*="92px"] .protyle-background__iconw .protyle-icons,
@@ -341,4 +355,5 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 	font-size: 14px;
 	position: unset;
 	z-index: 0;
+	transform: translate(2px, -1px);
 }

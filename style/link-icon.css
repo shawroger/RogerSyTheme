@@ -3038,3 +3038,12 @@
 	content: "";
 	background-image: url("../icon/essence-edu.cn.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="douyin.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="douyin.com"]::before,
+.b3-typography a[href*="douyin.com"]::before {
+	content: "";
+	background-image: url("../icon/douyin.com.ico");
+}

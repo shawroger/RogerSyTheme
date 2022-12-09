@@ -1,3 +1,11 @@
+.b3-typography .bq,
+.protyle-wysiwyg .bq {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	padding: 4px 0;
+}
+
 .protyle-wysiwyg [data-node-id].bq:not(div.list div.bq):not([custom-co]) {
 	border-left-color: transparent;
 	text-align: justify;

@@ -35,11 +35,6 @@
 	/* left: max(calc((100% - min(1380px, max(790px, 40vw))) / 2), 96px) !important; */
 }
 
-/* 修改头图emoji位置 */
-.protyle-background .protyle-background__iconw {
-	left: max(calc((100% - min(1380px, max(790px, 40vw))) / 2), 96px) !important;
-}
-
 /* ——————————————————————————H1-H6 标题样式—————————————————————————— */
 /* 标题居左对齐，采用彩虹色前6色 红橙黄绿青蓝 */
 .protyle-wysiwyg [data-node-id].h1,
@@ -195,4 +190,131 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 	color: var(--b3-font-color-gray-tm) !important;
 	border: var(--b3-border-normal);
 	border-radius: var(--b3-border-radius-noraml);
+}
+
+/* remcraft style */
+
+.protyle-background .protyle-background__iconw {
+	top: calc(30vh - 60px);
+	left: max(64px, 50% - 375px) !important;
+	padding-bottom: 5px !important;
+	transform: translateY(10px) !important;
+}
+
+.layout__center .protyle-content:not([data-fullwidth="true"]) .protyle-title {
+	margin: 0 max(64px, 50% - 375px) !important;
+	width: auto !important;
+}
+
+.protyle-background__tags .item {
+	font-size: 12px;
+	border-radius: 3px;
+	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 4px 6px;
+	line-height: 16px;
+	padding: 4px 12px;
+	border-radius: 9999px;
+	transition: padding opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 5%), 0 4px 5px rgba(0, 0, 0, 8%),
+		0 2px 4px -1px rgba(0, 0, 0, 12%);
+}
+
+.protyle-background__iconw .protyle-icons {
+	height: 28px;
+	margin: 8px 0 0 -1px;
+	transform: translate(7px, 3px);
+	transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.protyle-background__img .protyle-icons {
+	height: 26px;
+	right: max(36px, 50% - 410px);
+	transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.protyle-background__img .protyle-icons .protyle-icon {
+	background-color: white;
+	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	font-size: 13px;
+	border-radius: 4px;
+	height: 28px;
+	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 4px 8px;
+	line-height: 20px;
+	height: 26px;
+	line-height: 26px;
+	vertical-align: middle;
+	display: inline-flex;
+	width: auto;
+	color: rgba(0, 0, 0, 60%);
+	font-size: 12px;
+	padding: 0 8px;
+	margin: 0 3px;
+	transform: translateX(4px);
+}
+
+.protyle-background__img .protyle-icons .protyle-icon::after {
+	opacity: 1;
+	transform: unset;
+	margin: 0;
+	padding: 0;
+	border: unset;
+	border-radius: unset;
+	box-shadow: unset;
+	background-color: rgba(0, 0, 0, 0);
+	outline: unset;
+	position: unset;
+	height: 26px;
+	line-height: 26px;
+	vertical-align: middle;
+	display: inline-flex;
+	color: rgba(0, 0, 0, 60%);
+	font-size: 12px;
+	position: unset;
+	z-index: 0;
+}
+
+.protyle-background__iconw .protyle-icons .protyle-icon {
+	background-color: white;
+	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	font-size: 13px;
+	border-radius: 4px;
+	height: 28px;
+	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 4px 8px;
+	line-height: 20px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	display: inline-flex;
+	width: auto;
+	color: rgba(0, 0, 0, 60%);
+	font-size: 14px;
+	padding: 0 8px;
+	margin: 0 3px;
+}
+
+.protyle-icon > svg {
+	transform: translate(-1px, 2px);
+}
+
+.protyle-background__iconw .protyle-icons .protyle-icon::after {
+	opacity: 1;
+	transform: unset;
+	margin: 0;
+	padding: 0;
+	border: unset;
+	border-radius: unset;
+	box-shadow: unset;
+	background-color: rgba(0, 0, 0, 0);
+	outline: unset;
+	position: unset;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	display: inline-flex;
+	color: rgba(0, 0, 0, 60%);
+	font-size: 14px;
+	position: unset;
+	z-index: 0;
 }

@@ -1,7 +1,14 @@
-.protyle .protyle-wysiwyg {
+/* .protyle .protyle-wysiwyg {
 	width: 100% !important;
 	padding: 2cm !important;
 	margin: 25px auto 50px !important;
+} */
+
+.protyle .protyle-wysiwyg {
+	padding-left: max(64px, 50% - 375px) !important;
+	padding-right: max(64px, 50% - 375px) !important;
+	transition: unset !important;
+	width: 100% !important;
 }
 
 .protyle-content {
@@ -49,12 +56,6 @@ div.protyle-wysiwyg.protyle-wysiwyg--attr {
 	font-size: 32px;
 	font-family: "Times New Roman";
 	transform: translateX(-13.5px);
-}
-
-.protyle-background .protyle-background__iconw {
-	left: 74px !important;
-	padding-bottom: 5px !important;
-	transform: translateY(10px) !important;
 }
 
 .protyle-title.protyle-wysiwyg--attr {

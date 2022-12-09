@@ -1,20 +1,12 @@
-.b3-typography .bq,
-.protyle-wysiwyg .bq {
-	position: relative;
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
-	padding: 4px 0;
-}
-
-.protyle-wysiwyg [data-node-id].bq:not(div.list div.bq):not([custom-co]) {
+.protyle-wysiwyg [data-node-id].bq:not([custom-co]) {
 	border-left-color: transparent;
 	text-align: justify;
 	background-image: url(../../src/bq.svg);
 	background-repeat: no-repeat;
 	background-position: right 10px top 8px;
 	background-color: #f8f8f8;
-	background-size: 1.5em 1.5em;
-	color: rgba(0, 0, 0, 0.68);
+	background-size: 1em 1em;
+	color: inherit;
 	margin: 30px 0;
 	padding: 30px 20px 20px;
 }

@@ -194,11 +194,42 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 
 /* remcraft style */
 
+.protyle-background:not([style*="30vh"]) {
+	padding-top: 20px;
+}
+
+/* 无题头图，无 emoji */
 .protyle-background .protyle-background__iconw {
-	top: calc(30vh - 60px);
-	left: max(64px, 50% - 375px) !important;
+	height: 0;
+	top: 34px;
 	padding-bottom: 5px !important;
 	transform: translateY(10px) !important;
+	left: max(64px, 50% - 381px) !important;
+}
+
+.protyle-background__iconw .protyle-icons {
+	height: 28px;
+	margin: 8px 0 0 -1px;
+	transform: translate(7px, 3px);
+	transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* 无题头图，有 emoji */
+.protyle-background[style*="56px"] .protyle-background__iconw .protyle-icons,
+.protyle-background[style*="64px"] .protyle-background__iconw .protyle-icons,
+.protyle-background[style*="92px"] .protyle-background__iconw .protyle-icons,
+.protyle-background[style*="96px"] .protyle-background__iconw .protyle-icons,
+.protyle-background[style*="100px"] .protyle-background__iconw .protyle-icons {
+	transform: translate(5px, 42px);
+}
+
+/* 有题头图，有 emoji */
+.protyle-background[style*="30vh"] .protyle-background__iconw {
+	top: calc(30vh - 54px);
+}
+
+.protyle-background[style*="30vh"] .protyle-background__iconw .protyle-icons {
+	transform: translate(8px, 41px);
 }
 
 .layout__center .protyle-content:not([data-fullwidth="true"]) .protyle-title {
@@ -217,13 +248,6 @@ div[data-type="NodeHeading"][style*="background-color"]::before {
 	transition: padding opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 5%), 0 4px 5px rgba(0, 0, 0, 8%),
 		0 2px 4px -1px rgba(0, 0, 0, 12%);
-}
-
-.protyle-background__iconw .protyle-icons {
-	height: 28px;
-	margin: 8px 0 0 -1px;
-	transform: translate(7px, 3px);
-	transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .protyle-background__img .protyle-icons {

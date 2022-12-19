@@ -118,7 +118,7 @@
 
 .protyle-wysiwyg [data-node-id][custom-f~="tnr"],
 .protyle-wysiwyg [data-node-id][custom-f~="en"] {
-	font-family: "Times New Roman";
+	font-family: "Times New Roman", "宋体";
 }
 
 .protyle-wysiwyg [data-node-id][custom-f~="dskg"],
@@ -167,6 +167,11 @@
 .protyle-wysiwyg [data-node-id][custom-f~="jc"],
 .protyle-wysiwyg [data-node-id][custom-f~="bold"] {
 	font-weight: bold !important;
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~="jjc"],
+.protyle-wysiwyg [data-node-id][custom-f~="bolder"] {
+	font-weight: bolder !important;
 }
 
 /* ————————————文字下划线———————————— */

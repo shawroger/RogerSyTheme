@@ -1939,9 +1939,9 @@
 
 .protyle-wysiwyg
 	[data-node-id]
-	span[data-type="a"][data-href*="www.sina.com.cn"]:not(:empty)::before,
-.protyle-wysiwyg [data-node-id] a[href*="www.sina.com.cn"]::before,
-.b3-typography a[href*="www.sina.com.cn"]::before {
+	span[data-type="a"][data-href*="sina.com.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="sina.com.cn"]::before,
+.b3-typography a[href*="sina.com.cn"]::before {
 	content: "";
 	background-image: url("../icon/www.sina.com.cn.ico");
 }
@@ -3046,4 +3046,14 @@
 .b3-typography a[href*="douyin.com"]::before {
 	content: "";
 	background-image: url("../icon/douyin.com.ico");
+}
+
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="txwq.qq.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="txwq.qq.com"]::before,
+.b3-typography a[href*="txwq.qq.com"]::before {
+	content: "";
+	background-image: url("../icon/txwq.qq.com.ico");
 }

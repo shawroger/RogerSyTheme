@@ -3057,3 +3057,12 @@
 	content: "";
 	background-image: url("../icon/txwq.qq.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="www.66law.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="www.66law.cn"]::before,
+.b3-typography a[href*="www.66law.cn"]::before {
+	content: "";
+	background-image: url("../icon/www.66law.cn.ico");
+}

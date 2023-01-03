@@ -3048,7 +3048,6 @@
 	background-image: url("../icon/douyin.com.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="txwq.qq.com"]:not(:empty)::before,
@@ -3065,4 +3064,22 @@
 .b3-typography a[href*="www.66law.cn"]::before {
 	content: "";
 	background-image: url("../icon/www.66law.cn.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="foxwq.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="foxwq.com"]::before,
+.b3-typography a[href*="foxwq.com"]::before {
+	content: "";
+	background-image: url("../icon/foxwq.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="doc88.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="doc88.com"]::before,
+.b3-typography a[href*="doc88.com"]::before {
+	content: "";
+	background-image: url("../icon/doc88.com.ico");
 }

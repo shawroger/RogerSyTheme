@@ -186,3 +186,13 @@ div#dockLeft {
 .protyle-wysiwyg [data-node-id].li:before {
 	border-left: none;
 }
+
+/* 2023.01.11 barWorkspace */
+#barWorkspace .toolbar__text {
+	display: none;
+}
+
+#barWorkspace .toolbar__svg {
+	margin-left: 0px;
+	margin-right: 2px;
+}

@@ -4,7 +4,7 @@
 
 .protyle-wysiwyg [custom-co] {
 	padding: 0.35em 0.3em;
-	border-radius: 0 2px 5px 0;
+	border-radius: 25px;
 	padding-right: 4.5em !important;
 	color: var(--b3-theme-on-background);
 }
@@ -52,11 +52,10 @@
 .protyle-wysiwyg [data-node-id][custom-co] {
 	border: none;
 	left: 0.25em;
-	margin-top: 10px;
+	margin: 1.5em 0px;
 	min-height: 2.7em;
-	padding: 0.3em 1em;
+	padding: 0.75em 1em;
 	margin-right: 25px;
-	margin-bottom: 10px;
 }
 
 .protyle-wysiwyg [data-node-id].li > [data-node-id][custom-co] {

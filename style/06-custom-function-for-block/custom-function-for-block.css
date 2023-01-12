@@ -158,6 +158,10 @@
 	font-family: "Times New Roman", "楷体";
 }
 
+.protyle-wysiwyg [data-node-id][custom-f~="xz"] {
+	font-size: 16px;
+}
+
 .protyle-wysiwyg [data-node-id][custom-f~="pl"],
 .protyle-wysiwyg [data-node-id][custom-f~="zz"] {
 	font-family: "Times New Roman", "黑体";

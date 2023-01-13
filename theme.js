@@ -493,49 +493,51 @@ function downloadString(content, filename) {
 	document.body.removeChild(eleLink);
 }
 
-
-
 includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
+includeJs(
+	"/appearance/themes/RogerSyTheme/data/noteviews-data-1673426709208.js"
+);
 
-includeJs("/appearance/themes/RogerSyTheme/data/noteviews-data-1673426709208.js");
+function ddb() {
+	const db = new Dexie("NoteViews");
 
-/*
-const db = new Dexie("NoteViews");
+	db.open()
+		.then(function () {
+			const idbDatabase = db.backendDB();
 
-db.open()
-	.then(function () {
-		const idbDatabase = db.backendDB();
-
-		exportToJsonString(idbDatabase, function (err, data) {
-			if (err) {
-				console.error(err);
-			} else {
-				const uid = new Date().getTime();
-				downloadString(
-					"var noteViewsData = " + data,
-					"noteviews-data-" + uid + ".js"
-				);
-			}
+			exportToJsonString(idbDatabase, function (err, data) {
+				if (err) {
+					console.error(err);
+				} else {
+					const uid = new Date().getTime();
+					downloadString(
+						"var noteViewsData = " + data,
+						"noteviews-data-" + uid + ".js"
+					);
+				}
+			});
+		})
+		.catch(function (e) {
+			console.error("Could not connect. " + e);
 		});
-	})
-	.catch(function (e) {
-		console.error("Could not connect. " + e);
-	});
+}
+function udb() {
+	const db = new Dexie("NoteViews");
 
-db.open()
-	.then(function () {
-		const idbDatabase = db.backendDB();
-		clearDatabase(idbDatabase, function (err) {
-			if (!err) {
-				importFromJsonString(idbDatabase, noteViewsData, function (err) {
-					if (!err) {
-						console.log("Imported data successfully");
-					}
-				});
-			}
+	db.open()
+		.then(function () {
+			const idbDatabase = db.backendDB();
+			clearDatabase(idbDatabase, function (err) {
+				if (!err) {
+					importFromJsonString(idbDatabase, noteViewsData, function (err) {
+						if (!err) {
+							console.log("Imported data successfully");
+						}
+					});
+				}
+			});
+		})
+		.catch(function (e) {
+			console.error("Could not connect. " + e);
 		});
-	})
-	.catch(function (e) {
-		console.error("Could not connect. " + e);
-	});
-*/
+}

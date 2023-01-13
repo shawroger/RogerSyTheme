@@ -3,10 +3,11 @@
 	text-align: justify;
 	background-image: url(../../src/bq.svg);
 	background-repeat: no-repeat;
-	background-position: right 10px top 8px;
+	background-position: right 8px top 9px;
 	background-color: #f8f8f8;
-	background-size: 1em 1em;
+	background-size: 0.85em 0.85em;
 	color: inherit;
-	margin: 30px 0;
-	padding: 30px 20px 20px;
+	margin: 1em 0px;
+	padding: 0.5em 1em;
+	border-radius: 12px;
 }

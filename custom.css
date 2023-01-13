@@ -206,6 +206,37 @@ div#dockLeft {
 	display: none !important;
 }
 
+/* .protyle-util .protyle-font button.b3-tooltips::after {
+	display: none !important;
+}
+
+.protyle-util .protyle-font button.b3-tooltips::before {
+	display: inline-block !important;
+	position: absolute !important;
+	font-family: "微软雅黑" !important;
+	font-weight: 600 !important;
+	font-size: 1.3em !important;
+	left: center !important;
+	top: center !important;
+	z-index: -1 !important;
+	opacity: 1 !important;
+	top: initial !important;
+    right: initial !important;
+    bottom: initial !important;
+    margin-right: initial !important;
+    border-bottom-color: initial !important;
+} */
+
+.protyle-util .protyle-font select.b3-select {
+	margin-top: 5px;
+	outline: solid lightgrey 2px;
+}
+
+.protyle-util .protyle-font button[data-type="clear"] {
+	float: right;
+	margin-bottom: 8px;
+}
+
 #action #preview .protyle-wysiwyg [data-node-id] a[href*=".pdf?p"] {
 	text-decoration: none !important;
 }

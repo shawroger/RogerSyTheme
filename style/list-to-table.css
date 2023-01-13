@@ -147,6 +147,14 @@
 	min-width: 5em !important;
 }
 
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w5.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 5.5em !important;
+}
+
 .protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w6"]
 	[data-node-id].li
@@ -155,10 +163,24 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w6.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 6.5em !important;
+}
+
+.protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w7"]
 	[data-node-id].li
 	> [data-node-id] {
 	min-width: 7em !important;
+}
+
+.protyle-wysiwyg
+	*[custom-f~="bg"][custom-f~="w7.5"]
+	[data-node-id].li
+	> [data-node-id] {
+	min-width: 7.5em !important;
 }
 
 .protyle-wysiwyg

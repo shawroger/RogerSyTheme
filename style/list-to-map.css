@@ -151,6 +151,14 @@
 }
 
 .protyle-wysiwyg
+	*[custom-f~="dt"][custom-f~="w500"]
+	.li
+	div
+	> div[spellcheck="false"] {
+	max-width: 500px !important;
+}
+
+.protyle-wysiwyg
 	*[custom-f~="dt"][custom-f~="w600"]
 	.li
 	div

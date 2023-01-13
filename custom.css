@@ -107,10 +107,11 @@ body > div.fn__flex-1.fn__flex {
 
 span[data-type~="inline-memo"] {
 	cursor: pointer;
-	margin: 1px 2px;
-	padding: 1px 1px;
+	padding: 0px 3px;
+	padding-bottom: 3px;
+	border-radius: 10px;
 	font-weight: normal !important;
-	background-color: lightpink !important;
+	background-color: transparent !important;
 	border: 1.5px dashed #7c6a6d !important;
 }
 
@@ -172,7 +173,7 @@ div.protyle-title.protyle-wysiwyg--attr {
 .protyle-wysiwyg mark,
 .protyle-wysiwyg span[data-type~="mark"] {
 	padding: 1px 2px;
-	background-color: #ffe4c4 !important;
+	/* background-color: #ffe4c4 !important; */
 }
 
 /* 2022.11.03 remove dockLeft */

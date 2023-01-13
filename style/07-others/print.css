@@ -1,7 +1,6 @@
 /* 控制打印样式 */
 
 @media print {
-	
 	/* 正文元素设置为宋体 */
 	/* .p,
     table,
@@ -15,6 +14,10 @@
 		font-weight: normal !important;
 	}
 	*/
+
+	a {
+		text-decoration: none !important;
+	}
 
 	.list[data-node-id] .li[data-node-id] > .protyle-action {
 		top: 0.2em !important;

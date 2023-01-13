@@ -2464,3 +2464,28 @@
 	content: "";
 	background-image: url("../icon/19x19.com.ico");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="teacher"] {
+	box-shadow: 0 0 0 1.5px #32bea6 inset;
+}
+
+[custom-co~="teacher"]::after {
+	background-image: url("../callout/teacher.png");
+}
+
+.protyle-wysiwyg [data-node-id][custom-co~="zl"],
+.protyle-wysiwyg [data-node-id][custom-co~="extract"] {
+	box-shadow: 0 0 0 1.5px #000000 inset;
+}
+
+[custom-co~="zl"]::after,
+[custom-co~="extract"]::after {
+	background-image: url("../callout/extract.png");
+}
+.protyle-wysiwyg [data-node-id][custom-co~="card"] {
+	box-shadow: 0 0 0 1.5px #0068ae inset;
+}
+
+[custom-co~="card"]::after {
+	background-image: url("../callout/card.png");
+}

@@ -8,6 +8,15 @@
 	outline: none !important;
 }
 
+.protyle-wysiwyg *[custom-f~="bg"] [data-node-id].li > [data-node-id] {
+	margin: 0px !important;
+}
+
+.protyle-wysiwyg *[custom-f~="bg"][custom-f~="c"] div.p {
+	display: flex;
+	justify-content: center;
+}
+
 /* ————————————————————所有子项目的表格（除去第一列其余的列），包含溢出的空白部分，所以才会有边框—————————————————————— */
 .protyle-wysiwyg *[custom-f~="bg"] .li .list {
 	padding: 0px;
@@ -72,10 +81,11 @@
 }
 
 /* ————————————————————大神增加代码———————————————————— */
-.protyle-wysiwyg *[custom-f~="bg"] [data-node-id].li > [data-node-id] {
+/* .protyle-wysiwyg *[custom-f~="bg"] [data-node-id].li > [data-node-id] {
 	margin-left: 4px !important;
 	min-width: 8em;
-}
+} */
+
 
 .protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w0.5"]
@@ -146,7 +156,6 @@
 	> [data-node-id] {
 	min-width: 5em !important;
 }
-
 
 .protyle-wysiwyg
 	*[custom-f~="bg"][custom-f~="w5.5"]

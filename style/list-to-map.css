@@ -1,315 +1,321 @@
-.protyle-wysiwyg *[custom-f~="dt"] .li .list {
-	padding: 0px;
-	margin: 0px;
-	transition: all 0.5s;
-}
-
-.protyle-wysiwyg *[custom-f~="dt"].list[data-node-index] {
+.protyle-content [custom-f="dt"][data-node-id].list,
+.protyle-content [custom-f~="map"][data-node-id].list {
+	/* 导图块样式 */
 	overflow-x: auto;
-	width: 100% !important;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	> div.li
-	> div.p
-	> div:not(.protyle-attr) {
-	outline: none;
-	padding: 1px 8px;
-	min-width: 2.5em;
-	text-align: center;
-	border: 2px solid var(--b3-theme-map-line);
+.protyle-content [custom-f="dt"][data-node-id].list > .protyle-attr,
+.protyle-content [custom-f~="map"][data-node-id].list > .protyle-attr,
+.protyle-content
+	[custom-f="dt"][data-node-id].list
+	> [data-node-id].li
+	> .protyle-attr,
+.protyle-content
+	[custom-f~="map"][data-node-id].list
+	> [data-node-id].li
+	> .protyle-attr {
+	/* 列表块属性标签 */
+	top: 0;
 }
 
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	> div.li
-	> div.p
-	> div
-	span[data-type="block-ref"]::before,
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	> div.li
-	> div.p
-	> div
-	span[data-type="block-ref"]::after {
-	color: rgba(255, 255, 255, 0.5);
+.protyle-content
+	[custom-f="dt"][data-node-id].list
+	> .protyle-attr
+	> .protyle-attr--refcount,
+.protyle-content
+	[custom-f~="map"][data-node-id].list
+	> .protyle-attr
+	> .protyle-attr--refcount,
+.protyle-content
+	[custom-f="dt"][data-node-id].list
+	> [data-node-id].li
+	> .protyle-attr
+	> .protyle-attr--refcount,
+.protyle-content
+	[custom-f~="map"][data-node-id].list
+	> [data-node-id].li
+	> .protyle-attr
+	> .protyle-attr--refcount {
+	/* 引用数按钮 */
+	right: 2px;
 }
 
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	div.list
-	div.li
-	div.p
-	div
-	> span.img {
-	padding-top: 10px;
-}
-
-/* 第二项颜色 */
-.protyle-wysiwyg
-	*[custom-f~="dt"].list[data-node-index]
-	> div.li
-	> div.list
-	> div.li
-	> div.p
-	> div:not(.protyle-attr) {
-	outline: none;
-	padding: 1px 8px;
-	min-width: 2.5em;
-	text-align: center;
-	border: 2px solid var(--b3-theme-map-line); /*var(--b3-theme-map-line)*/
-}
-
-/*子项设偏移调整*/
-.protyle-wysiwyg *[custom-f~="dt"] [data-node-id].li > [data-node-id] {
-	margin-left: 20px !important;
-	margin-right: -14px !important;
-}
-
-.protyle-wysiwyg *[custom-f~="dt"] [data-node-id].li > .list {
-	padding-left: 20px;
-}
-
-/*文字设置居中*/
-.protyle-wysiwyg *[custom-f~="dt"] .li {
-	display: flex;
-}
-
-.protyle-wysiwyg *[custom-f~="dt"] .li .p,
-.protyle-wysiwyg *[custom-f~="dt"] .li [data-type="NodeHeading"] {
+.protyle-content [custom-f="dt"] [data-node-id].li,
+.protyle-content [custom-f~="map"] [data-node-id].li {
+	/* 列表项文字设置居中 */
 	display: flex;
 	align-items: center;
-	left: 6px;
-	margin: 0;
-	flex-shrink: 0;
-	/*不压缩宽度*/
 }
 
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.li
-	[data-type="NodeHeading"]
-	> [spellcheck="false"]:after {
-	display: none;
-}
-
-/*取消标题层级提示*/
-
-/*文字框*/
-.protyle-wysiwyg *[custom-f~="dt"] .li div > div[spellcheck="false"] {
-	margin-top: 2px;
-	padding: 1px 8px;
-	min-width: 2.5em;
-	max-width: 15vw;
-	overflow-x: auto;
-	margin-left: -8px;
-	text-align: center;
-	border: 2px solid var(--b3-theme-map-line);
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="wn"]
-	.li
-	div
-	> div[spellcheck="false"],
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="winf"]
-	.li
-	div
-	> div[spellcheck="false"],
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="fullwidth"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: none !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w100"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 100px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w200"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 200px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w400"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 400px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w500"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 500px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w600"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 600px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"][custom-f~="w800"]
-	.li
-	div
-	> div[spellcheck="false"] {
-	max-width: 800px !important;
-}
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.li[data-subtype="t"]
-	> [data-node-id]
-	> div[spellcheck="false"] {
-	padding: 5px 10px 5px 32px;
-}
-
-/* .protyle-wysiwyg
-	*[custom-f~="dt"]
-	.li
-	div.bq[custom-co]
-	div[spellcheck="false"] {
-	border: none;
-} */
-
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.li[data-subtype="o"]
-	> [data-node-id]
-	> div[spellcheck="false"] {
-	padding: 5px 10px 5px 25px;
-}
-
-/*去除竖线*/
-.list[custom-f~="dt"][data-node-id] .li > :before {
-	display: none;
-}
-
-/*圆点符号居中对齐*/
-.list[custom-f~="dt"][data-node-id] .protyle-action {
-	top: calc(50% + 1px);
-	left: 23px;
-	position: absolute;
-	transform: translate(0, -50%);
-	z-index: 2;
-	color: #8080804d;
-}
-
+.protyle-content [custom-f="dt"] [data-node-id].li:first-of-type::after,
+.protyle-content [custom-f~="map"] [data-node-id].li:first-of-type::after,
+.protyle-content [custom-f="dt"] [data-node-id].li:nth-last-of-type(2)::before,
 .protyle-content
-	*[custom-f~="dt"]
-	[data-subtype="u"][data-node-id].li
-	> div.protyle-action {
-	top: 50%;
-	margin-left: -17px;
-}
-
-.protyle-content
-	*[custom-f~="dt"]
-	[data-subtype="o"][data-node-id].li
-	> div.protyle-action {
-	top: 50%;
-	margin-left: -5px;
-}
-
-/*前继承线*/
-.protyle-wysiwyg *[custom-f~="dt"] .li::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	border-top: 2px solid var(--b3-theme-map-line);
-	width: 20px;
-	height: 50%;
-}
-
-/*上竖线*/
-.protyle-wysiwyg *[custom-f~="dt"] .li::before {
-	bottom: 50%;
-	left: inherit;
-	border-left: 2px solid var(--b3-theme-map-line) !important;
-}
-
-/*下竖线*/
-.protyle-wysiwyg *[custom-f~="dt"] .li::after {
-	content: "";
-	position: absolute;
-	bottom: 50%;
-	border-left: 2px solid var(--b3-theme-map-line);
-	width: 20px;
-	height: 50%;
-}
-
-/*单个子项直线*/
-.protyle-wysiwyg
-	*[custom-f~="dt"]
-	.list
-	> .li:first-child:nth-last-child(2)::after {
-	border-radius: 0px;
-	width: 22px;
-	margin-bottom: -2px;
-}
-
-/*单子项居中*/
-.protyle-wysiwyg *[custom-f~="dt"] .list > .li:first-child:nth-last-child(2) {
-	top: 50%;
-	transform: translate(0, -50%);
-}
-
-/*取消多余线条*/
-.protyle-wysiwyg *[custom-f~="dt"] .li:first-child::after,
-.protyle-wysiwyg *[custom-f~="dt"] .li:nth-last-child(2)::before {
+	[custom-f~="map"]
+	[data-node-id].li:nth-last-of-type(2)::before {
+	/* 取消多余线条 */
 	border: none !important;
 }
 
-/*上框线*/
-.protyle-wysiwyg *[custom-f~="dt"] .li:first-child::before {
-	border-radius: 5px 0 0 0;
-	/* border-radius: 0; */
+.protyle-content [custom-f="dt"] [data-node-id].li:first-of-type::before,
+.protyle-content [custom-f~="map"] [data-node-id].li:first-of-type::before {
+	/* 上框线 */
+	border-top-left-radius: 4px;
 }
 
-/*下框线*/
-.protyle-wysiwyg *[custom-f~="dt"] .li:nth-last-child(2)::after {
-	border-bottom: 2px solid var(--b3-theme-map-line) !important;
-	border-radius: 0 0 0 5px;
-	/* border-radius: 0; */
+.protyle-content [custom-f="dt"] [data-node-id].li:nth-last-of-type(2)::after,
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li:nth-last-of-type(2)::after {
+	/* 下框线 */
+	border-bottom: 2px solid var(--b3-theme-on-surface) !important;
+	border-bottom-left-radius: 4px !important;
 }
 
-/*后继承线*/
-.list[custom-f~="dt"] .list::after {
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li:first-of-type:nth-last-of-type(2)::after,
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li:first-of-type:nth-last-of-type(2)::after {
+	/* 单个子项直线 */
+	border-radius: 0 !important;
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].li::before,
+.protyle-content [custom-f~="map"] [data-node-id].li::before {
+	/* 上导航线 */
+	content: "";
+	height: calc(50% - 2px / 2);
+	width: calc(2em - 2px);
+	position: absolute !important;
+	border-left: 2px solid var(--b3-theme-on-surface) !important;
+	top: calc(50% - 2px / 2);
+	left: 0;
+	border-top: 2px solid var(--b3-theme-on-surface);
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].li::after,
+.protyle-content [custom-f~="map"] [data-node-id].li::after {
+	/* 下导航线 */
+	content: "";
+	height: calc(50% - 2px / 2);
+	width: calc(2em - 2px);
+	position: absolute !important;
+	border-left: 2px solid var(--b3-theme-on-surface) !important;
+	bottom: calc(50% - 2px / 2) !important;
+	border-bottom: 2px solid var(--b3-theme-on-surface) !important;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li[data-subtype="u"]
+	> div.protyle-action,
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li[data-subtype="u"]
+	> div.protyle-action {
+	/* 无序列表标志 */
+	top: calc(50%);
+	left: calc(2em - 20px);
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].li > div:nth-child(2),
+.protyle-content [custom-f~="map"] [data-node-id].li > div:nth-child(2) {
+	/* 修复单子项导航线错位问题 */
+	margin-top: 4px !important;
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].li > div.protyle-action,
+.protyle-content [custom-f~="map"] [data-node-id].li > div.protyle-action {
+	/* 表格项标志 */
+	top: calc(50% - 12px);
+	position: absolute;
+	transform: translate(0, -50%);
+	z-index: 2;
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].li > [data-node-id]::before,
+.protyle-content [custom-f~="map"] [data-node-id].li > [data-node-id]::before {
+	/* 去除竖线 */
+	display: none;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id][data-type="NodeHeading"],
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id][data-type="NodeHeading"] {
+	/* 移除脑图内部标题块的左侧边线 */
+	border-left: 0 solid transparent;
+	padding-left: 0;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list),
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list) {
+	/* 叶子节点 */
+	align-items: center;
+	display: flex;
+	/* 块内边距 */
+	padding: 4px;
+	/* 叶子节点的轮廓 */
+	outline: 1px solid var(--b3-theme-on-surface);
+	border-radius: 4px;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.p, .h1, .h2, .h3, .h4, .h5, .h6),
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.p, .h1, .h2, .h3, .h4, .h5, .h6) {
+	/* 段落块/标题块内边距为 0 */
+	padding: 0;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.p, .h1, .h2, .h3, .h4, .h5, .h6)
+	> [contenteditable][spellcheck],
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.p, .h1, .h2, .h3, .h4, .h5, .h6)
+	> [contenteditable][spellcheck] {
+	white-space: pre;
+	padding: 0 0.5em;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.render-node[data-type="NodeMathBlock"]),
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.render-node[data-type="NodeMathBlock"]) {
+	min-height: 0 !important;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.render-node[data-type="NodeMathBlock"])
+	.katex-display,
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id]:not(.li, .list):is(.render-node[data-type="NodeMathBlock"])
+	.katex-display {
+	margin: 0;
+	padding: 0.25em;
+}
+
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id].li
+	> [data-node-id][data-type="NodeBlockQueryEmbed"],
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id].li
+	> [data-node-id][data-type="NodeBlockQueryEmbed"],
+.protyle-content [custom-f="dt"] [data-node-id].li > [data-node-id].sb,
+.protyle-content [custom-f~="map"] [data-node-id].li > [data-node-id].sb,
+.protyle-content [custom-f="dt"] [data-node-id].li > [data-node-id].bq,
+.protyle-content [custom-f~="map"] [data-node-id].li > [data-node-id].bq {
+	/* 列表项内的容器块与嵌入块恢复上下排列 */
+	display: block;
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].list,
+.protyle-content [custom-f~="map"] [data-node-id].list {
+	/* 整个导图列表取消缩进 */
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+.protyle-content [custom-f="dt"] [data-node-id].list::after,
+.protyle-content [custom-f~="map"] [data-node-id].list::after {
+	/* 后继承线 */
 	content: "";
 	position: absolute;
-	left: 0;
-	top: 50%;
-	border-top: 2px solid var(--b3-theme-map-line);
-	width: 20px;
+	left: calc(-1em + 2px);
+	top: calc(50% - 2px / 2);
+	border-bottom: 2px solid var(--b3-theme-on-surface);
+	width: 2em;
 	height: 0;
 }
 
-.list[custom-f~="dt"] [custom-co] > .list::after {
-	display: none;
+.protyle-content
+	[custom-f="dt"].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2),
+.protyle-content
+	[custom-f~="map"].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2),
+.protyle-content
+	[custom-f="dt"]
+	> [data-node-id].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2),
+.protyle-content
+	[custom-f~="map"]
+	> [data-node-id].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2),
+.protyle-content
+	[custom-f="dt"]
+	[data-node-id]:not(.li)
+	> [data-node-id].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2),
+.protyle-content
+	[custom-f~="map"]
+	[data-node-id]:not(.li)
+	> [data-node-id].list
+	> [data-node-id].li:first-of-type:nth-last-of-type(2) {
+	/* 修复顶层列表项错位问题 */
+	top: 0;
+	transform: none;
 }
 
-/*取消根目录线*/
-div[data-node-index] > [data-type="NodeListItem"]::after,
-div[data-node-index] > [data-type="NodeListItem"]::before {
-	display: none;
-}
-
-/*————————————————————————————————————————————————————————————————————————*/
+/* 取消根目录线 */
+/* 列表块属性 */
+/* .protyle-content *[custom-type~="思维导图"]>[data-node-id].li::after,
+ .protyle-content *[custom-type~="导图"]>[data-node-id].li::after,
+ .protyle-content *[custom-type~="脑图"]>[data-node-id].li::after,
+ .protyle-content *[custom-type~=mind-map]>[data-node-id].li::after,
+ .protyle-content *[custom-type~=map]>[data-node-id].li::after,
+ 
+ .protyle-content *[custom-type~="思维导图"]>[data-node-id].li::before,
+ .protyle-content *[custom-type~="导图"]>[data-node-id].li::before,
+ .protyle-content *[custom-type~="脑图"]>[data-node-id].li::before,
+ .protyle-content *[custom-type~=mind-map]>[data-node-id].li::before,
+ .protyle-content *[custom-type~=map]>[data-node-id].li::before {
+	 display: none;
+ }
+ */
+/* 文档属性 */
+/* .protyle-content *[custom-type~="思维导图"]>[data-node-id].list>[data-node-id].li::after,
+ .protyle-content *[custom-type~="导图"]>[data-node-id].list>[data-node-id].li::after,
+ .protyle-content *[custom-type~="脑图"]>[data-node-id].list>[data-node-id].li::after,
+ .protyle-content *[custom-type~=mind-map]>[data-node-id].list>[data-node-id].li::after,
+ .protyle-content *[custom-type~=map]>[data-node-id].list>[data-node-id].li::after,
+ 
+ .protyle-content *[custom-type~="思维导图"]>[data-node-id].list>[data-node-id].li::before,
+ .protyle-content *[custom-type~="导图"]>[data-node-id].list>[data-node-id].li::before,
+ .protyle-content *[custom-type~="脑图"]>[data-node-id].list>[data-node-id].li::before,
+ .protyle-content *[custom-type~=mind-map]>[data-node-id].list>[data-node-id].li::before,
+ .protyle-content *[custom-type~=map]>[data-node-id].list>[data-node-id].li::before {
+	 display: none;
+ } */

@@ -3083,3 +3083,12 @@
 	content: "";
 	background-image: url("../icon/doc88.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="xiezuocat.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="xiezuocat.com"]::before,
+.b3-typography a[href*="xiezuocat.com"]::before {
+	content: "";
+	background-image: url("../icon/xiezuocat.com.ico");
+}

@@ -2489,3 +2489,11 @@
 [custom-co~="card"]::after {
 	background-image: url("../callout/card.png");
 }
+
+.protyle-wysiwyg [data-node-id][custom-co~="later"] {
+	box-shadow: 0 0 0 1.5px #000000 inset;
+}
+
+[custom-co~="later"]::after {
+	background-image: url("../callout/later.png");
+}

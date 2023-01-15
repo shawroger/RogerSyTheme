@@ -3092,3 +3092,26 @@
 	content: "";
 	background-image: url("../icon/xiezuocat.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="sequoiacap.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="sequoiacap.com"]::before,
+.b3-typography a[href*="sequoiacap.com"]::before {
+	content: "";
+	background-image: url("../icon/sequoiacap.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="hujiang.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="hujiang.com"]::before,
+.b3-typography a[href*="hujiang.com"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="hjenglish.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="hjenglish.com"]::before,
+.b3-typography a[href*="hjenglish.com"]::before {
+	content: "";
+	background-image: url("../icon/hujiang.com.ico");
+}

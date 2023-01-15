@@ -1619,7 +1619,12 @@
 	[data-node-id]
 	span[data-type="a"][data-href*="www.sanguosha.com"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="www.sanguosha.com"]::before,
-.b3-typography a[href*="www.sanguosha.com"]::before {
+.b3-typography a[href*="www.sanguosha.com"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="web.sanguosha.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="web.sanguosha.com"]::before,
+.b3-typography a[href*="web.sanguosha.com"]::before {
 	content: "";
 	background-image: url("../icon/www.sanguosha.com.ico");
 }
@@ -3114,4 +3119,16 @@
 .b3-typography a[href*="hjenglish.com"]::before {
 	content: "";
 	background-image: url("../icon/hujiang.com.ico");
+}
+
+[data-node-id] span[data-type="a"][data-href*="cctv.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cctv.com"]::before,
+.b3-typography a[href*="cctv.com"]::before,
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="news.cntv.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="news.cntv.cn"]::before,
+.b3-typography a[href*="news.cntv.cn"]::before {
+	content: "";
+	background-image: url("../icon/cctv.com.ico");
 }

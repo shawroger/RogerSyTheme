@@ -3132,3 +3132,12 @@
 	content: "";
 	background-image: url("../icon/cctv.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="tiktok.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="tiktok.com"]::before,
+.b3-typography a[href*="tiktok.com"]::before {
+	content: "";
+	background-image: url("../icon/tiktok.com.png");
+}

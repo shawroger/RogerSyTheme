@@ -3150,3 +3150,30 @@
 	content: "";
 	background-image: url("../icon/worthsee.com.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="lanzouy.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="lanzouy.com"]::before,
+.b3-typography a[href*="lanzouy.com"]::before {
+	content: "";
+	background-image: url("../icon/lanzouy.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="skamrta.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="skamrta.com"]::before,
+.b3-typography a[href*="skamrta.com"]::before {
+	content: "";
+	background-image: url("../icon/skamrta.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="hrfjw.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="hrfjw.com"]::before,
+.b3-typography a[href*="hrfjw.com"]::before {
+	content: "";
+	background-image: url("../icon/hrfjw.com.ico");
+}

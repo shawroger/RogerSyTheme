@@ -3141,3 +3141,12 @@
 	content: "";
 	background-image: url("../icon/tiktok.com.png");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="worthsee.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="worthsee.com"]::before,
+.b3-typography a[href*="worthsee.com"]::before {
+	content: "";
+	background-image: url("../icon/worthsee.com.ico");
+}

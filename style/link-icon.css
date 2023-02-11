@@ -3200,3 +3200,12 @@
 	content: "";
 	background-image: url("../icon/zoomeye.org.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="comet-bc.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="comet-bc.com"]::before,
+.b3-typography a[href*="comet-bc.com"]::before {
+	content: "";
+	background-image: url("../icon/comet-bc.com.ico");
+}

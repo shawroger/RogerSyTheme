@@ -202,10 +202,10 @@ div#dockLeft {
 
 'b3-tooltips b3-tooltips__s' */
 
-.protyle-util .protyle-font div:nth-of-type(1),
+/* .protyle-util .protyle-font div:nth-of-type(1),
 .protyle-util .protyle-font div:nth-of-type(2) {
 	display: none !important;
-}
+} */
 
 /* .protyle-util .protyle-font button.b3-tooltips::after {
 	display: none !important;
@@ -241,3 +241,12 @@ div#dockLeft {
 #action #preview .protyle-wysiwyg [data-node-id] a[href*=".pdf?p"] {
 	text-decoration: none !important;
 }
+
+/* 2023.01.27 闪卡区域样式 */
+/* body > div.b3-dialog--open > div > div.b3-dialog__container {
+	width: 80vw !important;
+}
+
+body > div.b3-dialog--open > div > div.b3-dialog__container > div:nth-child(3) {
+	height: 90vh !important;
+} */

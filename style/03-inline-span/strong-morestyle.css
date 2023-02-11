@@ -141,72 +141,86 @@ div[style*="background-color: var(--b3-font-background12);"],
 }
 
 /* 设置文字介绍 */
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color1)"]:before {
+
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color1)"]:before {
 	content: "红";
 	color: var(--b3-font-color1);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color2)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color2)"]:before {
 	content: "橙";
 	color: var(--b3-font-color2);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color3)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color3)"]:before {
 	content: "黄";
 	color: var(--b3-font-color3);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color4)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color4)"]:before {
 	content: "绿";
 	color: var(--b3-font-color4);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color5)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color5)"]:before {
 	content: "青";
 	color: var(--b3-font-color5);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color6)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color6)"]:before {
 	content: "蓝";
 	color: var(--b3-font-color6);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color7)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color7)"]:before {
 	content: "紫";
 	color: var(--b3-font-color7);
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color8)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color8)"]:before {
 	content: "灰";
 	color: var(--b3-font-color8);
 }
 
 /* 设置字体样式 */
-.p[data-type="NodeParagraph"][style*="background-color: var(--b3-font-color9);"],
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color9)"]:before {
+.p[data-type="NodeParagraph"][style*="color: var(--b3-font-color9);"],
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color9)"]:before {
 	content: "宋";
-	font-family: "宋体";
+	top: initial !important;
+	font-family: "宋体" !important;
+	color: var(--b3-theme-on-background) !important;
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color10)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color10)"]:before {
 	content: "楷";
-	font-family: "楷体";
-	font-size: 1.4em;
+	top: initial !important;
+	font-family: "楷体" !important;
+	font-size: 1.4em !important;
+	color: var(--b3-theme-on-background) !important;
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color11)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color11)"]:before {
 	content: "黑";
-	font-family: "黑体";
+	top: initial !important;
+	font-family: "黑体" !important;
+	color: var(--b3-theme-on-background) !important;
+}
+
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color"] {
+	color: transparent !important;
 }
 
 /* 设置曲线样式 */
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color12)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color12)"]:before {
 	content: "T";
+	font-weight: 500 !important;
 	font-family: "Times New Roman";
+	color: var(--b3-theme-on-background) !important;
 }
 
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-color13)"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-color13)"]:before {
 	content: "~";
+	color: var(--b3-theme-on-background) !important;
 }
 
 /* ——————————————————————为样式中13种背景设置格式—————————————————————— */
@@ -216,14 +230,14 @@ div[style*="background-color: var(--b3-font-background12);"],
 	z-index: 2;
 }
 
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-"]:before,
 .b3-color__square[data-type="backgroundColor"][style*="background-color:var(--b3-font-"]:before {
 	display: inline-block;
 	position: absolute;
 	font-family: "微软雅黑";
 	font-weight: 600;
 	font-size: 1.3em;
-	left: center;
-	top: center;
+	top: 0px;
 	z-index: -1;
 }
 

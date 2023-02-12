@@ -2473,6 +2473,16 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href^="logseq://"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href^="logseq://"]::before,
+.b3-typography a[href^="logseq://"]::before
+{
+	content: "";
+	background-image: url("../icon/logseq.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="doczj.com"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="doczj.com"]::before,
 .b3-typography a[href*="doczj.com"]::before {
@@ -3208,4 +3218,13 @@
 .b3-typography a[href*="comet-bc.com"]::before {
 	content: "";
 	background-image: url("../icon/comet-bc.com.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ankichinas.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="ankichinas.cn"]::before,
+.b3-typography a[href*="ankichinas.cn"]::before {
+	content: "";
+	background-image: url("../icon/ankichinas.cn.ico");
 }

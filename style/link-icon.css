@@ -3228,3 +3228,12 @@
 	content: "";
 	background-image: url("../icon/ankichinas.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="ankimemory.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="ankimemory.com"]::before,
+.b3-typography a[href*="ankimemory.com"]::before {
+	content: "";
+	background-image: url("../icon/ankimemory.com.ico");
+}

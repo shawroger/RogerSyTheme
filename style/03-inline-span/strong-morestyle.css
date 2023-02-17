@@ -188,6 +188,7 @@ div[style*="background-color: var(--b3-font-background12);"],
 	content: "宋";
 	top: initial !important;
 	font-family: "宋体" !important;
+	font-weight: initial !important;
 	color: var(--b3-theme-on-background) !important;
 }
 
@@ -213,8 +214,10 @@ div[style*="background-color: var(--b3-font-background12);"],
 /* 设置曲线样式 */
 .b3-color__square[data-type="color"][style*="color:var(--b3-font-color12)"]:before {
 	content: "T";
-	font-weight: 500 !important;
-	font-family: "Times New Roman";
+	top: 2px !important;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: "Times New Roman" !important;
 	color: var(--b3-theme-on-background) !important;
 }
 

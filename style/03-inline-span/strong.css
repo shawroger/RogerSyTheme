@@ -72,60 +72,195 @@
 
 button.b3-menu__item
 	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background9);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background10);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background11);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background12);"] {
+	span[style*="background-color:var(--b3-font-background"] {
 	color: white !important;
 	font-weight: bold !important;
 }
 
 button.b3-menu__item
 	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color9);"],
+	span[style*="color:var(--b3-font-color"],
 button.b3-menu__item
 	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color10);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color11);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color12);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color13);"],
-button.b3-menu__item
-	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background13);"] {
+	span[style*="background-color:var(--b3-font-background"] {
 	color: white !important;
 }
 
 button.b3-menu__item:hover
 	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color9);"],
+	span[style*="color:var(--b3-font-color"],
 button.b3-menu__item:hover
 	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color10);"],
-button.b3-menu__item:hover
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color11);"],
-button.b3-menu__item:hover
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color12);"],
-button.b3-menu__item:hover
-	> span.b3-menu__label
-	span[style*="color:var(--b3-font-color13);"],
-button.b3-menu__item:hover
-	> span.b3-menu__label
-	span[style*="background-color:var(--b3-font-background13);"] {
+	span[style*="background-color:var(--b3-font-background"] {
 	color: var(--b3-theme-hover2) !important;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color1);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background1);"]::before {
+	content: "红";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color1);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color2);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background2);"]::before {
+	content: "橙";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color2);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color3);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background3);"]::before {
+	content: "黄";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color3);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color4);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background4);"]::before {
+	content: "绿";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color4);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color5);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background5);"]::before {
+	content: "青";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color5);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color6);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background6);"]::before {
+	content: "蓝";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color6);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color7);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background7);"]::before {
+	content: "紫";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color7);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="color:var(--b3-font-color8);"]::before,
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background8);"]::before {
+	content: "灰";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: var(--b3-font-color8);
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background9);"]::before {
+	content: "红";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: white;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background10);"]::before {
+	content: "黄";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: white;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background11);"]::before {
+	content: "蓝";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: white;
+}
+
+button.b3-menu__item
+	> span.b3-menu__label
+	span[style*="background-color:var(--b3-font-background12);"]::before {
+	content: "绿";
+	display: inline-block;
+	position: absolute;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 1.1em;
+	color: white;
 }
 
 button.b3-menu__item
@@ -184,6 +319,7 @@ button.b3-menu__item
 	> span.b3-menu__label
 	span[style*="background-color:var(--b3-font-background13);"]::before {
 	content: "空";
+	font-weight: bold;
 	box-sizing: border-box;
 	font-size: 1.2em;
 	position: absolute;

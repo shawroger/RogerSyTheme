@@ -3237,3 +3237,13 @@
 	content: "";
 	background-image: url("../icon/ankimemory.com.ico");
 }
+
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="aippt.wps.cn"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="aippt.wps.cn"]::before,
+.b3-typography a[href*="aippt.wps.cn"]::before {
+	content: "";
+	background-image: url("../icon/aippt.wps.cn.ico");
+}

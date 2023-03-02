@@ -250,3 +250,11 @@ div#dockLeft {
 body > div.b3-dialog--open > div > div.b3-dialog__container > div:nth-child(3) {
 	height: 90vh !important;
 } */
+
+.dock__item--pin {
+	opacity: 1 !important;
+}
+
+.dock__item--pin[aria-label="取消钉住"] {
+	color: var(--b3-theme-primary) !important;
+}

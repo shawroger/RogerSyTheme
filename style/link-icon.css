@@ -3247,3 +3247,12 @@
 	content: "";
 	background-image: url("../icon/aippt.wps.cn.ico");
 }
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="dspace.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="dspace.com"]::before,
+.b3-typography a[href*="dspace.com"]::before {
+	content: "";
+	background-image: url("../icon/dspace.com.svg");
+}

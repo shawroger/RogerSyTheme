@@ -495,7 +495,7 @@ function downloadString(content, filename) {
 
 includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
 includeJs(
-	"/appearance/themes/RogerSyTheme/data/noteviews-data-1673426709208.js"
+	"/appearance/themes/RogerSyTheme/data/noteviews-data.js"
 );
 
 function ddb() {

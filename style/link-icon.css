@@ -740,6 +740,15 @@
 
 .protyle-wysiwyg
 	[data-node-id]
+	span[data-type="a"][data-href*="huaweicloud.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="huaweicloud.com"]::before,
+.b3-typography a[href*="huaweicloud.com"]::before {
+	content: "";
+	background-image: url("../icon/huawei_com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
 	span[data-type="a"][data-href*="samsung.com"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href*="samsung.com"]::before,
 .b3-typography a[href*="samsung.com"]::before {
@@ -3238,7 +3247,6 @@
 	background-image: url("../icon/ankimemory.com.ico");
 }
 
-
 .protyle-wysiwyg
 	[data-node-id]
 	span[data-type="a"][data-href*="aippt.wps.cn"]:not(:empty)::before,
@@ -3255,4 +3263,58 @@
 .b3-typography a[href*="dspace.com"]::before {
 	content: "";
 	background-image: url("../icon/dspace.com.svg");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="pdai.tech"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="pdai.tech"]::before,
+.b3-typography a[href*="pdai.tech"]::before {
+	content: "";
+	background-image: url("../icon/pdai.tech.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="cloudconvert.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="cloudconvert.com"]::before,
+.b3-typography a[href*="cloudconvert.com"]::before {
+	content: "";
+	background-image: url("../icon/cloudconvert.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="veed.io"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="veed.io"]::before,
+.b3-typography a[href*="veed.io"]::before {
+	content: "";
+	background-image: url("../icon/veed.io.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="flixier.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="flixier.com"]::before,
+.b3-typography a[href*="flixier.com"]::before {
+	content: "";
+	background-image: url("../icon/flixier.com.png");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="media.io"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="media.io"]::before,
+.b3-typography a[href*="media.io"]::before {
+	content: "";
+	background-image: url("../icon/media.io.ico");
+}
+
+.protyle-wysiwyg
+	[data-node-id]
+	span[data-type="a"][data-href*="go-transcribe.com"]:not(:empty)::before,
+.protyle-wysiwyg [data-node-id] a[href*="go-transcribe.com"]::before,
+.b3-typography a[href*="go-transcribe.com"]::before {
+	content: "";
+	background-image: url("../icon/go-transcribe.com.png");
 }

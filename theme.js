@@ -359,7 +359,7 @@ function initDOM() {
 }
 
 setTimeout(() => {
-	initDOM();
+	//initDOM();
 	ClickMonitor();
 }, 300);
 
@@ -493,7 +493,7 @@ function downloadString(content, filename) {
 	document.body.removeChild(eleLink);
 }
 
-includeJs("https://unpkg.com/dexie@3.2.2/dist/dexie.js");
+includeJs("/appearance/themes/RogerSyTheme/data/dexie.js");
 includeJs(
 	"/appearance/themes/RogerSyTheme/data/noteviews-data.js"
 );
